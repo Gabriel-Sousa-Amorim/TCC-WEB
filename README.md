@@ -5,4 +5,3 @@
 * [Patrick Santos Cano](https://github.com/patricks10)
 * [Carina Leandro Da Silva](https://github.com/caleandro)
 * [Rafael Pinheiro Faria Gomes] ()
-
