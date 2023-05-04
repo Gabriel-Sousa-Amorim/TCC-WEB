@@ -14,6 +14,19 @@
 
 Nosso projeto trata-se de um Website que se trata de...
 
+
+
+<!--Sensibilidade a pessoas dislexicas-->
+
+
 <!-- Ideias Ideias e Ideias -->
+
+Projeto baseado em um Organizações sem fins lucrativos direcionadas à doações de cesta básica, alimentos não perecíveis, roupas, cobertores, brinquedos e entre outros. E funcionar com unidades de doação e dias de coleta.
+
 <!-- Imagens do projeto -->
+
+---
+
 <!-- QR CODE -->
+
+---
