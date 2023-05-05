@@ -1,4 +1,4 @@
-Anotações Gabriel 
+Lista de Check
 
 - [ ] Home:
 	- [ ] Descrição da nossa missão e nosso objetivo.
