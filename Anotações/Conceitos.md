@@ -7,7 +7,7 @@ Objetivos Página:
 
 	- [x] Paleta de Cores:
 
-	![Paleta de Cores](../Designs/Image/Paleta.png))
+	![Paleta de Cores](../Designs/Image/Paleta.png)
 
 	- [x] Idéias do Projeto.
 	
