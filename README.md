@@ -21,7 +21,8 @@ Nosso projeto trata-se de um Website que se trata de...
 
 <!-- Ideias Ideias e Ideias -->
 
-Projeto baseado em um Organizações sem fins lucrativos direcionadas à doações de cesta básica, alimentos não perecíveis, roupas, cobertores, brinquedos e entre outros. E funcionar com unidades de doação e dias de coleta.
+Projeto de uma Organizaçãp sem fins lucrativos direcionadas à doações de cesta básica, alimentos não perecíveis, roupas, cobertores, brinquedos e entre outros. E funcionar com unidades de doação e dias de coleta.
+Hamada de Organização Mangará.
 
 <!-- Imagens do projeto -->
 
