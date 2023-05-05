@@ -27,5 +27,5 @@ nossas unidades
 
 - [ ] Contato: 
 	- [ ] Incluir informações de contato.
-	- [ ] E uma sessão de perguntas. ou enviar perguntas pelo email
+	- [ ] Seção de perguntas. ou enviar perguntas pelo email
 	- [ ] Redes sociais
