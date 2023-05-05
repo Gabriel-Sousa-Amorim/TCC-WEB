@@ -3,7 +3,7 @@ Lista de Check
 - [ ] Home:
 	- [ ] Descrição da nossa missão e nosso objetivo.
 	- [ ] Sobre nós e texto de incentivo para nossa causa.
-	- [ ]  Explicar como seráo usadas nossas doações.
+	- [ ]  Explicar como serão usadas nossas doações.
 	- [ ] Eventos que estamos planejando ou faremos
 
 - [ ] Sobre:
