@@ -11,9 +11,9 @@ Objetivos Página:
 
 	-[x] Idéia do Projeto.
 	
-- [ ] Header:
+- [X] Header:
 	- [x] Título que direciona a página principal. 
 	- [ ] Outros elementos futuros.
-- [ ] Navbar:
-    - [ ] Links para as outras páginas.
+- [X] Navbar:
+    - [X] Links para as outras páginas.
     - [ ] Outros elementos futuros.
