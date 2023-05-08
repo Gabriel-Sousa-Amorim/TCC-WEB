@@ -76,7 +76,7 @@ nav {
   background: rgb(0, 0, 0);
   margin-bottom: 3px;
 }
-.flex-container {
+.nav-flex-container {
   display: flex;
   padding: 5px;
   align-items: center;
@@ -84,11 +84,11 @@ nav {
 .flex-container > li {
   list-style: none;
 }
-.flex-item {
+.nav-flex-item {
   flex: 1;
   text-align: center;
 }
-.flex-item > a {
+.nav-flex-item > a {
   display: block;
   padding: 3px;
   margin-inline: 5px;
@@ -99,13 +99,13 @@ nav {
   border: 1px solid #101010;
   font-size: medium;
 }
-.flex-item > a:hover {
+.nav-flex-item > a:hover {
   border: 1px solid var(--color-white);
   padding: 2px;
   font-size: large;
 }
 
-.title {
+.main-title {
   display: block;
   text-align: center;
   letter-spacing: 3px;
@@ -117,7 +117,7 @@ article {
 article>p {
   margin: 0 20px 20px 20px;
 }
-.bg-img-1 {
+.parallax-img-1 {
   height:300px;
   width: 100%;
   background-image: url("https://outraspalavras.net/wp-content/uploads/2019/12/viela-em-paraisopolis-1575224235562_v2_1920x1279-1024x682.jpg");
