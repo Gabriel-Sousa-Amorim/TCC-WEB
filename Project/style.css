@@ -3,7 +3,7 @@
 :root {
   --color-white: #efefef;
   --color-red: #fb8064;
-  --color-orange:	#f59a50;
+  --color-orange: #f59a50;
   --color-yellow-orange: #f0b03f;
   --color-yellow: #d2dd2b;
   --color-blue: #83dd2d;
@@ -39,7 +39,7 @@ body {
 }
 header {
   background: rgb(231, 70, 69);
-  background:linear-gradient(
+  background: linear-gradient(
     40deg,
     var(--color-red) 0%,
     var(--color-orange) 25%,
@@ -47,13 +47,18 @@ header {
     var(--color-yellow) 75%,
     var(--color-blue) 90%
   );
+  background: radial-gradient(
+    circle,
+    rgb(161, 255, 130) 0%,
+    rgba(0, 147, 49, 1) 100%
+  );
   color: #fff;
   padding: 50px;
   transition: all 0.5s;
   font-size: large;
   text-transform: uppercase;
   font-weight: 100;
-  box-shadow: inset 2px 2px 20px #000;
+  box-shadow: inset 0px 0px 50px #000;
   font-family: "Vina Sans", cursive;
 }
 header:hover {
@@ -61,15 +66,15 @@ header:hover {
   font-size: x-large;
 }
 header > a {
-  display: flex ;
+  display: flex;
   align-items: center;
   color: #000000;
   text-decoration: none;
 }
-a>img {
+a > img {
   width: 100px;
 }
-a>h1 {
+a > h1 {
   word-spacing: 10px;
 }
 nav {
@@ -81,11 +86,9 @@ nav {
   padding: 5px;
   align-items: center;
 }
-.flex-container > li {
-  list-style: none;
-}
 .nav-flex-item {
   flex: 1;
+  list-style: none;
   text-align: center;
 }
 .nav-flex-item > a {
@@ -93,18 +96,17 @@ nav {
   padding: 3px;
   margin-inline: 5px;
   border-radius: 5px;
-  color: var(--color-white);
   text-decoration: none;
   transition: all 0.5s;
   border: 1px solid #101010;
-  font-size: medium;
+  font-size: large;
+  color: var(--color-white);
 }
 .nav-flex-item > a:hover {
   border: 1px solid var(--color-white);
   padding: 2px;
-  font-size: large;
+  font-size: x-large;
 }
-
 .main-title {
   display: block;
   text-align: center;
@@ -114,16 +116,16 @@ article {
   text-align: justify;
   text-justify: inter-word;
 }
-article>p {
+article > p {
   margin: 0 20px 20px 20px;
 }
 .parallax-img-1 {
-  height:300px;
+  height: 300px;
   width: 100%;
   background-image: url("https://outraspalavras.net/wp-content/uploads/2019/12/viela-em-paraisopolis-1575224235562_v2_1920x1279-1024x682.jpg");
-  background-attachment:fixed;
+  background-attachment: fixed;
   background-position: center;
-  background-size:cover;
+  background-size: cover;
   transition: all 0.5s;
 }
 @media (max-width: 700px) {
@@ -136,17 +138,27 @@ article>p {
     padding: 52px;
     font-size: large;
   }
+  a > h1 {
+    word-spacing: 2px;
+  }
   header > a {
     display: inline-block;
   }
-  a>img {
+  a > img {
     width: 50px;
   }
-  .flex-container {
+  .nav-flex-container {
     display: block;
   }
-  .flex-container > li {
+  .nav-flex-item {
+    display: block;
     padding: 2px;
+  }
+  .nav-flex-item > a {
+    font-size: 15px;
+  }
+  .nav-flex-item > a:hover {
+    font-size: 20px;
   }
   .title {
     font-size: large;
@@ -154,14 +166,34 @@ article>p {
 }
 @media (max-width: 330px) {
   * {
-    font-size: xx-small;
+    font-size: small;
   }
-  a>img {
+  header > a img {
     width: 25px;
   }
-  @media (max-width: 150px) {
-    * {
-      font-size: 5px;
-    }
+  .nav-flex-item > a {
+    font-size: 10px;
+  }
+  .nav-flex-item > a:hover {
+    font-size: 15px;
+  }
+}
+@media (max-width: 150px) {
+  * {
+    font-size: 5px;
+  }
+  header {
+    padding: 15px;
+    font-size: large;
+  }
+  header:hover {
+    padding: 20px;
+    font-size: large;
+  }
+  .nav-flex-item > a {
+    font-size: 5px;
+  }
+  .nav-flex-item > a:hover {
+    font-size: 10px;
   }
 }
