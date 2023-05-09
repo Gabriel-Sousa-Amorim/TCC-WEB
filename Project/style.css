@@ -2,11 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Konkhmer+Sleokchher&family=Reem+Kufi+Ink&display=swap");
 :root {
   --color-white: #efefef;
-  --color-red: #fb8064;
-  --color-orange: #f59a50;
-  --color-yellow-orange: #f0b03f;
-  --color-yellow: #d2dd2b;
-  --color-blue: #83dd2d;
+  --color-red: rgb(251, 128, 100);
+  --color-orange: rgb(245, 154, 80);
+  --color-yellow-orange: rgb(240, 176, 63);
+  --color-yellow: rgb(210, 221, 43);
+  --color-green: rgb(131, 221, 45);
 }
 * {
   margin: 0;
@@ -45,12 +45,7 @@ header {
     var(--color-orange) 25%,
     var(--color-yellow-orange) 50%,
     var(--color-yellow) 75%,
-    var(--color-blue) 90%
-  );
-  background: radial-gradient(
-    circle,
-    rgb(161, 255, 130) 0%,
-    rgba(0, 147, 49, 1) 100%
+    var(--color-green) 90%
   );
   color: #fff;
   padding: 50px;
@@ -122,11 +117,34 @@ article > p {
 .parallax-img-1 {
   height: 300px;
   width: 100%;
-  background-image: url("https://outraspalavras.net/wp-content/uploads/2019/12/viela-em-paraisopolis-1575224235562_v2_1920x1279-1024x682.jpg");
+  background-image: url("https://agemt.org/contraponto/wp-content/uploads/2018/05/favela.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   transition: all 0.5s;
+}
+
+@keyframes marquee-effect {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.marquee {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: #000000;
+  color: #f7f7f7;
+  font-size: x-large;
+  word-spacing: 10PX;
+  text-transform: capitalize;
+  overflow-x: hidden;
+}
+.marquee-content>li {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee-effect 32s linear infinite;
 }
 @media (max-width: 700px) {
   header {
@@ -162,6 +180,9 @@ article > p {
   }
   .title {
     font-size: large;
+  }
+  .marquee {
+    display: none;
   }
 }
 @media (max-width: 330px) {
