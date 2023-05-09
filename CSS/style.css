@@ -2,12 +2,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Konkhmer+Sleokchher&family=Reem+Kufi+Ink&display=swap");
 :root {
   --color-white: #efefef;
-  --color-red: rgb(251, 128, 100);
-  --color-orange: rgb(245, 154, 80);
-  --color-yellow-orange: rgb(240, 176, 63);
-  --color-yellow: rgb(210, 221, 43);
-  --color-green: rgb(131, 221, 45);
+  --color-red: #fb8064;
+  --color-orange: #f59a50;
+  --color-yellow-orange: #f0b03f;
+  --color-yellow: #eaf826;
+  --color-green: #2ddd3c;
+
+
+@keyframes marquee-effect {
+  from {
+    transform: translateX(500%);
 }
+to {
+    transform: translateX(-600%);
+}
+}
+@keyframes background-moving-effect {
+  0% {
+    background-position: left;
+  }
+  25% {
+    background-position: center;
+  }
+  50% {
+    background-position: right;
+  }
+  
+  100% {
+    background-position: left;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -45,8 +70,13 @@ header {
     var(--color-orange) 25%,
     var(--color-yellow-orange) 50%,
     var(--color-yellow) 75%,
-    var(--color-green) 90%
-  );
+    var(--color-green) 100%)
+  background-size: 200% 100%;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: background-moving-effect 30s ease-in-out infinite ;
+
   color: #fff;
   padding: 50px;
   transition: all 0.5s;
@@ -123,7 +153,6 @@ article > p {
   background-size: cover;
   transition: all 0.5s;
 }
-
 @keyframes marquee-effect {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
@@ -147,6 +176,70 @@ article > p {
   animation: marquee-effect 32s linear infinite;
 }
 @media (max-width: 700px) {
+.marquee-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 65px;
+  overflow: hidden;
+}
+.marquee-container-grid {
+  display: grid;
+  grid-template-rows: repeat(2, 30px);
+  justify-items: center;
+  gap: 3px;
+}
+.btn-marquee::before {
+  content: "▼";
+  font-size: x-large;
+}
+.btn-marquee {
+  width: 80px;
+  background-color: #000;
+  border: none;
+  color: rgb(255, 255, 255);
+  border-radius: 10px 10px 0 0;
+}
+.btn-marquee:hover {
+  background-color: #000;
+  color: red;
+}
+
+marquee {
+  display: flex;
+  background-color: #000;
+  color: #FFF;
+  align-self: center;
+  font-size: x-large;
+  word-spacing: 5px;
+  text-transform: uppercase;
+}
+marquee>p {
+  display: inline-flex;
+  align-content: center;
+  align-self: center;
+}
+marquee>a {
+  padding-bottom:6px ;
+  background-color: #efefef;
+  text-decoration: solid;
+  color: #000;
+  font-size: large;
+  border-radius: 5px;
+  padding: 1px;
+}
+marquee>a:hover {
+  align-content: center;
+  align-self: center;
+  background-color: #efefef;
+  text-decoration: solid;
+  color: #000;
+  font-size: large;
+  border-radius: 5px;
+  padding: 1px;
+}
+
+@media (max-width: 768px) {
   header {
     padding: 50px;
     text-align: center;
@@ -182,6 +275,11 @@ article > p {
     font-size: large;
   }
   .marquee {
+    display: none;
+  }
+}
+@media (max-width:600px) {
+  .marquee-container {
     display: none;
   }
 }
