@@ -24,8 +24,15 @@ Lista de Check
 - [ ] Explicar como funciona passo à passo para doar. dias de coleta, e
 nossas unidades
 
-
 - [ ] Contato: 
 	- [ ] Incluir informações de contato.
 	- [ ] Seção de perguntas. ou enviar perguntas pelo email
 	- [ ] Redes sociais
+
+- [ ] Formulário:
+	- [ ] Nome Completo.
+	- [ ] Idade.
+	- [ ] Onde mora.
+	- [ ] O que deseja doar + Descrição do Item.
+	- [ ] Foto do Item.
+	- [ ] Botão de Enviar.
