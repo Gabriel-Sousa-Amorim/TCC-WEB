@@ -2,12 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Konkhmer+Sleokchher&family=Reem+Kufi+Ink&display=swap");
 :root {
   --color-white: #efefef;
-  --color-red: #fb8064;
+  --color-red: #ff6542;
   --color-orange: #f59a50;
   --color-yellow-orange: #f0b03f;
   --color-yellow: #eaf826;
   --color-green: #2ddd3c;
-
+}
 
 @keyframes marquee-effect {
   from {
@@ -70,12 +70,14 @@ header {
     var(--color-orange) 25%,
     var(--color-yellow-orange) 50%,
     var(--color-yellow) 75%,
-    var(--color-green) 100%)
+    var(--color-green) 100%
+  );
+
   background-size: 200% 100%;
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
-  animation: background-moving-effect 30s ease-in-out infinite ;
+  animation: background-moving-effect 2s ease-in-out infinite ;
 
   color: #fff;
   padding: 50px;
@@ -147,57 +149,28 @@ article > p {
 .parallax-img-1 {
   height: 300px;
   width: 100%;
-  background-image: url("https://agemt.org/contraponto/wp-content/uploads/2018/05/favela.jpg");
+  background-image: url("https://outraspalavras.net/wp-content/uploads/2019/12/viela-em-paraisopolis-1575224235562_v2_1920x1279-1024x682.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   transition: all 0.5s;
 }
-@keyframes marquee-effect {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+
+#marquee-container-grid {
+  display: grid;
+  grid-template-rows: repeat(2, 2fr);
+  justify-items: center;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height:63px;
 }
 
-.marquee {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  background-color: #000000;
-  color: #f7f7f7;
-  font-size: x-large;
-  word-spacing: 10PX;
-  text-transform: capitalize;
-  overflow-x: hidden;
-}
-.marquee-content>li {
-  position: absolute;
-  white-space: nowrap;
-  will-change: transform;
-  animation: marquee-effect 32s linear infinite;
-}
-@media (max-width: 700px) {
-.marquee-container {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 65px;
-  overflow: hidden;
-}
-.marquee-container-grid {
-  display: grid;
-  grid-template-rows: repeat(2, 30px);
-  justify-items: center;
-  gap: 3px;
-}
-.btn-marquee::before {
-  content: "▼";
-  font-size: x-large;
-}
-.btn-marquee {
-  width: 80px;
+.checkbox-marquee {
+  width: 30px;
   background-color: #000;
   border: none;
-  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   border-radius: 10px 10px 0 0;
 }
 .btn-marquee:hover {
@@ -210,9 +183,11 @@ marquee {
   background-color: #000;
   color: #FFF;
   align-self: center;
-  font-size: x-large;
+  font-size: large;
+  padding: 5px;
   word-spacing: 5px;
   text-transform: uppercase;
+  align-items: center;
 }
 marquee>p {
   display: inline-flex;
@@ -220,23 +195,19 @@ marquee>p {
   align-self: center;
 }
 marquee>a {
+  display: inline-block;
   padding-bottom:6px ;
-  background-color: #efefef;
+  background-color: #ccc;
   text-decoration: solid;
   color: #000;
-  font-size: large;
+  font-size: medium;
   border-radius: 5px;
   padding: 1px;
 }
 marquee>a:hover {
-  align-content: center;
-  align-self: center;
-  background-color: #efefef;
-  text-decoration: solid;
-  color: #000;
-  font-size: large;
-  border-radius: 5px;
-  padding: 1px;
+  background-color: #eee;
+  color: red;
+
 }
 
 @media (max-width: 768px) {
@@ -274,12 +245,9 @@ marquee>a:hover {
   .title {
     font-size: large;
   }
-  .marquee {
-    display: none;
-  }
 }
 @media (max-width:600px) {
-  .marquee-container {
+  #marquee-container-grid {
     display: none;
   }
 }

@@ -18,12 +18,14 @@
     <title>ONG Mangará</title>
   </head>
   <body>
+    <!--Título da página que funciona como link-->
     <header>
       <a href="Home.html">
         <img src="../Designs/Image/Icon_Mangará.png" alt="" />
         <h1>Organização Mangará</h1>
       </a>
     </header>
+
     <nav>
       <ul class="nav-flex-container">
         <li class="nav-flex-item">
@@ -36,12 +38,11 @@
         <li class="nav-flex-item"><a href="Contato.HTML">Contatos</a></li>
       </ul>
     </nav>
+
     <main>
       <section class="main-title">
         <h1>HOME</h1>
       </section>
-
-
 
       <article>
         <p>
@@ -117,36 +118,57 @@
       </section>
     </main>
 
-    <!--Efeito marquee, feito com CSS para melhores funcionalidades-->
 
-    <section tabindex="0" class="marquee-container marquee-container-grid">
-      <button id="hide-btn" onclick="hide_marquee()" class="btn-marquee"></button>
-      <marquee  id="marquee-text" behavior="scrolling" direction="">
-          <p>Veja nosso massivo evento de doação, acesse para ver as localidades ➤</p>
-          <a href="">Veja mais</a> /
-          Se torne um voluntário ➤
-          <a href="">Veja mais</a> /
-          Deseja doar? Preencha o formulário de doação ➤
-          <a href="">Veja mais</a> /
-          Acesse nossas redes sociais ➤
-          <a href="">Veja mais</a> /
+    <section 
+    id="marquee-container-grid">
+      <input type="checkbox"
+      id="hide-btn"
+        onclick=" hide_marquee()"
+        class="checkbox-marquee"
+        checked
+      ></input>
+      <marquee id="marquee-text" behavior="scrolling" direction="left" scrollamount="5">
+        Veja nosso massivo evento de doação, acesse para ver as localidades ➤
+        <a href="">Veja mais</a> / 
+        Se torne um voluntário ➤
+        <a href="">Veja mais</a> / 
+        Deseja doar? Preencha o formulário de doação ➤
+        <a href="">Veja mais</a> / 
+        Acesse nossas redes sociais ➤
+        <a href="">Veja mais</a> /
 
-          <p>Veja nosso massivo evento de doação, acesse para ver as localidades ➤</p>
-          <a href="">Veja mais</a> /
-          Se torne um voluntário ➤
-          <a href="">Veja mais</a> /
-          Deseja doar? Preencha o formulário de doação ➤
-          <a href="">Veja mais</a> /
-          Acesse nossas redes sociais ➤
-          <a href="">Veja mais</a> /
+        Veja nosso massivo evento de doação, acesse para ver as localidades
+        <a href="">Veja mais</a> / 
+
+        Se torne um voluntário ➤
+        <a href="">Veja mais</a> / 
+
+        Deseja doar? Preencha o formulário de doação ➤ 
+        <a href="">Veja mais</a> / 
+
+        Acesse nossas redes sociais ➤
+        <a href="">Veja mais</a> /
       </marquee>
     </section>
->>>>>>> 1d85ddf8a1961bc30473c419cf06d4b9d4228dc4:HTML/Home.html
+    
     <footer></footer>
-    <script src="">
-        function hide_marquee() {
-          alert(aaaaaaaaaa);
-        };
+
+    <script>
+      function hide_marquee() {
+        let marquee = document.getElementById('marquee-text');
+        let btn = document.getElementById('hide-btn');
+        if (btn.checked == false) {
+        marquee.style.transform = 'translate(0px, 40px)';
+        marquee.style.transition = 'all ease-in 0.5s';
+        btn.style.transform = 'translate(0px, 30px)';
+        btn.style.transition = 'all ease-in 0.3s';
+      } else {
+        marquee.style.transform = 'translate(0px, 0px)';
+        marquee.style.transition = 'all ease-in 0.5s';
+        btn.style.transform = 'translate(0px, 0px)';
+        btn.style.transition = 'all ease-in 0.3s';
+      }
+      };
     </script>
   </body>
 </html>
