@@ -1,21 +1,11 @@
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Konkhmer+Sleokchher&family=Reem+Kufi+Ink&display=swap");
 :root {
-  --color-white: #efefef;
-  --color-red: #ff6542;
+  --color-red: #ff5959;
   --color-orange: #f59a50;
   --color-yellow-orange: #f0b03f;
   --color-yellow: #eaf826;
   --color-green: #2ddd3c;
-}
-
-@keyframes marquee-effect {
-  from {
-    transform: translateX(500%);
-}
-to {
-    transform: translateX(-600%);
-}
 }
 @keyframes background-moving-effect {
   0% {
@@ -27,9 +17,11 @@ to {
   50% {
     background-position: right;
   }
-  
+  75% {
+    background-position:center ;
+  }
   100% {
-    background-position: left;
+    background-position:left ;
   }
 }
 
@@ -39,31 +31,30 @@ to {
   font-family: "Reem Kufi Ink", sans-serif;
 }
 
-html,
-body {
+html,body {
   height: 100%;
-  background: #f7f7f7;
+  background:#efefef;
 }
 ::-webkit-scrollbar {
-  width: 1vw;
+  width: 0.7vw;
+  background: transparent;
 }
 ::-webkit-scrollbar-track {
   width: 1px;
   padding: 1px;
   background: var(--color-white);
-  background: #000;
   box-shadow: inset 0 0 1px #aeaeae;
 }
 ::-webkit-scrollbar-thumb {
   box-shadow: 0 0 1px #000;
-  background: #333333;
+  background: #1a1a1a;
+  width: 1px;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #a0a0a0;
+  background: #5a5a5a;
 }
 header {
-  background: rgb(231, 70, 69);
   background: linear-gradient(
     40deg,
     var(--color-red) 0%,
@@ -72,21 +63,15 @@ header {
     var(--color-yellow) 75%,
     var(--color-green) 100%
   );
-
   background-size: 200% 100%;
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
-  animation: background-moving-effect 20s ease-in-out infinite ;
-
-  color: #fff;
+  animation: background-moving-effect 20s ease-in-out infinite;
   padding: 50px;
-  transition: all 0.5s;
   font-size: large;
-  text-transform: uppercase;
-  font-weight: 100;
-  box-shadow: inset 0px 0px 50px #000;
-  font-family: "Vina Sans", cursive;
+  box-shadow: inset 0px 0px 30px #000;
+  transition: all 0.5s;
 }
 header:hover {
   padding: 52px;
@@ -97,16 +82,13 @@ header > a {
   align-items: center;
   color: #000000;
   text-decoration: none;
+  word-spacing: 10px;
 }
 a > img {
   width: 100px;
 }
-a > h1 {
-  word-spacing: 10px;
-}
 nav {
   background: rgb(0, 0, 0);
-  margin-bottom: 3px;
 }
 .nav-flex-container {
   display: flex;
@@ -114,46 +96,49 @@ nav {
   align-items: center;
 }
 .nav-flex-item {
-  flex: 1;
+  flex: 4;
   list-style: none;
   text-align: center;
 }
 .nav-flex-item > a {
   display: block;
-  padding: 3px;
+  padding: 5px;
   margin-inline: 5px;
   border-radius: 5px;
   text-decoration: none;
-  transition: all 0.5s;
-  border: 1px solid #101010;
+  border: 1px solid #111111;
   font-size: large;
-  color: var(--color-white);
+  color: #FFF;
+  transition: all 0.5s;
 }
 .nav-flex-item > a:hover {
-  border: 1px solid var(--color-white);
-  padding: 2px;
+  border: 1px solid #eaeaea;
   font-size: x-large;
 }
 .main-title {
-  display: block;
   text-align: center;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 article {
   text-align: justify;
   text-justify: inter-word;
 }
-article > p {
-  margin: 0 20px 20px 20px;
+.article-text {
+  margin: 5px 20px 10px;
 }
-.parallax-img-1 {
+.parallax_bg_1 {
   height: 300px;
   width: 100%;
   background-image: url("https://outraspalavras.net/wp-content/uploads/2019/12/viela-em-paraisopolis-1575224235562_v2_1920x1279-1024x682.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  transition: all 0.5s;
+  margin-bottom: 10px;
+  vertical-align: last baseline;
+}
+
+footer {
+
 }
 
 #marquee-container-grid {
