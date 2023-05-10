@@ -184,9 +184,12 @@ input[type=checkbox] {
   align-self: center;
   font-size: x-large;
   content: "▲";
+  transition: all 0.5s;
+  
 }
 .checkbox-icon:checked::before {
-  content: "▼";
+
+  transform: rotate(-180deg) translate(0px, 0px);;
 }
 .btn-marquee:hover {
   color: red;
