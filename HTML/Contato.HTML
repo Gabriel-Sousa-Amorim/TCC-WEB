@@ -49,7 +49,56 @@
       </section>
     </main>
 
+    <section 
+    id="marquee-container-grid">
+      <input type="checkbox"
+      id="hide-btn"
+        onclick=" hide_marquee()"
+        class="checkbox-marquee"
+        checked
+      ></input>
+      <marquee id="marquee-text" behavior="scrolling" direction="left" scrollamount="5">
+        Veja nosso massivo evento de doação, acesse para ver as localidades ➤
+        <a href="">Veja mais</a> / 
+        Se torne um voluntário ➤
+        <a href="">Veja mais</a> / 
+        Deseja doar? Preencha o formulário de doação ➤
+        <a href="">Veja mais</a> / 
+        Acesse nossas redes sociais ➤
+        <a href="">Veja mais</a> /
+
+        Veja nosso massivo evento de doação, acesse para ver as localidades
+        <a href="">Veja mais</a> / 
+
+        Se torne um voluntário ➤
+        <a href="">Veja mais</a> / 
+
+        Deseja doar? Preencha o formulário de doação ➤ 
+        <a href="">Veja mais</a> / 
+
+        Acesse nossas redes sociais ➤
+        <a href="">Veja mais</a> /
+      </marquee>
+    </section>
+    
     <footer></footer>
-    <script src=""></script>
+
+    <script>
+      function hide_marquee() {
+        let marquee = document.getElementById('marquee-text');
+        let btn = document.getElementById('hide-btn');
+        if (btn.checked == false) {
+        marquee.style.transform = 'translate(0px, 40px)';
+        marquee.style.transition = 'all ease-in 0.5s';
+        btn.style.transform = 'translate(0px, 30px)';
+        btn.style.transition = 'all ease-in 0.3s';
+      } else {
+        marquee.style.transform = 'translate(0px, 0px)';
+        marquee.style.transition = 'all ease-in 0.5s';
+        btn.style.transform = 'translate(0px, 0px)';
+        btn.style.transition = 'all ease-in 0.3s';
+      }
+      };
+    </script>
   </body>
 </html>
