@@ -170,10 +170,7 @@ article > p {
   justify-items: center;
   gap: 3px;
 }
-.btn-marquee::before {
-  content: "▼";
-  font-size: x-large;
-}
+
 .btn-marquee {
   width: 80px;
   background-color: #000;
