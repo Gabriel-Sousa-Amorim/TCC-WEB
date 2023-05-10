@@ -6,9 +6,8 @@ Objetivos Página:
 		## "Organização Mangará"
 
 	- [x] Paleta de Cores:
-
-	![Paleta de Cores](../Designs/Image/Paleta.png)
-
+	<img width="100%" src="../Designs/Image/Paleta.png" alt="Paleta de Cores">
+	
 	- [x] Idéia do Projeto.
 	
 	- [X] Ícone do Projeto.
