@@ -3,7 +3,7 @@
 :root {
   --color-red: #ff5959;
   --color-orange: #f59a50;
-  --color-yellow-orange: #f0b03f;
+  --color-yellow-orange: #f0ca3f;
   --color-yellow: #eaf826;
   --color-green: #2ddd3c;
 }
@@ -67,7 +67,7 @@ header {
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
-  animation: background-moving-effect 20s ease-in-out infinite;
+  animation: background-moving-effect 40s ease-in-out infinite;
   padding: 50px;
   font-size: large;
   box-shadow: inset 0px 0px 30px #000;
@@ -137,9 +137,6 @@ article {
   vertical-align: last baseline;
 }
 
-footer {
-
-}
 
 #marquee-container-grid {
   display: grid;
@@ -173,7 +170,6 @@ input[type=checkbox] {
   
 }
 .checkbox-icon:checked::before {
-
   transform: rotate(-180deg) translate(0px, 0px);;
 }
 .btn-marquee:hover {

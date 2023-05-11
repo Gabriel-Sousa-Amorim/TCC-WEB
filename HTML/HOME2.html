@@ -158,33 +158,15 @@
         </marquee>
       </section>
 
-<footer onload="document.getElementById('hide-btn').style.display = 'none'">
-
-    qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq <br>
-    qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq <br>
-    qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq <br>
-    qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq <br>
-    qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq <br>
-    qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq <br>
-    qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq <br>
-    qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq <br>
-    qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq <br>
-    qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq <br>
-    qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq <br>
-    qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq <br>
-    qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq <br>
-    qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq <br>
-    qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq <br>
-    qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq <br>
-    qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq <br>
+<footer>
 
 </footer>
 
+<input type="file" name="" id="" accept="text/pdf">
       <script>
         function hide_marquee() {
           let marquee = document.getElementById("marquee-text");
           let btn = document.getElementById("hide-btn");
-
           if (btn.checked == false) {
             marquee.style.transform = "translate(0px, 40px)";
             marquee.style.transition = "all ease-in 0.5s";
@@ -201,40 +183,3 @@
     </main>
   </body>
 </html>
-
-<!-- begin snippet: js hide: false console: true babel: false -->
-
-<!-- language: lang-js -->
-
-var btn = document.querySelector('#random-button');
-var btnRect = btn.getBoundingClientRect();
-
-function RandomInterval(limit) {
-  let random = Math.random() * limit;
-  random = Math.floor(random);
-}
-
-btn.addEventListener('mouseover', function() {
-  btn.style.top = Math.random() * (window.innerHeight - btnRect.height) + "px";
-  btn.style.left = Math.random() * (window.innerWidth - btnRect.width) + "px";
-}, false);
-
-<!-- end snippet -->
-
-<!-- begin snippet: js hide: false console: true babel: false -->
-
-<!-- language: lang-css -->
-
-#random-button {
-  position: absolute;
-}
-
-<!-- end snippet -->
-
-<!-- begin snippet: js hide: false console: true babel: false -->
-
-<!-- language: lang-html -->
-
-<button id="random-button">try to click me</button>
-
-<!-- end snippet -->
