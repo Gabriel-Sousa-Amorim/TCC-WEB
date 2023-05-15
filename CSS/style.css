@@ -36,21 +36,18 @@ html,body {
   background:#efefef;
 }
 ::-webkit-scrollbar {
-  display: none;
-}
-::-webkit-scrollbar {
-  width: 0.4vw;
-  display: block;
+  width: 0.7vw;
+  background: transparent;
 }
 ::-webkit-scrollbar-track {
   width: 1px;
   padding: 1px;
-  background: transparent;
+  background: var(--color-white);
   box-shadow: inset 0 0 1px #aeaeae;
 }
 ::-webkit-scrollbar-thumb {
   box-shadow: 0 0 1px #000;
-  background: #434343;
+  background: #1a1a1a;
   width: 1px;
   border-radius: 10px;
 }
@@ -93,7 +90,7 @@ a > img {
 nav {
   background: rgb(0, 0, 0);
 }
-.nav-flex-container{
+.nav-flex-container {
   display: flex;
   padding: 5px;
   align-items: center;
@@ -130,7 +127,7 @@ article {
   margin: 5px 100px 10px;
 }
 .parallax_bg_1 {
-  height: 500px;
+  height: 300px;
   width: 100%;
   background-image: url("https://outraspalavras.net/wp-content/uploads/2019/12/viela-em-paraisopolis-1575224235562_v2_1920x1279-1024x682.jpg");
   background-attachment: fixed;
@@ -147,10 +144,11 @@ article {
   justify-items: center;
   bottom: 0;
   position: fixed;
+  width: 100%;
   height:63px;
 }
 
-#marquee-container-grid > input[type=checkbox] {
+input[type=checkbox] {
   appearance: none;
   -webkit-appearance: none;
   padding: 10px;
@@ -164,18 +162,19 @@ article {
   align-content: center;
 
 }
-.hide-btn-icon::before {
+.checkbox-icon::before {
   align-self: center;
   font-size: x-large;
   content: "▲";
   transition: all 0.5s;
   
 }
-.hide-btn-icon:checked::before {
+.checkbox-icon:checked::before {
   transform: rotate(-180deg) translate(0px, 0px);;
+}
+.btn-marquee:hover {
   color: red;
 }
-
 
 marquee {
   display: flex;
@@ -243,15 +242,9 @@ marquee>a:hover {
   .title {
     font-size: large;
   }
-  .article-text {
-    margin: 10px 40px;
-  }
-}
-@media (max-width:600px) {
   #marquee-container-grid {
     display: none;
   }
-  
 }
 @media (max-width: 330px) {
   * {
@@ -285,4 +278,4 @@ marquee>a:hover {
   .nav-flex-item > a:hover {
     font-size: 10px;
   }
-}
+};
