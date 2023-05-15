@@ -40,7 +40,7 @@
     </nav>
 
     <main>
-      <section class="main-title">
+      <section id="class" class="main-title">
         <h1>HOME</h1>
       </section>
 
@@ -118,6 +118,12 @@
       </section>
     </main>
 
+    <input type="checkbox"
+    id="dark-btn"
+      onclick=" DarkMode()"
+      checked
+      class="checkbox-icon"
+    >
 
     <section 
     id="marquee-container-grid">
@@ -126,7 +132,7 @@
       id="hide-btn"
         onclick=" hide_marquee()"
         checked
-        class="checkbox-icon"
+        class="hide-btn-icon"
       >
 
       <marquee id="marquee-text" behavior="scrolling" direction="left" scrollamount="5">
@@ -173,6 +179,19 @@
         marquee.style.transition = 'all 0.4s';
         btn.style.transform = 'translate(0px, 0px)';
         btn.style.transition = 'all ease-in 0.3s';
+      }
+      };
+      function DarkMode() {
+        let btn = document.getElementById('dark-btn');
+        let body = document.getElementById("class")
+        if (btn.checked == false) {
+        console.log("false");
+        body.style.backgroundColor = '#efefef';
+        body.style.color = '#000';
+      } else {
+        console.log("true");
+        body.style.backgroundColor = '#222222';
+        body.style.color = '#eaeaea';
       }
       };
     </script>
