@@ -205,10 +205,9 @@ marquee>a {
 marquee>a:hover {
   background-color: #eee;
   color: red;
-
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   header {
     padding: 50px;
     text-align: center;
@@ -243,8 +242,6 @@ marquee>a:hover {
   .title {
     font-size: large;
   }
-}
-@media (max-width:600px) {
   #marquee-container-grid {
     display: none;
   }
