@@ -15,12 +15,6 @@ Lista de Check
     - [ ] Depoimentos dos que foram ajudados.
     - [ ] Transparência.
 
-- [ ] Formulário de Doação:
-    - [ ] Especificar:
-     * Nome. 
-	* Sobrenome. 
-	* Idade. 
-	* Objeto de doação.
 - [ ] Explicar como funciona passo à passo para doar. dias de coleta, e
 nossas unidades
 
@@ -30,9 +24,11 @@ nossas unidades
 	- [ ] Redes sociais
 
 - [ ] Formulário:
-	- [ ] Nome Completo.
-	- [ ] Idade.
-	- [ ] Onde mora.
-	- [ ] O que deseja doar + Descrição do Item.
-	- [ ] Foto do Item.
+	- [ ] Nome Completo;
+	- [ ] Telefone;
+	- [ ] CPF;
+	- [ ] E-mail;
+	- [ ] Onde mora;
+	- [ ] O que deseja doar + Descrição do Item;
+	- [ ] Foto do Item;
 	- [ ] Botão de Enviar.
