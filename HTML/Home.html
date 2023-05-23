@@ -12,27 +12,35 @@
     />
     <title>ONG Mangará</title>
   </head>
-  <body>     
+  <!--Função Observed_elmt() para reconhecer em qual seção estamos-->
+  <body onload="Observed_elmt()"> 
+    
     <!--Header Conatainer-->
     <header>
-      <a href="">
+    <a href="Home.html">
         <img src="../Designs/Image/Icon_Mangará.png" alt="Ícone Mangará" />
         <h1>Organização Mangará</h1>
-      </a>
+    </a>
     </header>
+
     <!--Nav bar-->
     <nav>
       <ul class="nav-flex-container">
         <li class="nav-flex-item">
           <a style="border: 1px solid #fff" href="Home.html">Home</a>
         </li>
-        <li class="nav-flex-item"><a href="Sobre.HTML">Sobre nós</a></li>
+        <li class="nav-flex-item">
+          <a href="Sobre.HTML">Sobre nós</a>
+        </li>
         <li class="nav-flex-item">
           <a href="Unidades.HTML">Unidades de Coleta</a>
         </li>
-        <li class="nav-flex-item"><a href="Contato.HTML">Contatos</a></li>
+        <li class="nav-flex-item">
+          <a href="Contato.HTML">Contatos</a>
+        </li>
       </ul>
     </nav>
+    
     <main>
       <section class="main-title">
         <h1>HOME</h1>
@@ -157,21 +165,10 @@
       </footer>
     </main>
             <script>
-              function hide_marquee() {
+//Botão de esconder seção marquee;
+  function hide_marquee() {
     let marquee = document.getElementById("marquee-text");
     let btn = document.getElementById("hide-btn");
-    let container = document.getElementById("marquee-container-grid");
-    const observedElement = document.querySelector(".Footer");
-    const intersectionObserver = new IntersectionObserver((entries) => {
-        if (entries[0].intersectionRatio > 0) {
-            container.style.transform = "translate(0px, 70px)";
-            container.style.transition = "all ease-in 0.5s";
-        } else {
-            container.style.transform = "translate(0px, 0px)";
-            container.style.transition = "all 0.4s";
-        };
-    });
-    intersectionObserver.observe(observedElement);
     if (btn.checked == false) {
         marquee.style.transform = "translate(0px, 40px)";
         marquee.style.transition = "all ease-in 0.5s";
@@ -184,6 +181,21 @@
         btn.style.transition = "all ease-in 0.6s";
     }
 };
-</script>
+//Função para esconder a marquee ao chegar na seção footer;
+function Observed_elmt() {
+    let container = document.getElementById("marquee-container-grid");
+    let observedElement = document.querySelector("Footer");
+    let intersectionObserver = new IntersectionObserver((entries) => {
+        if (entries[0].intersectionRatio > 0) {
+            container.style.transform = "translate(0px, 70px)";
+            container.style.transition = "all ease-in 0.5s";
+        } else {
+            container.style.transform = "translate(0px, 0px)";
+            container.style.transition = "all 0.4s";
+        };
+    });
+    intersectionObserver.observe(observedElement);
+};
+  </script>
   </body>
   </html>
