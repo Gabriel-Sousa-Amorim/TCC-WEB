@@ -32,9 +32,10 @@
 }
 
 html,body {
-  height: 100%;
-  background:#efefef;
+  min-height: 100vh;
+  display: flex;
   flex-direction: column;
+  background:#efefef;
 }
 ::-webkit-scrollbar {
   width: 0.7vw;
@@ -125,6 +126,7 @@ article {
 }
 .article-text {
   margin: 5px 100px 10px;
+  font-size: 20px;
 }
 .parallax_bg_1 {
   height: 500px;
@@ -207,6 +209,7 @@ marquee>a:hover {
   color: red;
 }
 footer {
+  margin-top: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, auto)  ;
