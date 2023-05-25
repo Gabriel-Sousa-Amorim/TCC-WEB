@@ -205,8 +205,28 @@ marquee>a {
 marquee>a:hover {
   background-color: #eee;
   color: red;
+} 
+.Footer{
+  display:flex;
+background-color: #000;
+color: white;
 }
 
+
+.Footer>div>a{
+  color: #fff;
+text-decoration: none;
+margin-inline:4px;
+}
+#footer-div-1{
+  flex: 1;
+justify-content: start;
+}
+
+#footer-div-2{
+  flex: 1;
+  justify-content:end;
+}
 @media (max-width: 800px) {
   header {
     padding: 50px;
