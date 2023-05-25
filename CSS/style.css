@@ -34,20 +34,19 @@
 html,body {
   height: 100%;
   background:#efefef;
+  flex-direction: column;
 }
 ::-webkit-scrollbar {
   width: 0.7vw;
-  background: transparent;
 }
 ::-webkit-scrollbar-track {
   width: 1px;
   padding: 1px;
-  background: var(--color-white);
-  box-shadow: inset 0 0 1px #aeaeae;
+  background-color: #000;
 }
 ::-webkit-scrollbar-thumb {
-  box-shadow: 0 0 1px #000;
-  background: #1a1a1a;
+  box-shadow: inset 0 0 3px #dadada;
+  background: #313131;
   width: 1px;
   border-radius: 10px;
 }
@@ -106,12 +105,13 @@ nav {
   margin-inline: 5px;
   border-radius: 5px;
   text-decoration: none;
-  border: 1px solid #111111;
+  border: 1px solid #535353;
   font-size: large;
   color: #FFF;
   transition: all 0.5s;
 }
 .nav-flex-item > a:hover {
+  background: #181818;
   border: 1px solid #eaeaea;
   font-size: x-large;
 }
@@ -127,16 +127,15 @@ article {
   margin: 5px 100px 10px;
 }
 .parallax_bg_1 {
-  height: 300px;
+  height: 500px;
   width: 100%;
   background-image: url("https://outraspalavras.net/wp-content/uploads/2019/12/viela-em-paraisopolis-1575224235562_v2_1920x1279-1024x682.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   margin-bottom: 10px;
-  vertical-align: last baseline;
+  vertical-align: middle;
 }
-
 
 #marquee-container-grid {
   display: grid;
@@ -144,6 +143,7 @@ article {
   justify-items: center;
   bottom: 0;
   position: fixed;
+  z-index: 1;
   width: 100%;
   height:63px;
 }
@@ -212,20 +212,70 @@ background-color: #000;
 color: white;
 }
 
-
-.Footer>div>a{
-  color: #fff;
-text-decoration: none;
-margin-inline:4px;
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto)  ;
+  word-spacing: 2.5px;
+  background: linear-gradient(
+    40deg,
+    var(--color-red) 0%,
+    var(--color-orange) 25%,
+    var(--color-yellow-orange) 50%,
+    var(--color-yellow) 75%,
+    var(--color-green) 100%
+  );
+  background-size: 200% 100%;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: background-moving-effect 40s ease-in-out infinite;
+  filter: grayscale(100%) invert() ;
+  box-shadow: 1px 1px 10px #000;
+  color: #030303;
+  align-items: center;
+  z-index: 1;
 }
-#footer-div-1{
-  flex: 1;
-justify-content: start;
+footer>div{
+  grid: 1;
+  text-align: center;
 }
-
-#footer-div-2{
-  flex: 1;
-  justify-content:end;
+.Footer-Title {
+  grid-column: 2;
+  grid-row: 1;
+  place-self: center;
+  place-content: center;
+}
+.Footer-nav {
+  grid: 1;
+  background:transparent;
+  grid-row: 2;
+  place-items: center center;
+  place-self: center center;
+  text-align: center;
+}
+.Footer-nav > ul li {
+  display: inline;
+}
+.Footer-link{
+  align-content: center;
+  align-self: center;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #eaeaea;
+}
+.Footer-link>svg{
+  vertical-align: middle;
+  transition: all 0.2s;
+}
+.Footer-link:hover>svg  {
+  width:45px;
+  filter: sepia(100%);
+}
+.copyright-div {
+  grid-column: 2 ;
+  grid-row: 3 ;
+  justify-self: center;
 }
 @media (max-width: 800px) {
   header {
@@ -262,6 +312,9 @@ justify-content: start;
   .title {
     font-size: large;
   }
+  .article-text {
+    margin: 5px 50px 10px;
+  }
   #marquee-container-grid {
     display: none;
   }
@@ -278,6 +331,9 @@ justify-content: start;
   }
   .nav-flex-item > a:hover {
     font-size: 15px;
+  }
+  .article-text {
+    margin: 5px 20px 10px;
   }
 }
 @media (max-width: 150px) {
@@ -297,5 +353,8 @@ justify-content: start;
   }
   .nav-flex-item > a:hover {
     font-size: 10px;
+  }
+  .article-text {
+    margin: 5px 10px 10px;
   }
 };
