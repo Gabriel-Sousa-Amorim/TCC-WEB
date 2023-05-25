@@ -256,17 +256,23 @@
             </li>
           </ul>
         </nav>
+
+        <div>
+          <a href="">Saiba mais</a>
+        </div>
         <div class="copyright-div">
           <p>
-            &copy; Copyright ONG Mangará &nbsp;<span id="copyright"></span>.
+            &copy; Copyright ONG Mangará &nbsp;<span id="copyright-year"></span>.
           </p>
         </div>
       </footer>
     </main>
     <script>
+      //Atualiza automaticamente o Ano;
       let data = new Date();
       let ano = data.getFullYear();
-      document.getElementById("copyright").innerHTML = ano;
+      document.getElementById("copyright-year").innerHTML = ano;
+
       //Botão para esconder seção marquee;
       function hide_marquee() {
         let marquee = document.getElementById("marquee-text");

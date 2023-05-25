@@ -263,7 +263,7 @@ footer>div{
   transition: all 0.2s;
 }
 .Footer-link:hover>svg  {
-  width: 55px;
+  width:45px;
   filter: sepia(100%);
 }
 .copyright-div {
