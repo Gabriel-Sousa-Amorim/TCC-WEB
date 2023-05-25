@@ -1,39 +1,26 @@
-Objetivos Página: 
-
-- [ ] Conceitos
-	- [x] Nome Do Projeto:
-
-		## "Organização Mangará"
-
-	- [x] Paleta de Cores:
-
-	![Paleta de Cores](../Designs/Image/Paleta.png)
-
-	- [x] Idéias do Projeto.
-	
-- [X] Header:
-	- [x] Título que direciona a página principal. 
-	- [ ] Outros elementos futuros.
-- [X] Navbar:
-    - [X] Links para as outras páginas.
-    - [ ] Outros elementos futuros.
-
-- [ ] Main:
-	- [X] Títulos.
-	- [ ] Aside.
-	- [ ] Sections.
-	- [ ] Imagens.
-	- [ ] Formulário.
-	
-- [ ] Footer:
-	- [ ] Emails.
-	- [ ] Contatos.
-	- [ ] Redes Sociais.
-- [X] Estilização:
-	- [X] Cores.
-	- [X] Fontes.
-	- [X] Media Query.
-	- [X] Flex.    	
-- [ ] JavaScript:
-	- [ ] Endereço do formulário e outras funcionalidades. 
-	- [ ] ...   
+# HTML
+- [X] Header, navm div, footer, section.
+- [X] Imagens.
+- [X] Listas.
+- [X] Nav-bars.
+- [ ] Tabelas.
+- [ ] Forms.
+# CSS
+- [X] Class e ID.
+- [X] Margin padding border.
+- [X] Unidades de medidas coerentes.
+- [X] Display.
+- [X] Pseudoclasses.
+- [X] Grid e Flex.
+- [X] Media query.
+- [ ] Float.
+- [ ] Bootstrap.
+# JavaScrit
+- [X] DOM.
+- [X] Estrutura de decisão.
+- [ ] Metodos.
+- [ ] Strings arrays e objetos.
+- [ ] Estrutura de repetição.
+- [ ] Classes.
+- [ ] Metodos array(forEach, map, filter, find).
+- [ ] React.
