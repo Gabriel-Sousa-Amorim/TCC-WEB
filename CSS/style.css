@@ -111,7 +111,7 @@ nav {
   transition: all 0.5s;
 }
 .nav-flex-item > a:hover {
-  background: #181818;
+  background: #030303;
   border: 1px solid #eaeaea;
   font-size: x-large;
 }
