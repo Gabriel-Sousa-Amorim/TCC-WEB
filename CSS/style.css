@@ -136,7 +136,6 @@ article {
   background-position: center;
   background-size: cover;
   margin-bottom: 10px;
-  vertical-align: middle;
 }
 
 #marquee-container-grid {
@@ -145,7 +144,7 @@ article {
   justify-items: center;
   bottom: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   height:63px;
 }
@@ -157,7 +156,7 @@ input[type=checkbox] {
   display: flex;
   width: 80px;
   height: 33px;
-  background-color: #000;
+  background-color: #001;
   border-radius: 10px 10px 0 0;
   color: #FFF;
   justify-content: center;
@@ -180,7 +179,7 @@ input[type=checkbox] {
 
 marquee {
   display: flex;
-  background-color: #000;
+  background-color: #001;
   color: #FFF;
   align-self: center;
   font-size: large;
@@ -214,22 +213,14 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, auto)  ;
   word-spacing: 2.5px;
-  background: linear-gradient(
-    40deg,
-    var(--color-red) 0%,
-    var(--color-orange) 25%,
-    var(--color-yellow-orange) 50%,
-    var(--color-yellow) 75%,
-    var(--color-green) 100%
-  );
+  background: #000;
   background-size: 200% 100%;
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
   animation: background-moving-effect 40s ease-in-out infinite;
-  filter: grayscale(100%) invert() ;
-  box-shadow: 1px 1px 10px #000;
-  color: #030303;
+
+  color: #ffffff;
   align-items: center;
   z-index: 1;
 }
@@ -264,11 +255,12 @@ footer>div{
 .Footer-link>svg{
   vertical-align: middle;
   transition: all 0.2s;
+  fill: #dadada;
 }
-.Footer-link:hover>svg  {
+.Footer-link:hover>svg + path {
   width:45px;
-  filter: sepia(100%);
 }
+
 .copyright-div {
   grid-column: 2 ;
   grid-row: 3 ;
