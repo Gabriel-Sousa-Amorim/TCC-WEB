@@ -285,7 +285,7 @@
       //Função para esconder a marquee ao chegar na seção footer;
       function Observed_elmt() {
         let container = document.getElementById("marquee-container-grid");
-        let observedElement = document.querySelector("Footer");
+        let observedElement = document.querySelector("footer");
         let intersectionObserver = new IntersectionObserver((entries) => {
           if (entries[0].intersectionRatio > 0) {
             container.style.transform = "translate(0px, 70px)";
