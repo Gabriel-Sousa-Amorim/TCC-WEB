@@ -13,17 +13,15 @@ Lista de Check
     - [ ] Doações monetárias para manutenção do projeto.
     - [ ] Poder se tornar um voluntário.
     - [ ] Depoimentos dos que foram ajudados.
-    - [ ] Transparência.
-
-- [ ] Explicar como funciona passo à passo para doar. dias de coleta, e
-nossas unidades
+    - [ ] Mostrar nossa Transparência.
+    - [ ] Explicar como funciona passo à passo para doar. dias de coleta, e nossas unidades.
 
 - [ ] Contato: 
 	- [ ] Incluir informações de contato.
 	- [ ] Seção de perguntas. ou enviar perguntas pelo email
 	- [ ] Redes sociais
 
-- [ ] Formulário:
+- [ ] Formulário de Doação e de se tornar:
 	- [X] Nome Completo;
 	- [X] Telefone;
 	- [ ] CPF;
