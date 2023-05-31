@@ -17,14 +17,15 @@ function darkToogle() {
         label.innerHTML = "Modo Claro";
     };
 };
+
 function FormatadorCPF() {
     }
 function ValidaCPF() {
     let CPF = document.getElementById("CPF").value;
     console.log(CPF.length)
-    console.log()
+    console.log(CPF)
 
-    if (CPF.length == 11 && CPF != NaN){
+    if (CPF.length == 11){
         let i =  0;
         let  newCPF =  0;
         let ObjCPF = Object.values(CPF);
@@ -34,9 +35,17 @@ function ValidaCPF() {
             i++;
             newCPF = ObjCPF.slice(0,9);
         }
-        for
+        var sum = newCPF.reduce((accumulator, currentValue) => {
+            return accumulator + currentValue;
+        },0);
+        console.log(sum)
+        let j = sum / 11;
+        console.log(parseFloat(j))
+        console.log(parseInt(j))
+        j = j - parseInt(j)
+        j.toFixed(1);
 
-        
+
     } else {
         console.log(false)
     }
