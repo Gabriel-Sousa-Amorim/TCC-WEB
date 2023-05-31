@@ -1,10 +1,10 @@
 # HTML
-- [X] Header, navm div, footer, section.
+- [X] Header, nav, div, footer, section…
 - [X] Imagens.
 - [X] Listas.
 - [X] Nav-bars.
-- [ ] Tabelas.
-- [ ] Forms.
+- [X] Tabelas. Sem muita Estilização.
+- [X] Forms. Não Completo Ainda.
 # CSS
 - [X] Class e ID.
 - [X] Margin padding border.
@@ -14,13 +14,13 @@
 - [X] Grid e Flex.
 - [X] Media query.
 - [ ] Float.
-- [ ] Bootstrap.
-# JavaScrit
+- [X] Bootstrap. Não Completo Ainda
+# JavaScript
 - [X] DOM.
 - [X] Estrutura de decisão.
-- [ ] Metodos.
-- [ ] Strings arrays e objetos.
-- [ ] Estrutura de repetição.
+- [X] Metodos.
+- [X] Strings arrays e objetos. mais ou menos
+- [X] Estrutura de repetição.
 - [ ] Classes.
-- [ ] Metodos array(forEach, map, filter, find).
+- [ ] Array(forEach, map, filter, find).
 - [ ] React.
