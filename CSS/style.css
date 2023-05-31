@@ -208,11 +208,6 @@ marquee>a:hover {
   background-color: #eee;
   color: red;
 } 
-.Footer{
-  display:flex;
-background-color: #000;
-color: white;
-}
 
 footer {
   margin-top: auto;
