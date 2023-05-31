@@ -226,7 +226,8 @@ marquee>a {
 marquee>a:hover {
   background-color: #eee;
   color: red;
-}
+} 
+
 footer {
   margin-top: auto;
   display: grid;
