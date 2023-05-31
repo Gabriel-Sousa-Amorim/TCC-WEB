@@ -3,8 +3,8 @@
 - [X] Imagens.
 - [X] Listas.
 - [X] Nav-bars.
-- [ ] Tabelas.
-- [ ] Forms.
+- [X] Tabelas. Completa Mas sem Estilização
+- [X] Forms. Não Completo Ainda 
 # CSS
 - [X] Class e ID.
 - [X] Margin padding border.
@@ -14,11 +14,11 @@
 - [X] Grid e Flex.
 - [X] Media query.
 - [ ] Float.
-- [ ] Bootstrap.
+- [X] Bootstrap. Não Completo Ainda
 # JavaScrit
 - [X] DOM.
 - [X] Estrutura de decisão.
-- [ ] Metodos.
+- [X] Metodos.
 - [ ] Strings arrays e objetos.
 - [ ] Estrutura de repetição.
 - [ ] Classes.

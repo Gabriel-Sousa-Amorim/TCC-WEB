@@ -118,9 +118,22 @@ nav {
   text-align: center;
   letter-spacing: 1px;
 }
+.table-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 30px 20px;
+}
 .Telefones {
-  border: 1px solid #000;
-  
+  flex: 2;
+  border: 2px solid #000;
+  border-collapse: collapse;
+  background-color: lightgray;  
+}
+.Telefones tr td{
+  text-align: center;
+  padding: 4px 30px;
+  border: 2px solid #000;  
+  background-color: #ececec;  
 }
 article {
   text-align: justify;
@@ -138,15 +151,14 @@ article {
   background-size: cover;
   margin-bottom: 10px;
 }
-.cenejei{
-
-  text-align:center;
-}
 #parallax_bg_1{
   background-image: url("https://outraspalavras.net/wp-content/uploads/2019/12/viela-em-paraisopolis-1575224235562_v2_1920x1279-1024x682.jpg");
 }
 #parallax_bg_2{
   background-image: url("https://live.staticflickr.com/8508/8544921603_7400482a5c_b.jpg");
+}
+.downLabel{
+  text-align:center;
 }
 
 #marquee-container-grid {

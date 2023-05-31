@@ -71,14 +71,14 @@
             excepturi laudantium amet soluta distinctio, ex vero quis magnam
             beatae repudiandae fugit molestiae, exercitationem possimus, ipsum
             obcaecati error delectus. Nulla officia modi atque exercitationem.
-            Veniam, nam quisquam animi enim aliquid pariatur! Temporibus nulla
+            Veniam, na;m quisquam animi enim aliquid pariatur! Temporibus nulla
             quam architecto fugit. Harum quas repudiandae maxime atque quod
             optio, minima ratione ipsam magni consequatur. Error placeat non et
             quidem! Cupiditate.
           </p>
         </div>
         <div class="parallax_bg" id="parallax_bg_1"></div>
-        <small>Favela Paraisópolis - 2019</small>
+        <p class="downLabel">Favela Paraisópolis - 2019</p>
         <div>
           <p class="article-text">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
@@ -145,7 +145,7 @@
         </div>
         <!--Imagem -->
         <div class="parallax_bg" id="parallax_bg_2"></div>
-        <p class="cenejei">Favela Paraisópolis - 2020</p>
+        <p class="downLabel">Favela Paraisópolis - 2020</p>
       </article>
       
 
@@ -270,38 +270,7 @@
       let data = new Date();
       let ano = data.getFullYear();
       document.getElementById("copyright-year").innerHTML = ano;
-
-      //Botão para esconder seção marquee;
-      function hide_marquee() {
-        let marquee = document.getElementById("marquee-text");
-        let btn = document.getElementById("hide-btn");
-        if (btn.checked == false) {
-          marquee.style.transform = "translate(0px, 40px)";
-          marquee.style.transition = "all ease-in 0.5s";
-          btn.style.transform = "translate(0px, 30px)";
-          btn.style.transition = "all 0.3s";
-        } else {
-          marquee.style.transform = "translate(0px, 0px)";
-          marquee.style.transition = "all 0.4s";
-          btn.style.transform = "translate(0px, 0px)";
-          btn.style.transition = "all ease-in 0.6s";
-        }
-      }
-      //Função para esconder a marquee ao chegar na seção footer;
-      function Observed_elmt() {
-        let container = document.getElementById("marquee-container-grid");
-        let observedElement = document.querySelector("footer");
-        let intersectionObserver = new IntersectionObserver((entries) => {
-          if (entries[0].intersectionRatio > 0) {
-            container.style.transform = "translate(0px, 70px)";
-            container.style.transition = "all ease-in 0.5s";
-          } else {
-            container.style.transform = "translate(0px, 0px)";
-            container.style.transition = "all 0.4s";
-          }
-        });
-        intersectionObserver.observe(observedElement);
-      }
     </script>
+    <script src="../Javascript/Marquee.js"></script>
   </body>
 </html>
