@@ -20,8 +20,10 @@ Objetivos Página:
 - [X] Navbar:
     - [X] Links para as outras páginas.
     - [X] Responsividade.
-    - [ ] Outros elementos futuros.
+
 - [X] Marquee Bar
 	- [ ] Conteúdo.
 	- [X] Animação e estilização.
 	- [X] Botão para ocultar.
+- [X] Main.
+- [X] Footer.
