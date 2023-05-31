@@ -24,10 +24,10 @@ nossas unidades
 	- [ ] Redes sociais
 
 - [ ] Formulário:
-	- [ ] Nome Completo;
-	- [ ] Telefone;
+	- [X] Nome Completo;
+	- [X] Telefone;
 	- [ ] CPF;
-	- [ ] E-mail;
+	- [X] E-mail;
 	- [ ] Onde mora;
 	- [ ] O que deseja doar + Descrição do Item;
 	- [ ] Foto do Item;

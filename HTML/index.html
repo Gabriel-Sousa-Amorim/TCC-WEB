@@ -1,26 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <title>Document</title>
-</head>
-<body>
-    <!--Uso de Bootstrap no formulário-->
-    <!--Uso de nomes aleatórios dentro de uma array por exemplo-->
-    <!--Olá vaqueiro de Marte-->
-    <!--Olá mochileiro intergalático-->
-    <!--Olá cozinheiro do centro da terra-->
-    <form action="get">
-        <input type="text" name="" id="">
-        <input type="email" name="" id="">
-        <input type="tel" name="" id="">
-        <input type="text" name="" id="">
-        <input type="file" name="" id="" accept="image/*">
-        <textarea name="" id="" cols="50" rows="10" maxlength="500">
-        </textarea>
+  </head>
+  <body class="bg-primary">
+    <main class="container rounded bg-white">
+      <form class="container bg-white p-4 m-4" action="get">
+        <h1>Formulário de Doação</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+          exercitationem ipsa, amet minus iusto sapiente libero possimus eius
+          magnam modi a beatae! Libero architecto voluptatem quis maiores
+          dignissimos et ut. Lorem ipsum dolor, sit amet consectetur adipisicing
+          elit. Totam quae aut animi nemo, dicta aliquam ipsa reiciendis autem
+          eligendi natus dolorum pariatur accusantium aspernatur iure
+          necessitatibus, quasi commodi! Iste, voluptatem!
+        </p>
 
-    </form>
-</body>
+        <label for="">Nome Completo</label><br />
+        <input type="text" name="" id="" class="form-control" /><br />
+
+        <label for="CPF">CPF</label><br />
+        <input
+          type="number"
+          maxlength="9"
+          name=""
+          id="CPF"
+          class="form-control"
+        /><br />
+
+        <label for="">Idade</label><br />
+        <input
+          type="number"
+          min="0"
+          max="126"
+          name=""
+          id=""
+          class="form-control"
+        /><br />
+
+        <label for="">E-mail</label><br />
+        <input type="email" name="" id="" class="form-control" /><br />
+
+        <label for="">Telefone</label><br />
+        <input type="tel" name="" id="" class="form-control" /><br />
+
+        <label for="">Foto da Doação</label>
+        <input
+          type="file"
+          name=""
+          id=""
+          class="form-control"
+          accept="image/*"
+        />
+
+        <label for="">Descrição da Doação</label>
+        <textarea
+          name=""
+          id=""
+          class="form-control"
+          cols="50"
+          rows="10"
+          maxlength="500"
+        >
+        </textarea>
+      </form>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
