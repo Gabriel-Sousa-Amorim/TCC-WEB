@@ -24,9 +24,9 @@ Lista de Check
 - [ ] Formulário de Doação e de se tornar:
 	- [X] Nome Completo;
 	- [X] Telefone;
-	- [ ] CPF;
+	- [X] CPF +/-;
 	- [X] E-mail;
 	- [ ] Onde mora;
-	- [ ] O que deseja doar + Descrição do Item;
-	- [ ] Foto do Item;
+	- [X] O que deseja doar + Descrição do Item;
+	- [X] Foto do Item;
 	- [ ] Botão de Enviar.

@@ -5,6 +5,7 @@
 - [X] Nav-bars.
 - [X] Tabelas. Sem muita Estilização.
 - [X] Forms. Não Completo Ainda.
+
 # CSS
 - [X] Class e ID.
 - [X] Margin padding border.
@@ -15,6 +16,7 @@
 - [X] Media query.
 - [ ] Float.
 - [X] Bootstrap. Não Completo Ainda
+
 # JavaScript
 - [X] DOM.
 - [X] Estrutura de decisão.
