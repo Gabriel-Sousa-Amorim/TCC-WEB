@@ -22,8 +22,14 @@
       </a>
     </header>
 
+
+
     <!--Nav bar-->
     <nav>
+      <div class="nav-flex-item">
+        <label class="darkModeElement" for="DarkButton">Modo Escuro</label>
+        <input class="darkModeElement" type="checkbox" name=""id="DarkButton">
+      </div>
       <ul class="nav-flex-container">
         <li class="nav-flex-item">
           <a style="border: 1px solid #fff" href="Home.html">Home</a>
@@ -36,6 +42,7 @@
         </li>
       </ul>
     </nav>
+
 
     <main>
       <section class="main-title">
@@ -75,8 +82,9 @@
           </p>
         </div>
         <section>
-          <div class="parallax_bg" id="parallax_bg_1"></div>
-          <p class="downLabel">Jardim Fontalis - Zona Norte - 2023</p>
+          <div class="parallax_bg" id="parallax_bg_1">
+          <p class="innerLabel">Jardim Fontalis - Zona Norte - 2023</p>
+        </div>
         </section>
         <div>
           <p class="article-text">
@@ -304,5 +312,6 @@
       document.getElementById("copyright-year").innerHTML = ano;
     </script>
     <script src="../Javascript/Marquee.js"></script>
+    <script src="../Javascript/DarkMode.js"></script>
   </body>
 </html>

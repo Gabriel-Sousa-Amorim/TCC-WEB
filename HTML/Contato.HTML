@@ -22,21 +22,30 @@
       </a>
       </header>
 
-    <nav>
-      <ul class="nav-flex-container">
-        <li class="nav-flex-item">
-          <a href="Home.html">Home</a>
-        </li>
-        <li class="nav-flex-item"><a href="Sobre.HTML">Sobre nós</a></li>
-        <li class="nav-flex-item"><a  style="border: 1px solid #fff"  href="Contato.HTML">Contatos</a></li>
-      </ul>
-    </nav>
+        <!--Nav bar-->
+        <nav>
+          <div class="nav-flex-item">
+            <label class="darkModeElement" for="DarkButton">Modo Escuro</label>
+            <input class="darkModeElement" type="checkbox" name="" id="DarkButton">
+          </div>
+          <ul class="nav-flex-container">
+            <li class="nav-flex-item">
+              <a href="Home.html">Home</a>
+            </li>
+            <li class="nav-flex-item">
+              <a href="Sobre.HTML">Sobre nós</a>
+            </li>
+            <li class="nav-flex-item">
+              <a style="border: 1px solid #fff" href="Contato.HTML">Contatos</a>
+            </li>
+          </ul>
+        </nav>
     <main>
       <section class="main-title">
         <h1>Contatos</h1>
       </section>
-      <section class="table-container">
-        <table class="Telefones">
+      <section class="tableContainer">
+        <table class="phoneTable">
           <tr>  
             <th>Telefones</th>
             <th>Celular</th>
@@ -197,6 +206,6 @@
       document.getElementById("copyright-year").innerHTML = ano;
       </script>
       <script src="../Javascript/Marquee.js"></script>
-
+<script src="../Javascript/DarkMode.js"></script>
   </body>
 </html>
