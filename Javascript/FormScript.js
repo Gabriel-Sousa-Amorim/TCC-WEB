@@ -44,8 +44,6 @@ function ValidaCPF() {
         console.log(parseInt(j))
         j = j - parseInt(j)
         j.toFixed(1);
-
-
     } else {
         console.log(false)
     }
