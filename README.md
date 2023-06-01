@@ -22,7 +22,7 @@ Com o nome de 'Organização Mangará', nosso projeto trata-se de um Website de 
  Ícone da Organização Mangaŕa
 </p>
 
-"Mangará" significa coração em <em>Tupi-Guarani</em>, tem sentido de que seja algo dado "de coração" e estamos direcionando as suas doações para pessoas passando por situações difícies 
+"Mangará" significa coração em Tupi-Guarani, tem sentido de que seja algo dado "de coração" e estamos direcionando as suas doações para pessoas passando por situações difíceis
 <!--Sensibilidade a pessoas dislexicas-->
 
 
