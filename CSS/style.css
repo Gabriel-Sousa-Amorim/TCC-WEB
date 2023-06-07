@@ -74,7 +74,7 @@ header {
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
-  animation: background-moving-effect 40s ease-in-out infinite alternate;
+  animation: background-moving-effect 30s ease-in-out infinite alternate;
   padding: 50px;
   font-size: 20px;
   box-shadow: inset 0px 0px 30px #000;
@@ -241,16 +241,7 @@ table.phoneTable {
   letter-spacing: 1px;
   padding: 5px;
   vertical-align: middle;
-  background: linear-gradient(90deg,
-  var(--color-red) 0%,
-  var(--color-orange) 25%,
-  var(--color-yellow-orange) 50%,
-  var(--color-yellow) 75%,
-  var(--color-green) 100%);
-  background-size:25%;
-  background-position: center;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--color-black);
 }
 
 article {

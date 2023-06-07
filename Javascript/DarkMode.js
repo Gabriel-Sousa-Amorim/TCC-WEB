@@ -9,12 +9,10 @@ function DarkcheckboxToogle() {
         root.style.setProperty('--color-white', "#181818");
         root.style.setProperty('--color-black', "#efefef ");
         label.textContent = "Modo Claro"
-        return i = 1;
     } else {
         root.style.setProperty('--color-white', "#efefef ");
         root.style.setProperty('--color-black', "#181818");
         label.textContent = "Modo Escuro"
-        return i = 0;
     }
 };
 Darkcheckbox.addEventListener("change", DarkcheckboxToogle, true)
