@@ -575,10 +575,16 @@ footer>div {
     margin: 5px 50px 10px;
   }
 
+  .card-container {
+    margin: 5px 50px 10px;
+    flex-direction: column;
+  }
+
   .parallax_bg  {
     height: 20%;
     padding-block: 150px;
   }
+
 
   #marquee-container-grid {
     display: none;
@@ -611,6 +617,9 @@ footer>div {
     font-size: 7px;
   }
   .article-text {
+    margin: 5px 20px 10px;
+  }
+  .card-container {
     margin: 5px 20px 10px;
   }
 }
@@ -648,6 +657,8 @@ footer>div {
   .article-text {
     margin: 5px 10px 10px;
   }
+  .card-container {
+    margin: 5px 10px 10px;
+    flex-direction: column;
+  }
 }
-
-;
