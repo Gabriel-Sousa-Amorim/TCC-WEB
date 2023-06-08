@@ -12,7 +12,7 @@
   --color-white: #efefef;
   --color-gray: #4f4f4f;
   --color-grey: #313131;
-  --color-black: #181818;
+  --color-black: #202020;
   --paragraph-size: 16px;
 }
 
@@ -74,7 +74,7 @@ header {
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
-  animation: background-moving-effect 40s ease-in-out infinite alternate;
+  animation: background-moving-effect 30s ease-in-out infinite alternate;
   padding: 50px;
   font-size: 20px;
   box-shadow: inset 0px 0px 30px #000;
@@ -255,6 +255,34 @@ article {
   margin: 5px 100px 20px;
   font-size: var(--paragraph-size);
 }
+
+.card-container {
+  display:flex;
+  margin-inline:100px;
+  gap: 20px;
+}
+.card-child {
+  flex:1;
+  border-block: 2px solid var(--color-black);
+  border-radius: 5px;
+  padding: 4px;
+  margin-bottom: 20px;
+}
+.card-child>h3 {
+  text-align: center;
+  color: var(--color-black);
+}
+.card-child>p {
+  color: var(--color-black);
+  text-align:justify;
+  text-justify: inter-word;
+}
+.card-child>ul li {
+  list-style-position: inside;
+  color: var(--color-black);
+}
+
+
 
 .parallax_bg {
   height: 600px;
@@ -547,10 +575,16 @@ footer>div {
     margin: 5px 50px 10px;
   }
 
+  .card-container {
+    margin: 5px 50px 10px;
+    flex-direction: column;
+  }
+
   .parallax_bg  {
     height: 20%;
     padding-block: 150px;
   }
+
 
   #marquee-container-grid {
     display: none;
@@ -583,6 +617,9 @@ footer>div {
     font-size: 7px;
   }
   .article-text {
+    margin: 5px 20px 10px;
+  }
+  .card-container {
     margin: 5px 20px 10px;
   }
 }
@@ -620,6 +657,8 @@ footer>div {
   .article-text {
     margin: 5px 10px 10px;
   }
+  .card-container {
+    margin: 5px 10px 10px;
+    flex-direction: column;
+  }
 }
-
-;
