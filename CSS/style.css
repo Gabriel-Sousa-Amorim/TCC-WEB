@@ -241,16 +241,7 @@ table.phoneTable {
   letter-spacing: 1px;
   padding: 5px;
   vertical-align: middle;
-  background: linear-gradient(90deg,
-  var(--color-red) 0%,
-  var(--color-orange) 25%,
-  var(--color-yellow-orange) 50%,
-  var(--color-yellow) 75%,
-  var(--color-green) 100%);
-  background-size:25%;
-  background-position: center;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--color-black);
 }
 
 article {
