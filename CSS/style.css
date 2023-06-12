@@ -2,13 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Reem+Kufi:wght@400;500;600;700&family=Rubik+Puddles&family=Sacramento&display=swap');
 
 :root {
-  --color-red: #ff5959;
-  --color-red-orange: #f57950;
-  --color-orange: #f7a144;
-  --color-yellow-orange: #f0ca3f;
-  --color-yellow: #f8e326;
-  --color-green-yellow: #abf826;
-  --color-green: #2ddd3c;
+  --color-red: #fb6964;
+  --color-orange: #f59a50;
+  --color-yellow-orange: #f0b03f;
+  --color-yellow: #fff06d;
+  --color-green-yellow: #dadd2b;
+  --color-green: #a1fc85;
   --color-white: #efefef;
   --color-gray: #4f4f4f;
   --color-grey: #313131;
@@ -67,14 +66,15 @@ html, body {
   position:absolute;
   background: linear-gradient(0deg,
       var(--color-red) 0%,
-      var(--color-orange) 25%,
-      var(--color-yellow-orange) 50%,
-      var(--color-yellow) 75%,
+      var(--color-orange) 20%,
+      var(--color-yellow-orange) 40%,
+      var(--color-yellow) 60%,
+      var(--color-green-yellow) 80%,
       var(--color-green) 100%);
     height: 120vh;
     width: 100%;
     z-index: 10;
-
+    border-radius: 0 0 120px 120px ;
     box-shadow: 0px 10px 200px #000;
 }
 #Moving-page>div {
@@ -103,7 +103,7 @@ header {
       var(--color-yellow-orange) 50%,
       var(--color-yellow) 75%,
       var(--color-green) 100%);
-  background-size: 200% 100%;
+  background-size: 150% 100%;
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
