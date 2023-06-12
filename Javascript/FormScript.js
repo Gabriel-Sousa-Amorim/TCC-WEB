@@ -3,28 +3,36 @@ function darkToogle() {
     let html = document.querySelector("html").attributes;
     let main = document.querySelector("main").classList;
     let label = document.querySelector("label");
+    let img = document.getElementById("IconMangara").parentElement
     if (btnCheck.checked == true) {
         html[1].textContent = "light";
         main.replace("bg-dark", "bg-white");
         main.replace("border-light", "border-dark");
         label.classList.replace("btn-outline-light", "btn-outline-dark");
         label.innerHTML = "Modo Escuro";
+        img.style.filter = "invert(1) brightness(15%)"
     } else {
         html[1].textContent = "dark";
         main.replace("bg-white", "bg-dark");
         main.replace("border-dark", "border-light");
         label.classList.replace("btn-outline-dark", "btn-outline-light");
         label.innerHTML = "Modo Claro";
+        img.style.filter = "invert(1) brightness(65%)"
     };
 };
+document.getElementById("dark-button").addEventListener("change", darkToogle, true)
+
+
+
 
 function FormatadorCPF() {
+
     }
-function ValidaCPF() {
-    let CPF = document.getElementById("CPF").value;
+function ValidaCPF(x) {
+    let CPF = document.getElementById(`${x}`).value;
     console.log(CPF.length)
     console.log(CPF)
-
+    console.log(CPF)
     if (CPF.length == 11){
         let i =  0;
         let  newCPF =  0;
@@ -47,6 +55,11 @@ function ValidaCPF() {
     } else {
         console.log(false)
     }
-} 
-FormatadorCPF()
+} BtnVoluntário
 
+
+
+document.getElementById("CPFDoador").addEventListener("blur", function() {
+    ValidaCPF("CPFDoador")
+}
+    )

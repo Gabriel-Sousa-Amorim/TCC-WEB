@@ -1,77 +1,80 @@
 let date = new Date();
 let day = date.getDay()
-console.log(day)
+let year = date.getFullYear();
 
-switch (day) {
-    //Caso Domingo
-    case(0) :
-    const Sunday = document.getElementById("Sunday")
-    Sunday.style.background = "#ff5959";
-    Sunday.style.borderBlock = "2px solid var(--color-black)";
-    Sunday.querySelector("h3").style.color = "#000"
-    Sunday.querySelector("p").style.color = "#000"
-    Sunday.querySelectorAll("li").forEach(i => i.style.color = "#000")
-    break;
-    
-    //Caso Segunda
-    case(1) :
-    const Monday = document.getElementById("Monday")
-    Monday.style.background = "#f5a550";
-    Monday.style.borderBlock = "2px solid var(--color-black)";
-    Monday.querySelector("h3").style.color = "#000"
-    Monday.querySelector("p").style.color = "#000"
-    Monday.querySelectorAll("li").forEach(i => i.style.color = "#000")
-    break;
-    
-    //Caso Terça
-    case(2) :
-    const Tuesday = document.getElementById("Tuesday")
-    Tuesday.style.background = "#eaf826";
-    Tuesday.style.border = "2px solid #000";
-    Tuesday.querySelector("h3").style.color = "#000"
-    Tuesday.querySelector("p").style.color = "#000"
-    Tuesday.querySelectorAll("li").forEach(i => i.style.color = "#000")
-    
-    break;
-    
-    //Caso Quarta
-    case(3) :
-    const Wednesday = document.getElementById("Wednesday")
-    Wednesday.style.background = "#2ddd3c";
-    Wednesday.style.borderBlock = "2px solid var(--color-black)";
-    Wednesday.querySelector("h3").style.color = "#000"
-    Wednesday.querySelector("p").style.color = "#000"
-    Wednesday.querySelectorAll("li").forEach(i => i.style.color = "#000")
-    break;
-    
-    //Caso Quinta
-    case(4) :
-    const Thursday = document.getElementById("Thursday")
-    Thursday.style.background = "#eaf826";
-    Thursday.style.borderBlock = "2px solid var(--color-black)";
-    Thursday.querySelector("h3").style.color = "#000"
-    Thursday.querySelector("p").style.color = "#000"
-    Thursday.querySelectorAll("li").forEach(i => i.style.color = "#000")
-    
-    break;
-    
-    //Caso Sexta
-    case(5) :
-    const Friday = document.getElementById("Friday").style.background = "#f5a550";
-    Friday.style.background = "#eaf826";
-    Friday.style.borderBlock = "2px solid var(--color-black)";
-    Friday.querySelector("h3").style.color = "#000"
-    Friday.querySelector("p").style.color = "#000"
-    Friday.querySelectorAll("li").forEach(i => i.style.color = "#000")
-    break;
-    
-    //Caso Sábado
-    case(6) :
-    const Saturday = document.getElementById("Saturday")
-    Saturday.style.background = "#ff5959";
-    Saturday.style.borderBlock = "2px solid var(--color-black)";
-    Saturday.querySelector("h3").style.color = "#000"
-    Saturday.querySelector("p").style.color = "#000"
-    Saturday.querySelectorAll("li").forEach(i => i.style.color = "#000")
+function CatchTheDay() {
+    switch (day) {
+        //Caso Domingo
+        case(0) :
+        const Sunday = document.getElementById("Sunday")
+        Sunday.style.filter = "brightness(100%)"
+        Sunday.style.boxShadow = "1px 1px 90px var(--color-red)"
+        document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1")
+        Sunday.style.zIndex = "0"
         break;
+        
+        //Caso Segunda
+        case(1) :
+        const Monday = document.getElementById("Monday")
+        Monday.style.filter = "brightness(100%)"
+        Monday.style.boxShadow = "1px 1px 90px var(--color-orange)"
+        document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1")
+        Monday.style.zIndex = "0"
+        break;
+        
+        //Caso Terça
+        case(2) :
+        const Tuesday = document.getElementById("Tuesday")
+        Tuesday.style.filter = "brightness(100%)"
+        Tuesday.style.boxShadow = "1px 1px 90px var(--color-yellow)"
+        document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1")
+        Tuesday.style.zIndex = "0"
+        break;
+        
+        //Caso Quarta
+        case(3) :
+        const Wednesday = document.getElementById("Wednesday")
+        Wednesday.style.filter = "brightness(100%)"
+        Wednesday.style.boxShadow = "1px 1px 90px var(--color-green)"
+        document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1")
+        Wednesday.style.zIndex = "0"
+        break;
+        
+        //Caso Quinta
+        case(4) :
+        const Thursday = document.getElementById("Thursday")
+        Thursday.style.filter = "brightness(100%)"
+        Thursday.style.boxShadow = "1px 1px 90px var(--color-yellow)"
+        document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1")
+        Thursday.style.zIndex = "0"
+        break;
+        
+        //Caso Sexta
+        case(5) :
+        const Friday = document.getElementById("Friday")
+        Friday.style.filter = "none"
+        Friday.style.boxShadow = "1px 1px 90px var(--color-orange)"
+        document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1")
+        Friday.style.zIndex = "0"
+        break;
+        
+        //Caso Sábado
+        case(6) :
+        const Saturday = document.getElementById("Saturday");
+        Saturday.style.filter = "brightness(100%)"
+        Saturday.style.boxShadow = "1px 1px 90px var(--color-red)"
+        document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1")
+        Saturday.style.zIndex = "0"
+        break;
+    }
 }
+
+function CatchTheYear() {
+    if(document.querySelector("section.main-title").children[0].innerHTML == "Sobre Nós"  ) {
+    CatchTheDay()
+    document.getElementById("copyright-year").innerHTML = year;
+} else {
+    document.getElementById("copyright-year").innerHTML = year;
+}
+}
+CatchTheYear()

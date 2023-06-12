@@ -29,3 +29,5 @@ function Observed_elmt() {
     });
     intersectionObserver.observe(observedElement);
 }
+document.querySelector("body").addEventListener("load", Observed_elmt, true)
+document.getElementById("hide-btn").addEventListener("click", hide_marquee, true)

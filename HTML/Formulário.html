@@ -4,178 +4,228 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
+      rel="shortcut icon"
+      href="../Designs/Image/Icon_Mangara_color.png"
+      type="image/x-icon"
     />
-    <link rel="shortcut icon" href="../Designs/Image/Icon_Mangara_color.png" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/Formstyle.css" />
     <title>Formulário de Doação</title>
   </head>
-  <body class=" p-5">
+  <body class="p-2">
     <main class="container rounded bg-dark p-2 border border-3 border-light">
       <div class="d-grid gap-2">
         <input
-          onclick="darkToogle()"
           id="dark-button"
           type="checkbox"
           class="btn-check center"
-          autocomplete="off"
         />
         <label for="dark-button" class="btn btn-outline-light"
           >Modo Claro</label
         >
       </div>
-      <form class="container" action="get">
-        <h1>Formulário de Doação</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-          exercitationem ipsa, amet minus iusto sapiente libero possimus eius
-          magnam modi a beatae! Libero architecto voluptatem quis maiores
-          dignissimos et ut. Lorem ipsum dolor, sit amet consectetur adipisicing
-          elit. Totam quae aut animi nemo, dicta aliquam ipsa reiciendis autem
-          eligendi natus dolorum pariatur accusantium aspernatur iure
-          necessitatibus, quasi commodi! Iste, voluptatem!
+
+      <article class="">
+        <h1 class="h1 text-center">Formulários Organização Mangará</h1>
+        <figure class="text-center">
+          <img
+            id="IconMangara"
+            src="../Designs/Image/Icon_Mangara.svg"
+            alt=""
+          />
+        </figure>
+        <h3 class="h3 text-center">Olá tudo bem? <br /></h3>
+        <p class="justify-text">
+          Esse formulário é dedicado à aqueles que desejam ou doar alimentos não
+          pereciveis, roupas, cobertores e brinquedos ou doar seu tempo à nossa
+          causa. Suas doações são direcionadas para aqueles que estão em
+          situação de vunurabilidade social, em situação de rua, comunidades
+          carentes e à pessoas que sofreram perdas por desastres naturais em
+          suas comunidades, e atuamos na cidade de São Paulo-SP e região.
         </p>
+        <details class="justify-text text-dark bg-warning border border-dark rounded p-3">
+          <summary>Detalhes sobre a inscrição</summary>
+          <hr>
+          <h5>Posso me tornar Voluntário sendo menor de idade?</h5>
+          Sim, você que é menor de idade pode ser um voluntário e doar seu tempo a organização, entretanto caso você seja menor de idade você deve comparecer com seu <strong> Responsável Legal </strong>, para quaisquer eventos que a organização preparar.
+          <hr>
+          <h5>Meus dados estão protegidos?</h5>
+          Sim, os seus documentos e dados estão protegidos, e não utilizamos seus dados para quaisquer outros fins. A finalidade do uso dos seus dados é para a sua e a nossa segurança.
+          <hr>
+          <h5>Como sei se minha doação está sendo direcionada corretamente?</h5>
+          Nossa equipe faz postagens das nossas ações sociais por meio do nosso <strong>Instagram, Facebook e Twitter</strong> nos comunicando por meio destas. E se você deseja conhecer nossa organização, você pode agendar uma visita a uma das nossas unidades por meio do nosso e-mail ou telefone.
+          <hr>
 
-        <label for="Nome">Nome Completo</label><br />
-        <input type="text" name="" id="" class="form-control" /><br />
+        </details>
+      </article>
 
-        <label for="CPF">CPF</label><br />
-        <input
-          autocomplete="off"
+      <div class="d-flex flex-wrap justify-content-evenly mt-2">
+            <input
+              class=" flex-fill border border-dark btn btn-primary"
+              type="button"
+              id="BtnVoluntário"
+              value="Desejo me tornar voluntário"
+            />
+
+            <input
+              class=" flex-fill border border-dark btn btn-danger"
+              type="button"
+              id="BtnVoluntário"
+              value="Desejo me tornar doador"
+            />
+      </div>
+
+      <hr>
+
+      <div class="d-none" id="FormVoluntário">
+        <h4 class="h4">Formulário para se tornar um voluntário</h4>
+        <form class="form" id="FormDoação" class="container" action="get">
+          <label class="form-label" for="Nome">Nome Completo</label><br />
+          <input 
+          maxlength="51"
+          type="text" 
+          name="" 
+          id="" 
+          class="form-control" 
+          required="required" /><br />
+  
+          <label class="form-label" for="CPF">CPF</label><br />
+          <input
+          maxlength="11"
+          type="text"
           placeholder="000.000.000-00"
           inputmode="numeric"
-          type="text"
           name=""
           id="CPF"
-          onblur="ValidaCPF()"
-          onkeypress="FormatadorCPF()"
           class="form-control"
-        /><br />
-
-        <label for="Data de nascimento">Idade</label><br />
-        <input
-          type="text"
+          autocomplete="off"
+          required="required"
+          /><br />
+  
+          <label class="form-label" for="Data de nascimento">Data de Nascimento</label><br />
+          <input
+          type="date"
           inputmode="numeric"
-          min="0"
-          max="126"
-          maxlength="3"
-          name=""
-          id=""
-          class="form-control"
-        /><br />
-
-        <label for="E-mail">E-mail</label><br />
-        <input
-          placeholder="Exemplo@exemplo.com.br"
+            name=""
+            id=""
+            class="form-control"
+          /><br />
+  
+          <label class="form-label" for="E-mail">E-mail</label><br />
+          <input
           type="email"
-          name=""
-          id=""
-          class="form-control"
-        /><br />
-        <div class="input-group">
-          <label for="Telefone"> Insira o DDD e o seu Telefone</label>
-          <select class="input-group-text" name="phone_prefix">
-            <option value="(11)">(11) - São Paulo</option>
-            <option value="(12)">(12) - São José dos Campos</option>
-            <option value="(13)">(13) - Santos</option>
-            <option value="(14)">(14) - Bauru</option>
-            <option value="(15)">(15) - Sorocaba</option>
-            <option value="(16)">(16) - Ribeirão Preto</option>
-            <option value="(17)">(17) - São José do Rio Preto</option>
-            <option value="(18)">(18) - Presidente Prudente</option>
-            <option value="(19)">(19) - Campinas</option>
-            <option value="(21)">(21) - Rio de Janeiro</option>
-            <option value="(22)">(22) - Campos dos Goytacazes</option>
-            <option value="(24)">(24) - Volta Redonda</option>
-            <option value="(27)">(27) - Vitória</option>
-            <option value="(28)">(28) - Cachoeiro de Itapemirim</option>
-            <option value="(31)">(31) - Belo Horizonte</option>
-            <option value="(32)">(32) - Juiz de Fora</option>
-            <option value="(33)">(33) - Governador Valadares</option>
-            <option value="(34)">(34) - Uberlândia</option>
-            <option value="(35)">(35) - Poços de Caldas</option>
-            <option value="(37)">(37) - Divinópolis</option>
-            <option value="(38)">(38) - Montes Claros</option>
-            <option value="(41)">(41) - Curitiba</option>
-            <option value="(42)">(42) - Ponta Grossa</option>
-            <option value="(43)">(43) - Londrina</option>
-            <option value="(44)">(44) - Maringá</option>
-            <option value="(45)">(45) - Foz do Iguaçu</option>
-            <option value="(46)">(46) - Francisco Beltrão</option>
-            <option value="(47)">(47) - Joinville</option>
-            <option value="(48)">(48) - Florianópolis</option>
-            <option value="(49)">(49) - Chapecó</option>
-            <option value="(51)">(51) - Porto Alegre</option>
-            <option value="(53)">(53) - Pelotas</option>
-            <option value="(54)">(54) - Caxias do Sul</option>
-            <option value="(55)">(55) - Santa Maria</option>
-            <option value="(61)">(61) - Brasília</option>
-            <option value="(62)">(62) - Goiânia</option>
-            <option value="(63)">(63) - Palmas</option>
-            <option value="(64)">(64) - Rio Verde</option>
-            <option value="(65)">(65) - Cuiabá</option>
-            <option value="(66)">(66) - Rondonópolis</option>
-            <option value="(67)">(67) - Campo Grande</option>
-            <option value="(68)">(68) - Rio Branco</option>
-            <option value="(69)">(69) - Porto Velho</option>
-            <option value="(71)">(71) - Salvador</option>
-            <option value="(73)">(73) - Ilhéus</option>
-            <option value="(74)">(74) - Juazeiro</option>
-            <option value="(75)">(75) - Feira de Santana</option>
-            <option value="(77)">(77) - Barreiras</option>
-            <option value="(79)">(79) - Aracaju</option>
-            <option value="(81)">(81) - Recife</option>
-            <option value="(82)">(82) - Maceió</option>
-            <option value="(83)">(83) - João Pessoa</option>
-            <option value="(84)">(84) - Natal</option>
-            <option value="(85)">(85) - Fortaleza</option>
-            <option value="(86)">(86) - Teresina</option>
-            <option value="(87)">(87) - Petrolina</option>
-            <option value="(88)">(88) - Juazeiro do Norte</option>
-            <option value="(89)">(89) - Picos</option>
-            <option value="(91)">(91) - Belém</option>
-            <option value="(92)">(92) - Manaus</option>
-            <option value="(93)">(93) - Santarém</option>
-            <option value="(94)">(94) - Marabá</option>
-            <option value="(95)">(95) - Boa Vista</option>
-            <option value="(96)">(96) - Macapá</option>
-            <option value="(97)">(97) - Coari</option>
-            <option value="(98)">(98) - São Luís</option>
-            <option value="(99)">(99) - Imperatriz</option>
+            placeholder="Exemplo@exemplo.com.br"
+            name=""
+            id=""
+            class="form-control"
+          /><br />
+          
+          <label class="form-label" for="Telefone"> Insira o DDD e o seu Telefone</label>
+          <div class="input-group">
+          <div class="input-group-prepend">
+          <select class="form-select input-group-text" name="phone_prefix">
+            <option value="11">(11) - São Paulo</option>
+            <option value="12">(12) - São José dos Campos</option>
+            <option value="13">(13) - Santos</option>
+            <option value="14">(14) - Bauru</option>
+            <option value="15">(15) - Sorocaba</option>
+            <option value="16">(16) - Ribeirão Preto</option>
+            <option value="17">(17) - São José do Rio Preto</option>
+            <option value="18">(18) - Presidente Prudente</option>
+            <option value="19">(19) - Campinas</option>
+            <option value="21">(21) - Rio de Janeiro</option>
+            <option value="22">(22) - Campos dos Goytacazes</option>
+            <option value="24">(24) - Volta Redonda</option>
+            <option value="27">(27) - Vitória</option>
+            <option value="28">(28) - Cachoeiro de Itapemirim</option>
+            <option value="31">(31) - Belo Horizonte</option>
+            <option value="32">(32) - Juiz de Fora</option>
+            <option value="33">(33) - Governador Valadares</option>
+            <option value="34">(34) - Uberlândia</option>
+            <option value="35">(35) - Poços de Caldas</option>
+            <option value="37">(37) - Divinópolis</option>
+            <option value="38">(38) - Montes Claros</option>
+            <option value="41">(41) - Curitiba</option>
+            <option value="42">(42) - Ponta Grossa</option>
+            <option value="43">(43) - Londrina</option>
+            <option value="44">(44) - Maringá</option>
+            <option value="45">(45) - Foz do Iguaçu</option>
+            <option value="46">(46) - Francisco Beltrão</option>
+            <option value="47">(47) - Joinville</option>
+            <option value="48">(48) - Florianópolis</option>
+            <option value="49">(49) - Chapecó</option>
+            <option value="51">(51) - Porto Alegre</option>
+            <option value="53">(53) - Pelotas</option>
+            <option value="54">(54) - Caxias do Sul</option>
+            <option value="55">(55) - Santa Maria</option>
+            <option value="61">(61) - Brasília</option>
+            <option value="62">(62) - Goiânia</option>
+            <option value="63">(63) - Palmas</option>
+            <option value="64">(64) - Rio Verde</option>
+            <option value="65">(65) - Cuiabá</option>
+            <option value="66">(66) - Rondonópolis</option>
+            <option value="67">(67) - Campo Grande</option>
+            <option value="68">(68) - Rio Branco</option>
+            <option value="69">(69) - Porto Velho</option>
+            <option value="71">(71) - Salvador</option>
+            <option value="73">(73) - Ilhéus</option>
+            <option value="74">(74) - Juazeiro</option>
+            <option value="75">(75) - Feira de Santana</option>
+            <option value="77">(77) - Barreiras</option>
+            <option value="79">(79) - Aracaju</option>
+            <option value="81">(81) - Recife</option>
+            <option value="82">(82) - Maceió</option>
+            <option value="83">(83) - João Pessoa</option>
+            <option value="84">(84) - Natal</option>
+            <option value="85">(85) - Fortaleza</option>
+            <option value="86">(86) - Teresina</option>
+            <option value="87">(87) - Petrolina</option>
+            <option value="88">(88) - Juazeiro do Norte</option>
+            <option value="89">(89) - Picos</option>
+            <option value="91">(91) - Belém</option>
+            <option value="92">(92) - Manaus</option>
+            <option value="93">(93) - Santarém</option>
+            <option value="94">(94) - Marabá</option>
+            <option value="95">(95) - Boa Vista</option>
+            <option value="96">(96) - Macapá</option>
+            <option value="97">(97) - Coari</option>
+            <option value="98">(98) - São Luís</option>
+            <option value="99">(99) - Imperatriz</option>
           </select>
-          <input type="tel" name="" id="" class="input-group" /><br />
+          </div>
+          <input 
+          class="form-control" 
+          type="tel"
+          id=""
+          name="" 
+          />
         </div>
-
-        <label for="Foto">Foto da Doação</label>
-        <input
-          type="file"
-          name=""
-          id=""
-          class="form-control"
-          accept="image/*"
-        />
-
-        <label for="Descrição">Descrição da Doação</label>
-        <textarea
-          name=""
-          id=""
-          class="form-control"
+  
+          <label class="form-label" for="Foto">Foto da Doação</label>
+          <input
+            type="file"
+            accept="image/*"
+            id=""
+            name=""
+            class="form-control"
+          />
+  
+          <label class="form-label" for="Descrição">Descrição da Doação</label>
+          <textarea
+          maxlength="500"
           cols="50"
           rows="10"
-          maxlength="500"
-        >
-        </textarea>
-      </form>
-    </main>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
+          id=""
+          name=""
+          class="form-control"
+          >
+          </textarea>
+        </form>
+      </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="../Javascript/FormScript.js"></script>
   </body>
 </html>

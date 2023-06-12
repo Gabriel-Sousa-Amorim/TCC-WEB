@@ -14,11 +14,17 @@
   </head>
   <!--Função Observed_elmt() para reconhecer em qual seção estamos-->
 
-  <body onload="Observed_elmt()">
+  <body>
+    <section id="Moving-page">
+      <div>
+        <img src="../Designs/Image/Icon_Mangara.svg" alt="Ícone Mangará" />
+        <h1 class="header-title">Organização Mangará</h1>
+      </div>
+    </section>
     <!--Header Conatainer-->
     <header>
       <a href="Home.html">
-        <img src="../Designs/Image/Icon_Mangara.png" alt="Ícone Mangará" />
+        <img src="../Designs/Image/Icon_Mangara.svg" alt="">
         <h1 class="header-title">Organização Mangará</h1>
       </a>
     </header>
@@ -179,7 +185,6 @@
         <input
           type="checkbox"
           id="hide-btn"
-          onclick=" hide_marquee()"
           checked="checked"
           class="checkbox-icon"
         />
@@ -310,11 +315,11 @@
 
     <script>
       //Atualiza automaticamente o Ano;
-      let data = new Date();
-      let ano = data.getFullYear();
-      document.getElementById("copyright-year").innerHTML = ano;
+      
     </script>
     <script src="../Javascript/Marquee.js"></script>
     <script src="../Javascript/DarkMode.js"></script>
+    <script src="../Javascript/Taketheday.js"></script>
+    <script src="../Javascript/Transition.js"></script>
   </body>
 </html>
