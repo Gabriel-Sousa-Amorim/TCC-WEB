@@ -22,8 +22,13 @@ function darkToogle() {
 };
 document.getElementById("dark-button").addEventListener("change", darkToogle, true)
 
+if (document.getElementsByName("TypeForm").value == "Voluntário") {
 
-
+}
+console.log(document.getElementsByName("TypeForms").value)
+document.getElementById("RadioVoluntario").addEventListener("change", function() {
+    console.log(document.getElementsByName("TypeForms").forEach(i => i.value))
+})
 
 function FormatadorCPF() {
 
@@ -55,11 +60,7 @@ function ValidaCPF(x) {
     } else {
         console.log(false)
     }
-} BtnVoluntário
+} 
 
 
 
-document.getElementById("CPFDoador").addEventListener("blur", function() {
-    ValidaCPF("CPFDoador")
-}
-    )
