@@ -1,3 +1,4 @@
+/////////////////////////
 function darkToogle() {
     let btnCheck = document.getElementById("dark-button");
     let html = document.querySelector("html").attributes;
@@ -22,17 +23,14 @@ function darkToogle() {
 };
 document.getElementById("dark-button").addEventListener("change", darkToogle, true)
 
-if (document.getElementsByName("TypeForm").value == "Voluntário") {
-
+/////////////////////////
+function TypeForms() {
+    let radio = document.getElementsByName("TypeForms");
+    console.log(radio)
 }
-console.log(document.getElementsByName("TypeForms").value)
-document.getElementById("RadioVoluntario").addEventListener("change", function() {
-    console.log(document.getElementsByName("TypeForms").forEach(i => i.value))
-})
+TypeForms()
 
-function FormatadorCPF() {
-
-    }
+/////////////////////////
 function ValidaCPF(x) {
     let CPF = document.getElementById(`${x}`).value;
     console.log(CPF.length)
