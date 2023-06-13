@@ -219,10 +219,17 @@ div.nav-flex-item {
   color: var(--color-black);
   padding: 10px;
   margin-block: 40px;
+  padding: 10px;
   text-align: center;
   border-inline: 4px solid var(--color-black);
 }
-.Email-child>a  {
+.email-container {
+  background-color: #202020;
+  border-radius: 5px;
+  padding: 3px;
+  display: inline;
+}
+.email-container>a  {
     background: linear-gradient(90deg,
   var(--color-red) 0%,
   var(--color-orange) 25%,
