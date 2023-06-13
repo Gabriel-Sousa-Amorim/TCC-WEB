@@ -1,24 +1,27 @@
 /////////////////////////
 function darkToogle() {
-    let btnCheck = document.getElementById("dark-button");
-    let html = document.querySelector("html").attributes;
-    let main = document.querySelector("main").classList;
-    let label = document.querySelector("label");
-    let img = document.getElementById("IconMangara").parentElement
+    const btnCheck = document.getElementById("dark-button");
+    const html = document.querySelector("html").attributes;
+    const main = document.querySelector("main").classList;
+    const label = document.querySelector("label");
+    const img = document.getElementById("IconMangara").parentElement
+    const icon = document.querySelector("span#Dark-Icon")
     if (btnCheck.checked == true) {
         html[1].textContent = "light";
         main.replace("bg-dark", "bg-white");
         main.replace("border-light", "border-dark");
+        label.innerHTML = "Modo Claro";
         label.classList.replace("btn-outline-light", "btn-outline-dark");
-        label.innerHTML = "Modo Escuro";
         img.style.filter = "invert(1) brightness(15%)"
+        icon.classList.replace("bi-moon-stars-fill", "bi-brightness-high-fill")
     } else {
         html[1].textContent = "dark";
         main.replace("bg-white", "bg-dark");
         main.replace("border-dark", "border-light");
         label.classList.replace("btn-outline-dark", "btn-outline-light");
-        label.innerHTML = "Modo Claro";
+        label.innerHTML = "Modo Escuro";
         img.style.filter = "invert(1) brightness(65%)"
+        icon.classList.replace("bi-brightness-high-fill", "bi-moon-stars-fill")
     };
 };
 document.getElementById("dark-button").addEventListener("change", darkToogle, true)
@@ -60,5 +63,42 @@ function ValidaCPF(x) {
     }
 } 
 
+const NameExp = new RegExp(/^[a-z ,.'-]+$/i)
+const CPFExp = new RegExp(/^[a-z ,.'-]+$/i)
+const EmailExp = new RegExp(/^[a-z ,.'-]+$/i)
+const ImageExp = new RegExp(/^[a-z ,.'-]+$/i)
+const TelefoneExp = new RegExp(/^\9{1}?(\d{4})?[ -]?(\d{4})$/);
 
 
+function ValidaNome(x) {
+    x.classList.remove("is-invalid");
+    x.classList.remove("is-valid");
+    if (NameExp.test(x.value) == true) {
+        x.classList.add("is-valid");
+        return true;
+    } else {
+        x.classList.add("is-invalid");
+        return false;
+    }
+}
+document.getElementById("NomeVoluntario").addEventListener("blur", function() {
+    ValidaNome(document.getElementById("NomeVoluntario"))
+})
+
+function ValidaTelefone(x) {
+    //Regex Expression própria, verifica se há o digito 9 no início e após isso verifica se há 4 digitos numéricos 
+    //se sim aceita a separação por hifén,espaço ou sem 
+    if (TelefoneExp.test(x.value) == true) {
+        x.classList.add('is-valid')
+        return true
+    } else {
+
+        x.classList.add('is-invalid')
+        return false;
+    }
+}
+document.getElementById("TelefoneVoluntario").addEventListener("blur", function() {
+    document.getElementById("TelefoneVoluntario").classList.remove('is-valid')
+    document.getElementById("TelefoneVoluntario").classList.remove('is-invalid')
+    ValidaTelefone(document.getElementById("TelefoneVoluntario"))
+})
