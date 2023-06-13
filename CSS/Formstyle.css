@@ -11,6 +11,9 @@ body {
 figure {
     filter: invert(1) brightness(65%);
 }
+.bg-warning-dark {
+    background-color:rgb(107, 91, 0) ;
+}
 .justify-text{
     text-align: justify;
     text-justify: inter-word;
