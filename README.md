@@ -1,6 +1,6 @@
 <!-- Informações do nosso Projeto -->
-
-# [Website Organização Mangará](https://gabriel-sousa-amorim.github.io/TCC/)
+# TCC
+## [Website Organização Mangará](https://gabriel-sousa-amorim.github.io/TCC/)
 *Projeto TCC* do curso de Programação WEB no período noturno, do primeiro semestre de 2023. O nosso grupo é constituído por:  
 * [Gabriel Sousa.](https://github.com/Gabriel-Sousa-Amorim)
 * [Carina Leandro Da Silva.](https://github.com/caleandro)
