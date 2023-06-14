@@ -1,11 +1,10 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Reem+Kufi:wght@400;500;600;700&family=Rubik+Puddles&family=Sacramento&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Moirai+One&family=Reem+Kufi:wght@400;500;600;700&family=Rubik+Puddles&family=Sacramento&display=swap');
 :root {
   --color-red: #fb6964;
   --color-orange: #f59a50;
   --color-yellow-orange: #f0b03f;
-  --color-yellow: #fff06d;
+  --color-yellow: #ffed4f;
   --color-green-yellow: #dadd2b;
   --color-green: #a1fc85;
   --color-white: #efefef;
@@ -26,6 +25,10 @@
   100% {
     background-position: right;
   }
+}
+@keyframes rotate-card {
+  from {transform: rotateX(0);}
+  to {transform: rotateX(180deg);}
 }
 
 * {
@@ -206,69 +209,73 @@ div.nav-flex-item {
   font-size: 22px;
 }
 
-.tableContainer {
-  display: flex;
-  flex-direction: column;
-  margin-inline: 100px;
-  align-items: stretch;
-  justify-content: space-between;
+.contacts-container {
+  display:grid;
+  margin: 5px 200px 20px;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(2, 2fr);
+  row-gap: 5px;
+  column-gap: 7px;
 }
-.Email-child {
-  flex: 1;
-  border-radius: 10px;
-  color: var(--color-black);
-  padding: 10px;
-  margin-block: 40px;
-  padding: 10px;
-  text-align: center;
-  border-inline: 4px solid var(--color-black);
-}
-.email-container {
-  background-color: #202020;
-  border-radius: 5px;
-  padding: 3px;
-  display: inline;
-}
-.email-container>a  {
-    background: linear-gradient(90deg,
-  var(--color-red) 0%,
-  var(--color-orange) 25%,
-  var(--color-yellow-orange) 50%,
-  var(--color-yellow) 75%,
-  var(--color-green) 100%);
-  border: 1px 1px transparent;
-  background-position: center;
-  -webkit-background-clip:text;
-  -webkit-text-fill-color: transparent;
-}
-.Email-child>p {
-  margin-top: 10px;
-  text-align: justify;
-  text-justify: inter-word;
-  letter-spacing: 1px;
-}
-table.phoneTable {
-  flex: 1;
-  border: 1px solid var(--color-black);
-  border-radius: 2px;
-  box-shadow: 0px 0px 4px #000;
-  border-collapse: separate;
-  background-color: var(--color-grey);
-  color: #FFF;
-}
-
-.phoneTable tr td, tr th {
+.contact-child {
+  padding-inline: 15px;
+  padding-block: 40px;
   border: 1px solid #000;
-  border-radius: 2px;
   text-align: center;
-  text-shadow: 1px 1px 20px #000;
+  cursor: pointer;
+}
+.front-content {
+  display: flex;
+  place-content: center center;
+  gap: 3px;
+}
+.front-content>h1, svg {
   color: #FFF;
-  background-color: var(--color-gray);
+  place-self:center center;
+  text-shadow: 1px 1px 5px #000, -1px -1px 5px #000;
 }
 
-.phoneTable tr td>a {
-  color: #FFF;
-  text-decoration:dashed;
+#div-Instagram  {
+  background: linear-gradient(0deg, rgba(187, 0, 255, 0.300), rgba(204, 0, 255, 0.300)), url(/Designs/Image/FILHOS\ DA\ TERRA.jpg);
+  background-position: center ;
+  background-size: cover;
+  background-attachment: fixed;
+  fill: #8a2be2;
+  fill-opacity: 50%;
+  grid-column: 1/3;
+}
+#div-Facebook {
+  background-color: rgb(44, 77, 226);
+  background: linear-gradient(0deg, rgba(44, 77, 226, 0.300), rgba(61, 96, 253, 0.300)), url(/Designs/Image/JARDIM\ FONTALIS.jpg);
+  background-position: center ;
+  background-size: contain;
+  background-attachment: fixed;
+  grid-row: 2/4;
+  display: flex;
+  place-items: center center;
+  place-content: center center;
+}
+#div-Twitter {
+  background-color: rgb(44, 77, 226);
+  background: linear-gradient(0deg, rgba(44, 147, 226, 0.300), rgba(61, 224, 253, 0.300)), url(/Designs/Image/JOVA\ RURAL.jpg);
+  background-position: center ;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#div-Email {
+  background-color: rgb(44, 77, 226);
+  background: linear-gradient(0deg, rgba(44, 226, 65, 0.3), rgba(61, 253, 83, 0.3)), url(/Designs/Image/JOVA\ RURAL.jpg);
+  background-position: center ;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#div-Telefone {
+  background-color: rgb(44, 77, 226);
+  background: linear-gradient(0deg, rgba(46, 139, 13, 0.300), rgba(20, 139, 12, 0.300)), url(/Designs/Image/FILHOS\ DA\ TERRA.jpg);
+  background-position: center ;
+  background-size: cover;
+  background-attachment: fixed;
+  grid-column: 1/3;
 }
 
 .main-title {
@@ -277,6 +284,7 @@ table.phoneTable {
   padding: 5px;
   vertical-align: middle;
   color: var(--color-black);
+  z-index: 1;
 }
 
 article {
@@ -291,7 +299,7 @@ article:nth-child(odd) {
 .article-text {
   letter-spacing: 1px;
   color: var(--color-black);
-  margin: 5px 220px 20px;
+  margin: 5px 200px 20px;
   font-size: var(--paragraph-size);
 }
 
