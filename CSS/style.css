@@ -236,7 +236,7 @@ div.nav-flex-item {
 }
 
 #div-Instagram  {
-  background: linear-gradient(0deg, rgba(187, 0, 255, 0.300), rgba(204, 0, 255, 0.300)), url(/Designs/Image/FILHOS\ DA\ TERRA.jpg);
+  background: linear-gradient(0deg, rgba(187, 0, 255, 0.300), rgba(204, 0, 255, 0.300)), url(..../Designs/Image/FILHOS\ DA\ TERRA.jpg);
   background-position: center ;
   background-size: cover;
   background-attachment: fixed;
@@ -246,7 +246,7 @@ div.nav-flex-item {
 }
 #div-Facebook {
   background-color: rgb(44, 77, 226);
-  background: linear-gradient(0deg, rgba(44, 77, 226, 0.300), rgba(61, 96, 253, 0.300)), url(/Designs/Image/JARDIM\ FONTALIS.jpg);
+  background: linear-gradient(0deg, rgba(44, 77, 226, 0.300), rgba(61, 96, 253, 0.300)), url(..../Designs/Image/JARDIM\ FONTALIS.jpg);
   background-position: center ;
   background-size: contain;
   background-attachment: fixed;
@@ -257,21 +257,21 @@ div.nav-flex-item {
 }
 #div-Twitter {
   background-color: rgb(44, 77, 226);
-  background: linear-gradient(0deg, rgba(44, 147, 226, 0.300), rgba(61, 224, 253, 0.300)), url(/Designs/Image/JOVA\ RURAL.jpg);
+  background: linear-gradient(0deg, rgba(44, 147, 226, 0.300), rgba(61, 224, 253, 0.300)), url(../Designs/Image/JOVA\ RURAL.jpg);
   background-position: center ;
   background-size: cover;
   background-attachment: fixed;
 }
 #div-Email {
   background-color: rgb(44, 77, 226);
-  background: linear-gradient(0deg, rgba(44, 226, 65, 0.3), rgba(61, 253, 83, 0.3)), url(/Designs/Image/JOVA\ RURAL.jpg);
+  background: linear-gradient(0deg, rgba(44, 226, 65, 0.3), rgba(61, 253, 83, 0.3)), url(../Designs/Image/JOVA\ RURAL.jpg);
   background-position: center ;
   background-size: cover;
   background-attachment: fixed;
 }
 #div-Telefone {
   background-color: rgb(44, 77, 226);
-  background: linear-gradient(0deg, rgba(46, 139, 13, 0.300), rgba(20, 139, 12, 0.300)), url(/Designs/Image/FILHOS\ DA\ TERRA.jpg);
+  background: linear-gradient(0deg, rgba(46, 139, 13, 0.300), rgba(20, 139, 12, 0.300)), url(../Designs/Image/FILHOS\ DA\ TERRA.jpg);
   background-position: center ;
   background-size: cover;
   background-attachment: fixed;
