@@ -236,7 +236,7 @@ div.nav-flex-item {
 }
 
 #div-Instagram  {
-  background: linear-gradient(0deg, rgba(187, 0, 255, 0.300), rgba(204, 0, 255, 0.300)), url(..../Designs/Image/FILHOS\ DA\ TERRA.jpg);
+  background: linear-gradient(0deg, rgba(187, 0, 255, 0.300), rgba(204, 0, 255, 0.300)), url(../Designs/Image/FILHOS\ DA\ TERRA.jpg);
   background-position: center ;
   background-size: cover;
   background-attachment: fixed;
@@ -246,7 +246,7 @@ div.nav-flex-item {
 }
 #div-Facebook {
   background-color: rgb(44, 77, 226);
-  background: linear-gradient(0deg, rgba(44, 77, 226, 0.300), rgba(61, 96, 253, 0.300)), url(..../Designs/Image/JARDIM\ FONTALIS.jpg);
+  background: linear-gradient(0deg, rgba(44, 77, 226, 0.300), rgba(61, 96, 253, 0.300)), url(../Designs/Image/JARDIM\ FONTALIS.jpg);
   background-position: center ;
   background-size: contain;
   background-attachment: fixed;
