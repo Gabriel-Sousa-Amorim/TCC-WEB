@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Moirai+One&family=Reem+Kufi:wght@400;500;600;700&family=Rubik+Puddles&family=Sacramento&display=swap');
+
 :root {
   --color-red: #fb6964;
   --color-orange: #f59a50;
@@ -11,7 +12,7 @@
   --color-gray: #4f4f4f;
   --color-grey: #313131;
   --color-black: #202020;
-  --paragraph-size: 16px;
+  --paragraph-size: 18px;
 }
 
 @keyframes background-moving-effect {
@@ -22,13 +23,20 @@
   50% {
     background-position: center;
   }
+
   100% {
     background-position: right;
   }
 }
+
 @keyframes rotate-card {
-  from {transform: rotateX(0);}
-  to {transform: rotateX(180deg);}
+  from {
+    transform: rotateX(0);
+  }
+
+  to {
+    transform: rotateX(180deg);
+  }
 }
 
 * {
@@ -66,7 +74,7 @@ html, body {
 }
 
 #Moving-page {
-  position:absolute;
+  position: absolute;
   background: linear-gradient(0deg,
       var(--color-red) 0%,
       var(--color-orange) 20%,
@@ -74,29 +82,32 @@ html, body {
       var(--color-yellow) 60%,
       var(--color-green-yellow) 80%,
       var(--color-green) 100%);
-    height: 120vh;
-    width: 100%;
-    z-index: 10;
-    border-radius: 0 0 120px 120px ;
-    box-shadow: 0px 10px 200px #000;
+  height: 120vh;
+  width: 100%;
+  z-index: 10;
+  border-radius: 0 0 120px 120px;
+  box-shadow: 0px 10px 200px #000;
 }
+
 #Moving-page>div {
-  position:absolute;
-    display:inline-flex;
-    flex-direction: column;
-    text-align: center;
-    place-items: center center;
-    place-content: center center;
-    width: 100%;
-    height: 100vh;
-    z-index: 10;
-    
+  position: absolute;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  place-items: center center;
+  place-content: center center;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+
 }
+
 #Moving-page img {
-width: 20vh;
+  width: 20vh;
 }
+
 #Moving-page h1 {
-font-size: 10vh;
+  font-size: 10vh;
 }
 
 header {
@@ -134,7 +145,7 @@ header>a {
   font-family: 'Rubik Puddles', cursive;
   font-family: 'Sacramento', cursive;
   font-style: normal;
-  margin-left: 10px ;
+  margin-left: 10px;
 }
 
 
@@ -210,13 +221,14 @@ div.nav-flex-item {
 }
 
 .contacts-container {
-  display:grid;
+  display: grid;
   margin: 5px 200px 20px;
   grid-template-columns: repeat(2, 2fr);
   grid-template-rows: repeat(4, 300px);
   row-gap: 5px;
   column-gap: 7px;
 }
+
 .contact-child {
   border-radius: 5px;
   text-align: center;
@@ -225,12 +237,13 @@ div.nav-flex-item {
   place-items: center center;
   place-content: center center;
 }
+
 .contact-child:hover div h1 {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .front-content {
-  flex-basis:100% ;
+  flex-basis: 100%;
   padding: 4px;
   backdrop-filter: brightness(30%);
   display: flex;
@@ -241,40 +254,44 @@ div.nav-flex-item {
 .front-content>h1, svg {
   transition: all 0.3s;
   color: #FFF;
-  place-self:center center;
+  place-self: center center;
   font-size: 24px;
   text-shadow: 1px 1px 5px #000, -1px -1px 5px #000;
 }
 
-#div-Instagram  {
+#div-Instagram {
   background: linear-gradient(0deg, rgba(187, 0, 255, 0.4), rgba(204, 0, 255, 0.4)), url(../Designs/Image/FILHOS\ DA\ TERRA\ Reduzido.jpg);
-  background-position: center ;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
   grid-column: 1/3;
 }
+
 #div-Facebook {
   background: linear-gradient(0deg, rgba(1, 48, 255, 0.4), rgba(3, 49, 255, 0.4)), url(../Designs/Image/FILHOS\ DA\ TERRA\ Reduzido.jpg);
-  background-position: center ;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
   grid-row: 2/4;
 }
+
 #div-Twitter {
   background: linear-gradient(0deg, rgba(39, 241, 255, 0.4), rgba(61, 224, 253, 0.4)), url(../Designs/Image/JARDIM\ FONTALIS\ Reduzido.jpg);
-  background-position: right ;
-  background-size: contain;
+  background-position: right;
+  background-size: cover;
   background-attachment: fixed;
 }
+
 #div-Email {
   background: linear-gradient(0deg, rgba(44, 226, 165, 0.4), rgba(61, 253, 189, 0.4)), url(../Designs/Image/JARDIM\ FONTALIS\ Reduzido.jpg);
   background-position: right;
-  background-size: contain;
+    background-size: cover;
   background-attachment: fixed;
 }
+
 #div-Telefone {
   background: linear-gradient(0deg, rgba(68, 255, 0, 0.4), rgba(0, 255, 0, 0.4)), url(../Designs/Image/FILHOS\ DA\ TERRA\ Reduzido.jpg);
-  background-position: center ;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
   grid-column: 1/3;
@@ -294,6 +311,7 @@ article {
   text-justify: inter-word;
 
 }
+
 article:nth-child(odd) {
   width: 100px;
 }
@@ -304,66 +322,97 @@ article:nth-child(odd) {
   margin: 5px 200px 20px;
   font-size: var(--paragraph-size);
 }
-
-#card-container {
-  display:flex;
-  margin:20px 100px;
-  gap: 15px;
+.flip-card-container {
+  display: flex;
+  justify-content: center;
 }
+.flip-card {
+  padding: 20px;
+  border-block: 3px solid var(--color-black);
+  border-radius: 5px;
+  background-color: var(--color-red);
+}
+.flip-card-child {
+  text-align: center;
+  color: #202020;
+}
+.flip-card-behind {
+  padding: 10px;
+  border-radius: 5px;
+  backdrop-filter:brightness(80%);
+}
+.flip-card-behind>a {
+  color: #202020;
+  text-decoration: none;
+}
+#card-container {
+  display: flex;
+  margin: 20px 200px;
+  column-gap: 5px;
+  row-gap: 15px;
+  flex-wrap: wrap;
+}
+
 .card-child {
-  flex:1;
+  flex: 1;
   border-block: 3px solid #202020;
   border-radius: 5px;
   padding: 4px;
 }
+
 .card-child>h3 {
   text-align: center;
   color: #000;
 }
+
 .card-child>p {
   color: #000;
-  text-align:justify;
+  text-align: justify;
   text-justify: inter-word;
 }
+
 .card-child>ul li {
   list-style-position: inside;
   color: #000;
 }
+
 #Sunday {
   background: var(--color-red);
-  filter: brightness(30%);
+  filter: grayscale(75%) brightness(70%);
 }
+
 #Monday {
   background: var(--color-orange);
-  filter: brightness(30%);
-  
+  filter: grayscale(75%) brightness(70%);
 }
 
 #Tuesday {
   background: var(--color-yellow);
-  filter: brightness(30%);
+
+  filter: grayscale(75%) brightness(70%);
 }
 
 #Wednesday {
   background: var(--color-green);
-  filter: brightness(30%);
+  filter: grayscale(75%) brightness(70%);
 }
 
 #Thursday {
   background: var(--color-yellow);
-  filter: brightness(30%);
+  filter: grayscale(75%) brightness(70%);
 }
 
 #Friday {
   background: var(--color-orange);
-  filter: brightness(30%);
+  filter: grayscale(75%) brightness(70%);
   
 }
 
 #Saturday {
   background: var(--color-red);
-  filter: brightness(30%);
+  filter: grayscale(75%) brightness(70%);
 }
+
 
 .parallax_bg {
   height: 600px;
@@ -543,7 +592,7 @@ footer>div {
 }
 
 @media (min-width: 2100px) {
-  .header-title{
+  .header-title {
     font-size: 80px;
   }
 
@@ -588,12 +637,7 @@ footer>div {
 }
 
 @media (max-width: 900px) {
-  #card-container {
-    margin: 5px 50px 10px;
-    flex-direction: column;
-  }
-}
-@media (max-width: 800px) {
+
   header {
     padding: 50px;
     text-align: center;
@@ -617,7 +661,7 @@ footer>div {
   header>a {
     display: inline-block;
   }
-  
+
   a>img {
     width: 50px;
   }
@@ -625,7 +669,7 @@ footer>div {
   label.darkModeElement {
     font-size: 15px;
   }
-  
+
   label:hover.darkModeElement {
     font-size: 20px;
   }
@@ -642,14 +686,19 @@ footer>div {
   .nav-flex-item>a {
     font-size: 15px;
   }
-  
+
   .nav-flex-item>a:hover {
     font-size: 20px;
   }
-  
+
   .contacts-container {
     margin: 5px 50px 20px;
   }
+
+  .contact-child:hover div h1 {
+    font-size: 30px;
+  }
+
   .title {
     font-size: large;
   }
@@ -669,9 +718,13 @@ footer>div {
   #card-container {
     margin: 5px 50px 10px;
     flex-direction: column;
+    text-align: center;
+  }
+  .card-child>p {
+    text-align: center;
   }
 
-  .parallax_bg  {
+  .parallax_bg {
     height: 20%;
     padding-block: 150px;
   }
@@ -692,6 +745,7 @@ footer>div {
     width: 35px;
     height: 35px;
   }
+
   header>a {
     font-size: large;
   }
@@ -699,7 +753,7 @@ footer>div {
   label.darkModeElement {
     font-size: 10px;
   }
-  
+
   label:hover.darkModeElement {
     font-size: 12px;
   }
@@ -717,20 +771,26 @@ footer>div {
     display: flex;
     flex-direction: column;
   }
-  
+  .contact-child:hover div h1 {
+    font-size: 20px;
+  }
   .front-content {
     padding-block: 40px;
   }
+
   .front-content>h1, svg {
     font-size: 12px;
   }
+
   .front-content svg {
     width: 16px;
     width: 16px;
   }
+
   .article-text {
     margin: 5px 20px 10px;
   }
+
   .card-container {
     margin: 5px 20px 10px;
   }
@@ -754,7 +814,7 @@ footer>div {
   label.darkModeElement {
     font-size: 5px;
   }
-  
+
   label:hover.darkModeElement {
     font-size: 7px;
   }
@@ -766,17 +826,20 @@ footer>div {
   .nav-flex-item>a:hover {
     font-size: 7px;
   }
-  
+
   .contacts-container {
     margin: 5px 10px 20px;
   }
+
   .article-text {
     margin: 5px 10px 10px;
   }
+
   .card-container {
     margin: 5px 10px 10px;
     flex-direction: column;
   }
+
   .contacts-container {
     display: flex;
     flex-direction: column;

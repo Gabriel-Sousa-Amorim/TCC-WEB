@@ -7,6 +7,7 @@ function CatchTheDay() {
         //Caso Domingo
         case(0) :
         const Sunday = document.getElementById("Sunday")
+        Sunday.style.filter = "grayscale(0%)"
         Sunday.style.filter = "brightness(100%)"
         Sunday.style.boxShadow = "1px 1px 90px var(--color-red)"
         document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1")
@@ -16,6 +17,7 @@ function CatchTheDay() {
         //Caso Segunda
         case(1) :
         const Monday = document.getElementById("Monday")
+        Monday.style.filter = "grayscale(0%)"
         Monday.style.filter = "brightness(100%)"
         Monday.style.boxShadow = "1px 1px 90px var(--color-orange)"
         document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1")
@@ -25,6 +27,7 @@ function CatchTheDay() {
         //Caso Terça
         case(2) :
         const Tuesday = document.getElementById("Tuesday")
+        Tuesday.style.filter = "grayscale(0%)"
         Tuesday.style.filter = "brightness(100%)"
         Tuesday.style.boxShadow = "1px 1px 90px var(--color-yellow)"
         document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1")
@@ -34,6 +37,7 @@ function CatchTheDay() {
         //Caso Quarta
         case(3) :
         const Wednesday = document.getElementById("Wednesday")
+        Wednesday.style.filter = "grayscale(0%)"
         Wednesday.style.filter = "brightness(100%)"
         Wednesday.style.boxShadow = "1px 1px 90px var(--color-green)"
         document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1")
@@ -43,6 +47,7 @@ function CatchTheDay() {
         //Caso Quinta
         case(4) :
         const Thursday = document.getElementById("Thursday")
+        Thursday.style.filter = "grayscale(0%)"
         Thursday.style.filter = "brightness(100%)"
         Thursday.style.boxShadow = "1px 1px 90px var(--color-yellow)"
         document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1")
@@ -52,7 +57,8 @@ function CatchTheDay() {
         //Caso Sexta
         case(5) :
         const Friday = document.getElementById("Friday")
-        Friday.style.filter = "none"
+        Thursday.style.filter = "grayscale(0%)"
+        Thursday.style.filter = "brightness(100%)"
         Friday.style.boxShadow = "1px 1px 90px var(--color-orange)"
         document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1")
         Friday.style.zIndex = "0"
@@ -61,6 +67,7 @@ function CatchTheDay() {
         //Caso Sábado
         case(6) :
         const Saturday = document.getElementById("Saturday");
+        Saturday.style.filter = "grayscale(0%)"
         Saturday.style.filter = "brightness(100%)"
         Saturday.style.boxShadow = "1px 1px 90px var(--color-red)"
         document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1")
