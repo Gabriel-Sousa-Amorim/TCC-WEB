@@ -148,8 +148,6 @@ header>a {
   margin-left: 10px;
 }
 
-
-
 .darkModeElement {
   flex: 1;
   color: var(--color-white);
@@ -219,7 +217,9 @@ div.nav-flex-item {
   border: 1px solid var(--color-white);
   font-size: 22px;
 }
-
+.nav-icon {
+  margin-inline: 4px;
+}
 .contacts-container {
   display: grid;
   margin: 5px 200px 20px;
@@ -309,7 +309,6 @@ div.nav-flex-item {
 article {
   text-align: justify;
   text-justify: inter-word;
-
 }
 
 article:nth-child(odd) {
@@ -317,9 +316,9 @@ article:nth-child(odd) {
 }
 
 .article-text {
+  margin: 5px 250px 20px;
   letter-spacing: 1px;
   color: var(--color-black);
-  margin: 5px 200px 20px;
   font-size: var(--paragraph-size);
 }
 .flip-card-container {
@@ -347,7 +346,7 @@ article:nth-child(odd) {
 }
 #card-container {
   display: flex;
-  margin: 20px 200px;
+  margin: 20px 100px;
   column-gap: 5px;
   row-gap: 15px;
   flex-wrap: wrap;
@@ -382,6 +381,7 @@ article:nth-child(odd) {
 #Sunday {
   background: var(--color-red);
   filter: grayscale(75%) brightness(70%);
+  flex-basis: 100%;
 }
 
 #Monday {
@@ -414,6 +414,7 @@ article:nth-child(odd) {
 #Saturday {
   background: var(--color-red);
   filter: grayscale(75%) brightness(70%);
+  flex-basis: 100%;
 }
 
 
@@ -637,8 +638,22 @@ footer>div {
   marquee {
     font-size: calc(var(--paragraph-size) + 5px);
   }
+  .card-child {
+    flex-basis: 10%;
+    font-size: 30px;
+  }
+  #Sunday {
+    flex-basis: 10%;
+  }
+  #Saturday {
+    flex-basis: 10%;
+  }
+  
 }
 @media (max-width:1000px) {
+  .article-text {
+    margin: 5px 200px 10px;
+  }
   #card-container {
   flex-direction: column;
   }
@@ -706,10 +721,6 @@ footer>div {
     font-size: 30px;
   }
 
-  .title {
-    font-size: large;
-  }
-
   .article-text {
     margin: 5px 50px 10px;
   }
@@ -771,7 +782,9 @@ footer>div {
   .nav-flex-item>a:hover {
     font-size: 12px;
   }
-
+  .main-title>h1 {
+    font-size: 20px;
+  }
   .contacts-container {
     margin: 5px 20px 20px;
     display: flex;
