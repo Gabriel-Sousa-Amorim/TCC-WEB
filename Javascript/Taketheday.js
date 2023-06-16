@@ -9,7 +9,7 @@ function CatchTheDay() {
         const Sunday = document.getElementById("Sunday")
         Sunday.style.filter = "grayscale(0%)"
         Sunday.style.filter = "brightness(100%)"
-        Sunday.style.boxShadow = "1px 1px 90px var(--color-red)"
+        Sunday.style.boxShadow = "1px 1px 40px var(--color-red)"
         document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1")
         Sunday.style.zIndex = "0"
         break;
@@ -19,7 +19,7 @@ function CatchTheDay() {
         const Monday = document.getElementById("Monday")
         Monday.style.filter = "grayscale(0%)"
         Monday.style.filter = "brightness(100%)"
-        Monday.style.boxShadow = "1px 1px 90px var(--color-orange)"
+        Monday.style.boxShadow = "1px 1px 40px var(--color-orange)"
         document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1")
         Monday.style.zIndex = "0"
         break;
@@ -29,7 +29,7 @@ function CatchTheDay() {
         const Tuesday = document.getElementById("Tuesday")
         Tuesday.style.filter = "grayscale(0%)"
         Tuesday.style.filter = "brightness(100%)"
-        Tuesday.style.boxShadow = "1px 1px 90px var(--color-yellow)"
+        Tuesday.style.boxShadow = "1px 1px 40px var(--color-yellow)"
         document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1")
         Tuesday.style.zIndex = "0"
         break;
@@ -39,7 +39,7 @@ function CatchTheDay() {
         const Wednesday = document.getElementById("Wednesday")
         Wednesday.style.filter = "grayscale(0%)"
         Wednesday.style.filter = "brightness(100%)"
-        Wednesday.style.boxShadow = "1px 1px 90px var(--color-green)"
+        Wednesday.style.boxShadow = "1px 1px 40px var(--color-green)"
         document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1")
         Wednesday.style.zIndex = "0"
         break;
@@ -49,7 +49,7 @@ function CatchTheDay() {
         const Thursday = document.getElementById("Thursday")
         Thursday.style.filter = "grayscale(0%)"
         Thursday.style.filter = "brightness(100%)"
-        Thursday.style.boxShadow = "1px 1px 90px var(--color-yellow)"
+        Thursday.style.boxShadow = "1px 1px 40px var(--color-yellow)"
         document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1")
         Thursday.style.zIndex = "0"
         break;
@@ -59,7 +59,7 @@ function CatchTheDay() {
         const Friday = document.getElementById("Friday")
         Thursday.style.filter = "grayscale(0%)"
         Thursday.style.filter = "brightness(100%)"
-        Friday.style.boxShadow = "1px 1px 90px var(--color-orange)"
+        Friday.style.boxShadow = "1px 1px 40px var(--color-orange)"
         document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1")
         Friday.style.zIndex = "0"
         break;
@@ -69,7 +69,7 @@ function CatchTheDay() {
         const Saturday = document.getElementById("Saturday");
         Saturday.style.filter = "grayscale(0%)"
         Saturday.style.filter = "brightness(100%)"
-        Saturday.style.boxShadow = "1px 1px 90px var(--color-red)"
+        Saturday.style.boxShadow = "1px 1px 40px var(--color-red)"
         document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1")
         Saturday.style.zIndex = "0"
         break;
