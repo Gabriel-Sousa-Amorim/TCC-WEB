@@ -274,29 +274,26 @@ div.nav-flex-item {
   background-attachment: fixed;
   grid-row: 2/4;
 }
-
+#div-Telefone {
+  background: linear-gradient(0deg, rgba(68, 255, 0, 0.4), rgba(0, 255, 0, 0.4)), url(../Designs/Image/FILHOS\ DA\ TERRA\ Reduzido.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+#div-Email {
+  background: linear-gradient(0deg, rgba(226, 223, 44, 0.4), rgba(253, 234, 61, 0.4)), url(../Designs/Image/JARDIM\ FONTALIS\ Reduzido.jpg);
+  background-position: right;
+  background-size: cover;
+  background-attachment: fixed;
+  grid-column: 1/3;
+}
 #div-Twitter {
   background: linear-gradient(0deg, rgba(39, 241, 255, 0.4), rgba(61, 224, 253, 0.4)), url(../Designs/Image/JARDIM\ FONTALIS\ Reduzido.jpg);
   background-position: right;
   background-size: cover;
   background-attachment: fixed;
 }
-
-#div-Email {
-  background: linear-gradient(0deg, rgba(44, 226, 165, 0.4), rgba(61, 253, 189, 0.4)), url(../Designs/Image/JARDIM\ FONTALIS\ Reduzido.jpg);
-  background-position: right;
-    background-size: cover;
-  background-attachment: fixed;
-}
-
-#div-Telefone {
-  background: linear-gradient(0deg, rgba(68, 255, 0, 0.4), rgba(0, 255, 0, 0.4)), url(../Designs/Image/FILHOS\ DA\ TERRA\ Reduzido.jpg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  grid-column: 1/3;
-}
-
 .main-title {
   text-align: center;
   letter-spacing: 1px;
@@ -357,7 +354,7 @@ article:nth-child(odd) {
   flex: 1;
   border-block: 3px solid #202020;
   border-radius: 5px;
-  padding: 4px;
+  padding: 15px;
 }
 
 .card-child>h3 {
@@ -369,11 +366,14 @@ article:nth-child(odd) {
   color: #000;
   text-align: justify;
   text-justify: inter-word;
+  word-spacing: 2px;
 }
 
 .card-child>ul li {
   list-style-position: inside;
   color: #000;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
 
 #Sunday {
@@ -635,7 +635,11 @@ footer>div {
     font-size: calc(var(--paragraph-size) + 5px);
   }
 }
-
+@media (max-width:1000px) {
+  #card-container {
+  flex-direction: column;
+  }
+}
 @media (max-width: 900px) {
 
   header {
@@ -717,7 +721,6 @@ footer>div {
 
   #card-container {
     margin: 5px 50px 10px;
-    flex-direction: column;
     text-align: center;
   }
   .card-child>p {
