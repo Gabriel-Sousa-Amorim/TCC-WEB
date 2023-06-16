@@ -57,8 +57,8 @@ function CatchTheDay() {
         //Caso Sexta
         case(5) :
         const Friday = document.getElementById("Friday")
-        Thursday.style.filter = "grayscale(0%)"
-        Thursday.style.filter = "brightness(100%)"
+        Friday.style.filter = "grayscale(0%)"
+        Friday.style.filter = "brightness(100%)"
         Friday.style.boxShadow = "1px 1px 40px var(--color-orange)"
         document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1")
         Friday.style.zIndex = "0"

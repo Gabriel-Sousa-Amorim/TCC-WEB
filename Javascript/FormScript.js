@@ -1,4 +1,4 @@
-/////////////////////////
+//Dark Mode
 function darkToogle() {
     const btnCheck = document.getElementById("dark-button");
     const html = document.querySelector("html").attributes;
