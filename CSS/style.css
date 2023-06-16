@@ -265,6 +265,7 @@ div.nav-flex-item {
   background-size: cover;
   background-attachment: fixed;
   grid-column: 1/3;
+  background-repeat: repeat-y;
 }
 
 #div-Facebook {
@@ -273,6 +274,7 @@ div.nav-flex-item {
   background-size: cover;
   background-attachment: fixed;
   grid-row: 2/4;
+  background-repeat: repeat-y;
 }
 
 #div-Twitter {
@@ -280,13 +282,15 @@ div.nav-flex-item {
   background-position: right;
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: repeat-y;
 }
 
 #div-Email {
   background: linear-gradient(0deg, rgba(44, 226, 165, 0.4), rgba(61, 253, 189, 0.4)), url(../Designs/Image/JARDIM\ FONTALIS\ Reduzido.jpg);
   background-position: right;
-    background-size: cover;
+  background-size: cover;
   background-attachment: fixed;
+  background-repeat: repeat-y;
 }
 
 #div-Telefone {
@@ -295,6 +299,7 @@ div.nav-flex-item {
   background-size: cover;
   background-attachment: fixed;
   grid-column: 1/3;
+  background-repeat: repeat-y;
 }
 
 .main-title {
