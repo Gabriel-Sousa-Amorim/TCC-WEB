@@ -439,6 +439,13 @@ article:nth-child(odd) {
   height: 700px;
   background-image: url("https://live.staticflickr.com/8508/8544921603_7400482a5c_b.jpg");
 }
+#parallax_bg_3 {
+  background-size: cover;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../Designs/Image/Jardim\ Joana\ Dark.jpg");
+}
 
 .innerLabel {
   flex: 1;
@@ -453,12 +460,12 @@ article:nth-child(odd) {
   display: flex;
   align-items: center;
   justify-items: center;
+  margin-inline:250px ;
 }
 
 .section-flex-child {
   flex: 1;
   margin: 10px;
-  border-radius: 10px;
   color: var(--color-black);
   font-size: var(--paragraph-size)
 }
@@ -558,7 +565,7 @@ footer>div {
   place-content: center;
 }
 
-.Footer-nav {
+.Contacts-nav {
   grid: 1;
   background: transparent;
   grid-row: 2;
@@ -567,10 +574,26 @@ footer>div {
   text-align: center;
 }
 
-.Footer-nav>ul li {
+footer nav ul li {
   display: inline;
 }
 
+.Info-nav {
+  grid-column: 3;
+  grid-row: 2;
+}
+.Info-nav-list>li a {
+  display: block;
+  color: #efefef;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px solid #efefef;
+  font-size: calc(var(--paragraph-size));
+  transition: all 0.2s;
+}
+.Info-nav-list>li a:hover {
+  font-size: calc(var(--paragraph-size) + 2px);
+}
 .Footer-link {
   align-content: center;
   align-self: center;
@@ -654,6 +677,17 @@ footer>div {
   .article-text {
     margin: 5px 200px 10px;
   }
+  .section-flex {
+    margin: 0;
+    flex-direction: column;
+  }
+  .section-flex-child {
+    margin: 5px 200px 10px;
+  }
+  .parallax_bg {
+    height: 20%;
+    padding-block: 150px;
+  }
   #card-container {
   flex-direction: column;
   }
@@ -724,15 +758,9 @@ footer>div {
   .article-text {
     margin: 5px 50px 10px;
   }
-
-  .section-flex {
-    flex-direction: column;
-  }
-
   .section-flex-child {
     margin: 5px 50px 10px;
   }
-
   #card-container {
     margin: 5px 50px 10px;
     text-align: center;
@@ -741,12 +769,6 @@ footer>div {
     text-align: center;
   }
 
-  .parallax_bg {
-    height: 20%;
-    padding-block: 150px;
-  }
-
-
   #marquee-container-grid {
     display: none;
   }
@@ -754,10 +776,6 @@ footer>div {
 }
 
 @media (max-width: 430px) {
-  * {
-    font-size: small;
-  }
-
   header>a svg {
     width: 35px;
     height: 35px;
@@ -809,9 +827,16 @@ footer>div {
   .article-text {
     margin: 5px 20px 10px;
   }
+  .section-flex-child {
+    margin: 5px 20px 10px;
+  }
 
   .card-container {
     margin: 5px 20px 10px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
   }
 }
 
