@@ -65,8 +65,8 @@ function ValidaCPF(x) {
 
 const NameExp = new RegExp(/^[a-z ,.'-]+$/i)
 const CPFExp = new RegExp(/^[a-z ,.'-]+$/i)
-const EmailExp = new RegExp(/^[a-z ,.'-]+$/i)
-const ImageExp = new RegExp(/^[a-z ,.'-]+$/i)
+const EmailExp = new RegExp(/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i)
+const ImageExp = new RegExp(/.*\.(jpe?g|png|)$/igm)
 const TelefoneExp = new RegExp(/^\9{1}?(\d{4})?[ -]?(\d{4})$/);
 
 
@@ -81,13 +81,18 @@ function ValidaNome(x) {
         return false;
     }
 }
-document.getElementById("NomeVoluntario").addEventListener("blur", function() {
-    ValidaNome(document.getElementById("NomeVoluntario"))
+document.getElementById("Nome-Voluntario").addEventListener("blur", function() {
+    ValidaNome(document.getElementById("Nome-Voluntario"))
+})
+document.getElementById("Nome-Doador").addEventListener("blur", function() {
+    ValidaNome(document.getElementById("Nome-Doador"))
 })
 
 function ValidaTelefone(x) {
     //Regex Expression própria, verifica se há o digito 9 no início e após isso verifica se há 4 digitos numéricos 
     //se sim aceita a separação por hifén,espaço ou sem 
+    x.classList.remove('is-valid')
+    x.classList.remove('is-invalid')
     if (TelefoneExp.test(x.value) == true) {
         x.classList.add('is-valid')
         return true
@@ -97,8 +102,41 @@ function ValidaTelefone(x) {
         return false;
     }
 }
-document.getElementById("TelefoneVoluntario").addEventListener("blur", function() {
-    document.getElementById("TelefoneVoluntario").classList.remove('is-valid')
-    document.getElementById("TelefoneVoluntario").classList.remove('is-invalid')
-    ValidaTelefone(document.getElementById("TelefoneVoluntario"))
+document.getElementById("Telefone-Voluntario").addEventListener("blur", function() {
+    ValidaTelefone(document.getElementById("Telefone-Voluntario"))
+})
+document.getElementById("Telefone-Doador").addEventListener("blur", function() {
+    ValidaTelefone(document.getElementById("Telefone-Doador"))
+})
+
+function ValidaEmail(x) {
+    x.classList.remove("is-invalid");
+    x.classList.remove("is-valid");
+    if (EmailExp.test(x.value) == true) {
+        x.classList.add("is-valid");
+        return true;
+    } else {
+        x.classList.add("is-invalid");
+        return false;
+    }
+}
+document.getElementById("Email-Voluntario").addEventListener("blur", function() {
+    ValidaEmail(document.getElementById("Email-Voluntario"))
+})
+document.getElementById("Email-Doador").addEventListener("blur", function() {
+    ValidaEmail(document.getElementById("Email-Doador"))
+})
+function ValidaImagem(x) {
+    x.classList.remove("is-invalid");
+    x.classList.remove("is-valid");
+    if (ImageExp.test(x.value) == true) {
+        x.classList.add("is-valid");
+        return true;
+    } else {
+        x.classList.add("is-invalid");
+        return false;
+    }
+}
+document.getElementById("Foto-Doador").addEventListener("blur", function() {
+    ValidaEmail(document.getElementById("Foto-Doador"))
 })

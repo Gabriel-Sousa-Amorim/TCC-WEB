@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="shortcut icon" href="Designs/Image/Icon_Mangará_color.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="Designs/ICONS/Icon_Mangará_color.png" type="image/x-icon" />
   <link rel="stylesheet" href="CSS/Formstyle.css" />
   <title>Formulário de Doação</title>
 </head>
@@ -22,14 +22,6 @@
       <input id="dark-button" type="checkbox" class="form-check-input center" data-bs-theme="l" />
       
     </div>
-    <i class="bi bi-moon-stars-fill"></i>
-    <i class="bi bi-filetype-png"></i>
-    <i class="bi bi-lightbulb-fill"></i>
-    <i class="bi bi-patch-check-fill"></i>
-    <i class="bi bi-brightness-high-fill"></i>
-    <i class="bi bi-qr-code"></i>
-    <i class="bi bi-qr-code-scan"></i>
-    <i class="bi bi-brightness-high-fill"></i>
     
     <article class="">
       <h1 class="h1 text-center indigo-100">Formulários Organização Mangará</h1>
@@ -58,21 +50,21 @@
         <h5 class="justify-text">Como sei se minha doação está sendo direcionada corretamente?</h5>
         Nossa equipe faz postagens e se comunica sobre das nossas ações sociais por meio do nosso <strong>Instagram, Facebook e
           Twitter</strong>. E se você deseja conhecer nossa organização, você pode
-        agendar uma visita a uma das nossas unidades por meio do nosso e-mail ou telefone.
-        <hr>
-      </details>
-    </article>
-
-    <hr>
-    
-    <!--Formulário Voluntário-->
-    <div class="">
-      <form class="form" id="FormVoluntário" class="container" action="get">
-        <section class="text-center">
-        <div class="p-2 my-1 d-flex">
-          <input class="btn-check" type="radio" id="RadioVoluntario" value="Voluntário" name="TypeForms"/>
-          <label for="RadioVoluntario" class="flex-fill btn btn-outline-primary ">Desejo me tornar voluntário<label>
-        </div>
+          agendar uma visita a uma das nossas unidades por meio do nosso e-mail ou telefone.
+          <hr>
+        </details>
+      </article>
+      
+      <hr>
+      
+      <!--Formulário Voluntário-->
+      <div class="">
+        <form class="form" id="FormVoluntário" class="container" action="get">
+          <section class="text-center">
+            <div class="p-2 my-1 d-flex">
+              <input class="btn-check" type="radio" id="RadioVoluntario" value="Voluntário" name="TypeForms"/>
+              <label for="RadioVoluntario" class="flex-fill btn btn-outline-primary ">Desejo me tornar voluntário<label>
+              </div>
   
         <div class=" p-2 my-1 d-flex ">
           <input class="btn-check" type="radio" id="RadioDoador" value="Doador" name="TypeForms" />
@@ -83,20 +75,20 @@
       <section class="">
         <hr>
         <h4 class="text-center"> Formulário Voluntário</h4>
-        <label class="form-label" for="Nome">Seu nome completo</label><br />
-        <input maxlength="51" type="text" name="" id="NomeVoluntario" class="form-control" required="required" autocapitalize="sentences"  autocomplete="off"/><br />
+        <label class="form-label" for="Nome-Voluntario"><i class="bi bi-person"></i>Seu nome completo</label><br />
+        <input maxlength="51" type="text" name="" id="Nome-Voluntario" class="form-control" required="required" autocapitalize="sentences"  autocomplete="off"/><br />
         
-        <label class="form-label" for="Data de nascimento">Sua data de Nascimento</label><br />
-        <input type="date" inputmode="numeric" name="" id="DataVoluntario" class="form-control" /><br />
+        <label class="form-label" for="Data-Voluntário"><i class="bi bi-calendar3"></i> Sua data de Nascimento</label><br />
+        <input type="date" inputmode="numeric" name="" id="Data-Voluntário" class="form-control" /><br />
 
-        <label class="form-label" for="CPF">CPF</label><br />
+        <label class="form-label" for="CPF-Voluntário"><i class="bi bi-person-vcard-fill"></i>CPF </label><br />
         <input maxlength="11" type="text" placeholder="000.000.000-00" inputmode="numeric" name="" id="CPFVoluntario"
           class="form-control" autocomplete="off" required="required" /><br />
 
-        <label class="form-label" for="E-mail">E-mail</label><br />
-        <input type="email" placeholder="Exemplo@exemplo.com.br" name="" id="EmailVoluntario" class="form-control" /><br />
+        <label class="form-label" for="Email-Voluntario"><i class="bi bi-envelope-at"></i>E-mail</label><br />
+        <input type="email" placeholder="Exemplo@exemplo.com.br" name="" id="Email-Voluntario" class="form-control" /><br />
 
-        <label class="form-label" for="Telefone"> Selecione o seu DDD e insira seu telefone</label>
+        <label class="form-label" for="Telefone-Voluntario"> <i class="bi bi-telephone"></i> Insira seu telefone</label>
         <div class="input-group">
           <div class="input-group-prepend">
           <select class="form-select input-group-text" name="phone_prefix">
@@ -169,37 +161,39 @@
             <option value="99">(99) - Imperatriz</option>
           </select>
           </div>
-          <input class="form-control" maxlength="10" placeholder="99999-9999" autocomplete="off" type="text" id="TelefoneVoluntario" name="" />
+          <input class="form-control" maxlength="10" placeholder="99999-9999" autocomplete="off" type="text" id="Telefone-Voluntario" name="" />
         </div>
         <br>
         <input class="" type="radio" required="required"> 
         <label for="">Me certifico que meus dados não são utilizados para quaisquer fins.</label>
         <div class="text-center my-2">
-          <input class="btn btn-primary" type="submit" value="Enviar">
+          <button class="btn btn-primary"><i class="bi bi-upload"></i>Enviar</button>
         </div>
-        </form>
-          </section>
-
-          <!--Formulário Doador-->
-      <section class="">
-        <form action="">
+        <i class="bi bi-qr-code"></i>
+        <i class="bi bi-qr-code-scan"></i>
+      </form>
+    </section>
+    
+    <!--Formulário Doador-->
+    <section class="">
+      <form action="">
         <hr>
         <h4 class="text-center"> Formulário Doação</h4>
-        <label class="form-label" for="Nome">Seu nome completo</label><br />
-        <input maxlength="51" type="text" name="" id="" class="form-control" required="required" /><br />
+        <label class="form-label" for="Nome-Doador"><i class="bi bi-person"></i>Seu nome completo</label><br />
+        <input maxlength="51" type="text" name="" id="Nome-Doador" class="form-control" required="required" autocapitalize="sentences"  autocomplete="off"/><br />
 
         
-        <label class="form-label" for="Data de nascimento">Sua data de Nascimento</label><br />
-        <input type="date" inputmode="numeric" name="" id="" class="form-control" /><br />
+        <label class="form-label" for="Data-Doador"><i class="bi bi-calendar3"></i>Sua data de Nascimento</label><br />
+        <input type="date" inputmode="numeric" name="" id="Data-Doador" class="form-control" /><br />
 
-        <label class="form-label" for="CPF">CPF</label><br />
-        <input maxlength="11" type="text" placeholder="000.000.000-00" inputmode="numeric" name="" id="CPF"
+        <label class="form-label" for="CPF-Doador"><i class="bi bi-person-vcard-fill"></i>CPF</label><br />
+        <input maxlength="11" type="text" placeholder="000.000.000-00" inputmode="numeric" name="" id="CPF-Doador"
           class="form-control" autocomplete="off" required="required" /><br />
 
-        <label class="form-label" for="E-mail">E-mail</label><br />
-        <input type="email" placeholder="Exemplo@exemplo.com.br" name="" id="" class="form-control" /><br />
+        <label class="form-label" for="Email-Doador"><i class="bi bi-envelope-at"></i>E-mail</label><br />
+        <input type="email" placeholder="Exemplo@exemplo.com.br" name="" id="Email-Doador" class="form-control" /><br />
 
-        <label class="form-label" for="Telefone"> Selecione o seu DDD e insira seu telefone</label>
+        <label class="form-label" for="Telefone-Doador"> <i class="bi bi-telephone"></i> Insira seu telefone</label>
         <div class="input-group">
           <div class="input-group-prepend">
           <select class="form-select input-group-text" name="phone_prefix">
@@ -272,21 +266,24 @@
             <option value="99">(99) - Imperatriz</option>
           </select>
           </div>
-          <input class="form-control" type="tel" id="" name="" />
+          <input class="form-control" maxlength="10" placeholder="99999-9999" autocomplete="off" type="text" id="Telefone-Doador" name="" />
         </div>
+        <br />
 
-        <label class="form-label" for="Foto">Foto da Doação</label>
-        <input type="file" accept="image/*" id="" name="" class="form-control" />
-
-        <label class="form-label" for="Descrição">Descrição da Doação</label>
+        <label class="form-label" for="Foto-Doador"><i class="bi bi-filetype-png"></i>Foto da Doação</label>
+        <input type="file" accept="image/*" id="Foto-Doador" name="" class="form-control" />
+        <p class="text-primary">(Aceita apenas PNG/JPG/JPEG)</p>
+        <label class="form-label" for="Descrição"><i class="bi bi-card-text"></i>Descrição da Doação</label>
         <textarea maxlength="500" cols="50" rows="10" id="" name="" class="form-control"></textarea>
         <br>
         <input class="" type="radio" required="required"> 
         <label for="">Me certifico que meus dados não são utilizados para quaisquer fins.</label>  
         <div class="text-center my-2">
-            <input class="btn btn-primary" type="submit" value="Enviar">
-          </div>
-    
+          <input class="btn btn-primary" type="submit" value="Enviar">
+        </div>
+        
+        <i class="bi bi-qr-code"></i>
+        <i class="bi bi-qr-code-scan"></i>
           </form>
         </section>  
 

@@ -4,7 +4,7 @@ function LockScroll() {
     document.getElementById("Moving-page").animate(
         [
             {top: "0px"},
-        {top: "-5000px", 
+        {top: "-10000px", 
         display: "none"}
     ], 
     {

@@ -19,9 +19,8 @@ figure {
     text-justify: inter-word;
 }
 .justify-items-strech {
-
     justify-self: stretch;
 }
-span.bi-moon-stars-fill {
-    animation: Dark-Icon-Change 12s infinite 1s ease-in-out;
+i.bi {
+    margin-right:8px ;
 }
