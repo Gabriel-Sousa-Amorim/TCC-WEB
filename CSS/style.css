@@ -121,7 +121,7 @@ header {
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
-  animation: background-moving-effect 30s ease-in-out infinite alternate;
+  animation: background-moving-effect 20s ease-in-out infinite alternate;
   padding: 50px;
   font-size: 20px;
   box-shadow: inset 0px 0px 30px #000;
@@ -260,7 +260,7 @@ div.nav-flex-item {
 }
 
 #div-Instagram {
-  background: linear-gradient(0deg, rgba(187, 0, 255, 0.4), rgba(204, 0, 255, 0.4)), url(../Designs/Image/FILHOS\ DA\ TERRA\ Reduzido.jpg);
+  background: linear-gradient(0deg, rgba(187, 0, 255, 0.4), rgba(204, 0, 255, 0.4)), url(../Designs/Fotos/FILHOS\ DA\ TERRA\ Reduzido.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -269,7 +269,7 @@ div.nav-flex-item {
 }
 
 #div-Facebook {
-  background: linear-gradient(0deg, rgba(1, 48, 255, 0.4), rgba(3, 49, 255, 0.4)), url(../Designs/Image/FILHOS\ DA\ TERRA\ Reduzido.jpg);
+  background: linear-gradient(0deg, rgba(1, 48, 255, 0.4), rgba(3, 49, 255, 0.4)), url(../Designs/Fotos/FILHOS\ DA\ TERRA\ Reduzido.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -277,21 +277,21 @@ div.nav-flex-item {
   background-repeat: repeat-y;
 }
 #div-Telefone {
-  background: linear-gradient(0deg, rgba(68, 255, 0, 0.4), rgba(0, 255, 0, 0.4)), url(../Designs/Image/FILHOS\ DA\ TERRA\ Reduzido.jpg);
+  background: linear-gradient(0deg, rgba(68, 255, 0, 0.4), rgba(0, 255, 0, 0.4)), url(../Designs/Fotos/FILHOS\ DA\ TERRA\ Reduzido.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   
 }
 #div-Twitter {
-  background: linear-gradient(0deg, rgba(39, 241, 255, 0.4), rgba(61, 224, 253, 0.4)), url(../Designs/Image/JARDIM\ FONTALIS\ Reduzido.jpg);
+  background: linear-gradient(0deg, rgba(39, 241, 255, 0.4), rgba(61, 224, 253, 0.4)), url(../Designs/Fotos/JARDIM\ FONTALIS\ Reduzido.jpg);
   background-position: right;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: repeat-y;
 }
 #div-Email {
-  background: linear-gradient(0deg, rgba(226, 223, 44, 0.4), rgba(253, 234, 61, 0.4)), url(../Designs/Image/JARDIM\ FONTALIS\ Reduzido.jpg);
+  background: linear-gradient(0deg, rgba(226, 223, 44, 0.4), rgba(253, 234, 61, 0.4)), url(../Designs/Fotos/JARDIM\ FONTALIS\ Reduzido.jpg);
   background-position: right;
   background-size: cover;
   background-attachment: fixed;
@@ -616,8 +616,12 @@ footer nav ul li {
   justify-self: center;
 }
 
-@media (min-width: 2100px) {
+@media (min-width: 2200px) {
   
+  .article-text, .section-flex ,#card-container, .contacts-container {
+    margin: 5px 600px 10px;
+  }
+
   .card-child {
     flex-basis: 10%;
     font-size: 30px;
@@ -629,6 +633,12 @@ footer nav ul li {
     flex-basis: 10%;
   }
   
+}
+@media (min-width: 2600px) {
+  
+  .article-text, .section-flex ,#card-container, .contacts-container {
+    margin: 5px 800px 10px;
+  }
 }
 @media (max-width:1000px) {
   .article-text, .section-flex-child, #card-container, .contacts-container {
@@ -821,5 +831,4 @@ footer nav ul li {
   .card-container {
     flex-direction: column;
   }
-
 }
