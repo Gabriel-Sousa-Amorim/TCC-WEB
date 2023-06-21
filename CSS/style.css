@@ -346,12 +346,11 @@ article:nth-child(odd) {
 }
 #card-container {
   display: flex;
-  margin: 20px 100px;
-  column-gap: 5px;
+  margin: 20px 250px;
+  column-gap: 10px;
   row-gap: 15px;
   flex-wrap: wrap;
 }
-
 .card-child {
   flex: 1;
   border-block: 3px solid #202020;
@@ -416,7 +415,6 @@ article:nth-child(odd) {
   filter: grayscale(75%) brightness(70%);
   flex-basis: 100%;
 }
-
 
 .parallax_bg {
   height: 600px;
@@ -619,48 +617,7 @@ footer nav ul li {
 }
 
 @media (min-width: 2100px) {
-  .header-title {
-    font-size: 80px;
-  }
-
-  label.darkModeElement {
-    font-size: calc(var(--paragraph-size) + 20px);
-    ;
-  }
-
-  label.darkModeElement:hover {
-    font-size: calc(var(--paragraph-size) + 30px);
-    ;
-  }
-
-  .nav-flex-item>a {
-    font-size: calc(var(--paragraph-size) + 20px);
-  }
-
-  .nav-flex-item>a:hover {
-    font-size: calc(var(--paragraph-size) + 30px);
-    ;
-  }
-
-  .main-title {
-    font-size: 2em;
-  }
-
-  .article-text {
-    font-size: calc(var(--paragraph-size) + 20px);
-  }
-
-  .innerLabel {
-    font-size: calc(var(--paragraph-size) + 24px);
-  }
-
-  .section-flex-child {
-    font-size: calc(var(--paragraph-size) + 15px)
-  }
-
-  marquee {
-    font-size: calc(var(--paragraph-size) + 5px);
-  }
+  
   .card-child {
     flex-basis: 10%;
     font-size: 30px;
@@ -674,7 +631,7 @@ footer nav ul li {
   
 }
 @media (max-width:1000px) {
-  .article-text {
+  .article-text, .section-flex-child, #card-container, .contacts-container {
     margin: 5px 200px 10px;
   }
   .section-flex {
@@ -690,6 +647,7 @@ footer nav ul li {
   }
   #card-container {
   flex-direction: column;
+  gap: 5px;
   }
 }
 @media (max-width: 900px) {
@@ -747,22 +705,14 @@ footer nav ul li {
     font-size: 20px;
   }
 
-  .contacts-container {
-    margin: 5px 50px 20px;
-  }
-
   .contact-child:hover div h1 {
     font-size: 30px;
   }
 
-  .article-text {
-    margin: 5px 50px 10px;
-  }
-  .section-flex-child {
+  .article-text, .section-flex-child, #card-container, .contacts-container {
     margin: 5px 50px 10px;
   }
   #card-container {
-    margin: 5px 50px 10px;
     text-align: center;
   }
   .card-child>p {
@@ -804,7 +754,6 @@ footer nav ul li {
     font-size: 20px;
   }
   .contacts-container {
-    margin: 5px 20px 20px;
     display: flex;
     flex-direction: column;
   }
@@ -824,16 +773,10 @@ footer nav ul li {
     width: 16px;
   }
 
-  .article-text {
-    margin: 5px 20px 10px;
-  }
-  .section-flex-child {
+  .article-text, .section-flex-child, #card-container, .contacts-container {
     margin: 5px 20px 10px;
   }
 
-  .card-container {
-    margin: 5px 20px 10px;
-  }
   footer {
     display: flex;
     flex-direction: column;
@@ -871,21 +814,12 @@ footer nav ul li {
     font-size: 7px;
   }
 
-  .contacts-container {
-    margin: 5px 10px 20px;
-  }
-
-  .article-text {
+  .article-text, .section-flex-child, #card-container, .contacts-container {
     margin: 5px 10px 10px;
   }
 
   .card-container {
-    margin: 5px 10px 10px;
     flex-direction: column;
   }
 
-  .contacts-container {
-    display: flex;
-    flex-direction: column;
-  }
 }
