@@ -428,7 +428,7 @@ article:nth-child(odd) {
 }
 
 #parallax_bg_1 {
-  background-image: url("../Designs/Image/Parallax1.jpeg");
+  background-image: url("../Designs/Fotos/Parallax1.jpeg");
   background-attachment: fixed;
 }
 
@@ -442,7 +442,7 @@ article:nth-child(odd) {
   height: 700px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../Designs/Image/Jardim\ Joana\ Dark.jpg");
+  background-image: url("../Designs/Fotos/Jardim\ Joana\ Dark.jpg");
 }
 
 .innerLabel {
