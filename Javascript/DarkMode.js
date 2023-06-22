@@ -1,16 +1,50 @@
-function DarkcheckboxToogle() {
-    const root = document.querySelector(":root");
-    let label = document.querySelector("label.darkModeElement");
-    if (this.checked == true) {
-        root.style.setProperty('--color-white', "#efefef ");
-        root.style.setProperty('--color-black', "#202020");
-        label.classList.replace("bi-moon-stars-fill", "bi-brightness-high" )
-        label.textContent = "Modo Claro"
+
+
+//Dark Mode
+function darkToogle() {
+    const btnCheck = document.getElementById("dark-button");
+    const html = document.querySelector("html").attributes;
+    const main = document.querySelector("main").classList;
+    const label = document.querySelector("label");
+    const img = document.getElementById("IconMangara").parentElement;
+    const icon = document.querySelector("span#Dark-Icon");
+    if (btnCheck.checked == true) {
+        html[1].textContent = "light";
+        main.replace("bg-dark", "bg-white");
+        main.replace("border-light", "border-dark");
+        label.innerHTML = "Modo Claro";
+        label.classList.replace("btn-outline-light", "btn-outline-dark");
+        img.style.filter = "invert(1) brightness(15%)";
+        icon.classList.replace("bi-moon-stars-fill", "bi-brightness-high-fill");
     } else {
-        root.style.setProperty('--color-white', "#202020");
-        root.style.setProperty('--color-black', "#efefef ");
-        label.classList.replace("bi-brightness-high", "bi-moon-stars-fill")
-        label.textContent = "Modo Escuro"
-    }
+        html[1].textContent = "dark";
+        main.replace("bg-white", "bg-dark");
+        main.replace("border-dark", "border-light");
+        label.classList.replace("btn-outline-dark", "btn-outline-light");
+        label.innerHTML = "Modo Escuro";
+        img.style.filter = "invert(1) brightness(65%)";
+        icon.classList.replace("bi-brightness-high-fill", "bi-moon-stars-fill");
+    };
 };
-document.getElementById("DarkButton").addEventListener("change", DarkcheckboxToogle, true)
+
+if(document.querySelector('title').textContent ==  "Formulário de Doação") {
+document.getElementById("dark-button").addEventListener("change", darkToogle, true); 
+} else {
+    function DarkcheckboxToogle() {
+        const root = document.querySelector(":root");
+        let label = document.querySelector("label.darkModeElement");
+        if (this.checked == true) {
+            root.style.setProperty('--color-white', "#efefef ");
+            root.style.setProperty('--color-black', "#202020");
+            label.classList.replace("bi-moon-stars-fill", "bi-brightness-high");
+            label.textContent = "Modo Claro";
+        } else {
+            root.style.setProperty('--color-white', "#202020");
+            root.style.setProperty('--color-black', "#efefef ");
+            label.classList.replace("bi-brightness-high", "bi-moon-stars-fill");
+            label.textContent = "Modo Escuro";
+        };
+    };
+    document.getElementById("DarkButton").addEventListener("change", DarkcheckboxToogle, true);
+}
+

@@ -1,31 +1,3 @@
-//Dark Mode
-function darkToogle() {
-    const btnCheck = document.getElementById("dark-button");
-    const html = document.querySelector("html").attributes;
-    const main = document.querySelector("main").classList;
-    const label = document.querySelector("label");
-    const img = document.getElementById("IconMangara").parentElement
-    const icon = document.querySelector("span#Dark-Icon")
-    if (btnCheck.checked == true) {
-        html[1].textContent = "light";
-        main.replace("bg-dark", "bg-white");
-        main.replace("border-light", "border-dark");
-        label.innerHTML = "Modo Claro";
-        label.classList.replace("btn-outline-light", "btn-outline-dark");
-        img.style.filter = "invert(1) brightness(15%)"
-        icon.classList.replace("bi-moon-stars-fill", "bi-brightness-high-fill")
-    } else {
-        html[1].textContent = "dark";
-        main.replace("bg-white", "bg-dark");
-        main.replace("border-dark", "border-light");
-        label.classList.replace("btn-outline-dark", "btn-outline-light");
-        label.innerHTML = "Modo Escuro";
-        img.style.filter = "invert(1) brightness(65%)"
-        icon.classList.replace("bi-brightness-high-fill", "bi-moon-stars-fill")
-    };
-};
-document.getElementById("dark-button").addEventListener("change", darkToogle, true)
-
 /////////////////////////
 function TypeForms() {
     let radio = document.getElementsByName("TypeForms");

@@ -23,5 +23,3 @@ function LockScroll() {
 
 setTimeout(function() {window.onscroll = {}},1800)
 LockScroll()
-
-console.log(document.querySelectorAll("div.contact-child"))
