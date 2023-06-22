@@ -138,7 +138,16 @@ function ValidaEmail(x) {
         return false;
     }
 }
+//Previne Copiar ctrl+v;
+document.querySelectorAll("input").forEach(i => 
+    i.addEventListener("drop", e => e.preventDefault())
+    )
+document.querySelectorAll("input").forEach(i => 
+    i.addEventListener("paste", e => e.preventDefault())
+    )
+
 document.getElementById("Email-Voluntario").addEventListener("blur", function() {
+    
     ValidaEmail(document.getElementById("Email-Voluntario"))
 })
 document.getElementById("Email-Doador").addEventListener("blur", function() {
