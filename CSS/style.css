@@ -305,7 +305,6 @@ div.nav-flex-item {
 #section-Email {
   background: linear-gradient(0deg, rgba(226, 223, 44, 0.4), rgba(253, 234, 61, 0.4)), url(../Designs/Fotos/FILHOS\ DA\ TERRA\ Reduzido.jpg);
   box-shadow: 0px 0px 10px rgba(226, 223, 44) ;
-  z-index: 5;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -420,7 +419,6 @@ article:nth-child(odd) {
 
 #Tuesday {
   background: var(--color-yellow);
-
   filter: grayscale(75%) brightness(70%);
 }
 
