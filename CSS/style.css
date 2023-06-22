@@ -731,6 +731,17 @@ footer nav ul li {
   }
 }
 
+@media (max-width:1100px) { 
+  .Regions-IMG {
+    transition: all 0.2s ease;
+    width: 250px;
+  }
+  .Regions-IMG:hover {
+    cursor: pointer;
+    width: 300px;
+  }
+}
+
 @media (max-width:1000px) {
   .article-text, .section-flex-child, #card-container, .contacts-container {
     margin: 5px 200px 10px;
@@ -834,6 +845,14 @@ footer nav ul li {
   #marquee-container-grid {
     display: none;
   }
+  .Regions-IMG {
+    transition: all 0.2s ease;
+    width: 150px;
+  }
+  .Regions-IMG:hover {
+    cursor: pointer;
+    width: 200px;
+  }
 
 }
 
@@ -896,6 +915,14 @@ footer nav ul li {
   footer {
     display: flex;
     flex-direction: column;
+  }
+  .Regions-IMG {
+    transition: all 0.2s ease;
+    width: 90px;
+  }
+  .Regions-IMG:hover {
+    cursor: pointer;
+    width: 120px;
   }
 }
 
