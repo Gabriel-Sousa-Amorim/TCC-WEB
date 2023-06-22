@@ -734,11 +734,11 @@ footer nav ul li {
 @media (max-width:1100px) { 
   .Regions-IMG {
     transition: all 0.2s ease;
-    width: 250px;
+    width: 210px;
   }
   .Regions-IMG:hover {
     cursor: pointer;
-    width: 300px;
+    width: 260px;
   }
 }
 
@@ -847,11 +847,11 @@ footer nav ul li {
   }
   .Regions-IMG {
     transition: all 0.2s ease;
-    width: 150px;
+    width: 120px;
   }
   .Regions-IMG:hover {
     cursor: pointer;
-    width: 200px;
+    width: 150px;
   }
 
 }
@@ -918,11 +918,11 @@ footer nav ul li {
   }
   .Regions-IMG {
     transition: all 0.2s ease;
-    width: 90px;
+    width: 70px;
   }
   .Regions-IMG:hover {
     cursor: pointer;
-    width: 120px;
+    width: 100px;
   }
 }
 
