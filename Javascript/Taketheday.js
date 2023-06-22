@@ -77,7 +77,7 @@ function CatchTheDay() {
 }
 
 function CatchTheYear() {
-    if(document.querySelector("section.main-title").children[0].innerHTML == "Sobre Nós"  ) {
+    if(document.querySelector("section.main-title").children[0].innerHTML == "Sobre Nós") {
     CatchTheDay()
     document.getElementById("copyright-year").innerHTML = year;
 } else {

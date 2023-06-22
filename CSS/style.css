@@ -415,6 +415,20 @@ article:nth-child(odd) {
   flex-basis: 100%;
 }
 
+.Unidade-container {
+  display: flex;
+  flex-direction: column;
+}
+.Unidade-child {
+  display: flex;
+  flex:1;
+  flex-basis: 100%;
+}
+#div-norte {flex-basis: 100%;align-self: center;}
+#div-leste {flex-basis: 33%; align-self: end;}
+#div-centro {flex-basis: 33%;align-self: center;}
+#div-oeste {flex-basis: 33%;align-self: start;}
+#div-sul {flex-basis: 100%;align-self: center;}
 .parallax_bg {
   height: 600px;
   width: 100%;
