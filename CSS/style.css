@@ -493,13 +493,17 @@ article:nth-child(odd) {
   fill: var(--color-green);
   filter: drop-shadow(0px 0px 10px var(--color-green));
 }
+.Foto-container {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
 
 .parallax_bg {
-  height: 600px;
+  height: 700px;
   width: 100%;
   background-attachment: fixed;
   background-size: cover;
-  margin-bottom: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -510,15 +514,14 @@ article:nth-child(odd) {
   background-attachment: fixed;
 }
 
-#parallax_bg_2 {
-  background-size: contain;
-  height: 700px;
-  background-image: url("https://live.staticflickr.com/8508/8544921603_7400482a5c_b.jpg");
+#parallax_bg_2{
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("../Designs/Fotos/PARQUEDOGATO.jpg");
 }
 
 #parallax_bg_3 {
   background-size: cover;
-  height: 700px;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../Designs/Fotos/Jardim\ Joana\ Dark.jpg");
@@ -746,7 +749,11 @@ footer nav ul li {
     height: 20%;
     padding-block: 150px;
   }
-
+  .Foto-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
   #card-container {
     flex-direction: column;
     gap: 5px;
