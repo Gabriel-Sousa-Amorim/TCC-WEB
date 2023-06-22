@@ -44,6 +44,10 @@
   padding: 0;
   font-family: 'Reem Kufi', sans-serif;
 }
+*::selection {
+  background-color: rgb(0, 119, 255);
+  color: #FFF;
+}
 
 html, body {
   min-height: 100vh;
@@ -263,6 +267,7 @@ div.nav-flex-item {
 
 #section-Instagram {
   background: linear-gradient(0deg, rgba(187, 0, 255, 0.4), rgba(204, 0, 255, 0.4)), url(../Designs/Fotos/FILHOS\ DA\ TERRA\ Reduzido.jpg);
+  box-shadow: 0px 0px 10px rgba(187, 0, 255) ;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -272,6 +277,7 @@ div.nav-flex-item {
 
 #section-Facebook {
   background: linear-gradient(0deg, rgba(1, 48, 255, 0.4), rgba(3, 49, 255, 0.4)), url(../Designs/Fotos/FILHOS\ DA\ TERRA\ Reduzido.jpg);
+  box-shadow: 0px 0px 10px rgba(1, 48, 255) ;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -281,6 +287,7 @@ div.nav-flex-item {
 
 #section-Telefone {
   background: linear-gradient(0deg, rgba(68, 255, 0, 0.4), rgba(0, 255, 0, 0.4)), url(../Designs/Fotos/FILHOS\ DA\ TERRA\ Reduzido.jpg);
+  box-shadow: 0px 0px 10px rgba(68, 255, 0) ;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -289,6 +296,7 @@ div.nav-flex-item {
 
 #section-Twitter {
   background: linear-gradient(0deg, rgba(39, 241, 255, 0.4), rgba(61, 224, 253, 0.4)), url(../Designs/Fotos/FILHOS\ DA\ TERRA\ Reduzido.jpg);
+  box-shadow: 0px 0px 10px rgba(39, 241, 255) ;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -296,6 +304,8 @@ div.nav-flex-item {
 
 #section-Email {
   background: linear-gradient(0deg, rgba(226, 223, 44, 0.4), rgba(253, 234, 61, 0.4)), url(../Designs/Fotos/FILHOS\ DA\ TERRA\ Reduzido.jpg);
+  box-shadow: 0px 0px 10px rgba(226, 223, 44) ;
+  z-index: 5;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -325,6 +335,14 @@ article:nth-child(odd) {
   letter-spacing: 1px;
   color: var(--color-black);
   font-size: var(--paragraph-size);
+}
+.list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.list-group {
+  list-style-position: inside;
 }
 
 .flip-card-container {
@@ -456,13 +474,12 @@ article:nth-child(odd) {
 
 .Regions-IMG {
   transition: all 0.2s ease;
-  width: 350px;
+  width: 210px;
   height: fit-content;
 }
-
 .Regions-IMG:hover {
   cursor: pointer;
-  width: 375px;
+  width: 260px;
 }
 
 .Regions-IMG:hover>g {
@@ -731,17 +748,6 @@ footer nav ul li {
   }
 }
 
-@media (max-width:1100px) { 
-  .Regions-IMG {
-    transition: all 0.2s ease;
-    width: 210px;
-  }
-  .Regions-IMG:hover {
-    cursor: pointer;
-    width: 260px;
-  }
-}
-
 @media (max-width:1000px) {
   .article-text, .section-flex-child, #card-container, .contacts-container {
     margin: 5px 200px 10px;
@@ -833,7 +839,9 @@ footer nav ul li {
   .article-text, .section-flex-child, #card-container, .contacts-container {
     margin: 5px 50px 10px;
   }
-
+  .list-container {
+    flex-direction: column;
+  }
   #card-container {
     text-align: center;
   }
@@ -889,8 +897,14 @@ footer nav ul li {
   .contacts-container {
     display: flex;
     flex-direction: column;
+    
   }
-
+  .contact-child {
+    border-radius: 0px; 
+  }
+  .front-content {
+    backdrop-filter: brightness(80%);
+  }
   .contact-child:hover div h1 {
     font-size: 20px;
   }
@@ -918,11 +932,14 @@ footer nav ul li {
   }
   .Regions-IMG {
     transition: all 0.2s ease;
-    width: 70px;
+    width: 100px;
   }
   .Regions-IMG:hover {
     cursor: pointer;
     width: 100px;
+  }
+  .Regions-IMG>text {
+    font-size: 25px;
   }
 }
 
