@@ -1,10 +1,10 @@
-document.body.style.zoom = "100%"
-function Animation() {
+
+function LockScroll() {
     window.scrollTo(1, 1)
     document.getElementById("Moving-page").animate(
         [
             {top: "0px"},
-        {top: "-5000px", 
+        {top: "-10000px", 
         display: "none"}
     ], 
     {
@@ -14,16 +14,12 @@ function Animation() {
         delay: 900,
         fill:"forwards",
         easing: "ease-in"
-    }
-    );
-    
-    const Xposition = window.pageXOffset || document.documentElement.scrollLeft;
-    const Yposition = window.pageYOffset || document.documentElement.scrollTop;
+    });
+    const Xposition = document.documentElement.scrollLeft;
+    const Yposition = document.documentElement.scrollTop;
     window.onscroll = function() {
         window.scrollTo(Xposition, Yposition);
-}
-}
-setTimeout(
-    function() {window.onscroll = {}},
-    1800)
-Animation()
+}}
+
+setTimeout(function() {window.onscroll = {}},1800)
+LockScroll()

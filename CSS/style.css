@@ -1,18 +1,18 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Reem+Kufi:wght@400;500;600;700&family=Rubik+Puddles&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Moirai+One&family=Reem+Kufi:wght@400;500;600;700&family=Rubik+Puddles&family=Sacramento&display=swap');
 
 :root {
-  --color-red: #fb6964;
+  --color-red: #ff5d58;
   --color-orange: #f59a50;
   --color-yellow-orange: #f0b03f;
-  --color-yellow: #fff06d;
+  --color-yellow: #ffed4f;
   --color-green-yellow: #dadd2b;
   --color-green: #a1fc85;
   --color-white: #efefef;
   --color-gray: #4f4f4f;
   --color-grey: #313131;
   --color-black: #202020;
-  --paragraph-size: 16px;
+  --paragraph-size: 18px;
 }
 
 @keyframes background-moving-effect {
@@ -23,8 +23,19 @@
   50% {
     background-position: center;
   }
+
   100% {
     background-position: right;
+  }
+}
+
+@keyframes rotate-card {
+  from {
+    transform: rotateX(0);
+  }
+
+  to {
+    transform: rotateX(180deg);
   }
 }
 
@@ -63,7 +74,7 @@ html, body {
 }
 
 #Moving-page {
-  position:absolute;
+  position: absolute;
   background: linear-gradient(0deg,
       var(--color-red) 0%,
       var(--color-orange) 20%,
@@ -71,29 +82,32 @@ html, body {
       var(--color-yellow) 60%,
       var(--color-green-yellow) 80%,
       var(--color-green) 100%);
-    height: 120vh;
-    width: 100%;
-    z-index: 10;
-    border-radius: 0 0 120px 120px ;
-    box-shadow: 0px 10px 200px #000;
+  height: 120vh;
+  width: 100%;
+  z-index: 10;
+  border-radius: 0 0 90px 90px;
+  box-shadow: 0px 10px 200px #000;
 }
+
 #Moving-page>div {
-  position:absolute;
-    display:inline-flex;
-    flex-direction: column;
-    text-align: center;
-    place-items: center center;
-    place-content: center center;
-    width: 100%;
-    height: 100vh;
-    z-index: 10;
-    
+  position: absolute;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  place-items: center center;
+  place-content: center center;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+
 }
+
 #Moving-page img {
-width: 20vh;
+  width: 20vh;
 }
+
 #Moving-page h1 {
-font-size: 10vh;
+  font-size: 10vh;
 }
 
 header {
@@ -107,7 +121,7 @@ header {
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
-  animation: background-moving-effect 30s ease-in-out infinite alternate;
+  animation: background-moving-effect 20s ease-in-out infinite alternate;
   padding: 50px;
   font-size: 20px;
   box-shadow: inset 0px 0px 30px #000;
@@ -131,10 +145,8 @@ header>a {
   font-family: 'Rubik Puddles', cursive;
   font-family: 'Sacramento', cursive;
   font-style: normal;
-  margin-left: 10px ;
+  margin-left: 10px;
 }
-
-
 
 .darkModeElement {
   flex: 1;
@@ -206,69 +218,88 @@ div.nav-flex-item {
   font-size: 22px;
 }
 
-.tableContainer {
-  display: flex;
-  flex-direction: column;
-  margin-inline: 100px;
-  align-items: stretch;
-  justify-content: space-between;
+.nav-icon {
+  margin-inline: 4px;
 }
-.Email-child {
-  flex: 1;
-  border-radius: 10px;
-  color: var(--color-black);
-  padding: 10px;
-  margin-block: 40px;
-  padding: 10px;
-  text-align: center;
-  border-inline: 4px solid var(--color-black);
+
+.contacts-container {
+  display: grid;
+  margin: 5px 200px 20px;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(4, 300px);
+  row-gap: 5px;
+  column-gap: 7px;
 }
-.email-container {
-  background-color: #202020;
+
+.contact-child {
   border-radius: 5px;
-  padding: 3px;
-  display: inline;
-}
-.email-container>a  {
-    background: linear-gradient(90deg,
-  var(--color-red) 0%,
-  var(--color-orange) 25%,
-  var(--color-yellow-orange) 50%,
-  var(--color-yellow) 75%,
-  var(--color-green) 100%);
-  border: 1px 1px transparent;
-  background-position: center;
-  -webkit-background-clip:text;
-  -webkit-text-fill-color: transparent;
-}
-.Email-child>p {
-  margin-top: 10px;
-  text-align: justify;
-  text-justify: inter-word;
-  letter-spacing: 1px;
-}
-table.phoneTable {
-  flex: 1;
-  border: 1px solid var(--color-black);
-  border-radius: 2px;
-  box-shadow: 0px 0px 4px #000;
-  border-collapse: separate;
-  background-color: var(--color-grey);
-  color: #FFF;
-}
-
-.phoneTable tr td, tr th {
-  border: 1px solid #000;
-  border-radius: 2px;
   text-align: center;
-  text-shadow: 1px 1px 20px #000;
-  color: #FFF;
-  background-color: var(--color-gray);
+  cursor: pointer;
+  display: flex;
+  place-items: center center;
+  place-content: center center;
 }
 
-.phoneTable tr td>a {
+.contact-child:hover div h1 {
+  font-size: 35px;
+}
+
+.front-content {
+  flex-basis: 100%;
+  padding: 4px;
+  backdrop-filter: brightness(30%);
+  display: flex;
+  place-content: center center;
+  gap: 3px;
+}
+
+.front-content>h1, svg {
+  transition: all 0.3s;
   color: #FFF;
-  text-decoration:dashed;
+  place-self: center center;
+  font-size: 24px;
+  text-shadow: 1px 1px 5px #000, -1px -1px 5px #000;
+}
+
+#section-Instagram {
+  background: linear-gradient(0deg, rgba(187, 0, 255, 0.4), rgba(204, 0, 255, 0.4)), url(../Designs/Fotos/FILHOS\ DA\ TERRA\ Reduzido.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  grid-column: 1/3;
+  background-repeat: repeat-y;
+}
+
+#section-Facebook {
+  background: linear-gradient(0deg, rgba(1, 48, 255, 0.4), rgba(3, 49, 255, 0.4)), url(../Designs/Fotos/FILHOS\ DA\ TERRA\ Reduzido.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  grid-row: 2/4;
+  background-repeat: repeat-y;
+}
+
+#section-Telefone {
+  background: linear-gradient(0deg, rgba(68, 255, 0, 0.4), rgba(0, 255, 0, 0.4)), url(../Designs/Fotos/FILHOS\ DA\ TERRA\ Reduzido.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+#section-Twitter {
+  background: linear-gradient(0deg, rgba(39, 241, 255, 0.4), rgba(61, 224, 253, 0.4)), url(../Designs/Fotos/FILHOS\ DA\ TERRA\ Reduzido.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#section-Email {
+  background: linear-gradient(0deg, rgba(226, 223, 44, 0.4), rgba(253, 234, 61, 0.4)), url(../Designs/Fotos/FILHOS\ DA\ TERRA\ Reduzido.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  grid-column: 1/3;
 }
 
 .main-title {
@@ -277,82 +308,190 @@ table.phoneTable {
   padding: 5px;
   vertical-align: middle;
   color: var(--color-black);
+  z-index: 1;
 }
 
 article {
   text-align: justify;
   text-justify: inter-word;
-
 }
+
 article:nth-child(odd) {
   width: 100px;
 }
 
 .article-text {
+  margin: 5px 250px 20px;
   letter-spacing: 1px;
   color: var(--color-black);
-  margin: 5px 220px 20px;
   font-size: var(--paragraph-size);
 }
 
-#card-container {
-  display:flex;
-  margin:20px 100px;
-  gap: 15px;
+.flip-card-container {
+  display: flex;
+  justify-content: center;
 }
+
+.flip-card {
+  padding: 20px;
+  border-block: 3px solid var(--color-black);
+  border-radius: 5px;
+  background-color: var(--color-red);
+}
+
+.flip-card-child {
+  text-align: center;
+  color: #202020;
+}
+
+.flip-card-behind {
+  padding: 10px;
+  border-radius: 5px;
+  backdrop-filter: brightness(80%);
+}
+
+.flip-card-behind>a {
+  color: #202020;
+  text-decoration: none;
+}
+
+#card-container {
+  display: flex;
+  margin: 20px 250px;
+  column-gap: 10px;
+  row-gap: 15px;
+  flex-wrap: wrap;
+}
+
 .card-child {
-  flex:1;
+  flex: 1;
   border-block: 3px solid #202020;
   border-radius: 5px;
-  padding: 4px;
+  padding: 15px;
 }
+
 .card-child>h3 {
   text-align: center;
   color: #000;
 }
+
 .card-child>p {
   color: #000;
-  text-align:justify;
+  text-align: justify;
   text-justify: inter-word;
+  word-spacing: 2px;
 }
+
 .card-child>ul li {
   list-style-position: inside;
   color: #000;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
+
 #Sunday {
   background: var(--color-red);
-  filter: brightness(30%);
+  filter: grayscale(75%) brightness(70%);
+  flex-basis: 100%;
 }
+
 #Monday {
   background: var(--color-orange);
-  filter: brightness(30%);
-  
+  filter: grayscale(75%) brightness(70%);
 }
 
 #Tuesday {
   background: var(--color-yellow);
-  filter: brightness(30%);
+
+  filter: grayscale(75%) brightness(70%);
 }
 
 #Wednesday {
   background: var(--color-green);
-  filter: brightness(30%);
+  filter: grayscale(75%) brightness(70%);
 }
 
 #Thursday {
   background: var(--color-yellow);
-  filter: brightness(30%);
+  filter: grayscale(75%) brightness(70%);
 }
 
 #Friday {
   background: var(--color-orange);
-  filter: brightness(30%);
-  
+  filter: grayscale(75%) brightness(70%);
+
 }
 
 #Saturday {
   background: var(--color-red);
-  filter: brightness(30%);
+  filter: grayscale(75%) brightness(70%);
+  flex-basis: 100%;
+}
+
+.Unidade-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.Unidade-child {
+  display: flex;
+  flex: 1;
+  place-items: center center;
+  place-content: center center;
+}
+
+.SP-regions {
+  align-self: center;
+  flex: 1;
+}
+
+#section-norte {
+  margin: 0;
+}
+
+#section-centro {
+  display: flex;
+  place-items: center center;
+}
+
+.Regions-IMG {
+  transition: all 0.2s ease;
+  width: 350px;
+  height: fit-content;
+}
+
+.Regions-IMG:hover {
+  cursor: pointer;
+  width: 375px;
+}
+
+.Regions-IMG:hover>g {
+  filter: saturate(150%);
+}
+
+.Regions-IMG>text {
+  text-shadow: none;
+}
+
+#SVG-norte {
+  fill: var(--color-red);
+  filter: drop-shadow(0px 0px 10px var(--color-red));
+}
+#SVG-oeste {
+  fill: var(--color-orange);
+  filter: drop-shadow(0px 0px 10px var(--color-orange));
+}
+#SVG-centro {
+  fill: var(--color-yellow);
+  filter: drop-shadow(0px 0px 10px var(--color-yellow));
+}
+#SVG-leste {
+  fill: var(--color-green-yellow);
+  filter: drop-shadow(0px 0px 10px var(--color-green-yellow));
+}
+#SVG-sul {
+  fill: var(--color-green);
+  filter: drop-shadow(0px 0px 10px var(--color-green));
 }
 
 .parallax_bg {
@@ -367,7 +506,7 @@ article:nth-child(odd) {
 }
 
 #parallax_bg_1 {
-  background-image: url("../Designs/Image/Parallax1.jpeg");
+  background-image: url("../Designs/Fotos/Parallax1.jpeg");
   background-attachment: fixed;
 }
 
@@ -375,6 +514,14 @@ article:nth-child(odd) {
   background-size: contain;
   height: 700px;
   background-image: url("https://live.staticflickr.com/8508/8544921603_7400482a5c_b.jpg");
+}
+
+#parallax_bg_3 {
+  background-size: cover;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../Designs/Fotos/Jardim\ Joana\ Dark.jpg");
 }
 
 .innerLabel {
@@ -390,12 +537,12 @@ article:nth-child(odd) {
   display: flex;
   align-items: center;
   justify-items: center;
+  margin-inline: 250px;
 }
 
 .section-flex-child {
   flex: 1;
   margin: 10px;
-  border-radius: 10px;
   color: var(--color-black);
   font-size: var(--paragraph-size)
 }
@@ -495,7 +642,7 @@ footer>div {
   place-content: center;
 }
 
-.Footer-nav {
+.Contacts-nav {
   grid: 1;
   background: transparent;
   grid-row: 2;
@@ -504,8 +651,27 @@ footer>div {
   text-align: center;
 }
 
-.Footer-nav>ul li {
+footer nav ul li {
   display: inline;
+}
+
+.Info-nav {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.Info-nav-list>li a {
+  display: block;
+  color: #efefef;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px solid #efefef;
+  font-size: calc(var(--paragraph-size));
+  transition: all 0.2s;
+}
+
+.Info-nav-list>li a:hover {
+  font-size: calc(var(--paragraph-size) + 2px);
 }
 
 .Footer-link {
@@ -532,58 +698,63 @@ footer>div {
   justify-self: center;
 }
 
-@media (min-width: 2100px) {
-  .header-title{
-    font-size: 80px;
+@media (min-width: 2000px) {
+  .article-text, .section-flex, .contacts-container {
+    margin: 5px 900px 10px;
   }
 
-  label.darkModeElement {
-    font-size: calc(var(--paragraph-size) + 20px);
-    ;
+  #card-container {
+    margin: 5px 400px 10px;
   }
 
-  label.darkModeElement:hover {
-    font-size: calc(var(--paragraph-size) + 30px);
-    ;
+  .card-child {
+    flex-basis: 10%;
+    font-size: 30px;
   }
 
-  .nav-flex-item>a {
-    font-size: calc(var(--paragraph-size) + 20px);
+  #Sunday {
+    flex-basis: 10%;
   }
 
-  .nav-flex-item>a:hover {
-    font-size: calc(var(--paragraph-size) + 30px);
-    ;
+  #Saturday {
+    flex-basis: 10%;
   }
 
-  .main-title {
-    font-size: 2em;
+}
+
+@media (min-width: 2600px) {
+  .article-text, .section-flex, #card-container, .contacts-container {
+    margin: 5px 900px 10px;
+  }
+}
+
+@media (max-width:1000px) {
+  .article-text, .section-flex-child, #card-container, .contacts-container {
+    margin: 5px 200px 10px;
   }
 
-  .article-text {
-    font-size: calc(var(--paragraph-size) + 20px);
-  }
-
-  .innerLabel {
-    font-size: calc(var(--paragraph-size) + 24px);
+  .section-flex {
+    margin: 0;
+    flex-direction: column;
   }
 
   .section-flex-child {
-    font-size: calc(var(--paragraph-size) + 15px)
+    margin: 5px 200px 10px;
   }
 
-  marquee {
-    font-size: calc(var(--paragraph-size) + 5px);
+  .parallax_bg {
+    height: 20%;
+    padding-block: 150px;
+  }
+
+  #card-container {
+    flex-direction: column;
+    gap: 5px;
   }
 }
 
 @media (max-width: 900px) {
-  #card-container {
-    margin: 5px 50px 10px;
-    flex-direction: column;
-  }
-}
-@media (max-width: 800px) {
+
   header {
     padding: 50px;
     text-align: center;
@@ -607,7 +778,7 @@ footer>div {
   header>a {
     display: inline-block;
   }
-  
+
   a>img {
     width: 50px;
   }
@@ -615,7 +786,7 @@ footer>div {
   label.darkModeElement {
     font-size: 15px;
   }
-  
+
   label:hover.darkModeElement {
     font-size: 20px;
   }
@@ -632,47 +803,26 @@ footer>div {
   .nav-flex-item>a {
     font-size: 15px;
   }
-  
+
   .nav-flex-item>a:hover {
     font-size: 20px;
   }
-  
-  .tableContainer {
-    margin-inline: 50px;
-  }
-  table.phoneTable {
-    margin-bottom: 10px;
-  }
-  
-  .phoneTable tr td, tr th, tr td>a {
-    font-size: 14px;
-  }
-  .title {
-    font-size: large;
+
+  .contact-child:hover div h1 {
+    font-size: 30px;
   }
 
-  .article-text {
-    margin: 5px 50px 10px;
-  }
-
-  .section-flex {
-    flex-direction: column;
-  }
-
-  .section-flex-child {
+  .article-text, .section-flex-child, #card-container, .contacts-container {
     margin: 5px 50px 10px;
   }
 
   #card-container {
-    margin: 5px 50px 10px;
-    flex-direction: column;
+    text-align: center;
   }
 
-  .parallax_bg  {
-    height: 20%;
-    padding-block: 150px;
+  .card-child>p {
+    text-align: center;
   }
-
 
   #marquee-container-grid {
     display: none;
@@ -681,46 +831,64 @@ footer>div {
 }
 
 @media (max-width: 430px) {
-  * {
-    font-size: small;
-  }
-
   header>a svg {
     width: 35px;
     height: 35px;
   }
+
   header>a {
     font-size: large;
   }
 
   label.darkModeElement {
-    font-size: 10px;
+    font-size: large;
   }
-  
+
   label:hover.darkModeElement {
-    font-size: 12px;
+    font-size: x-large;
   }
 
   .nav-flex-item>a {
-    font-size: 10px;
+    font-size: large;
   }
 
   .nav-flex-item>a:hover {
+    font-size: x-large;
+  }
+
+  .main-title>h1 {
+    font-size: 20px;
+  }
+
+  .contacts-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-child:hover div h1 {
+    font-size: 20px;
+  }
+
+  .front-content {
+    padding-block: 40px;
+  }
+
+  .front-content>h1, svg {
     font-size: 12px;
   }
 
-  .tableContainer {
-    margin-inline: 20px;
+  .front-content svg {
+    width: 16px;
+    width: 16px;
   }
-  
-  .phoneTable tr td, tr th, tr td>a {
-    font-size: 7px;
-  }
-  .article-text {
+
+  .article-text, .section-flex-child, #card-container, .contacts-container {
     margin: 5px 20px 10px;
   }
-  .card-container {
-    margin: 5px 20px 10px;
+
+  footer {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -740,11 +908,11 @@ footer>div {
   }
 
   label.darkModeElement {
-    font-size: 5px;
-  }
-  
-  label:hover.darkModeElement {
     font-size: 7px;
+  }
+
+  label:hover.darkModeElement {
+    font-size: 10px;
   }
 
   .nav-flex-item>a {
@@ -754,19 +922,12 @@ footer>div {
   .nav-flex-item>a:hover {
     font-size: 7px;
   }
-  
-  .tableContainer {
-    margin-inline: 20px;
-  }
-  
-  .phoneTable tr td, tr th, tr td>a {
-    font-size: 5px;
-  }
-  .article-text {
+
+  .article-text, .section-flex-child, #card-container, .contacts-container {
     margin: 5px 10px 10px;
   }
+
   .card-container {
-    margin: 5px 10px 10px;
     flex-direction: column;
   }
 }
