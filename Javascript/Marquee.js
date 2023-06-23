@@ -1,4 +1,4 @@
-//Função para esconder seção marquee;
+//Função para esconder seção marquee ao apertar o botão;
 function hide_marquee() {
     let marquee = document.getElementById("marquee-text");
     let btn = document.getElementById("hide-btn");

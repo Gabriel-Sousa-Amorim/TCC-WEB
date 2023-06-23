@@ -25,7 +25,8 @@ document.getElementById("Nome-Doador").addEventListener("blur", function() {
     ValidaNome(document.getElementById("Nome-Doador"))
 })
 
-function ValidaçãoIdade(x) {
+//Valida Idade (Não completo ainda)
+function ValidaIdade(x) {
     x.classList.remove('is-valid')
     x.classList.remove('is-invalid')
     let dataNasc = new Date(x.value)
@@ -65,14 +66,18 @@ function ValidaçãoIdade(x) {
         return false;
     }
 }
-document.getElementById("Data-Voluntário").addEventListener("blur", function() {
-    ValidaçãoIdade(document.getElementById("Data-Voluntário"))
+document.getElementById("Data-Voluntário").addEventListener("focusout", function() {
+    document.getElementById("Data-Voluntário").classList.remove('is-valid')
+    document.getElementById("Data-Voluntário").classList.remove('is-invalid')
+    ValidaIdade(document.getElementById("Data-Voluntário"))
 })
-document.getElementById("Data-Doador").addEventListener("blur", function() {
-    ValidaçãoIdade(document.getElementById("Data-Doador"))
+document.getElementById("Data-Doador").addEventListener("focusout", function() {
+    document.getElementById("Data-Voluntário").classList.remove('is-valid')
+    document.getElementById("Data-Voluntário").classList.remove('is-invalid')
+    ValidaIdade(document.getElementById("Data-Doador"))
 })
 
-//Validação CPF
+//Valida CPF
 const CPFExp = new RegExp(/^[a-z ,.'-]+$/i)
 function ValidaCPF(x) {
     let CPF = document.getElementById(`${x}`).value;
@@ -111,7 +116,7 @@ function ValidaTelefone(x) {
     x.classList.remove('is-invalid')
     if (TelefoneExp.test(x.value) == true) {
         x.classList.add('is-valid')
-        return true
+        return true;
     } else {
 
         x.classList.add('is-invalid')
@@ -125,7 +130,7 @@ document.getElementById("Telefone-Doador").addEventListener("blur", function() {
     ValidaTelefone(document.getElementById("Telefone-Doador"))
 })
 
-//Validação Email;
+//Valida Email;
 const EmailExp = new RegExp(/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i)
 function ValidaEmail(x) {
     x.classList.remove("is-invalid");
@@ -138,7 +143,7 @@ function ValidaEmail(x) {
         return false;
     }
 }
-//Previne Copiar ctrl+v;
+//Previne Colar informações nas tags input (Ctrl+V);
 document.querySelectorAll("input").forEach(i => 
     i.addEventListener("drop", e => e.preventDefault())
     )
@@ -154,12 +159,12 @@ document.getElementById("Email-Doador").addEventListener("blur", function() {
     ValidaEmail(document.getElementById("Email-Doador"))
 })
 
-//validação Imagem
+//Valida Imagem
 const ImageExp = new RegExp(/.*\.(jpe?g|png|)$/igm)
 function ValidaImagem(x) {
-    x.classList.remove("is-invalid");
-    x.classList.remove("is-valid");
-    if (ImageExp.test(x.value) == true && x.value.length > 16) {
+    x.classList.remove('is-valid')
+    x.classList.remove('is-invalid')
+    if(ImageExp.test(x.value)==true) {
         x.classList.add("is-valid");
         return true;
     } else {
@@ -167,6 +172,31 @@ function ValidaImagem(x) {
         return false;
     }
 }
-document.getElementById("Foto-Doador").addEventListener("change", function() {
+document.getElementById("Foto-Doador").addEventListener("blur", function() {
+    document.getElementById("Foto-Doador").classList.remove("is-invalid");
+    document.getElementById("Foto-Doador").classList.remove("is-valid");
     ValidaImagem(document.getElementById("Foto-Doador"))
+})
+
+document.getElementById("Submit-Doador").addEventListener("click", function() {
+    if(
+        ValidaNome(document.getElementById("Nome-Doador")) == true &&
+        ValidaIdade(document.getElementById("Data-Doador")) == true &&
+        ValidaImagem(document.getElementById("Foto-Doador")) == true &&
+        ValidaEmail(document.getElementById("Email-Doador")) == true &&
+        ValidaImagem(document.getElementById("Foto-Doador")) == true &&
+        ValidaTelefone(document.getElementById("Telefone-Doador")) == true
+    ) {
+        console.log(1)
+    } else {
+        console.log(document.getElementById("Foto-Doador"))
+        console.log(document.getElementById("Foto-Doador").value)
+        console.log(ImageExp.test(document.getElementById("Foto-Doador").value))
+        ValidaNome(document.getElementById("Nome-Doador"))
+        ValidaIdade(document.getElementById("Data-Doador"))
+        ValidaImagem(document.getElementById("Foto-Doador"))
+        ValidaEmail(document.getElementById("Email-Doador"))
+        ValidaImagem(document.getElementById("Foto-Doador")) 
+        ValidaTelefone(document.getElementById("Telefone-Doador"))
+    }
 })

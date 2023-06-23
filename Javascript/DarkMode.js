@@ -1,6 +1,6 @@
 
 
-//Dark Mode
+//Função para mudança de tema pela mudança das váriaveis no CSS; 
 function darkToogle() {
     const btnCheck = document.getElementById("dark-button");
     const html = document.querySelector("html").attributes;
@@ -28,7 +28,8 @@ function darkToogle() {
 };
 
 if(document.querySelector('title').textContent ==  "Formulário de Doação") {
-document.getElementById("dark-button").addEventListener("change", darkToogle, true); 
+    document.getElementById("dark-button").addEventListener("change", darkToogle, true); 
+//Mudança de tema para o formulário; 
 } else {
     function DarkcheckboxToogle() {
         const root = document.querySelector(":root");
