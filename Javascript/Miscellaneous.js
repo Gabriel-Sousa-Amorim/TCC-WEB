@@ -176,7 +176,7 @@ function ChangingContentRegion(idRegion, Region, text, color) {
             behavior: "smooth",
             block: "center",
             inline: "nearest"
-          })
+        })
         description.children[0].textContent = Region;
         description.children[1].textContent = text;
         description.style.background = color;
