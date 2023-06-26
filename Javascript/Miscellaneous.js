@@ -169,11 +169,28 @@ function Observed_elmt() {
 document.querySelector("body").addEventListener("load", Observed_elmt, true)
 document.getElementById("hide-btn").addEventListener("click", hide_marquee, true)
 
-function ChangingContentRegion(idRegion, Region, text) {
-    document.getElementById(idRegion).addEventListener("focus", function() {
-        document.getElementById("description-container").children[0].textContent = Region;
-        document.getElementById("description-container").children[1].textContent = text;
+function ChangingContentRegion(idRegion, Region, text, color) {
+    document.getElementById(idRegion).addEventListener("click", function() {
+        let description = document.getElementById("description-container")
+        description.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+            inline: "nearest"
+          })
+        description.children[0].textContent = Region;
+        description.children[1].textContent = text;
+        description.style.background = color;
+        description.style.background = color;
+
     })
 }
-const NorteContext = "A unidade da zona norte se localiza n bairro do Parque Edu Chaves, onde há fácil acesso para outros bairros da Zona Norte como Jardim Brasil, Jova Rural, Jardim Filhos da Terra,  "
-ChangingContentRegion("SVG-norte", "Zona Norte", NorteContext)
+const NorteContext = "A unidade da zona norte se localiza no bairro do Parque Edu Chaves, onde há fácil acesso para outros bairros da Zona Norte como Vila Medeiros, Vila Maria, Jaçanã, Tremembé, mas também atendendo regiões mais distantes da zona norte, além de coleta e distribuição de doações em Guarulhos."
+ChangingContentRegion("SVG-norte", "Zona Norte", NorteContext, "var(--color-red)")
+const LesteContext = ""
+ChangingContentRegion("SVG-leste", "Zona Leste", LesteContext, "var(--color-green-yellow)")
+const SulContext = ""
+ChangingContentRegion("SVG-sul", "Zona Sul", SulContext, "var(--color-green)")
+const OesteContext = ""
+ChangingContentRegion("SVG-oeste", "Zona Oeste", OesteContext, "var(--color-orange)")
+const CentroContext = "A primeira unidade fundada da ONG, localizada no Bom Retiro que é"
+ChangingContentRegion("SVG-centro", "Zona Central", CentroContext, "var(--color-yellow)")
