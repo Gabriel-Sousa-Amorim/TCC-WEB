@@ -148,7 +148,6 @@ header>a {
 }
 
 .header-title {
-  font-family: 'Rubik Puddles', cursive;
   font-family: 'Sacramento', cursive;
   font-style: normal;
   margin-left: 10px;
@@ -220,7 +219,7 @@ div.nav-flex-item {
 
 .nav-flex-item>a:hover {
   background: var(--color-grey);
-  border: 1px solid var(--color-white);
+  border: 1px solid #FFF;
   font-size: 22px;
 }
 
