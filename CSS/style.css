@@ -44,12 +44,14 @@
   padding: 0;
   font-family: 'Reem Kufi', sans-serif;
 }
+
 *::selection {
   background-color: rgb(0, 119, 255);
   color: #FFF;
 }
 
-html, body {
+html,
+body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -126,7 +128,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   animation: background-moving-effect 20s ease-in-out infinite alternate;
-  padding: 50px;
+  padding: 40px;
   font-size: 20px;
   box-shadow: inset 0px 0px 30px #000;
   transition: all 0.5s;
@@ -257,7 +259,8 @@ div.nav-flex-item {
   gap: 3px;
 }
 
-.front-content>h1, svg {
+.front-content>h1,
+svg {
   transition: all 0.3s;
   color: #FFF;
   place-self: center center;
@@ -267,7 +270,7 @@ div.nav-flex-item {
 
 #section-Instagram {
   background: linear-gradient(0deg, rgba(187, 0, 255, 0.4), rgba(204, 0, 255, 0.4)), url(../Designs/Fotos/FILHOS\ DA\ TERRA\ Reduzido.jpg);
-  box-shadow: 0px 0px 10px rgba(187, 0, 255) ;
+  box-shadow: 0px 0px 10px rgba(187, 0, 255);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -277,7 +280,7 @@ div.nav-flex-item {
 
 #section-Facebook {
   background: linear-gradient(0deg, rgba(1, 48, 255, 0.4), rgba(3, 49, 255, 0.4)), url(../Designs/Fotos/FILHOS\ DA\ TERRA\ Reduzido.jpg);
-  box-shadow: 0px 0px 10px rgba(1, 48, 255) ;
+  box-shadow: 0px 0px 10px rgba(1, 48, 255);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -287,7 +290,7 @@ div.nav-flex-item {
 
 #section-Telefone {
   background: linear-gradient(0deg, rgba(68, 255, 0, 0.4), rgba(0, 255, 0, 0.4)), url(../Designs/Fotos/FILHOS\ DA\ TERRA\ Reduzido.jpg);
-  box-shadow: 0px 0px 10px rgba(68, 255, 0) ;
+  box-shadow: 0px 0px 10px rgba(68, 255, 0);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -296,7 +299,7 @@ div.nav-flex-item {
 
 #section-Twitter {
   background: linear-gradient(0deg, rgba(39, 241, 255, 0.4), rgba(61, 224, 253, 0.4)), url(../Designs/Fotos/FILHOS\ DA\ TERRA\ Reduzido.jpg);
-  box-shadow: 0px 0px 10px rgba(39, 241, 255) ;
+  box-shadow: 0px 0px 10px rgba(39, 241, 255);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -304,7 +307,7 @@ div.nav-flex-item {
 
 #section-Email {
   background: linear-gradient(0deg, rgba(226, 223, 44, 0.4), rgba(253, 234, 61, 0.4)), url(../Designs/Fotos/FILHOS\ DA\ TERRA\ Reduzido.jpg);
-  box-shadow: 0px 0px 10px rgba(226, 223, 44) ;
+  box-shadow: 0px 0px 10px rgba(226, 223, 44);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -335,63 +338,54 @@ article:nth-child(odd) {
   color: var(--color-black);
   font-size: var(--paragraph-size);
 }
+
 .button-flex-container {
   display: none;
 }
-.button-flex-container>a {
+
+.button-flex-container-child {
   flex: 1;
   text-decoration: none;
   background-color: var(--color-white);
   color: var(--color-black);
+  padding: 4px;
   border: 2px solid var(--color-black);
-  padding-block: 10px ;
+  padding-block: 10px;
   border-radius: 5px;
   flex-basis: 50%;
   text-align: center;
-  vertical-align: middle;
   align-self: center;
   transition: all 0.2s;
 }
-.button-flex-container>a:hover {
+
+.button-flex-container-child:hover {
   background-color: var(--color-black);
   color: var(--color-white);
-font-size: x-large;
+  border: 2px solid var(--color-black);
+  font-size: x-large;
+}
+.form-flex-container {
+  display: flex;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: 2px solid var(--color-black);
+  padding-block: 10px;
+  border-radius: 5px;
+  flex-direction: column;
+  place-items: center center;
+  place-content: center center;
+}
+.form-flex-container>a:hover {
+  border: 2px solid var(--color-white);
 }
 .list-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .list-group {
   list-style-position: inside;
-}
-
-.flip-card-container {
-  display: flex;
-  justify-content: center;
-}
-
-.flip-card {
-  padding: 20px;
-  border-block: 3px solid var(--color-black);
-  border-radius: 5px;
-  background-color: var(--color-red);
-}
-
-.flip-card-child {
-  text-align: center;
-  color: #202020;
-}
-
-.flip-card-behind {
-  padding: 10px;
-  border-radius: 5px;
-  backdrop-filter: brightness(80%);
-}
-
-.flip-card-behind>a {
-  color: #202020;
-  text-decoration: none;
 }
 
 #card-container {
@@ -405,17 +399,18 @@ font-size: x-large;
 .card-child {
   flex: 1;
   border-block: 3px solid #202020;
+  background-color: var(--color-black);
   border-radius: 5px;
   padding: 15px;
 }
 
 .card-child>h3 {
   text-align: center;
-  color: #000;
+  color: var(--color-white);
 }
 
 .card-child>p {
-  color: #000;
+  color: var(--color-white);
   text-align: justify;
   text-justify: inter-word;
   word-spacing: 2px;
@@ -423,46 +418,16 @@ font-size: x-large;
 
 .card-child>ul li {
   list-style-position: inside;
-  color: #000;
+  color: var(--color-white);
   font-weight: 600;
   margin-bottom: 5px;
 }
 
 #Sunday {
-  background: var(--color-red);
-  filter: grayscale(75%) brightness(70%);
   flex-basis: 100%;
 }
 
-#Monday {
-  background: var(--color-orange);
-  filter: grayscale(75%) brightness(70%);
-}
-
-#Tuesday {
-  background: var(--color-yellow);
-  filter: grayscale(75%) brightness(70%);
-}
-
-#Wednesday {
-  background: var(--color-green);
-  filter: grayscale(75%) brightness(70%);
-}
-
-#Thursday {
-  background: var(--color-yellow);
-  filter: grayscale(75%) brightness(70%);
-}
-
-#Friday {
-  background: var(--color-orange);
-  filter: grayscale(75%) brightness(70%);
-
-}
-
 #Saturday {
-  background: var(--color-red);
-  filter: grayscale(75%) brightness(70%);
   flex-basis: 100%;
 }
 
@@ -502,6 +467,7 @@ font-size: x-large;
   width: 130px;
   height: fit-content;
 }
+
 .Regions-IMG:hover {
   cursor: pointer;
   width: 190px;
@@ -513,33 +479,41 @@ font-size: x-large;
 
 .Regions-IMG>text {
   text-shadow: none;
+  font-weight: 900;
+  font-size: 25px;
 }
 
 #SVG-norte {
   fill: var(--color-red);
   filter: drop-shadow(0px 0px 10px var(--color-red));
 }
+
 #SVG-oeste {
   fill: var(--color-orange);
   filter: drop-shadow(0px 0px 10px var(--color-orange));
 }
+
 #SVG-centro {
   fill: var(--color-yellow);
   filter: drop-shadow(0px 0px 10px var(--color-yellow));
 }
+
 #SVG-leste {
   fill: var(--color-green-yellow);
   filter: drop-shadow(0px 0px 10px var(--color-green-yellow));
 }
+
 #SVG-sul {
   fill: var(--color-green);
   filter: drop-shadow(0px 0px 10px var(--color-green));
 }
+
 .Foto-container {
   display: flex;
   flex-direction: column;
   width: 100px;
 }
+
 #description-container {
   flex-basis: 50%;
   background-color: var(--color-orange);
@@ -555,15 +529,18 @@ font-size: x-large;
   place-content: center center;
 
 }
+
 #description-container>h1 {
   font-size: 30px;
 }
+
 #description-container>p {
   text-align: justify;
   vertical-align: middle;
 }
+
 .parallax_bg {
-  
+
   height: 700px;
   width: 100%;
   background-attachment: fixed;
@@ -578,7 +555,7 @@ font-size: x-large;
   background-attachment: fixed;
 }
 
-#parallax_bg_2{
+#parallax_bg_2 {
   background-attachment: fixed;
   background-size: cover;
   background-image: url("../Designs/Fotos/PARQUEDOGATO.jpg");
@@ -766,8 +743,13 @@ footer nav ul li {
 }
 
 @media (min-width: 2000px) {
-  .article-text, .section-flex, .contacts-container {
-    margin: 5px 900px 10px;
+
+  .article-text,
+  .section-flex,
+  #card-container,
+  .contacts-container,
+  .Unidade-container {
+    margin: 5px 600px 10px;
   }
 
   #card-container {
@@ -790,26 +772,40 @@ footer nav ul li {
 }
 
 @media (min-width: 2600px) {
-  .article-text, .section-flex, #card-container, .contacts-container, .Unidade-container {
-    margin: 5px 700px 10px;
+
+  .article-text,
+  .section-flex,
+  #card-container,
+  .contacts-container,
+  .Unidade-container {
+    margin: 5px 900px 10px;
   }
 }
+
 @media (max-width:1100px) {
   .Foto-container {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
+
   .Unidade-container {
     flex-direction: column
   }
+
   #card-container {
     flex-direction: column;
     gap: 5px;
   }
 }
+
 @media (max-width:1000px) {
-  .article-text, .section-flex-child, #card-container, .contacts-container, .Unidade-container {
+
+  .article-text,
+  .section-flex-child,
+  #card-container,
+  .contacts-container,
+  .Unidade-container {
     margin: 5px 200px 10px;
   }
 
@@ -887,18 +883,24 @@ footer nav ul li {
     font-size: 30px;
   }
 
-  .article-text, .section-flex-child, #card-container, .contacts-container, .Unidade-container {
+  .article-text,
+  .section-flex-child,
+  #card-container,
+  .contacts-container,
+  .Unidade-container {
     margin: 5px 50px 10px;
   }
 
   .button-flex-container {
     display: flex;
-    place-content: center center ;
+    place-content: center center;
     gap: 5px;
   }
+
   .list-container {
     flex-direction: column;
   }
+
   #card-container {
     text-align: center;
   }
@@ -910,10 +912,12 @@ footer nav ul li {
   #marquee-container-grid {
     display: none;
   }
+
   .Regions-IMG {
     transition: all 0.2s ease;
     width: 120px;
   }
+
   .Regions-IMG:hover {
     cursor: pointer;
     width: 150px;
@@ -954,22 +958,27 @@ footer nav ul li {
   .button-flex-container {
     flex-wrap: wrap;
   }
+
   .contacts-container {
     display: flex;
     flex-direction: column;
   }
+
   .contact-child {
-    border-radius: 0px; 
+    border-radius: 0px;
   }
+
   .front-content {
     backdrop-filter: brightness(80%);
     padding-block: 40px;
   }
+
   .contact-child:hover div h1 {
     font-size: 20px;
   }
 
-  .front-content>h1, svg {
+  .front-content>h1,
+  svg {
     font-size: 12px;
   }
 
@@ -979,9 +988,14 @@ footer nav ul li {
     width: 16px;
   }
 
-  .article-text, .section-flex-child, #card-container, .contacts-container, .Unidade-container {
+  .article-text,
+  .section-flex-child,
+  #card-container,
+  .contacts-container,
+  .Unidade-container {
     margin: 5px 20px 10px;
   }
+
   #description-container>p {
     margin-inline: 10px;
   }
@@ -990,14 +1004,17 @@ footer nav ul li {
     display: flex;
     flex-direction: column;
   }
+
   .Regions-IMG {
     transition: all 0.2s ease;
     width: 70px;
   }
+
   .Regions-IMG:hover {
     cursor: pointer;
     width: 80px;
   }
+
   .Regions-IMG>text {
     font-size: 25px;
   }
@@ -1034,13 +1051,18 @@ footer nav ul li {
     font-size: 7px;
   }
 
-  .article-text, .section-flex-child, #card-container, .contacts-container, .Unidade-container {
+  .article-text,
+  .section-flex-child,
+  #card-container,
+  .contacts-container,
+  .Unidade-container {
     margin: 5px 10px 10px;
   }
 
   .card-container {
     flex-direction: column;
   }
+
   #description-container>p {
     margin-inline: 0px;
   }
