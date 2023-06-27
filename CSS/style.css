@@ -126,7 +126,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   animation: background-moving-effect 20s ease-in-out infinite alternate;
-  padding: 50px;
+  padding: 40px;
   font-size: 20px;
   box-shadow: inset 0px 0px 30px #000;
   transition: all 0.5s;
@@ -146,7 +146,6 @@ header>a {
 }
 
 .header-title {
-  font-family: 'Rubik Puddles', cursive;
   font-family: 'Sacramento', cursive;
   font-style: normal;
   margin-left: 10px;
@@ -218,7 +217,7 @@ div.nav-flex-item {
 
 .nav-flex-item>a:hover {
   background: var(--color-grey);
-  border: 1px solid var(--color-white);
+  border: 1px solid #FFF;
   font-size: 22px;
 }
 
