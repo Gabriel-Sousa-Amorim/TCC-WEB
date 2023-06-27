@@ -12,7 +12,7 @@ function CatchTheDay() {
             Array.from(Sunday.children).forEach(i => {
                 i.style.color = "#000"
             });
-            Sunday.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color ="#000")
+            Sunday.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color = "#000")
             Sunday.style.boxShadow = "0px 0px 10px var(--color-red)";
             Sunday.style.backgroundColor = "var(--color-red)";
             document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1");
@@ -25,7 +25,7 @@ function CatchTheDay() {
             Array.from(Monday.children).forEach(i => {
                 i.style.color = "#000"
             });
-            Monday.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color ="#000")
+            Monday.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color = "#000")
             Monday.style.boxShadow = "0px 0px 10px var(--color-orange)";
             Monday.style.backgroundColor = "var(--color-orange)";
             document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1");
@@ -38,8 +38,7 @@ function CatchTheDay() {
             Array.from(Tuesday.children).forEach(i => {
                 i.style.color = "#000"
             });
-            
-            Tuesday.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color ="#000")
+            Tuesday.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color = "#000")
             Tuesday.style.boxShadow = "0px 0px 10px var(--color-yellow)";
             Tuesday.style.backgroundColor = "var(--color-yellow)";
             document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1");
@@ -52,7 +51,7 @@ function CatchTheDay() {
             Array.from(Wednesday.children).forEach(i => {
                 i.style.color = "#000"
             });
-            Wednesday.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color ="#000")
+            Wednesday.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color = "#000")
             Wednesday.style.boxShadow = "0px 0px 10px var(--color-green)";
             Wednesday.style.backgroundColor = "var(--color-green)";
             document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1");
@@ -65,7 +64,7 @@ function CatchTheDay() {
             Array.from(Thursday.children).forEach(i => {
                 i.style.color = "#000"
             });
-            Thursday.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color ="#000")
+            Thursday.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color = "#000")
             Thursday.style.boxShadow = "0px 0px 10px var(--color-yellow)";
             Thursday.style.backgroundColor = "var(--color-yellow)";
             document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1");
@@ -78,7 +77,7 @@ function CatchTheDay() {
             Array.from(Friday.children).forEach(i => {
                 i.style.color = "#000"
             });
-            Friday.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color ="#000")
+            Friday.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color = "#000")
             Friday.style.boxShadow = "0px 0px 10px var(--color-orange)";
             Friday.style.backgroundColor = "var(--color-orange)";
             document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1");
@@ -91,7 +90,7 @@ function CatchTheDay() {
             Array.from(Saturday.children).forEach(i => {
                 i.style.color = "#000"
             });
-            Saturday.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color ="#000")
+            Saturday.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color = "#000")
             Saturday.style.boxShadow = "0px 0px 10px var(--color-red)";
             Saturday.style.backgroundColor = "var(--color-red)";
             document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1");
@@ -100,16 +99,6 @@ function CatchTheDay() {
     }
 };
 
-//Põe o ano atual na área de copyright;
-function CatchTheYear() {
-    if (document.querySelector("section.main-title").children[0].innerHTML == "Sobre Nós") {
-        CatchTheDay();
-        document.getElementById("copyright-year").innerHTML = year;
-    } else {
-        document.getElementById("copyright-year").innerHTML = year;
-    };
-};
-CatchTheYear();
 
 //Executa a função apenas na página CONTATOS.html
 //Função para redirecionamento de página ao apertar nos cards do Facebook, Instagram e Twitter
@@ -141,9 +130,9 @@ function LockScroll() {
         ],
         {
             //Propriedades da animação;
-            duration: 2000,
+            duration: 1000,
             iterations: 1,
-            delay: 900,
+            delay: 1000,
             fill: "forwards",
             easing: "ease-in"
         });
@@ -154,9 +143,6 @@ function LockScroll() {
         window.scrollTo(Xposition, Yposition);
     }
 }
-
-setTimeout(function () { window.onscroll = {} }, 1800);
-LockScroll();
 
 //Função para esconder seção marquee ao apertar o botão;
 function hide_marquee() {
@@ -189,9 +175,12 @@ function Observed_elmt() {
     });
     intersectionObserver.observe(observedElement);
 }
-document.querySelector("body").addEventListener("load", Observed_elmt, true)
-document.getElementById("hide-btn").addEventListener("click", hide_marquee, true)
 
+const NorteContext = "A unidade da zona norte se localiza no bairro do Parque Edu Chaves, onde há fácil acesso para outros bairros da Zona Norte como Vila Medeiros, Vila Maria, Jaçanã, Tremembé, mas também atendendo regiões mais distantes da própria zona norte, além de realizarmos coleta e distribuição de doações em Guarulhos."
+const LesteContext = "a"
+const CentroContext = "A primeira unidade fundada da ONG, localizada no Bom Retiro que é"
+const OesteContext = "a"
+const SulContext = "a"
 function ChangingContentRegion(idRegion, Region, text, color) {
     document.getElementById(idRegion).addEventListener("click", function () {
         let description = document.getElementById("description-container")
@@ -205,13 +194,34 @@ function ChangingContentRegion(idRegion, Region, text, color) {
         description.style.background = color;
     })
 }
-const NorteContext = "A unidade da zona norte se localiza no bairro do Parque Edu Chaves, onde há fácil acesso para outros bairros da Zona Norte como Vila Medeiros, Vila Maria, Jaçanã, Tremembé, mas também atendendo regiões mais distantes da própria zona norte, além de realizarmos coleta e distribuição de doações em Guarulhos."
-ChangingContentRegion("SVG-norte", "Zona Norte", NorteContext, "var(--color-red)")
-const LesteContext = "a"
-ChangingContentRegion("SVG-leste", "Zona Leste", LesteContext, "var(--color-green-yellow)")
-const SulContext = "a"
-ChangingContentRegion("SVG-sul", "Zona Sul", SulContext, "var(--color-green)")
-const OesteContext = "a"
-ChangingContentRegion("SVG-oeste", "Zona Oeste", OesteContext, "var(--color-orange)")
-const CentroContext = "A primeira unidade fundada da ONG, localizada no Bom Retiro que é"
-ChangingContentRegion("SVG-centro", "Zona Central", CentroContext, "var(--color-yellow)")
+
+//Selecionador de funções específicas para cada página:
+switch (document.querySelector("section.main-title").children[0].innerHTML) {
+    case ("Home"):
+        console.log(1)
+
+        break;
+    case ("Sobre Nós"):
+        CatchTheDay();
+        ChangingContentRegion("SVG-norte", "Zona Norte", NorteContext, "var(--color-red)")
+        ChangingContentRegion("SVG-leste", "Zona Leste", LesteContext, "var(--color-green-yellow)")
+        ChangingContentRegion("SVG-sul", "Zona Sul", SulContext, "var(--color-green)")
+        ChangingContentRegion("SVG-oeste", "Zona Oeste", OesteContext, "var(--color-orange)")
+        ChangingContentRegion("SVG-centro", "Zona Central", CentroContext, "var(--color-yellow)")
+        break;
+    case ("Contatos"):
+        ContactLink("section-Instagram", "https://www.instagram.com/ong_mangara/");
+        ContactLink("section-Facebook", "https://www.facebook.com/people/Organização-Mangará/100092684681862/");
+        ContactLink("section-Twitter", "https://www.instagram.com/ong_mangara/");
+        break;
+}
+
+//Funções globais
+document.querySelector("body").addEventListener("load", Observed_elmt, true)
+
+document.getElementById("hide-btn").addEventListener("click", hide_marquee, true)
+
+document.getElementById("copyright-year").innerHTML = year;
+
+LockScroll();
+setTimeout(function () { window.onscroll = {} }, 1800);
