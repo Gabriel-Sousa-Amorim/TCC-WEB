@@ -29,35 +29,7 @@
   }
 }
 
-@keyframes rotate-card {
-  from {
-    transform: rotateX(0);
-  }
-
-  to {
-    transform: rotateX(180deg);
-  }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Reem Kufi', sans-serif;
-}
-
-*::selection {
-  background-color: rgb(0, 119, 255);
-  color: #FFF;
-}
-
-html,
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: var(--color-white);
-}
-
+/*Estilo da Scrollbar*/
 ::-webkit-scrollbar {
   width: 0.7vw;
 }
@@ -79,6 +51,25 @@ body {
   background: var(--color-gray);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+*::selection {
+  background-color: rgb(0, 119, 255);
+  color: #FFF;
+}
+
+html, body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-white);
+}
+
+/*Página que sobe toda vez que se abre as páginas Home, Sobre nós e contatos*/
 #Moving-page {
   position: absolute;
   background: linear-gradient(0deg,
@@ -153,6 +144,12 @@ header>a {
   margin-left: 10px;
 }
 
+/*Elementos Nav e Botão Tema Escuro e claro*/
+nav {
+  padding: 10px;
+  background: #000;
+}
+
 .darkModeElement {
   flex: 1;
   color: var(--color-white);
@@ -183,11 +180,6 @@ label:hover.darkModeElement {
   background: var(--color-grey);
   border: 1px solid #FFF;
   font-size: 24px;
-}
-
-nav {
-  padding: 10px;
-  background: #000;
 }
 
 .nav-flex-container {
@@ -227,6 +219,60 @@ div.nav-flex-item {
   margin-inline: 4px;
 }
 
+/*seção main e definição de margin e texto*/
+.main-title {
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 5px;
+  vertical-align: middle;
+  color: var(--color-black);
+  z-index: 1;
+}
+
+article {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.main-margin {
+  margin: 5px 250px 20px;
+}
+
+.article-text {
+  letter-spacing: 1px;
+  color: var(--color-black);
+  font-size: var(--paragraph-size);
+}
+
+/*Layout de redirecionamento para o formulário, visível apenas em celulares*/
+.button-flex-container {
+  display: none;
+}
+
+.button-flex-container-child {
+  flex: 1;
+  text-decoration: none;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  padding: 4px;
+  border: 2px solid var(--color-black);
+  padding-block: 10px;
+  border-radius: 5px;
+  flex-basis: 50%;
+  text-align: center;
+  align-self: center;
+  transition: all 0.2s;
+}
+
+.button-flex-container-child:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: 2px solid var(--color-black);
+  font-size: x-large;
+}
+
+
+/*Seção de contatos com os containers das redes sociais, telefones e emails*/
 .contacts-container {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
@@ -257,7 +303,7 @@ div.nav-flex-item {
   gap: 3px;
 }
 
-.front-content>h1,svg {
+.front-content>h1, svg {
   transition: all 0.3s;
   color: #FFF;
   place-self: center center;
@@ -268,20 +314,20 @@ div.nav-flex-item {
 #section-Instagram {
   background: linear-gradient(0deg, rgba(187, 0, 255, 0.4), rgba(204, 0, 255, 0.4)), url(../Designs/Fotos/FILHOS\ DA\ TERRA\ Reduzido.jpg);
   box-shadow: 0px 0px 10px rgba(187, 0, 255);
+  grid-column: 1/3;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  grid-column: 1/3;
   background-repeat: repeat-y;
 }
 
 #section-Facebook {
   background: linear-gradient(0deg, rgba(1, 48, 255, 0.4), rgba(3, 49, 255, 0.4)), url(../Designs/Fotos/FILHOS\ DA\ TERRA\ Reduzido.jpg);
   box-shadow: 0px 0px 10px rgba(1, 48, 255);
+  grid-row: 2/4;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  grid-row: 2/4;
   background-repeat: repeat-y;
 }
 
@@ -291,7 +337,8 @@ div.nav-flex-item {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-
+  background-repeat: repeat-y;
+  
 }
 
 #section-Twitter {
@@ -300,69 +347,19 @@ div.nav-flex-item {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: repeat-y;
 }
 
 #section-Email {
   background: linear-gradient(0deg, rgba(226, 223, 44, 0.4), rgba(253, 234, 61, 0.4)), url(../Designs/Fotos/FILHOS\ DA\ TERRA\ Reduzido.jpg);
   box-shadow: 0px 0px 10px rgba(226, 223, 44);
+  grid-column: 1/3;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  grid-column: 1/3;
+  background-repeat: repeat-y;
 }
 
-.main-title {
-  text-align: center;
-  letter-spacing: 1px;
-  padding: 5px;
-  vertical-align: middle;
-  color: var(--color-black);
-  z-index: 1;
-}
-
-article {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.main-margin {
-  margin: 5px 250px 20px;
-}
-
-.article-text {
-  letter-spacing: 1px;
-  color: var(--color-black);
-  font-size: var(--paragraph-size);
-}
-.article-text>p {
-  color: var(--color-black);
-}
-
-.button-flex-container {
-  display: none;
-}
-
-.button-flex-container-child {
-  flex: 1;
-  text-decoration: none;
-  background-color: var(--color-white);
-  color: var(--color-black);
-  padding: 4px;
-  border: 2px solid var(--color-black);
-  padding-block: 10px;
-  border-radius: 5px;
-  flex-basis: 50%;
-  text-align: center;
-  align-self: center;
-  transition: all 0.2s;
-}
-
-.button-flex-container-child:hover {
-  background-color: var(--color-black);
-  color: var(--color-white);
-  border: 2px solid var(--color-black);
-  font-size: x-large;
-}
 .form-flex-container {
   display: flex;
   background-color: var(--color-white);
@@ -374,12 +371,17 @@ article {
   text-align: center;
 
 }
+
+/*Redirecionador para o formulário na Sobre.HTML*/
 .form-flex-container>a:hover {
   transition: all 0.2s;
 }
+
 .form-flex-container>a:hover {
   border: 2px solid var(--color-black);
 }
+
+/*Classe abaixo está na Sobre.html serve para separar e juntar colunas conforme o tamanho da tela*/
 .list-container {
   display: flex;
   flex-direction: row;
@@ -395,6 +397,7 @@ article {
   font-size: var(--paragraph-size);
 }
 
+/*Seção de cards dos dias da semana*/
 #card-container {
   display: flex;
   column-gap: 10px;
@@ -405,15 +408,16 @@ article {
 .card-child {
   flex: 1;
   background-color: #202020;
-  border-block: 2px solid var(--color-black);
+  border: 2px solid var(--color-black);
   border-radius: 5px;
   padding: 15px;
 }
 
-.card-child>h3,p, ul li {
+.card-child>h3, p, ul li {
   color: #efefef;
 }
-.card-child>h3{
+
+.card-child>h3 {
   text-align: center;
 }
 
@@ -429,11 +433,7 @@ article {
   margin-bottom: 5px;
 }
 
-#Sunday {
-  flex-basis: 100%;
-}
-
-#Saturday {
+#Sunday, #Saturday {
   flex-basis: 100%;
 }
 
@@ -477,11 +477,13 @@ article {
   cursor: pointer;
   width: 190px;
 }
+
 .Regions-IMG>g {
   transition: all 0.2s;
 }
+
 .Regions-IMG:hover>g {
-  filter: saturate(150%);
+  filter: saturate(200%);
 }
 
 .Regions-IMG>text {
@@ -515,18 +517,12 @@ article {
   filter: drop-shadow(0px 0px 10px var(--color-green));
 }
 
-.Foto-container {
-  display: flex;
-  flex-direction: column;
-}
-
 #description-container {
   flex-basis: 50%;
   background-color: var(--color-orange);
   text-align: center;
   border-block: 3px solid #000;
   border-radius: 5px;
-  color: #202020;
   padding: 15px;
   transition: all 1s;
   display: flex;
@@ -536,17 +532,20 @@ article {
 
 }
 
-#description-container>h1 {
+#description-container>h3 {
+  color: #202020;
   font-size: 30px;
 }
 
 #description-container>p {
+  color: #202020;
   text-align: justify;
   vertical-align: middle;
 }
 
-.parallax_bg {
 
+
+.parallax_bg {
   height: 700px;
   width: 100%;
   background-attachment: fixed;
@@ -554,6 +553,11 @@ article {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.Foto-container {
+  display: flex;
+  flex-direction: column;
 }
 
 #parallax_bg_1 {
@@ -749,7 +753,7 @@ footer nav ul li {
 
 @media (min-width: 2000px) {
 
-.main-margin {
+  .main-margin {
     margin: 5px 600px 10px;
   }
 
@@ -774,7 +778,7 @@ footer nav ul li {
 
 @media (min-width: 2600px) {
 
-.main-margin {
+  .main-margin {
     margin: 5px 900px 10px;
   }
 }
@@ -804,10 +808,6 @@ footer nav ul li {
   .section-flex {
     margin: 0;
     flex-direction: column;
-  }
-
-  .section-flex-child {
-    margin: 5px 200px 10px;
   }
 
   .parallax_bg {
@@ -976,7 +976,7 @@ footer nav ul li {
     width: 16px;
   }
 
-.main-margin {
+  .main-margin {
     margin: 5px 20px 10px;
   }
 

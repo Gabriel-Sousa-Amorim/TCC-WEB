@@ -5,96 +5,58 @@ let year = date.getFullYear();
 //Função para destacar o dia da semana atual;
 //Domingo == 0, Segunda == 1, Terça == 2...
 function CatchTheDay() {
+    function styleProcess(element, color) {
+        Array.from(element.children).forEach(i => {
+            i.style.color = "#000"
+        });
+        element.style.boxShadow = `0px 0px 20px ${color}`;
+        element.style.border = `none`;
+        element.style.backgroundColor = color;
+        element.style.zIndex = "0";
+        element.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color = "#000")
+        document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1");
+    }
     switch (day) {
         //Caso Domingo
         case (0):
             const Sunday = document.getElementById("Sunday");
-            Array.from(Sunday.children).forEach(i => {
-                i.style.color = "#000"
-            });
-            Sunday.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color = "#000")
-            Sunday.style.boxShadow = "0px 0px 10px var(--color-red)";
-            Sunday.style.backgroundColor = "var(--color-red)";
-            document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1");
-            Sunday.style.zIndex = "0";
+            styleProcess(Sunday, "var(--color-red)");
             break;
 
         //Caso Segunda
         case (1):
             const Monday = document.getElementById("Monday");
-            Array.from(Monday.children).forEach(i => {
-                i.style.color = "#000"
-            });
-            Monday.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color = "#000")
-            Monday.style.boxShadow = "0px 0px 10px var(--color-orange)";
-            Monday.style.backgroundColor = "var(--color-orange)";
-            document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1");
-            Monday.style.zIndex = "0"
+            styleProcess(Monday, "var(--color-orange)")
             break;
 
         //Caso Terça
         case (2):
             const Tuesday = document.getElementById("Tuesday");
-            Array.from(Tuesday.children).forEach(i => {
-                i.style.color = "#000"
-            });
-            Tuesday.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color = "#000")
-            Tuesday.style.boxShadow = "0px 0px 10px var(--color-yellow)";
-            Tuesday.style.backgroundColor = "var(--color-yellow)";
-            document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1");
-            Tuesday.style.zIndex = "0"
+            styleProcess(Tuesday, "var(--color-yellow)")
             break;
 
         //Caso Quarta
         case (3):
             const Wednesday = document.getElementById("Wednesday");
-            Array.from(Wednesday.children).forEach(i => {
-                i.style.color = "#000"
-            });
-            Wednesday.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color = "#000")
-            Wednesday.style.boxShadow = "0px 0px 10px var(--color-green)";
-            Wednesday.style.backgroundColor = "var(--color-green)";
-            document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1");
-            Wednesday.style.zIndex = "0";
+            styleProcess(Wednesday, "var(--color-green)")
             break;
 
         //Caso Quinta
         case (4):
             const Thursday = document.getElementById("Thursday");
-            Array.from(Thursday.children).forEach(i => {
-                i.style.color = "#000"
-            });
-            Thursday.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color = "#000")
-            Thursday.style.boxShadow = "0px 0px 10px var(--color-yellow)";
-            Thursday.style.backgroundColor = "var(--color-yellow)";
-            document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1");
-            Thursday.style.zIndex = "0"
+            styleProcess(Thursday, "var(--color-yellow)")
             break;
 
         //Caso Sexta
         case (5):
             const Friday = document.getElementById("Friday");
-            Array.from(Friday.children).forEach(i => {
-                i.style.color = "#000"
-            });
-            Friday.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color = "#000")
-            Friday.style.boxShadow = "0px 0px 10px var(--color-orange)";
-            Friday.style.backgroundColor = "var(--color-orange)";
-            document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1");
-            Friday.style.zIndex = "0";
+            styleProcess(Friday, "var(--color-orange)")
             break;
 
         //Caso Sábado
         case (6):
             const Saturday = document.getElementById("Saturday");;
-            Array.from(Saturday.children).forEach(i => {
-                i.style.color = "#000"
-            });
-            Saturday.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color = "#000")
-            Saturday.style.boxShadow = "0px 0px 10px var(--color-red)";
-            Saturday.style.backgroundColor = "var(--color-red)";
-            document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1");
-            Saturday.style.zIndex = "0";
+            styleProcess(Saturday, "var(--color-red)")
             break;
     }
 };
@@ -182,8 +144,8 @@ const CentroContext = "A primeira unidade fundada da ONG, localizada no Bom Reti
 const OesteContext = "a"
 const SulContext = "a"
 function ChangingContentRegion(idRegion, Region, text, color) {
+    let description = document.getElementById("description-container")
     document.getElementById(idRegion).addEventListener("click", function () {
-        let description = document.getElementById("description-container")
         description.scrollIntoView({
             behavior: "smooth",
             block: "center",
@@ -194,13 +156,12 @@ function ChangingContentRegion(idRegion, Region, text, color) {
         description.style.background = color;
     })
 }
+function ClassRemover() {
+    console.log(1)
+}
 
 //Selecionador de funções específicas para cada página:
 switch (document.querySelector("section.main-title").children[0].innerHTML) {
-    case ("Home"):
-        console.log(1)
-
-        break;
     case ("Sobre Nós"):
         CatchTheDay();
         ChangingContentRegion("SVG-norte", "Zona Norte", NorteContext, "var(--color-red)")
