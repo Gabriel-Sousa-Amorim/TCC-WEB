@@ -264,8 +264,10 @@ article {
 .parallax_bg {
   height: 700px;
   width: 100%;
-  background-attachment: fixed;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: repeat-y;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -278,19 +280,13 @@ article {
 
 #parallax_bg_1 {
   background-image: url("../Designs/Fotos/Parallax1.jpeg");
-  background-attachment: fixed;
 }
 
 #parallax_bg_2 {
-  background-attachment: fixed;
-  background-size: cover;
   background-image: url("../Designs/Fotos/PARQUEDOGATO.jpg");
 }
 
 #parallax_bg_3 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   background-image: url("../Designs/Fotos/Jardim\ Joana\ Dark.jpg");
 }
 
@@ -490,13 +486,13 @@ article {
 /*Seção das regiões*/
 .Regions-IMG {
   transition: all 0.2s ease;
-  width: 130px;
+  width: 140px;
   height: fit-content;
 }
 
 .Regions-IMG:hover {
   cursor: pointer;
-  width: 190px;
+  width: 155px;
 }
 
 .Regions-IMG>g {
@@ -763,6 +759,7 @@ footer nav ul li {
   grid-row: 3;
   justify-self: center;
 }
+
 #footer-Instagram {
   fill: var(--color-red);
 }
@@ -771,7 +768,7 @@ footer nav ul li {
   fill: var(--color-orange);
 }
 
-#footer-Twitter{
+#footer-Twitter {
   fill: var(--color-yellow);
 }
 
@@ -935,13 +932,12 @@ footer nav ul li {
   }
 
   .Regions-IMG {
-    transition: all 0.2s ease;
     width: 120px;
   }
 
   .Regions-IMG:hover {
     cursor: pointer;
-    width: 150px;
+    width: 135px;
   }
 
 }
@@ -1023,17 +1019,30 @@ footer nav ul li {
   }
 
   .Regions-IMG {
-    transition: all 0.2s ease;
+    width: 100px;
+    height: fit-content;
+  }
+
+  .Regions-IMG:hover {
+    cursor: pointer;
+    width: 110px;
+  }
+
+  .Regions-IMG>text {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 300px) {
+
+  .Regions-IMG {
     width: 70px;
+    height: fit-content;
   }
 
   .Regions-IMG:hover {
     cursor: pointer;
     width: 80px;
-  }
-
-  .Regions-IMG>text {
-    font-size: 25px;
   }
 }
 
@@ -1068,11 +1077,7 @@ footer nav ul li {
     font-size: 7px;
   }
 
-  .article-text,
-  .section-flex-child,
-  #card-container,
-  .contacts-container,
-  .Unidade-container {
+  .main-margin {
     margin: 5px 10px 10px;
   }
 
