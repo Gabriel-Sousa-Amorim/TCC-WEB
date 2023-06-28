@@ -142,7 +142,7 @@ const NorteContext = "A unidade da zona norte se localiza no bairro do Parque Ed
 const LesteContext = "a"
 const CentroContext = "A primeira unidade fundada da ONG, localizada no Bom Retiro que é"
 const OesteContext = "a"
-const SulContext = "a"
+const SulContext = "Fundada juntamente com a Unidade leste a Unidade da zona sul se localiza em Santo Amaro. Auxiliando comunidades da região. Com dedicação e empenho, buscamos ajudar os bairros do Capão Redondo, Jardim Ângela, Grajaú, Paraisópolis e Heliópolis, e ainda expandindo nossos esforços auxiliando também a região de Diadema, Embu das Artes e Tabõao da Serra."
 function ChangingContentRegion(idRegion, Region, text, color) {
     let description = document.getElementById("description-container")
     document.getElementById(idRegion).addEventListener("click", function () {
@@ -153,6 +153,9 @@ function ChangingContentRegion(idRegion, Region, text, color) {
         })
         description.children[0].textContent = Region;
         description.children[1].textContent = text;
+        description.style.borderColor = "#000";
+        description.children[0].style.color = "#000";
+        description.children[1].style.color = "#000";
         description.style.background = color;
     })
 }

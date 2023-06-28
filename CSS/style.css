@@ -536,9 +536,9 @@ article {
 
 #description-container {
   flex-basis: 50%;
-  background-color: var(--color-orange);
+  background-color: var(--color-white);
   text-align: center;
-  border-block: 3px solid #000;
+  border: 3px solid var(--color-black);
   border-radius: 5px;
   padding: 15px;
   transition: all 1s;
@@ -549,12 +549,12 @@ article {
 }
 
 #description-container>h3 {
-  color: #202020;
+  color: var(--color-black);
   font-size: 30px;
 }
 
 #description-container>p {
-  color: #202020;
+  color: var(--color-black);
   text-align: justify;
   vertical-align: middle;
 }
