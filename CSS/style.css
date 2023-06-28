@@ -581,7 +581,7 @@ article {
   padding: 15px;
 }
 
-.card-child>h3, p, ul li {
+.card-child>h3, .card-child>p, .card-child>ul li {
   color: var(--color-black);
 }
 
@@ -687,9 +687,9 @@ footer {
   grid-template-rows: repeat(3, auto);
   word-spacing: 2.5px;
   background: #000;
-  color: #ffffff;
   align-items: center;
   z-index: 1;
+  color: #ffffff;
 }
 
 footer>div {
@@ -702,6 +702,7 @@ footer>div {
   grid-row: 1;
   place-self: center;
   place-content: center;
+  color: #ffffff;
 }
 
 .Contacts-nav {
@@ -711,10 +712,12 @@ footer>div {
   place-items: center center;
   place-self: center center;
   text-align: center;
+  color: #ffffff;
 }
 
 footer nav ul li {
   display: inline;
+  color: #ffffff;
 }
 
 .Info-nav {
@@ -741,7 +744,7 @@ footer nav ul li {
   align-self: center;
   vertical-align: middle;
   text-decoration: none;
-  color: #eaeaea;
+  color: #ffffff;
 }
 
 .Footer-link>svg {
