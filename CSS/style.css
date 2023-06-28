@@ -107,6 +107,7 @@ html, body {
   font-size: 10vh;
 }
 
+/*Cabeçalho*/
 header {
   background: linear-gradient(40deg,
       var(--color-red) 0%,
@@ -244,6 +245,64 @@ article {
   font-size: var(--paragraph-size);
 }
 
+/*Seção com textos e imagens na index.html*/
+.section-flex {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin: 5px 250px 20px;
+}
+
+.section-flex-child {
+  flex: 1;
+  margin: 10px;
+  color: var(--color-black);
+  font-size: var(--paragraph-size)
+}
+
+/*Seção de Fundo com parallax predominantemente na index.html*/
+.parallax_bg {
+  height: 700px;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Foto-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#parallax_bg_1 {
+  background-image: url("../Designs/Fotos/Parallax1.jpeg");
+  background-attachment: fixed;
+}
+
+#parallax_bg_2 {
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("../Designs/Fotos/PARQUEDOGATO.jpg");
+}
+
+#parallax_bg_3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../Designs/Fotos/Jardim\ Joana\ Dark.jpg");
+}
+
+.innerLabel {
+  flex: 1;
+  text-align: center;
+  color: #FFF;
+  font-size: 30px;
+  padding: 20px;
+  backdrop-filter: brightness(30%);
+}
+
 /*Layout de redirecionamento para o formulário, visível apenas em celulares*/
 .button-flex-container {
   display: none;
@@ -338,7 +397,7 @@ article {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: repeat-y;
-  
+
 }
 
 #section-Twitter {
@@ -360,6 +419,7 @@ article {
   background-repeat: repeat-y;
 }
 
+/*Redirecionador para o formulário na Sobre.HTML*/
 .form-flex-container {
   display: flex;
   background-color: var(--color-white);
@@ -372,7 +432,6 @@ article {
 
 }
 
-/*Redirecionador para o formulário na Sobre.HTML*/
 .form-flex-container>a:hover {
   transition: all 0.2s;
 }
@@ -397,46 +456,7 @@ article {
   font-size: var(--paragraph-size);
 }
 
-/*Seção de cards dos dias da semana*/
-#card-container {
-  display: flex;
-  column-gap: 10px;
-  row-gap: 15px;
-  flex-wrap: wrap;
-}
-
-.card-child {
-  flex: 1;
-  background-color: #202020;
-  border: 2px solid var(--color-black);
-  border-radius: 5px;
-  padding: 15px;
-}
-
-.card-child>h3, p, ul li {
-  color: #efefef;
-}
-
-.card-child>h3 {
-  text-align: center;
-}
-
-.card-child>p {
-  text-align: justify;
-  text-justify: inter-word;
-  word-spacing: 2px;
-}
-
-.card-child>ul li {
-  list-style-position: inside;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-#Sunday, #Saturday {
-  flex-basis: 100%;
-}
-
+/*Seção possuindo as regiões de são paulo e a descrição*/
 .Unidade-container {
   display: flex;
   align-items: stretch;
@@ -467,6 +487,7 @@ article {
   place-items: center center;
 }
 
+/*Seção das regiões*/
 .Regions-IMG {
   transition: all 0.2s ease;
   width: 130px;
@@ -529,7 +550,6 @@ article {
   flex-direction: column;
   place-items: center center;
   place-content: center center;
-
 }
 
 #description-container>h3 {
@@ -544,63 +564,48 @@ article {
 }
 
 
-
-.parallax_bg {
-  height: 700px;
-  width: 100%;
-  background-attachment: fixed;
-  background-size: cover;
+/*Seção de cards dos dias da semana*/
+#card-container {
   display: flex;
-  align-items: center;
+  column-gap: 10px;
+  row-gap: 15px;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-.Foto-container {
-  display: flex;
-  flex-direction: column;
-}
-
-#parallax_bg_1 {
-  background-image: url("../Designs/Fotos/Parallax1.jpeg");
-  background-attachment: fixed;
-}
-
-#parallax_bg_2 {
-  background-attachment: fixed;
-  background-size: cover;
-  background-image: url("../Designs/Fotos/PARQUEDOGATO.jpg");
-}
-
-#parallax_bg_3 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../Designs/Fotos/Jardim\ Joana\ Dark.jpg");
-}
-
-.innerLabel {
+.card-child {
   flex: 1;
-  text-align: center;
-  color: #FFF;
-  font-size: 30px;
-  padding: 20px;
-  backdrop-filter: brightness(30%);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-black);
+  border-radius: 5px;
+  padding: 15px;
 }
 
-.section-flex {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-}
-
-.section-flex-child {
-  flex: 1;
-  margin: 10px;
+.card-child>h3, p, ul li {
   color: var(--color-black);
-  font-size: var(--paragraph-size)
 }
 
+.card-child>h3 {
+  text-align: center;
+}
 
+.card-child>p {
+  text-align: justify;
+  text-justify: inter-word;
+  word-spacing: 2px;
+}
+
+.card-child>ul li {
+  list-style-position: inside;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#Sunday, #Saturday {
+  flex-basis: 100%;
+}
+
+/*Container Marquee que some conforme o zoom */
 #marquee-container-grid {
   display: grid;
   grid-template-rows: repeat(2, 2fr);
@@ -612,6 +617,7 @@ article {
   height: 63px;
 }
 
+/*Botão para sumir a marquee*/
 #hide-btn {
   appearance: none;
   -webkit-appearance: none;
@@ -658,19 +664,22 @@ marquee>p {
 marquee>a {
   display: inline-block;
   padding-bottom: 6px;
-  background-color: var(--color-white);
   text-decoration: solid;
-  color: var(--color-black);
+  background-color: var(--color-black);
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
   font-size: medium;
   border-radius: 5px;
   padding: 1px;
+  transition: all 0.2s;
 }
 
 marquee>a:hover {
-  background-color: var(--color-red);
+  background-color: var(--color-white);
   color: var(--color-black);
 }
 
+/*Footer global exceto para o Formulari.html*/
 footer {
   margin-top: auto;
   display: grid;
@@ -738,11 +747,12 @@ footer nav ul li {
 .Footer-link>svg {
   vertical-align: middle;
   transition: all 0.2s;
-  fill: #dadada;
+  filter: saturate(70%);
 }
 
 .Footer-link:hover>svg {
   width: 45px;
+  filter: saturate(180%);
 }
 
 .copyright-div {
@@ -750,6 +760,26 @@ footer nav ul li {
   grid-row: 3;
   justify-self: center;
 }
+#footer-Instagram {
+  fill: var(--color-red);
+}
+
+#footer-Facebook {
+  fill: var(--color-orange);
+}
+
+#footer-Twitter{
+  fill: var(--color-yellow);
+}
+
+#footer-Email {
+  fill: var(--color-green-yellow);
+}
+
+#footer-Telefone {
+  fill: var(--color-green);
+}
+
 
 @media (min-width: 2000px) {
 
@@ -758,12 +788,12 @@ footer nav ul li {
   }
 
   #card-container {
-    margin: 5px 400px 10px;
+    justify-items: center;
+    flex-wrap: nowrap;
   }
 
   .card-child {
-    flex-basis: 10%;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   #Sunday {
@@ -777,7 +807,6 @@ footer nav ul li {
 }
 
 @media (min-width: 2600px) {
-
   .main-margin {
     margin: 5px 900px 10px;
   }
@@ -807,6 +836,7 @@ footer nav ul li {
 
   .section-flex {
     margin: 0;
+    margin: 5px 0px 10px;
     flex-direction: column;
   }
 
@@ -875,7 +905,7 @@ footer nav ul li {
     font-size: 30px;
   }
 
-  .main-margin {
+  .main-margin, .section-flex-text {
     margin: 5px 50px 10px;
   }
 

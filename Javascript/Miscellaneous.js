@@ -10,7 +10,7 @@ function CatchTheDay() {
             i.style.color = "#000"
         });
         element.style.boxShadow = `0px 0px 20px ${color}`;
-        element.style.border = `none`;
+        element.style.border = `1px solid black`;
         element.style.backgroundColor = color;
         element.style.zIndex = "0";
         element.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color = "#000")
@@ -156,12 +156,27 @@ function ChangingContentRegion(idRegion, Region, text, color) {
         description.style.background = color;
     })
 }
+
+//
 function ClassRemover() {
-    console.log(1)
+    if (window.matchMedia("(min-width:2000px)").matches) {
+        document.querySelectorAll("section.section-flex").forEach(i => i.classList.add("main-margin"))
+        document.querySelectorAll("div.section-flex-child").forEach(i => i.classList.remove("main-margin"))
+    } else {
+        document.querySelectorAll("section.section-flex").forEach(i => i.classList.remove("main-margin"))
+        document.querySelectorAll("div.section-flex-child").forEach(i => i.classList.add("main-margin"))
+    }
 }
+
+
 
 //Selecionador de funções específicas para cada página:
 switch (document.querySelector("section.main-title").children[0].innerHTML) {
+    case ("HOME"):
+        ClassRemover();
+        window.matchMedia("(min-width: 2000px)").addEventListener("change", ClassRemover)
+        window.matchMedia("(max-width: 900px)").addEventListener("change", ClassRemover)
+        break;
     case ("Sobre Nós"):
         CatchTheDay();
         ChangingContentRegion("SVG-norte", "Zona Norte", NorteContext, "var(--color-red)")
