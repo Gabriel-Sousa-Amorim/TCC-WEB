@@ -108,9 +108,9 @@ function ValidaCPF(x) {
     }
 }
 
-document.getElementById("CPF-Voluntário").addEventListener("blur", function() {
-ValidaCPF(document.getElementById('CPF-Voluntário').value)
-})
+//document.getElementById("CPF-Voluntário").addEventListener("blur", function() {
+//ValidaCPF(document.getElementById('CPF-Voluntário').value)
+//})
 
 const TelefoneExp = new RegExp(/^\9{1}?(\d{4})?[ -]?(\d{4})$/);
 function ValidaTelefone(x) {
@@ -164,19 +164,19 @@ document.getElementById("Email-Doador").addEventListener("blur", function() {
 })
 
 //Valida Imagem
-const ImageExp = new RegExp(/.*\.(jpe?g|png|)$/igm)
 function ValidaImagem(x) {
+    const ImageExp = new RegExp(/.*\.(jpe?g|png|)$/igm)
     x.classList.remove('is-valid')
     x.classList.remove('is-invalid')
-    if(ImageExp.test(x.value)==true) {
+    if (ImageExp.test(x.value) == true) {
         x.classList.add("is-valid");
         return true;
     } else {
         x.classList.add("is-invalid");
         return false;
-    }
-}
-document.getElementById("Foto-Doador").addEventListener("blur", function() {
+    }}
+
+document.getElementById("Foto-Doador").addEventListener("change", function() {
     document.getElementById("Foto-Doador").classList.remove("is-invalid");
     document.getElementById("Foto-Doador").classList.remove("is-valid");
     ValidaImagem(document.getElementById("Foto-Doador"))
