@@ -1,5 +1,3 @@
-
-
 //Função para mudança de tema pela mudança das váriaveis no CSS; 
 function darkToogle() {
     const btnCheck = document.getElementById("dark-button");
