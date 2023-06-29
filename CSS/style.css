@@ -1,6 +1,5 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Moirai+One&family=Reem+Kufi:wght@400;500;600;700&family=Rubik+Puddles&family=Sacramento&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&family=Sacramento&display=swap');
 :root {
   --color-red: #ff5d58;
   --color-orange: #f59a50;
