@@ -108,6 +108,10 @@ function ValidaCPF(x) {
     }
 }
 
+document.getElementById("CPF-Voluntário").addEventListener("blur", function() {
+ValidaCPF(document.getElementById('CPF-Voluntário').value)
+})
+
 const TelefoneExp = new RegExp(/^\9{1}?(\d{4})?[ -]?(\d{4})$/);
 function ValidaTelefone(x) {
     //Regex Expression própria, verifica se há o digito 9 no início e após isso verifica se há 4 digitos numéricos 

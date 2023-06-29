@@ -13,6 +13,14 @@ function CatchTheDay() {
         element.style.border = `2px solid black`;
         element.style.backgroundColor = color;
         element.style.zIndex = "0";
+        element.style.filter = 'none'
+        element.style.transition = "all 0.2s"
+        element.addEventListener("mouseover", function() {
+        element.style.filter = 'saturate(135%)'
+        })
+        element.addEventListener("mouseout", function() {
+            element.style.filter = 'saturate(100%)'
+        })
         element.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color = "#000")
         document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1");
     }
