@@ -13,6 +13,14 @@ function CatchTheDay() {
         element.style.border = `2px solid black`;
         element.style.backgroundColor = color;
         element.style.zIndex = "0";
+        element.style.filter = 'none'
+        element.style.transition = "all 0.2s"
+        element.addEventListener("mouseover", function() {
+        element.style.filter = 'saturate(135%)'
+        })
+        element.addEventListener("mouseout", function() {
+            element.style.filter = 'saturate(100%)'
+        })
         element.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color = "#000")
         document.querySelectorAll(".card-child").forEach(i => i.style.zIndex = "1");
     }
@@ -22,37 +30,31 @@ function CatchTheDay() {
             const Sunday = document.getElementById("Sunday");
             styleProcess(Sunday, "var(--color-red)");
             break;
-
         //Caso Segunda
         case (1):
             const Monday = document.getElementById("Monday");
             styleProcess(Monday, "var(--color-orange)")
             break;
-
         //Caso Terça
         case (2):
             const Tuesday = document.getElementById("Tuesday");
             styleProcess(Tuesday, "var(--color-yellow)")
             break;
-
         //Caso Quarta
         case (3):
             const Wednesday = document.getElementById("Wednesday");
             styleProcess(Wednesday, "var(--color-green)")
             break;
-
         //Caso Quinta
         case (4):
             const Thursday = document.getElementById("Thursday");
             styleProcess(Thursday, "var(--color-yellow)")
             break;
-
         //Caso Sexta
         case (5):
             const Friday = document.getElementById("Friday");
             styleProcess(Friday, "var(--color-orange)")
             break;
-
         //Caso Sábado
         case (6):
             const Saturday = document.getElementById("Saturday");;
@@ -138,6 +140,8 @@ function Observed_elmt() {
     intersectionObserver.observe(observedElement);
 }
 
+//Conteúdo Relacionado as regiões da página Sobre.HTML 
+//Com o conteudo e a função para por ou mudar o conteudo da description-container e etc... 
 const NorteContext = "A unidade da zona norte se localiza no bairro do Parque Edu Chaves, onde há fácil acesso para outros bairros da Zona Norte como Vila Medeiros, Vila Maria, Jaçanã, Tremembé, mas também atendendo regiões mais distantes da própria zona norte, além de realizarmos coleta e distribuição de doações em Guarulhos."
 const LesteContext = "a"
 const CentroContext = "A primeira unidade fundada da ONG, localizada no Bom Retiro que é"
@@ -160,33 +164,31 @@ function ChangingContentRegion(idRegion, Region, text, color) {
     })
 }
 
-//
+//Media queries ativadas para por a classe main-margin em elementos específicos conforme o zoom;
 function ClassRemover() {
     if (window.matchMedia("(min-width:2000px)").matches) {
-        document.querySelectorAll("section.section-flex").forEach(i => i.classList.add("main-margin"))
-        document.querySelectorAll("div.section-flex-child").forEach(i => i.classList.remove("main-margin"))
+        document.querySelectorAll("section.section-flex").forEach(i => i.classList.add("main-margin"));
+        document.querySelectorAll("div.section-flex-child").forEach(i => i.classList.remove("main-margin"));
     } else {
-        document.querySelectorAll("section.section-flex").forEach(i => i.classList.remove("main-margin"))
-        document.querySelectorAll("div.section-flex-child").forEach(i => i.classList.add("main-margin"))
-    }
-}
-
-
+        document.querySelectorAll("section.section-flex").forEach(i => i.classList.remove("main-margin"));
+        document.querySelectorAll("div.section-flex-child").forEach(i => i.classList.add("main-margin"));
+    };
+};
 
 //Selecionador de funções específicas para cada página:
 switch (document.querySelector("section.main-title").children[0].innerHTML) {
     case ("HOME"):
         ClassRemover();
-        window.matchMedia("(min-width: 2000px)").addEventListener("change", ClassRemover)
-        window.matchMedia("(max-width: 900px)").addEventListener("change", ClassRemover)
+        window.matchMedia("(min-width: 2000px)").addEventListener("change", ClassRemover);
+        window.matchMedia("(max-width: 900px)").addEventListener("change", ClassRemover);
         break;
     case ("Sobre Nós"):
         CatchTheDay();
-        ChangingContentRegion("SVG-norte", "Zona Norte", NorteContext, "var(--color-red)")
-        ChangingContentRegion("SVG-leste", "Zona Leste", LesteContext, "var(--color-green-yellow)")
-        ChangingContentRegion("SVG-sul", "Zona Sul", SulContext, "var(--color-green)")
-        ChangingContentRegion("SVG-oeste", "Zona Oeste", OesteContext, "var(--color-orange)")
-        ChangingContentRegion("SVG-centro", "Zona Central", CentroContext, "var(--color-yellow)")
+        ChangingContentRegion("SVG-norte", "Zona Norte", NorteContext, "var(--color-red)");
+        ChangingContentRegion("SVG-oeste", "Zona Oeste", OesteContext, "var(--color-orange)");
+        ChangingContentRegion("SVG-centro", "Zona Central", CentroContext, "var(--color-yellow)");
+        ChangingContentRegion("SVG-leste", "Zona Leste", LesteContext, "var(--color-green-yellow)");
+        ChangingContentRegion("SVG-sul", "Zona Sul", SulContext, "var(--color-green)");
         break;
     case ("Contatos"):
         ContactLink("section-Instagram", "https://www.instagram.com/ong_mangara/");
@@ -197,9 +199,7 @@ switch (document.querySelector("section.main-title").children[0].innerHTML) {
 
 //Funções globais
 document.querySelector("body").addEventListener("load", Observed_elmt, true)
-
 document.getElementById("hide-btn").addEventListener("click", hide_marquee, true)
-
 document.getElementById("copyright-year").innerHTML = year;
 
 LockScroll();

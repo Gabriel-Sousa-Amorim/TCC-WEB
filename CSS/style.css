@@ -262,7 +262,7 @@ article {
 
 /*Seção de Fundo com parallax predominantemente na index.html*/
 .parallax_bg {
-  height: 700px;
+  height: 600px;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -283,11 +283,12 @@ article {
 }
 
 #parallax_bg_2 {
-  background-image: url("../Designs/Fotos/PARQUEDOGATO.jpg");
+  background-image: url("../Designs/Fotos/Paraisópolis.jpg");
 }
 
 #parallax_bg_3 {
-  background-image: url("../Designs/Fotos/Jardim\ Joana\ Dark.jpg");
+  background-image: url("../Designs/Fotos/JARDIM\ FONTALIS\ Reduzido.jpg");
+  background-position: right;
 }
 
 .innerLabel {
@@ -577,20 +578,28 @@ article {
   border: 2px solid var(--color-black);
   border-radius: 5px;
   padding: 15px;
+  transition: all 0.5s;
+}
+.card-child:hover  {
+  padding: 20px;
+  border-color: var(--color-white);
+  filter: invert(1);
+  cursor: pointer;
 }
 
 .card-child>h3, .card-child>p, .card-child>ul li {
   color: var(--color-black);
 }
-
 .card-child>h3 {
   text-align: center;
+  font-weight: 900;
 }
 
 .card-child>p {
   text-align: justify;
   text-justify: inter-word;
   word-spacing: 2px;
+  margin-bottom: 10px;
 }
 
 .card-child>ul li {
