@@ -298,7 +298,12 @@ article {
   padding: 20px;
   backdrop-filter: brightness(30%);
 }
-
+.link-ref {
+  color: var(--color-red);
+}
+.link-ref:hover {
+  filter: brightness(50%);
+}
 /*Layout de redirecionamento para o formulário, visível apenas em celulares*/
 .button-flex-container {
   display: none;
