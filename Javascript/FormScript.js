@@ -107,7 +107,6 @@ function ValidaCPF(x) {
         console.log(false)
     }
 }
-
 //document.getElementById("CPF-Voluntário").addEventListener("blur", function() {
 //ValidaCPF(document.getElementById('CPF-Voluntário').value)
 //})
