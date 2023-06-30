@@ -10,7 +10,7 @@ function CatchTheDay() {
             i.style.color = "#000"
         });
         element.style.boxShadow = `0px 0px 20px ${color}`;
-        element.style.border = `1px solid black`;
+        element.style.border = `2px solid black`;
         element.style.backgroundColor = color;
         element.style.zIndex = "0";
         element.querySelector("ul").querySelectorAll("li").forEach(i => i.style.color = "#000")

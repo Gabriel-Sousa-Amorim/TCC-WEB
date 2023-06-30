@@ -298,7 +298,9 @@ article {
   padding: 20px;
   backdrop-filter: brightness(30%);
 }
-
+.link-ref {
+  color: var(--color-black);
+}
 /*Layout de redirecionamento para o formulário, visível apenas em celulares*/
 .button-flex-container {
   display: none;
