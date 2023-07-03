@@ -4,187 +4,155 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projeto TCC de uma ONG com direcionamento em doações">
+    <meta name="keywords" content="ong, mangará, mangara">
+    <meta name="author" content="Gabriel Sousa">
     <link rel="stylesheet" href="CSS/style.css" />
-    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     <link
       rel="shortcut icon"
       href="Designs/ICONS/Icon_Mangará_yellow.png"
       type="image/x-icon"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
     <title>ONG Mangará</title>
   </head>
   <!--Função Observed_elmt() para reconhecer em qual seção estamos-->
 
-  <body>
-    <section id="Moving-page">
-      <div>
-        <img src="Designs/ICONS/Icon_Mangara.svg" alt="Ícone Mangará" />
-        <h1 class="header-title">Organização Mangará</h1>
-      </div>
+<body>
+  <section id="Moving-page">
+    <div>
+      <img src="Designs/ICONS/Icon_Mangara.svg" alt="Ícone Mangará" />
+      <h1 class="header-title">Organização Mangará</h1>
+    </div>
+  </section>
+
+  <!--Header Container-->
+  <header>
+    <a href="index.html">
+      <img src="Designs/ICONS/Icon_Mangara.svg" alt="Ícone Mangará" />
+      <h1 class="header-title">Organização Mangará</h1>
+    </a>
+  </header>
+
+  <!--Nav bar-->
+  <nav>
+    <!--Botão Dark Mode-->
+    <div class="nav-flex-item">
+      <label class="darkModeElement bi bi-moon-stars-fill" for="DarkButton">
+        Modo Escuro
+      </label>
+      <input class="darkModeElement" checked="checked" type="checkbox" id="DarkButton" />
+    </div>
+    <!--Nav bar-->
+    <ul class="nav-flex-container">
+      <li class="nav-flex-item">
+        <a href="index.html"><span class="bi bi-house nav-icon"></span>Home</a>
+      </li>
+      <li class="nav-flex-item">
+        <a style="border: 1px solid #fff" href="Sobre.HTML"><span class="bi bi-file-earmark-text nav-icon"></span>Sobre
+          nós</a>
+      </li>
+      <li class="nav-flex-item">
+        <a href="Contato.HTML"><span class="bi bi-telephone nav-icon"></span>Contatos</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <section class="main-title">
+      <h1>Sobre Nós</h1>
     </section>
 
-    <!--Header Container-->
-    <header>
-      <a href="index.html">
-        <img src="Designs/ICONS/Icon_Mangara.svg" alt="Ícone Mangará" />
-        <h1 class="header-title">Organização Mangará</h1>
-      </a>
-    </header>
-
-    <!--Nav bar-->
-    <nav>
-      <!--Botão Dark Mode-->
-      <div class="nav-flex-item">
-        <label class="darkModeElement bi bi-moon-stars-fill" for="DarkButton">
-          Modo Escuro
-        </label>
-        <input
-          class="darkModeElement"
-          checked="checked"
-          type="checkbox"
-          id="DarkButton"
-        />
-      </div>
-      <!--Nav bar-->
-      <ul class="nav-flex-container">
-        <li class="nav-flex-item">
-          <a href="index.html"
-            ><span class="bi bi-house nav-icon"></span>Home</a
-          >
-        </li>
-        <li class="nav-flex-item">
-          <a style="border: 1px solid #fff" href="Sobre.HTML"
-            ><span class="bi bi-file-earmark-text nav-icon"></span>Sobre nós</a
-          >
-        </li>
-        <li class="nav-flex-item">
-          <a href="Contato.HTML"
-            ><span class="bi bi-telephone nav-icon"></span>Contatos</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <main>
-      <section class="main-title">
-        <h1>Sobre Nós</h1>
-      </section>
-
       <article class="main-margin">
-        <h3 style="color: var(--color-black)">Significado Mangará.</h3>
+        <h3 style="color: var(--color-black);">Significado Mangará.</h3>
         <p class="article-text">
-          Quando Pablo Sousa o idealizador da ONG escolheu o nome, ele buscou
-          por nomes com uma pronúncia fácil e de grande significância, a escolha
-          foi
-          <em>'Mangará'</em> que significa “Coração” em Tupi-Guarani, tal
-          escolha é justificada pelo fato da organização fazer um direcionamento
-          de doações dadas de coração. Além de um nome com resgate de uma
-          herança brasileira.
+          Quando Pablo Sousa o idealizador da ONG escolheu o nome, ele buscou por nomes
+          com uma pronúncia fácil e de grande significância, a escolha foi
+          <em>'Mangará'</em> que significa “Coração” em Tupi-Guarani, tal escolha é
+          justificada pelo fato da organização fazer um direcionamento de
+          doações dadas de coração. Além de um nome com resgate de uma herança brasileira.
         </p>
       </article>
       <article class="main-margin">
-        <h3 style="color: var(--color-black)">Eventos que organizamos.</h3>
-        <p style="color: var(--color-red)" class="article-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-          accusantium repudiandae esse, reprehenderit repellat id minus. Nam
-          voluptatem, dolorem porro animi tenetur culpa fugit dolore, illum
-          minus repellendus, atque odio.
-        </p>
-      </article>
-      <article class="main-margin">
-        <h3 style="color: var(--color-black)">Missão.</h3>
-        <p style="color: var(--color-red)" class="article-text">
-          A nossa missão como organização é ajudar as pessoas que estão em
-          situação de rua ou em comunidades carentes.
-        </p>
-      </article>
-      <article class="main-margin">
-        <h3 style="color: var(--color-black)">Visão.</h3>
+        <h3 style="color: var(--color-black);">Eventos que organizamos</h3>
         <p class="article-text">
-          A nossa missão como organização é ajudar as pessoas que estão em
-          situação de rua ou em comunidades carentes.
+          Quando Pablo Sousa o idealizador da ONG escolheu o nome, ele buscou por nomes
+          com uma pronúncia fácil e de grande significância, a escolha foi
+          <em>'Mangará'</em> que significa “Coração” em Tupi-Guarani, tal escolha é
+          justificada pelo fato da organização fazer um direcionamento de
+          doações dadas de coração. Além de um nome com resgate de uma
+          brasilidade.
         </p>
       </article>
       <article class="main-margin">
-        <h3 style="color: var(--color-black)">Valores.</h3>
-        <p style="color: var(--color-red)" class="article-text">
-          A nossa missão como organização é ajudar as pessoas que estão em
-          situação de rua ou em comunidades carentes.
+        <h3 style="color: var(--color-black);">Significado Mangará</h3>
+        <p class="article-text">
+          Quando Pablo Sousa o idealizador da ONG escolheu o nome, ele buscou por nomes
+          com uma pronúncia fácil e de grande significância, a escolha foi
+          <em>'Mangará'</em> que significa “Coração” em Tupi-Guarani, tal escolha é
+          justificada pelo fato da organização fazer um direcionamento de
+          doações dadas de coração. Além de um nome com resgate de uma
+          brasilidade.
         </p>
       </article>
 
-      <section class="main-title">
-        <h1>Seja um Voluntário</h1>
-      </section>
+    <section class="main-title">
+      <h1>Seja um Voluntário</h1>
+    </section>
 
       <section class="main-margin form-flex-container">
-        <h3>Preencha nossos formulários de doação ou para voluntariar-se</h3>
+        <h3>Entre nos Formulários de doação ou para voluntariar-se</h3>
         <a class="button-flex-container-child" href="Formulário.html"
           >Entre Aqui</a
         >
       </section>
 
-      <section class="main-title">
-        <h1>Eventos Massivos de Doações</h1>
-      </section>
+    <section class="main-title">
+      <h1>Eventos Massivos de Doações</h1>
+    </section>
 
-      <!-- conteudo adicionar -->
-      <section class="main-title">
-        <h1>Nossas Unidades</h1>
-      </section>
-      <article class="main-margin">
-        <p class="article-text">
-          Possuímos atualmente cinco unidades, cada uma para atender bairros da
-          zona em que a unidade se localiza, possuem localizações estratégicas
-          para atender outros municípios, atendemos municípios como:
-        </p>
-        <div class="list-container">
-          <ul class="list-group">
-            <li>Guarulhos.</li>
-            <li>Itaquaquecetuba.</li>
-            <li>Mogi das Cruzes.</li>
-            <li>Poá.</li>
-            <li>ABC paulista.</li>
-            <li>Diadema.</li>
-          </ul>
-          <ul class="list-group">
-            <li>Embu das Artes.</li>
-            <li>Tabõao da Serra.</li>
-            <li>Osasco.</li>
-            <li>Carapicuíba.</li>
-            <li>Barueri.</li>
-          </ul>
-        </div>
-        <p class="article-text">
-          As localidades efetuam cada uma o tratamento e fiscalização das
-          doações, após a fiscalização dos items o redirecionamento pode ser
-          efetuado. As unidades se ajudam entre sí com suprimentos e voluntários
-          conforme a demanda. Veja a seguir as localidades e as informações
-          sobre elas:
-        </p>
-      </article>
-      <section class="Unidade-container main-margin">
-        <section class="Unidade-child">
-          <section class="SP-regions" id="section-norte">
-            <svg
-              class="Regions-IMG"
-              id="SVG-norte"
-              version="1.0"
-              xmlns="http://www.w3.org/2000/svg"
-              width="409.000000pt"
-              height="309.000000pt"
-              viewBox="0 0 409.000000 249.000000"
-              preserveAspectRatio="xMidYMid meet"
-            >
-              <g
-                transform="translate(0.000000,309.000000) scale(0.100000,-0.100000)"
-                stroke="none"
-              >
-                <path
-                  d="M3720 2711 c-25 -35 -64 -74 -96 -95 -30 -20 -54 -40 -54 -44 0 -4
+    <!-- conteudo adicionar -->
+    <section class="main-title">
+      <h1>Nossas Unidades</h1>
+    </section>
+    <article class="main-margin">
+      <p class="article-text">
+        Possuímos atualmente cinco unidades, cada uma para atender bairros da
+        zona em que a unidade se localiza, possuem localizações estratégicas
+        para atender outros municípios, atendemos municípios como:
+      </p>
+      <div class="list-container">
+        <ul class="list-group">
+          <li>Guarulhos.</li>
+          <li>Itaquaquecetuba.</li>
+          <li>Mogi das Cruzes.</li>
+          <li>Poá.</li>
+          <li>ABC paulista.</li>
+          <li>Diadema.</li>
+        </ul>
+        <ul class="list-group">
+          <li>Embu das Artes.</li>
+          <li>Tabõao da Serra.</li>
+          <li>Osasco.</li>
+          <li>Carapicuíba.</li>
+          <li>Barueri.</li>
+        </ul>
+      </div>
+      <p class="article-text">
+        As localidades efetuam cada uma o tratamento e fiscalização das doações, após a fiscalização dos items o
+        redirecionamento pode ser efetuado. As unidades se ajudam entre si com suprimentos e voluntários conforme a
+        demanda. Veja a seguir as localidades e as informações sobre elas:
+      </p>
+    </article>
+    <section class="Unidade-container main-margin">
+      <section class="Unidade-child">
+        <section class="SP-regions" id="section-norte">
+          <svg class="Regions-IMG" id="SVG-norte" version="1.0" xmlns="http://www.w3.org/2000/svg" width="409.000000pt"
+            height="309.000000pt" viewBox="0 0 409.000000 249.000000" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,309.000000) scale(0.100000,-0.100000)" stroke="none">
+              <path d="M3720 2711 c-25 -35 -64 -74 -96 -95 -30 -20 -54 -40 -54 -44 0 -4
                 -14 -22 -31 -39 -34 -37 -71 -43 -118 -18 -28 14 -30 13 -64 -24 -20 -22 -71
                 -60 -114 -86 -43 -25 -89 -54 -103 -65 -24 -18 -24 -19 -6 -38 31 -35 17 -64
                 -45 -94 -62 -29 -85 -55 -123 -142 -23 -52 -25 -63 -15 -97 10 -32 9 -42 -5
@@ -218,29 +186,16 @@
                 145 21 46 26 67 20 94 -9 41 -8 38 -22 73 -10 23 -9 34 4 59 13 25 15 48 9
                 112 -9 108 0 127 80 178 l66 42 -6 76 c-6 71 -5 77 23 121 17 26 42 55 57 65
                 71 49 75 57 75 142 l0 80 55 55 c30 30 55 63 55 74 0 26 -58 79 -95 86 -16 3
-                -37 8 -46 12 -12 5 -28 -9 -59 -54z"
-                />
-              </g>
-              <text x="150" y="200" fill="#000">ZONA NORTE</text>
-            </svg>
-          </section>
-          <section class="SP-regions" id="section-centro">
-            <svg
-              class="Regions-IMG"
-              id="SVG-oeste"
-              version="1.0"
-              xmlns="http://www.w3.org/2000/svg"
-              width="402.000000pt"
-              height="392.000000pt"
-              viewBox="0 0 200.000000 392.000000"
-              preserveAspectRatio="xMidYMid meet"
-            >
-              <g
-                transform="translate(0.000000,392.000000) scale(0.100000,-0.100000)"
-                stroke="none"
-              >
-                <path
-                  d="M1620 3722 c-19 -9 -49 -36 -66 -58 -26 -35 -32 -53 -37 -115 -3 -41
+                -37 8 -46 12 -12 5 -28 -9 -59 -54z" />
+            </g>
+            <text x="150" y="200" fill="#000">ZONA NORTE</text>
+          </svg>
+        </section>
+        <section class="SP-regions" id="section-centro">
+          <svg class="Regions-IMG" id="SVG-oeste" version="1.0" xmlns="http://www.w3.org/2000/svg" width="402.000000pt"
+            height="392.000000pt" viewBox="0 0 200.000000 392.000000" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,392.000000) scale(0.100000,-0.100000)" stroke="none">
+              <path d="M1620 3722 c-19 -9 -49 -36 -66 -58 -26 -35 -32 -53 -37 -115 -3 -41
                 -11 -87 -18 -104 l-12 -30 -9 39 c-4 22 -13 45 -19 53 -13 15 -53 18 -44 3 7
                 -11 -45 -82 -86 -117 -15 -13 -32 -36 -39 -53 -11 -26 -10 -37 10 -82 31 -73
                 64 -119 106 -148 20 -14 57 -43 83 -66 25 -22 54 -44 64 -47 22 -8 22 -18 -5
@@ -263,27 +218,14 @@
                 42 -145 68 -73 54 -79 63 -86 125 l-5 53 51 48 c28 27 51 53 51 58 0 5 19 21
                 41 36 29 19 54 27 87 28 42 0 48 3 73 40 31 44 49 112 49 179 0 64 -45 101
                 -184 150 -100 35 -114 38 -180 32 -39 -4 -145 -7 -236 -7 l-165 -1 -43 47
-                c-61 68 -180 225 -228 301 -42 67 -110 124 -149 124 -11 0 -36 -8 -55 -18z"
-                ></path>
-              </g>
-              <text x="120" y="200" fill="#000">ZONA OESTE</text>
-            </svg>
-            <svg
-              class="Regions-IMG"
-              id="SVG-centro"
-              version="1.0"
-              xmlns="http://www.w3.org/2000/svg"
-              width="299.000000pt"
-              height="297.000000pt"
-              viewBox="0 0 260.000000 307.000000"
-              preserveAspectRatio="xMidYMid meet"
-            >
-              <g
-                transform="translate(0.000000,297.000000) scale(0.100000,-0.100000)"
-                stroke="none"
-              >
-                <path
-                  d="M1000 2587 c0 -7 5 -18 10 -23 16 -16 -5 -129 -30 -164 -17 -23 -27
+                c-61 68 -180 225 -228 301 -42 67 -110 124 -149 124 -11 0 -36 -8 -55 -18z"></path>
+            </g>
+            <text x="120" y="200" fill="#000">ZONA OESTE</text>
+          </svg>
+          <svg class="Regions-IMG" id="SVG-centro" version="1.0" xmlns="http://www.w3.org/2000/svg" width="299.000000pt"
+            height="297.000000pt" viewBox="0 0 260.000000 307.000000" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,297.000000) scale(0.100000,-0.100000)" stroke="none">
+              <path d="M1000 2587 c0 -7 5 -18 10 -23 16 -16 -5 -129 -30 -164 -17 -23 -27
                 -29 -45 -24 -35 9 -87 -24 -155 -98 -57 -63 -61 -70 -54 -103 6 -35 6 -35 -29
                 -35 -52 0 -85 16 -128 60 -35 36 -44 40 -86 40 -30 0 -60 -8 -81 -20 -18 -11
                 -44 -20 -57 -20 -33 0 -106 -56 -136 -102 -13 -21 -30 -40 -38 -43 -10 -4 -3
@@ -306,27 +248,14 @@
                 33 88 47 117 17 138 39 88 91 -23 24 -24 29 -12 59 11 31 10 34 -14 54 -36 30
                 -47 107 -19 125 22 14 26 42 8 60 -7 7 -39 12 -75 12 -56 0 -66 3 -98 31 -35
                 31 -39 32 -143 35 -96 2 -274 16 -389 30 -32 4 -43 10 -43 22 0 12 -3 14 -8 4
-                -11 -16 -266 1 -336 23 -60 18 -66 19 -66 2z"
-                ></path>
-              </g>
-              <text x="90" y="140" fill="#000">CENTRO</text>
-            </svg>
-            <svg
-              class="Regions-IMG"
-              id="SVG-leste"
-              version="1.0"
-              xmlns="http://www.w3.org/2000/svg"
-              width="409.000000pt"
-              height="323.000000pt"
-              viewBox="30 0 409.000000 323.000000"
-              preserveAspectRatio="xMidYMid meet"
-            >
-              <g
-                transform="translate(0.000000,323.000000) scale(0.100000,-0.100000)"
-                stroke="none"
-              >
-                <path
-                  d="M3277 2963 c-4 -3 -7 -15 -7 -25 0 -21 -4 -22 -30 -6 -16 11 -22 9
+                -11 -16 -266 1 -336 23 -60 18 -66 19 -66 2z"></path>
+            </g>
+            <text x="90" y="140" fill="#000">CENTRO</text>
+          </svg>
+          <svg class="Regions-IMG" id="SVG-leste" version="1.0" xmlns="http://www.w3.org/2000/svg" width="409.000000pt"
+            height="323.000000pt" viewBox="30 0 409.000000 323.000000" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,323.000000) scale(0.100000,-0.100000)" stroke="none">
+              <path d="M3277 2963 c-4 -3 -7 -15 -7 -25 0 -21 -4 -22 -30 -6 -16 11 -22 9
               -33 -6 -15 -20 -35 -19 -93 5 -28 11 -36 10 -59 -5 -15 -10 -30 -27 -32 -37
               -6 -23 -16 -24 -33 -4 -14 17 -60 20 -60 4 0 -6 5 -19 10 -30 8 -14 7 -19 -2
               -20 -94 -3 -168 -19 -197 -40 -30 -22 -42 -24 -137 -23 -98 2 -107 4 -179 39
@@ -363,29 +292,16 @@
               63 -63 140 -12 61 -32 81 -73 75 -19 -3 -22 -9 -23 -48 0 -66 -11 -83 -45 -76
               -33 6 -113 -31 -142 -67 -13 -15 -20 -18 -24 -9 -2 6 -15 12 -28 12 -33 0 -49
               31 -33 66 11 24 10 28 -12 45 -50 38 -52 41 -41 52 15 15 14 50 -1 65 -13 13
-              -50 16 -61 5z"
-                ></path>
-              </g>
-              <text x="130" y="160" fill="#000">ZONA LESTE</text>
-            </svg>
-          </section>
-          <section class="SP-regions" id="section-sul">
-            <svg
-              class="Regions-IMG"
-              id="SVG-sul"
-              version="1.0"
-              xmlns="http://www.w3.org/2000/svg"
-              width="409.000000pt"
-              height="563.000000pt"
-              viewBox="0 0 409.000000 563.000000"
-              preserveAspectRatio="xMidYMid meet"
-            >
-              <g
-                transform="translate(0.000000,563.000000) scale(0.100000,-0.100000)"
-                stroke="none"
-              >
-                <path
-                  d="M2840 5243 c0 -25 -8 -45 -26 -64 -14 -15 -40 -42 -58 -61 -18 -18
+              -50 16 -61 5z"></path>
+            </g>
+            <text x="130" y="160" fill="#000">ZONA LESTE</text>
+          </svg>
+        </section>
+        <section class="SP-regions" id="section-sul">
+          <svg class="Regions-IMG" id="SVG-sul" version="1.0" xmlns="http://www.w3.org/2000/svg" width="409.000000pt"
+            height="563.000000pt" viewBox="0 0 409.000000 563.000000" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,563.000000) scale(0.100000,-0.100000)" stroke="none">
+              <path d="M2840 5243 c0 -25 -8 -45 -26 -64 -14 -15 -40 -42 -58 -61 -18 -18
                 -38 -55 -45 -81 -12 -40 -19 -48 -45 -56 -26 -7 -35 -4 -57 15 -29 28 -55 30
                 -80 8 -28 -25 -97 -24 -118 2 -16 21 -18 21 -79 4 -34 -10 -85 -29 -113 -44
                 -28 -14 -59 -26 -70 -26 -13 0 -21 -12 -30 -42 -6 -24 -13 -49 -15 -55 -6 -22
@@ -432,89 +348,88 @@
                 299 144 51 47 52 50 46 94 -4 31 -1 51 9 65 12 14 14 34 9 82 -5 46 -2 75 9
                 105 8 24 18 75 20 115 3 39 8 77 12 83 14 23 -103 163 -143 170 -18 4 -28 12
                 -30 27 -2 13 -13 29 -24 37 -19 14 -32 33 -69 107 -15 31 -36 49 -55 49 -2 0
-                -4 -16 -4 -37z"
-                />
-              </g>
-              <text x="110" y="160" fill="#000">ZONA SUL</text>
-            </svg>
-          </section>
-        </section>
-        <section id="description-container">
-          <h3>
-            Clique em qualquer região para saber sobre a unidade da respectiva
-            região
-          </h3>
-          <p></p>
+                -4 -16 -4 -37z" />
+            </g>
+            <text x="110" y="160" fill="#000">ZONA SUL</text>
+          </svg>
         </section>
       </section>
+      <section id="description-container">
+        <h3>
+          Clique em qualquer região para saber sobre a unidade da respectiva
+          região
+        </h3>
+        <p></p>
+      </section>
+    </section>
 
-      <section class="main-title">
-        <h1>Nossa rotina</h1>
-      </section>
-      <section id="card-container" class="main-margin">
-        <div id="Sunday" class="card-child">
-          <h3>Domingo</h3>
-          <p>Nossas atividades no domingo são:</p>
-          <ul>
-            <li>Discussões sobre o rumo da Organização.</li>
-            <li>Trazer novas pautas a ONG.</li>
-          </ul>
-        </div>
-        <div id="Monday" class="card-child">
-          <h3>Segunda-feira</h3>
-          <p>Nossas atividades na segunda-feira são:</p>
-          <ul>
-            <li>Coleta na Zona Norte de São Paulo.</li>
-            <li>Coletas de Guarulhos.</li>
-            <li>Trazer as doações a Unidade da Zona Norte.</li>
-          </ul>
-        </div>
-        <div id="Tuesday" class="card-child">
-          <h3>Terça-feira</h3>
-          <p>Nossas atividades na terça-feira são:</p>
-          <ul>
-            <li>Coleta na Zona Leste de São Paulo.</li>
-            <li>Coleta Itaquaquecetuba, Mogi das cruzes e Póa.</li>
-            <li>Trazer as doações a Unidade da Zona Leste.</li>
-          </ul>
-        </div>
-        <div id="Wednesday" class="card-child">
-          <h3>Quarta-feira</h3>
-          <p>Nossas atividades na quarta-feira são:</p>
-          <ul>
-            <li>Coleta na Zona Centro Sul de São Paulo.</li>
-            <li>Coleta no ABC. paulista.</li>
-            <li>Trazer as doações as Unidades da Zona Centro e Zona Leste.</li>
-          </ul>
-        </div>
-        <div id="Thursday" class="card-child">
-          <h3>Quinta-feira</h3>
-          <p>Nossas atividades na quinta-feira são:</p>
-          <ul>
-            <li>Coletas na Zona Sul de São Paulo.</li>
-            <li>Coletas em Diadema, Embu das Artes e Tabõao da Serra.</li>
-            <li>Trazer as doações a Unidade da Zona Sul</li>
-          </ul>
-        </div>
-        <div id="Friday" class="card-child">
-          <h3>Sexta-feira</h3>
-          <p>Nossas atividades na sexta-feira são:</p>
-          <ul>
-            <li>Coletas na Zona Oeste e Noroeste de São Paulo.</li>
-            <li>Coletas em Osasco, Carapicuíba e Barueri.</li>
-            <li>Trazer as doações a Unidade da Zona Oeste</li>
-          </ul>
-        </div>
-        <div id="Saturday" class="card-child">
-          <h3>Sábado</h3>
-          <p>Nossas atividades no sábado são:</p>
-          <ul>
-            <li>Separação e tratamento das doações</li>
-            <li>Direcionamento das doações</li>
-          </ul>
-        </div>
-      </section>
-    </main>
+    <section class="main-title">
+      <h1>Nossa rotina</h1>
+    </section>
+    <section id="card-container" class="main-margin">
+      <div id="Sunday" class="card-child">
+        <h3>Domingo</h3>
+        <p>Nossas atividades no domingo são:</p>
+        <ul>
+          <li>Discussões sobre o rumo da Organização.</li>
+          <li>Trazer novas pautas a ONG.</li>
+        </ul>
+      </div>
+      <div id="Monday" class="card-child">
+        <h3>Segunda-feira</h3>
+        <p>Nossas atividades na segunda-feira são:</p>
+        <ul>
+          <li>Coleta na Zona Norte de São Paulo.</li>
+          <li>Coletas de Guarulhos.</li>
+          <li>Trazer as doações a Unidade da Zona Norte.</li>
+        </ul>
+      </div>
+      <div id="Tuesday" class="card-child">
+        <h3>Terça-feira</h3>
+        <p>Nossas atividades na terça-feira são:</p>
+        <ul>
+          <li>Coleta na Zona Leste de São Paulo.</li>
+          <li>Coleta Itaquaquecetuba, Mogi das cruzes e Póa.</li>
+          <li>Trazer as doações a Unidade da Zona Leste.</li>
+        </ul>
+      </div>
+      <div id="Wednesday" class="card-child">
+        <h3>Quarta-feira</h3>
+        <p>Nossas atividades na quarta-feira são:</p>
+        <ul>
+          <li>Coleta na Zona Centro Sul de São Paulo.</li>
+          <li>Coleta no ABC. paulista.</li>
+          <li>Trazer as doações as Unidades da Zona Centro e Zona Leste.</li>
+        </ul>
+      </div>
+      <div id="Thursday" class="card-child">
+        <h3>Quinta-feira</h3>
+        <p>Nossas atividades na quinta-feira são:</p>
+        <ul>
+          <li>Coletas na Zona Sul de São Paulo.</li>
+          <li>Coletas em Diadema, Embu das Artes e Tabõao da Serra.</li>
+          <li>Trazer as doações a Unidade da Zona Sul</li>
+        </ul>
+      </div>
+      <div id="Friday" class="card-child">
+        <h3>Sexta-feira</h3>
+        <p>Nossas atividades na sexta-feira são:</p>
+        <ul>
+          <li>Coletas na Zona Oeste e Noroeste de São Paulo.</li>
+          <li>Coletas em Osasco, Carapicuíba e Barueri.</li>
+          <li>Trazer as doações a Unidade da Zona Oeste</li>
+        </ul>
+      </div>
+      <div id="Saturday" class="card-child">
+        <h3>Sábado</h3>
+        <p>Nossas atividades no sábado são:</p>
+        <ul>
+          <li>Separação e tratamento das doações</li>
+          <li>Direcionamento das doações</li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
     <section class="main-title">
       <h1>Projetos Apoiadores</h1>
@@ -561,125 +476,88 @@
       </marquee>
     </section>
 
-    <footer id="Footer">
-      <div class="Footer-Title">
-        <h2>ONG Mangará</h2>
-      </div>
-      <nav class="Contacts-nav">
-        <p>Nossas Redes Sociais:</p>
-        <ul>
-          <li>
-            <a class="Footer-link" href="Contato.HTML">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30px"
-                id="footer-Instagram"
-                fill="currentColor"
-                class="bi bi-instagram"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-                />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="Footer-link" tar href="Contato.HTML">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30px"
-                id="footer-Facebook"
-                fill="currentColor"
-                class="bi bi-facebook"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-                />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="Footer-link" tar href="Contato.HTML">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30px"
-                id="footer-Twitter"
-                fill="currentColor"
-                class="bi bi-twitter"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
-                />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="Footer-link" target="_parent" href="Contato.HTML">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30px"
-                id="footer-Email"
-                fill="currentColor"
-                class="bi bi-envelope-at"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"
-                />
-                <path
-                  d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"
-                />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="Footer-link" target="_parent" href="Contato.HTML">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30px"
-                id="footer-Telefone"
-                fill="currentColor"
-                class="bi bi-whatsapp"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
-                />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <nav class="Info-nav">
-        <ul class="Info-nav-list">
-          <li>
-            <a href="index.html">Nossa História</a>
-          </li>
+  <footer id="Footer">
+    <div class="Footer-Title">
+      <h2>ONG Mangará</h2>
+    </div>
+    <nav class="Contacts-nav">
+      <p>Nossas Redes Sociais:</p>
+      <ul>
+        <li>
+          <a class="Footer-link" href="Contato.HTML">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" id="footer-Instagram" fill="currentColor"
+              class="bi bi-instagram" viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="Footer-link" tar href="Contato.HTML">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" id="footer-Facebook" fill="currentColor"
+              class="bi bi-facebook" viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="Footer-link" tar href="Contato.HTML">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" id="footer-Twitter" fill="currentColor"
+              class="bi bi-twitter" viewBox="0 0 16 16">
+              <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="Footer-link" target="_parent" href="Contato.HTML">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" id="footer-Email" fill="currentColor"
+              class="bi bi-envelope-at" viewBox="0 0 16 16">
+              <path
+                d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
+              <path
+                d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="Footer-link" target="_parent" href="Contato.HTML">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" id="footer-Telefone" fill="currentColor"
+              class="bi bi-whatsapp" viewBox="0 0 16 16">
+              <path
+                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="Info-nav">
+      <ul class="Info-nav-list">
+        <li>
+          <a href="index.html">Nossa História</a>
+        </li>
 
-          <li>
-            <a href="Sobre.HTML">Nossa Rotina</a>
-          </li>
+        <li>
+          <a href="Sobre.HTML">Nossa Rotina</a>
+        </li>
 
-          <li>
-            <a href="Sobre.HTML">Nossas Unidades</a>
-          </li>
-          <li>
-            <a href="Sobre.HTML">Nossos Eventos</a>
-          </li>
+        <li>
+          <a href="Sobre.HTML">Nossas Unidades</a>
+        </li>
+        <li>
+          <a href="Sobre.HTML">Nossos Eventos</a>
+        </li>
 
-          <li>
-            <a href="Formulário.html">Formulário de Doação</a>
-          </li>
-        </ul>
-      </nav>
+        <li>
+          <a href="Formulário.html">Formulário de Doação</a>
+        </li>
+      </ul>
+    </nav>
 
       <div class="copyright-div">
         <p>
-          &copy; Copyright ONG Mangará &nbsp;<span id="copyright-year"></span>.
-          <br />
+          &copy; Copyright ONG Mangará &nbsp;<span id="copyright-year"></span>. <br>
           Todos direitos Reservados
         </p>
       </div>
