@@ -11,7 +11,8 @@
   --color-gray: #4f4f4f;
   --color-grey: #313131;
   --color-black: #202020;
-  --paragraph-size: 18px;
+  --title-size: 24px;
+  --paragraph-size: 22px;
 }
 
 @keyframes background-moving-effect {
@@ -118,7 +119,7 @@ header {
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
-  animation: background-moving-effect 20s ease-in-out infinite alternate;
+  animation: background-moving-effect 10s ease-in-out infinite alternate;
   padding: 35px;
   font-size: 20px;
   box-shadow: inset 0px 0px 30px #000;
@@ -221,12 +222,28 @@ div.nav-flex-item {
 
 /*seção main e definição de margin e texto*/
 .main-title {
+  font-size: var(--title-size);
   text-align: center;
   letter-spacing: 1px;
   padding: 5px;
   vertical-align: middle;
   color: var(--color-black);
   z-index: 1;
+}
+.second-title {
+  font-size: calc(var(--title-size) * 0.90);
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 5px;
+  vertical-align: middle;
+  color: var(--color-black);
+  z-index: 1;
+}
+.sub-title {
+  font-size: calc(var(--title-size) - 0.80px);
+  text-align: start;
+  font-weight: 900;
+  color: var(--color-black);
 }
 
 article {
@@ -237,6 +254,7 @@ article {
 .main-margin {
   margin: 5px 250px 20px;
 }
+
 
 .article-text {
   letter-spacing: 1px;
