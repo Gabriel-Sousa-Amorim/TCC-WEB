@@ -78,8 +78,8 @@ if (document.querySelector('.main-title').children[0].textContent.toLocaleLowerC
     ContactLink("section-Twitter", "https://www.instagram.com/ong_mangara/");
 }
 
-//Faz uma animação na seção que mostra o título e o logo da ONG,  
-//E ergue a seção para o alto da página.  
+//Faz uma animação na seção que mostra o título e o logo da ONG,
+//E ergue a seção para o alto da página.
 function LockScroll() {
     window.scrollTo(1, 1)
     document.getElementById("Moving-page").animate(
@@ -140,13 +140,13 @@ function Observed_elmt() {
     intersectionObserver.observe(observedElement);
 }
 
-//Conteúdo Relacionado as regiões da página Sobre.HTML 
-//Com o conteudo e a função para por ou mudar o conteudo da description-container e etc... 
+//Conteúdo Relacionado as regiões da página Sobre.HTML
+//Com o conteudo e a função para por ou mudar o conteudo da description-container e etc...
 const NorteContext = "A unidade da zona norte se localiza no bairro do Parque Edu Chaves, onde há fácil acesso para outros bairros da Zona Norte como Vila Medeiros, Vila Maria, Jaçanã, Tremembé, mas também atendendo regiões mais distantes da própria zona norte, além de realizarmos coleta e distribuição de doações em Guarulhos."
-const LesteContext = "Fundada juntamente com a Unidade Sul, a Unidade da zona leste se localiza em Santo Amaro. Auxiliando comunidades da região. Com dedicação e empenho, buscamos ajudar os bairros do Capão Redondo, Jardim Ângela, Grajaú, Paraisópolis e Heliópolis, e ainda expandindo nossos esforços auxiliando também a região de Diadema, Embu das Artes e Tabõao da Serra."
-const CentroContext = "A primeira unidade fundada da ONG, localizada no Bom Retiro próximo ao Conjunto Parque do Gato, onde é uma localização estratégica para fácil acesso a outras áreas do centro e como Sé, Vale do Anhagabaú e outras demais áreas. Sendo a unidade principal."
-const OesteContext = "a"
-const SulContext = "Fundada juntamente com a Unidade leste, a Unidade da zona sul se localiza em Santo Amaro. Auxiliando comunidades da região. Com dedicação e empenho, buscamos ajudar os bairros do Capão Redondo, Jardim Ângela, Grajaú, Paraisópolis e Heliópolis, e ainda expandindo nossos esforços auxiliando também a região de Diadema, Embu das Artes e Tabõao da Serra."
+const LesteContext = "Fundada juntamente com a Unidade Sul, a Unidade da Zona Leste se localiza no Bairro da Vila Matilde. Auxiliando comunidades de outros demais distritos da ZL como Itaquera, São Mateus, Cidade Tiradentes, Guaianases, Itaim Paulista entre outros. Com soliedariedade e união expandimos nossos esforços auxiliando também a região de Itaquaquecetuba, Poá e Mogi das Cruzes."
+const CentroContext = "A primeira unidade fundada da ONG, localizada no Bom Retiro próximo ao Conjunto Parque do Gato, onde é uma localização estratégica para fácil acesso a outras áreas do centro e como Sé, Vale do Anhagabaú e outras demais áreas. Sendo a unidade principal que se comunica com as demais outras e onde acontece geralmente confratenizações e eventos."
+const OesteContext = "Em 2023 finalmente conquistamos o objetivo de possuirmos unidades em cada região da cidade de São Paulo, para melhor logística das doações entre as regiões, e então a unidade na Zona Oeste é fundada no bairro do Jaraguá atendendo o bairro e atualmente bairros como Perus, Pirituba, Jaguaré além dos municípios de Osasco, Barueri e Carapicuíba."
+const SulContext = "Fundada juntamente com a Unidade Leste, a Unidade da Zona Sul se localiza em Santo Amaro. Auxiliando comunidades da região. Com dedicação e empenho, buscamos ajudar os bairros do Capão Redondo, Jardim Ângela, Grajaú, Paraisópolis e Heliópolis, e ainda expandindo nossos esforços auxiliando também a região de Diadema, Embu das Artes e Tabõao da Serra."
 function ChangingContentRegion(idRegion, Region, text, color) {
     let description = document.getElementById("description-container")
     document.getElementById(idRegion).addEventListener("click", function () {
