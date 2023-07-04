@@ -263,11 +263,13 @@ article {
 }
 .sponsor-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: end;
   gap: 10px;
 }
 .sponsor-figure {
-  flex-basis:50% ;
+  flex:1;
+  flex-basis:50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -548,27 +550,22 @@ font-size: calc(var(--paragraph-size) - 2px);
 
 #SVG-norte {
   fill: var(--color-red);
-  filter: drop-shadow(0px 0px 10px var(--color-red));
 }
 
 #SVG-oeste {
   fill: var(--color-orange);
-  filter: drop-shadow(0px 0px 10px var(--color-orange));
 }
 
 #SVG-centro {
   fill: var(--color-yellow);
-  filter: drop-shadow(0px 0px 10px var(--color-yellow));
 }
 
 #SVG-leste {
   fill: var(--color-green-yellow);
-  filter: drop-shadow(0px 0px 10px var(--color-green-yellow));
 }
 
 #SVG-sul {
   fill: var(--color-green);
-  filter: drop-shadow(0px 0px 10px var(--color-green));
 }
 
 #description-container {
@@ -595,6 +592,7 @@ font-size: calc(var(--paragraph-size) - 2px);
   text-align: justify;
   vertical-align: middle;
 }
+
 
 
 /*Seção de cards dos dias da semana*/
@@ -1066,9 +1064,6 @@ footer nav ul li {
   .Regions-IMG:hover {
     cursor: pointer;
     width: 110px;
-  }
-  .sponsor-container {
-    flex-direction: column;
   }
   .sponsor-figure {
     align-self: center;

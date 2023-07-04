@@ -147,7 +147,7 @@ const LesteContext = "Fundada juntamente com a Unidade Sul, a Unidade da Zona Le
 const CentroContext = "A primeira unidade fundada da ONG, localizada no Bom Retiro próximo ao Conjunto Parque do Gato, onde é uma localização estratégica para fácil acesso a outras áreas do centro e como Sé, Vale do Anhagabaú e outras demais áreas. Sendo a unidade principal que se comunica com as demais outras e onde acontece geralmente confratenizações e eventos."
 const OesteContext = "Em 2023 finalmente conquistamos o objetivo de possuirmos unidades em cada região da cidade de São Paulo, para melhor logística das doações entre as regiões, e então a unidade na Zona Oeste é fundada no bairro do Jaraguá atendendo o bairro e atualmente bairros como Perus, Pirituba, Jaguaré além dos municípios de Osasco, Barueri e Carapicuíba."
 const SulContext = "Fundada juntamente com a Unidade Leste, a Unidade da Zona Sul se localiza em Santo Amaro. Auxiliando comunidades da região. Com dedicação e empenho, buscamos ajudar os bairros do Capão Redondo, Jardim Ângela, Grajaú, Paraisópolis e Heliópolis, e ainda expandindo nossos esforços auxiliando também a região de Diadema, Embu das Artes e Tabõao da Serra."
-function ChangingContentRegion(idRegion, Region, text, color) {
+function ChangingContentRegion(idRegion, Region, text, color, textColor,shadowColor) {
     let description = document.getElementById("description-container")
     document.getElementById(idRegion).addEventListener("click", function () {
         description.scrollIntoView({
@@ -158,8 +158,10 @@ function ChangingContentRegion(idRegion, Region, text, color) {
         description.children[0].textContent = Region;
         description.children[1].textContent = text;
         description.style.borderColor = "#000";
-        description.children[0].style.color = "#000";
-        description.children[1].style.color = "#000";
+        description.children[0].style.color =  textColor;
+        description.children[1].style.color =  textColor;
+        description.children[0].style.textShadow = `1px 1px 1px ${shadowColor}`;
+        description.children[1].style.textShadow = `1px 1px 1px ${shadowColor}`;
         description.style.background = color;
     })
 }
@@ -184,11 +186,11 @@ switch (document.querySelector("section.main-title").children[0].innerHTML) {
         break;
     case ("Sobre Nós"):
         CatchTheDay();
-        ChangingContentRegion("SVG-norte", "Zona Norte", NorteContext, "var(--color-red)");
-        ChangingContentRegion("SVG-oeste", "Zona Oeste", OesteContext, "var(--color-orange)");
-        ChangingContentRegion("SVG-centro", "Zona Central", CentroContext, "var(--color-yellow)");
-        ChangingContentRegion("SVG-leste", "Zona Leste", LesteContext, "var(--color-green-yellow)");
-        ChangingContentRegion("SVG-sul", "Zona Sul", SulContext, "var(--color-green)");
+        ChangingContentRegion("SVG-norte", "Zona Norte", NorteContext, "var(--color-red)", '#efefef', '#202020');
+        ChangingContentRegion("SVG-oeste", "Zona Oeste", OesteContext, "var(--color-orange)", '#efefef', '#202020');
+        ChangingContentRegion("SVG-centro", "Zona Central", CentroContext, "var(--color-yellow)", '#202020', '#efefef');
+        ChangingContentRegion("SVG-leste", "Zona Leste", LesteContext, "var(--color-green-yellow)", '#202020', '#efefef');
+        ChangingContentRegion("SVG-sul", "Zona Sul", SulContext, "var(--color-green)", '#202020', '#efefef')
         break;
     case ("Contatos"):
         ContactLink("section-Instagram", "https://www.instagram.com/ong_mangara/");

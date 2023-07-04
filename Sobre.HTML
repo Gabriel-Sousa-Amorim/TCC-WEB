@@ -1,191 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Projeto TCC de uma ONG com direcionamento em doações"
-    />
-    <meta name="keywords" content="ong, mangará, mangara" />
-    <meta name="author" content="Gabriel Sousa" />
-    <link rel="stylesheet" href="CSS/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-    <link
-      rel="shortcut icon"
-      href="Designs/ICONS/Icon_Mangará_yellow.png"
-      type="image/x-icon"
-    />
-    <title>ONG Mangará</title>
-  </head>
-  <!--Função Observed_elmt() para reconhecer em qual seção estamos-->
 
-  <body>
-    <section id="Moving-page">
-      <div>
-        <img src="Designs/ICONS/Icon_Mangara.svg" alt="Ícone Mangará" />
-        <h1 class="header-title">Organização Mangará</h1>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projeto TCC de uma ONG com direcionamento em doações" />
+  <meta name="keywords" content="ong, mangará, mangara" />
+  <meta name="author" content="Gabriel Sousa" />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="shortcut icon" href="Designs/ICONS/Icon_Mangará_yellow.png" type="image/x-icon" />
+  <title>ONG Mangará</title>
+</head>
+<!--Função Observed_elmt() para reconhecer em qual seção estamos-->
+
+<body>
+  <section id="Moving-page">
+    <div>
+      <img src="Designs/ICONS/Icon_Mangara.svg" alt="Ícone Mangará" />
+      <h1 class="header-title">Organização Mangará</h1>
+    </div>
+  </section>
+
+  <!--Header Container-->
+  <header>
+    <a href="index.html">
+      <img src="Designs/ICONS/Icon_Mangara.svg" alt="Ícone Mangará" />
+      <h1 class="header-title">Organização Mangará</h1>
+    </a>
+  </header>
+
+  <!--Nav bar-->
+  <nav>
+    <!--Botão Dark Mode-->
+    <div class="nav-flex-item">
+      <label class="darkModeElement bi bi-moon-stars-fill" for="DarkButton">
+        Modo Escuro
+      </label>
+      <input class="darkModeElement" checked="checked" type="checkbox" id="DarkButton" />
+    </div>
+    <!--Nav bar-->
+    <ul class="nav-flex-container">
+      <li class="nav-flex-item">
+        <a href="index.html"><span class="bi bi-house nav-icon"></span>Home</a>
+      </li>
+      <li class="nav-flex-item">
+        <a style="border: 1px solid #fff" href="Sobre.HTML"><span class="bi bi-file-earmark-text nav-icon"></span>Sobre
+          nós</a>
+      </li>
+      <li class="nav-flex-item">
+        <a href="Contato.HTML"><span class="bi bi-telephone nav-icon"></span>Contatos</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <section class="main-title">
+      <h1>Sobre Nós</h1>
     </section>
 
-    <!--Header Container-->
-    <header>
-      <a href="index.html">
-        <img src="Designs/ICONS/Icon_Mangara.svg" alt="Ícone Mangará" />
-        <h1 class="header-title">Organização Mangará</h1>
-      </a>
-    </header>
+    <article class="main-margin">
+      <h1 class="sub-title">Significado Mangará.</h1>
+      <p class="article-text">
+        Quando Pablo Sousa o idealizador da ONG escolheu o nome, ele buscou
+        por nomes com uma pronúncia fácil e de grande significância, a escolha
+        foi
+        <em>'Mangará'</em> que significa “Coração” em Tupi-Guarani, tal
+        escolha é justificada pelo fato da organização fazer um direcionamento
+        de doações dadas de coração. Além de um nome com resgate de uma
+        herança brasileira.
+      </p>
+    </article>
+    <article class="main-margin">
+      <h1 class="sub-title">Eventos que organizamos</h1>
+      <p class="article-text">
+        Organizamos eventos beneficentes para arrecadar fundos e por em
+        evidência artistas das comunidades que atendemos, apresentando
+        diversos formatos artísticos como pinturas, esculturas, fotografias,
+        apresentações ao vivo de artistas locais e com convidados
+        especiais incluindo cantores, bandas de diferentes gêneros musicais,
+        DJs, grupos de dança, teatro e outras demais performances. Com essas
+        apresentações arrecadamos fundos e mantimentos a serem redirecionados
+        à população carente. 
+      </p>
+    </article>
+    <article class="main-margin">
+      <h1 class="sub-title">Missão</h1>
+      <p class="article-text"></p>
+    </article>
+    <article class="main-margin">
+      <h1 class="sub-title">Visão</h1>
+      <p class="article-text"></p>
+    </article>
+    <article class="main-margin">
+      <h1 class="sub-title">Valores</h1>
+      <p class="article-text"></p>
+    </article>
 
-    <!--Nav bar-->
-    <nav>
-      <!--Botão Dark Mode-->
-      <div class="nav-flex-item">
-        <label class="darkModeElement bi bi-moon-stars-fill" for="DarkButton">
-          Modo Escuro
-        </label>
-        <input
-          class="darkModeElement"
-          checked="checked"
-          type="checkbox"
-          id="DarkButton"
-        />
+    <section class="second-title">
+      <h1>Seja um Voluntário</h1>
+    </section>
+
+    <section class="main-margin form-flex-container">
+      <h3>Entre nos Formulários de doação ou para voluntariar-se</h3>
+      <a class="button-flex-container-child" href="Formulário.html">Entre Aqui</a>
+    </section>
+
+    <section class="second-title">
+      <h1>Eventos Massivos de Doações</h1>
+    </section>
+
+    <!-- conteudo adicionar -->
+    <section class="second-title">
+      <h1>Nossas Unidades</h1>
+    </section>
+
+    <article class="main-margin">
+      <p class="article-text">
+        Possuímos atualmente cinco unidades, cada uma para atender bairros da
+        zona em que a unidade se localiza, possuem localizações estratégicas
+        para atender outros municípios, atendemos municípios como:
+      </p>
+      <div class="list-container">
+        <ul class="list-group">
+          <li>Guarulhos.</li>
+          <li>Itaquaquecetuba.</li>
+          <li>Mogi das Cruzes.</li>
+          <li>Poá.</li>
+          <li>ABC paulista.</li>
+          <li>Diadema.</li>
+        </ul>
+        <ul class="list-group">
+          <li>Embu das Artes.</li>
+          <li>Taboão da Serra.</li>
+          <li>Osasco.</li>
+          <li>Carapicuíba.</li>
+          <li>Barueri.</li>
+        </ul>
       </div>
-      <!--Nav bar-->
-      <ul class="nav-flex-container">
-        <li class="nav-flex-item">
-          <a href="index.html"
-            ><span class="bi bi-house nav-icon"></span>Home</a
-          >
-        </li>
-        <li class="nav-flex-item">
-          <a style="border: 1px solid #fff" href="Sobre.HTML"
-            ><span class="bi bi-file-earmark-text nav-icon"></span>Sobre nós</a
-          >
-        </li>
-        <li class="nav-flex-item">
-          <a href="Contato.HTML"
-            ><span class="bi bi-telephone nav-icon"></span>Contatos</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <main>
-      <section class="main-title">
-        <h1>Sobre Nós</h1>
-      </section>
-
-      <article class="main-margin">
-        <h1 class="sub-title">Significado Mangará.</h1>
-        <p class="article-text">
-          Quando Pablo Sousa o idealizador da ONG escolheu o nome, ele buscou
-          por nomes com uma pronúncia fácil e de grande significância, a escolha
-          foi
-          <em>'Mangará'</em> que significa “Coração” em Tupi-Guarani, tal
-          escolha é justificada pelo fato da organização fazer um direcionamento
-          de doações dadas de coração. Além de um nome com resgate de uma
-          herança brasileira.
-        </p>
-      </article>
-      <article class="main-margin">
-        <h1 class="sub-title">Eventos que organizamos</h1>
-        <p class="article-text">
-          Organizamos eventos beneficentes para arrecadar fundos e por em
-          evidência artistas das comunidades que atendemos, apresentando
-          diversos formatos artísticos como pinturas, esculturas, fotografias,
-          apresentações ao vivo de artistas locais e com convidados
-          especiais incluindo cantores, bandas de diferentes gêneros musicais,
-          DJs, grupos de dança, teatro e outras demais performances. Com essas
-          apresentações arrecadamos fundos e mantimentos a serem redirecionados
-          à população carente. 
-        </p>
-      </article>
-      <article class="main-margin">
-        <h1 class="sub-title">Missão</h1>
-        <p class="article-text"></p>
-      </article>
-      <article class="main-margin">
-        <h1 class="sub-title">Visão</h1>
-        <p class="article-text"></p>
-      </article>
-      <article class="main-margin">
-        <h1 class="sub-title">Valores</h1>
-        <p class="article-text"></p>
-      </article>
-
-      <section class="second-title">
-        <h1>Seja um Voluntário</h1>
-      </section>
-
-      <section class="main-margin form-flex-container">
-        <h3>Entre nos Formulários de doação ou para voluntariar-se</h3>
-        <a class="button-flex-container-child" href="Formulário.html"
-          >Entre Aqui</a
-        >
-      </section>
-
-      <section class="second-title">
-        <h1>Eventos Massivos de Doações</h1>
-      </section>
-
-      <!-- conteudo adicionar -->
-      <section class="second-title">
-        <h1>Nossas Unidades</h1>
-      </section>
-
-      <article class="main-margin">
-        <p class="article-text">
-          Possuímos atualmente cinco unidades, cada uma para atender bairros da
-          zona em que a unidade se localiza, possuem localizações estratégicas
-          para atender outros municípios, atendemos municípios como:
-        </p>
-        <div class="list-container">
-          <ul class="list-group">
-            <li>Guarulhos.</li>
-            <li>Itaquaquecetuba.</li>
-            <li>Mogi das Cruzes.</li>
-            <li>Poá.</li>
-            <li>ABC paulista.</li>
-            <li>Diadema.</li>
-          </ul>
-          <ul class="list-group">
-            <li>Embu das Artes.</li>
-            <li>Tabõao da Serra.</li>
-            <li>Osasco.</li>
-            <li>Carapicuíba.</li>
-            <li>Barueri.</li>
-          </ul>
-        </div>
-        <p class="article-text">
-          As localidades efetuam cada uma o tratamento e fiscalização das
-          doações, após a fiscalização dos items o redirecionamento pode ser
-          efetuado. As unidades se ajudam entre si com suprimentos e voluntários
-          conforme a demanda. Veja a seguir as localidades e as informações
-          sobre elas:
-        </p>
-      </article>
-      <section class="Unidade-container main-margin">
-        <section class="Unidade-child">
-          <section class="SP-regions" id="section-norte">
-            <svg
-              class="Regions-IMG"
-              id="SVG-norte"
-              version="1.0"
-              xmlns="http://www.w3.org/2000/svg"
-              width="409.000000pt"
-              height="309.000000pt"
-              viewBox="0 0 409.000000 249.000000"
-              preserveAspectRatio="xMidYMid meet"
-            >
-              <g
-                transform="translate(0.000000,309.000000) scale(0.100000,-0.100000)"
-                stroke="none"
-              >
-                <path
-                  d="M3720 2711 c-25 -35 -64 -74 -96 -95 -30 -20 -54 -40 -54 -44 0 -4
+      <p class="article-text">
+        As localidades efetuam cada uma o tratamento e fiscalização das
+        doações, após a fiscalização dos items o redirecionamento pode ser
+        efetuado. As unidades se ajudam entre si com suprimentos e voluntários
+        conforme a demanda. Veja a seguir as localidades e as informações
+        sobre elas:
+      </p>
+    </article>
+    <section class="Unidade-container main-margin">
+      <section class="Unidade-child">
+        <section class="SP-regions" id="section-norte">
+          <svg class="Regions-IMG" id="SVG-norte" version="1.0" xmlns="http://www.w3.org/2000/svg" width="409.000000pt"
+            height="309.000000pt" viewBox="0 0 409.000000 249.000000" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,309.000000) scale(0.100000,-0.100000)" stroke="none">
+              <path d="M3720 2711 c-25 -35 -64 -74 -96 -95 -30 -20 -54 -40 -54 -44 0 -4
                 -14 -22 -31 -39 -34 -37 -71 -43 -118 -18 -28 14 -30 13 -64 -24 -20 -22 -71
                 -60 -114 -86 -43 -25 -89 -54 -103 -65 -24 -18 -24 -19 -6 -38 31 -35 17 -64
                 -45 -94 -62 -29 -85 -55 -123 -142 -23 -52 -25 -63 -15 -97 10 -32 9 -42 -5
@@ -219,29 +186,16 @@
                 145 21 46 26 67 20 94 -9 41 -8 38 -22 73 -10 23 -9 34 4 59 13 25 15 48 9
                 112 -9 108 0 127 80 178 l66 42 -6 76 c-6 71 -5 77 23 121 17 26 42 55 57 65
                 71 49 75 57 75 142 l0 80 55 55 c30 30 55 63 55 74 0 26 -58 79 -95 86 -16 3
-                -37 8 -46 12 -12 5 -28 -9 -59 -54z"
-                />
-              </g>
-              <text x="150" y="200" fill="#000">ZONA NORTE</text>
-            </svg>
-          </section>
-          <section class="SP-regions" id="section-centro">
-            <svg
-              class="Regions-IMG"
-              id="SVG-oeste"
-              version="1.0"
-              xmlns="http://www.w3.org/2000/svg"
-              width="402.000000pt"
-              height="392.000000pt"
-              viewBox="0 0 200.000000 392.000000"
-              preserveAspectRatio="xMidYMid meet"
-            >
-              <g
-                transform="translate(0.000000,392.000000) scale(0.100000,-0.100000)"
-                stroke="none"
-              >
-                <path
-                  d="M1620 3722 c-19 -9 -49 -36 -66 -58 -26 -35 -32 -53 -37 -115 -3 -41
+                -37 8 -46 12 -12 5 -28 -9 -59 -54z" />
+            </g>
+            <text x="150" y="200" fill="#FFF">ZONA NORTE</text>
+          </svg>
+        </section>
+        <section class="SP-regions" id="section-centro">
+          <svg class="Regions-IMG" id="SVG-oeste" version="1.0" xmlns="http://www.w3.org/2000/svg" width="402.000000pt"
+            height="392.000000pt" viewBox="0 0 200.000000 392.000000" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,392.000000) scale(0.100000,-0.100000)" stroke="none">
+              <path d="M1620 3722 c-19 -9 -49 -36 -66 -58 -26 -35 -32 -53 -37 -115 -3 -41
                 -11 -87 -18 -104 l-12 -30 -9 39 c-4 22 -13 45 -19 53 -13 15 -53 18 -44 3 7
                 -11 -45 -82 -86 -117 -15 -13 -32 -36 -39 -53 -11 -26 -10 -37 10 -82 31 -73
                 64 -119 106 -148 20 -14 57 -43 83 -66 25 -22 54 -44 64 -47 22 -8 22 -18 -5
@@ -264,27 +218,14 @@
                 42 -145 68 -73 54 -79 63 -86 125 l-5 53 51 48 c28 27 51 53 51 58 0 5 19 21
                 41 36 29 19 54 27 87 28 42 0 48 3 73 40 31 44 49 112 49 179 0 64 -45 101
                 -184 150 -100 35 -114 38 -180 32 -39 -4 -145 -7 -236 -7 l-165 -1 -43 47
-                c-61 68 -180 225 -228 301 -42 67 -110 124 -149 124 -11 0 -36 -8 -55 -18z"
-                ></path>
-              </g>
-              <text x="120" y="200" fill="#000">ZONA OESTE</text>
-            </svg>
-            <svg
-              class="Regions-IMG"
-              id="SVG-centro"
-              version="1.0"
-              xmlns="http://www.w3.org/2000/svg"
-              width="299.000000pt"
-              height="297.000000pt"
-              viewBox="0 0 260.000000 307.000000"
-              preserveAspectRatio="xMidYMid meet"
-            >
-              <g
-                transform="translate(0.000000,297.000000) scale(0.100000,-0.100000)"
-                stroke="none"
-              >
-                <path
-                  d="M1000 2587 c0 -7 5 -18 10 -23 16 -16 -5 -129 -30 -164 -17 -23 -27
+                c-61 68 -180 225 -228 301 -42 67 -110 124 -149 124 -11 0 -36 -8 -55 -18z"></path>
+            </g>
+            <text x="120" y="200" fill="#000">ZONA OESTE</text>
+          </svg>
+          <svg class="Regions-IMG" id="SVG-centro" version="1.0" xmlns="http://www.w3.org/2000/svg" width="299.000000pt"
+            height="297.000000pt" viewBox="0 0 260.000000 307.000000" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,297.000000) scale(0.100000,-0.100000)" stroke="none">
+              <path d="M1000 2587 c0 -7 5 -18 10 -23 16 -16 -5 -129 -30 -164 -17 -23 -27
                 -29 -45 -24 -35 9 -87 -24 -155 -98 -57 -63 -61 -70 -54 -103 6 -35 6 -35 -29
                 -35 -52 0 -85 16 -128 60 -35 36 -44 40 -86 40 -30 0 -60 -8 -81 -20 -18 -11
                 -44 -20 -57 -20 -33 0 -106 -56 -136 -102 -13 -21 -30 -40 -38 -43 -10 -4 -3
@@ -307,27 +248,14 @@
                 33 88 47 117 17 138 39 88 91 -23 24 -24 29 -12 59 11 31 10 34 -14 54 -36 30
                 -47 107 -19 125 22 14 26 42 8 60 -7 7 -39 12 -75 12 -56 0 -66 3 -98 31 -35
                 31 -39 32 -143 35 -96 2 -274 16 -389 30 -32 4 -43 10 -43 22 0 12 -3 14 -8 4
-                -11 -16 -266 1 -336 23 -60 18 -66 19 -66 2z"
-                ></path>
-              </g>
-              <text x="90" y="140" fill="#000">CENTRO</text>
-            </svg>
-            <svg
-              class="Regions-IMG"
-              id="SVG-leste"
-              version="1.0"
-              xmlns="http://www.w3.org/2000/svg"
-              width="409.000000pt"
-              height="323.000000pt"
-              viewBox="30 0 409.000000 323.000000"
-              preserveAspectRatio="xMidYMid meet"
-            >
-              <g
-                transform="translate(0.000000,323.000000) scale(0.100000,-0.100000)"
-                stroke="none"
-              >
-                <path
-                  d="M3277 2963 c-4 -3 -7 -15 -7 -25 0 -21 -4 -22 -30 -6 -16 11 -22 9
+                -11 -16 -266 1 -336 23 -60 18 -66 19 -66 2z"></path>
+            </g>
+            <text x="90" y="140" fill="#000">CENTRO</text>
+          </svg>
+          <svg class="Regions-IMG" id="SVG-leste" version="1.0" xmlns="http://www.w3.org/2000/svg" width="409.000000pt"
+            height="323.000000pt" viewBox="30 0 409.000000 323.000000" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,323.000000) scale(0.100000,-0.100000)" stroke="none">
+              <path d="M3277 2963 c-4 -3 -7 -15 -7 -25 0 -21 -4 -22 -30 -6 -16 11 -22 9
               -33 -6 -15 -20 -35 -19 -93 5 -28 11 -36 10 -59 -5 -15 -10 -30 -27 -32 -37
               -6 -23 -16 -24 -33 -4 -14 17 -60 20 -60 4 0 -6 5 -19 10 -30 8 -14 7 -19 -2
               -20 -94 -3 -168 -19 -197 -40 -30 -22 -42 -24 -137 -23 -98 2 -107 4 -179 39
@@ -364,29 +292,16 @@
               63 -63 140 -12 61 -32 81 -73 75 -19 -3 -22 -9 -23 -48 0 -66 -11 -83 -45 -76
               -33 6 -113 -31 -142 -67 -13 -15 -20 -18 -24 -9 -2 6 -15 12 -28 12 -33 0 -49
               31 -33 66 11 24 10 28 -12 45 -50 38 -52 41 -41 52 15 15 14 50 -1 65 -13 13
-              -50 16 -61 5z"
-                ></path>
-              </g>
-              <text x="130" y="160" fill="#000">ZONA LESTE</text>
-            </svg>
-          </section>
-          <section class="SP-regions" id="section-sul">
-            <svg
-              class="Regions-IMG"
-              id="SVG-sul"
-              version="1.0"
-              xmlns="http://www.w3.org/2000/svg"
-              width="409.000000pt"
-              height="563.000000pt"
-              viewBox="0 0 409.000000 563.000000"
-              preserveAspectRatio="xMidYMid meet"
-            >
-              <g
-                transform="translate(0.000000,563.000000) scale(0.100000,-0.100000)"
-                stroke="none"
-              >
-                <path
-                  d="M2840 5243 c0 -25 -8 -45 -26 -64 -14 -15 -40 -42 -58 -61 -18 -18
+              -50 16 -61 5z"></path>
+            </g>
+            <text x="130" y="160" fill="#000">ZONA LESTE</text>
+          </svg>
+        </section>
+        <section class="SP-regions" id="section-sul">
+          <svg class="Regions-IMG" id="SVG-sul" version="1.0" xmlns="http://www.w3.org/2000/svg" width="409.000000pt"
+            height="563.000000pt" viewBox="0 0 409.000000 563.000000" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,563.000000) scale(0.100000,-0.100000)" stroke="none">
+              <path d="M2840 5243 c0 -25 -8 -45 -26 -64 -14 -15 -40 -42 -58 -61 -18 -18
                 -38 -55 -45 -81 -12 -40 -19 -48 -45 -56 -26 -7 -35 -4 -57 15 -29 28 -55 30
                 -80 8 -28 -25 -97 -24 -118 2 -16 21 -18 21 -79 4 -34 -10 -85 -29 -113 -44
                 -28 -14 -59 -26 -70 -26 -13 0 -21 -12 -30 -42 -6 -24 -13 -49 -15 -55 -6 -22
@@ -433,386 +348,422 @@
                 299 144 51 47 52 50 46 94 -4 31 -1 51 9 65 12 14 14 34 9 82 -5 46 -2 75 9
                 105 8 24 18 75 20 115 3 39 8 77 12 83 14 23 -103 163 -143 170 -18 4 -28 12
                 -30 27 -2 13 -13 29 -24 37 -19 14 -32 33 -69 107 -15 31 -36 49 -55 49 -2 0
-                -4 -16 -4 -37z"
-                />
-              </g>
-              <text x="110" y="160" fill="#000">ZONA SUL</text>
-            </svg>
-          </section>
-        </section>
-        <section id="description-container">
-          <h3>
-            Clique em qualquer região para saber sobre a unidade da respectiva
-            região
-          </h3>
-          <p class="article-text" style="color: #202020"></p>
-        </section>
-      </section>
-
-      <section class="second-title">
-        <h1>Nossa rotina</h1>
-      </section>
-
-      <section id="card-container" class="main-margin">
-        <div id="Sunday" class="card-child">
-          <h3>Domingo</h3>
-          <p>Nossas atividades no domingo são:</p>
-          <ul>
-            <li>Discussões sobre o rumo da Organização.</li>
-            <li>Trazer novas pautas a ONG.</li>
-          </ul>
-        </div>
-        <div id="Monday" class="card-child">
-          <h3>Segunda-feira</h3>
-          <p>Nossas atividades na segunda-feira são:</p>
-          <ul>
-            <li>Coleta na Zona Norte de São Paulo.</li>
-            <li>Coletas de Guarulhos.</li>
-            <li>Trazer as doações a Unidade da Zona Norte.</li>
-          </ul>
-        </div>
-        <div id="Tuesday" class="card-child">
-          <h3>Terça-feira</h3>
-          <p>Nossas atividades na terça-feira são:</p>
-          <ul>
-            <li>Coleta na Zona Leste de São Paulo.</li>
-            <li>Coleta Itaquaquecetuba, Mogi das cruzes e Póa.</li>
-            <li>Trazer as doações a Unidade da Zona Leste.</li>
-          </ul>
-        </div>
-        <div id="Wednesday" class="card-child">
-          <h3>Quarta-feira</h3>
-          <p>Nossas atividades na quarta-feira são:</p>
-          <ul>
-            <li>Coleta na Zona Centro Sul de São Paulo.</li>
-            <li>Coleta no ABC. paulista.</li>
-            <li>Trazer as doações as Unidades da Zona Centro e Zona Leste.</li>
-          </ul>
-        </div>
-        <div id="Thursday" class="card-child">
-          <h3>Quinta-feira</h3>
-          <p>Nossas atividades na quinta-feira são:</p>
-          <ul>
-            <li>Coletas na Zona Sul de São Paulo.</li>
-            <li>Coletas em Diadema, Embu das Artes e Tabõao da Serra.</li>
-            <li>Trazer as doações a Unidade da Zona Sul</li>
-          </ul>
-        </div>
-        <div id="Friday" class="card-child">
-          <h3>Sexta-feira</h3>
-          <p>Nossas atividades na sexta-feira são:</p>
-          <ul>
-            <li>Coletas na Zona Oeste e Noroeste de São Paulo.</li>
-            <li>Coletas em Osasco, Carapicuíba e Barueri.</li>
-            <li>Trazer as doações a Unidade da Zona Oeste</li>
-          </ul>
-        </div>
-        <div id="Saturday" class="card-child">
-          <h3>Sábado</h3>
-          <p>Nossas atividades no sábado são:</p>
-          <ul>
-            <li>Separação e tratamento das doações</li>
-            <li>Direcionamento das doações</li>
-          </ul>
-        </div>
-      </section>
-    </main>
-
-    <section class="main-margin">
-      <section class="second-title">
-        <h1>Nossos Apoiadores</h1>
-      </section>
-      <section class="sponsor-container">
-        <figure class="sponsor-figure">
-          <svg
-            version="1.0"
-            width="100px"
-            viewBox="0 0 454.000000 586.000000"
-            preserveAspectRatio="xMidYMid meet"
-          >
-            <g
-              transform="translate(0.000000,586.000000) scale(0.100000,-0.100000)"
-              fill="var(--color-black)"
-              stroke="none"
-            >
-              <path
-                d="M2280 5350 c-74 -16 -168 -68 -225 -126 -61 -61 -133 -199 -192 -369
-       -19 -55 -52 -141 -73 -190 -21 -50 -54 -136 -74 -192 -19 -56 -43 -117 -52
-       -135 -10 -18 -43 -103 -75 -188 -31 -85 -66 -177 -77 -205 -23 -54 -98 -249
-       -168 -440 -81 -219 -75 -276 -68 615 4 551 2 812 -5 850 -58 294 -386 454
-       -658 320 -122 -60 -220 -190 -242 -320 -14 -81 -34 -4160 -21 -4230 55 -293
-       385 -454 657 -320 128 63 192 151 281 390 22 58 49 128 61 155 23 56 100 259
-       167 440 24 66 56 145 70 175 14 30 47 115 74 190 26 74 57 155 69 180 11 25
-       43 106 70 180 27 74 65 173 85 220 l35 85 3 -850 3 -850 22 -55 c55 -134 150
-       -224 292 -279 189 -73 373 -38 506 95 67 66 114 162 201 406 35 97 71 192 80
-       210 9 18 45 112 80 210 35 97 70 191 79 208 9 17 43 107 75 200 32 92 68 187
-       80 209 11 23 42 103 69 178 27 76 58 158 70 183 11 25 48 120 81 213 33 92 67
-       181 75 198 9 16 43 106 75 199 32 92 68 187 80 210 12 23 48 118 80 211 33 93
-       73 200 89 237 16 37 50 126 75 197 26 72 62 166 80 210 19 44 53 131 76 194
-       23 63 48 127 56 142 8 15 35 86 60 156 44 121 47 133 47 233 0 86 -4 116 -22
-       162 -49 125 -158 231 -283 275 -78 26 -234 24 -309 -6 -78 -30 -160 -91 -204
-       -151 -40 -54 -99 -189 -170 -387 -25 -67 -52 -139 -61 -160 -17 -39 -84 -206
-       -159 -398 -67 -170 -113 -285 -136 -340 -12 -27 -43 -108 -69 -180 -26 -71
-       -58 -155 -71 -185 l-24 -55 -5 865 -5 865 -23 57 c-50 124 -150 223 -271 269
-       -63 23 -193 33 -261 19z"
-              />
+                -4 -16 -4 -37z" />
             </g>
+            <text x="110" y="160" fill="#000">ZONA SUL</text>
           </svg>
+        </section>
+      </section>
+      <section id="description-container">
+        <h3>
+          Clique em qualquer região para saber sobre a unidade da respectiva
+          região
+        </h3>
+        <p id="Light-Region-text"></p>
+        <p id="Dark-Region-text"></p>
+      </section>
+    </section>
 
-          <figcaption class="article-text">
-            Willian Morais Alimentícios.
-          </figcaption>
-        </figure>
-        <figure class="sponsor-figure">
-          <svg
-            version="1.0"
-            width="100px"
-            viewBox="0 0 334.000000 398.000000"
-            preserveAspectRatio="xMidYMid meet"
-          >
-            <g
-              transform="translate(0.000000,398.000000) scale(0.100000,-0.100000)"
-              fill="var(--color-black)"
-              stroke="none"
-            >
-              <path
-                d="M800 3656 c-63 -16 -111 -48 -164 -107 -86 -95 -79 12 -87 -1369 -3
+    <section class="second-title">
+      <h1>Nossa rotina</h1>
+    </section>
+
+    <section id="card-container" class="main-margin">
+      <div id="Sunday" class="card-child">
+        <h3>Domingo</h3>
+        <p>Nossas atividades no domingo são:</p>
+        <ul>
+          <li>Discussões sobre o rumo da Organização.</li>
+          <li>Trazer novas pautas a ONG.</li>
+        </ul>
+      </div>
+      <div id="Monday" class="card-child">
+        <h3>Segunda-feira</h3>
+        <p>Nossas atividades na segunda-feira são:</p>
+        <ul>
+          <li>Coleta na Zona Norte de São Paulo.</li>
+          <li>Coletas de Guarulhos.</li>
+          <li>Trazer as doações a Unidade da Zona Norte.</li>
+        </ul>
+      </div>
+      <div id="Tuesday" class="card-child">
+        <h3>Terça-feira</h3>
+        <p>Nossas atividades na terça-feira são:</p>
+        <ul>
+          <li>Coleta na Zona Leste de São Paulo.</li>
+          <li>Coleta Itaquaquecetuba, Mogi das cruzes e Poá.</li>
+          <li>Trazer as doações a Unidade da Zona Leste.</li>
+        </ul>
+      </div>
+      <div id="Wednesday" class="card-child">
+        <h3>Quarta-feira</h3>
+        <p>Nossas atividades na quarta-feira são:</p>
+        <ul>
+          <li>Coleta na Zona Centro-Sul de São Paulo.</li>
+          <li>Coleta no ABC. Paulista.</li>
+          <li>Trazer as doações as Unidades da Zona Centro e Zona Leste.</li>
+        </ul>
+      </div>
+      <div id="Thursday" class="card-child">
+        <h3>Quinta-feira</h3>
+        <p>Nossas atividades na quinta-feira são:</p>
+        <ul>
+          <li>Coletas na Zona Sul de São Paulo.</li>
+          <li>Coletas em Diadema, Embu das Artes e Taboão da Serra.</li>
+          <li>Trazer as doações a Unidade da Zona Sul</li>
+        </ul>
+      </div>
+      <div id="Friday" class="card-child">
+        <h3>Sexta-feira</h3>
+        <p>Nossas atividades na sexta-feira são:</p>
+        <ul>
+          <li>Coletas na Zona Oeste e Noroeste de São Paulo.</li>
+          <li>Coletas em Osasco, Carapicuíba e Barueri.</li>
+          <li>Trazer as doações a Unidade da Zona Oeste</li>
+        </ul>
+      </div>
+      <div id="Saturday" class="card-child">
+        <h3>Sábado</h3>
+        <p>Nossas atividades no sábado são:</p>
+        <ul>
+          <li>Separação e tratamento das doações</li>
+          <li>Direcionamento das doações</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <section class="main-margin">
+    <section class="second-title">
+      <h1>Nossos Apoiadores</h1>
+    </section>
+    <section class="sponsor-container">
+      <figure class="sponsor-figure">
+       
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+width="250px"viewBox="0 0 787.000000 249.000000"
+preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,249.000000) scale(0.100000,-0.100000)"
+fill="var(--color-black)" stroke="none">
+<path d="M150 1687 c0 -641 1 -684 18 -703 10 -10 28 -35 42 -54 13 -19 27
+-37 30 -40 3 -3 17 -21 30 -40 13 -19 27 -37 30 -40 3 -3 17 -21 30 -40 13
+-19 27 -37 30 -40 3 -3 17 -21 30 -40 13 -19 27 -37 30 -40 3 -3 59 -76 123
+-163 l118 -157 170 0 169 0 165 165 c91 91 170 165 175 165 5 0 84 -74 175
+-165 l165 -165 169 0 170 0 118 158 c64 86 120 159 123 162 3 3 17 21 30 40
+13 19 27 37 30 40 3 3 17 21 30 40 13 19 27 37 30 40 3 3 17 21 30 40 13 19
+27 37 30 40 3 3 17 21 30 40 14 19 32 44 42 54 17 19 18 62 18 703 l0 683
+-170 0 -170 0 0 -596 0 -596 -76 -102 c-41 -55 -81 -108 -87 -116 -7 -8 -23
+-31 -37 -50 -13 -19 -29 -40 -35 -46 -5 -7 -30 -39 -54 -73 -40 -56 -64 -73
+-73 -53 -1 4 -41 41 -88 82 -47 41 -87 77 -90 80 -3 3 -43 39 -90 80 -47 41
+-92 82 -100 90 -49 49 -111 100 -122 100 -7 0 -36 -22 -63 -48 -28 -26 -89
+-81 -135 -122 -47 -41 -92 -82 -100 -90 -8 -8 -53 -49 -100 -90 -47 -41 -86
+-78 -88 -82 -9 -20 -33 -3 -73 53 -24 34 -49 66 -54 73 -6 6 -22 27 -35 46
+-13 19 -27 37 -30 40 -3 3 -17 21 -30 40 -14 19 -30 42 -37 50 -6 8 -32 43
+-57 76 l-46 62 0 596 0 596 -170 0 -170 0 0 -683z"/>
+<path d="M2850 1350 l0 -1020 170 0 170 0 0 740 c0 407 4 740 8 740 5 0 22
+-15 38 -33 16 -18 63 -71 104 -117 41 -47 82 -92 90 -100 8 -8 49 -53 90 -100
+41 -47 77 -87 80 -90 3 -3 39 -43 80 -90 41 -47 77 -87 80 -90 3 -3 34 -38 69
+-77 l64 -73 147 0 148 0 53 63 c30 34 61 69 69 77 8 8 49 53 90 100 41 47 77
+87 80 90 3 3 39 43 80 90 41 47 82 92 90 100 8 8 49 53 90 100 41 46 88 99
+104 117 16 18 33 33 38 33 4 0 8 -333 8 -740 l0 -740 170 0 170 0 0 1020 0
+1020 -168 0 -169 0 -39 -43 c-21 -23 -73 -80 -114 -127 -41 -47 -77 -87 -80
+-90 -3 -3 -20 -23 -39 -45 -19 -22 -64 -74 -101 -115 -37 -41 -82 -93 -101
+-115 -19 -22 -41 -47 -49 -55 -8 -8 -30 -33 -49 -55 -19 -22 -64 -74 -101
+-115 -37 -41 -82 -93 -101 -115 -68 -79 -78 -87 -92 -73 -6 7 -41 47 -77 88
+-35 41 -67 77 -70 80 -3 3 -39 43 -80 90 -41 47 -77 87 -80 90 -3 3 -35 39
+-70 80 -36 41 -72 82 -80 90 -8 8 -44 49 -80 90 -35 41 -67 77 -70 80 -3 3
+-39 43 -80 90 -41 47 -93 104 -114 127 l-39 43 -169 0 -168 0 0 -1020z"/>
+<path d="M6343 2308 c-45 -71 -262 -414 -333 -528 -182 -291 -392 -624 -436
+-692 l-44 -68 0 -345 0 -345 170 0 170 0 0 270 0 270 680 0 680 0 0 -270 0
+-270 170 0 170 0 0 345 0 345 -44 68 c-44 68 -254 401 -436 692 -71 114 -288
+457 -333 528 l-39 62 -168 0 -168 0 -39 -62z m227 -277 c0 -5 18 -39 41 -76
+22 -37 49 -82 59 -99 9 -17 41 -71 70 -121 51 -87 124 -212 244 -418 31 -53
+59 -104 62 -112 5 -13 -54 -15 -495 -15 -333 0 -501 3 -501 10 0 6 18 40 40
+76 22 36 40 68 40 70 0 3 11 21 24 42 21 33 129 215 176 297 10 17 41 71 70
+120 29 50 72 123 94 162 26 46 47 73 59 73 9 0 17 -4 17 -9z"/>
+</g>
+</svg>
+<figcaption class="article-text">Willian Morais Alimentos LTDA.</figcaption>
+    <article style="margin-block: 10px">
+      <h3 class="sub-title">Willian Morais Alimentos LTDA.</h3>
+      <p class="article-text">
+        Uma das nossas apoiadoras a Willian Morais Alimentícios nos auxilia com doações mensais de alimentos não
+        perecíveis, além de ser um dos mantenedores do projeto.
+      </p>
+    </article>
+
+      </figure>
+      <figure class="sponsor-figure">
+        <svg version="1.0" width="100px" viewBox="0 0 334.000000 398.000000" preserveAspectRatio="xMidYMid meet">
+          <g transform="translate(0.000000,398.000000) scale(0.100000,-0.100000)" fill="var(--color-black)"
+            stroke="none">
+            <path d="M800 3656 c-63 -16 -111 -48 -164 -107 -86 -95 -79 12 -87 -1369 -3
 -674 -3 -1280 1 -1346 8 -141 26 -188 96 -258 71 -71 122 -91 234 -91 79 0
 103 4 143 23 61 30 129 98 158 158 33 69 38 187 38 971 l1 692 -36 27 c-52 40
 -110 126 -135 202 -102 305 145 618 463 588 88 -8 164 -37 236 -90 l58 -43
 409 -5 c443 -6 487 -2 571 47 23 13 56 41 74 62 145 165 96 425 -98 520 l-57
-28 -930 2 c-713 1 -941 -1 -975 -11z"
-              />
-              <path
-                d="M2127 2836 c-50 -14 -137 -69 -177 -111 -16 -17 -26 -44 -32 -87 -5
+28 -930 2 c-713 1 -941 -1 -975 -11z" />
+            <path d="M2127 2836 c-50 -14 -137 -69 -177 -111 -16 -17 -26 -44 -32 -87 -5
 -38 -22 -92 -44 -136 -68 -139 -187 -223 -346 -246 l-82 -12 -23 -44 c-33 -65
 -46 -148 -34 -216 19 -103 -24 -37 767 -1163 200 -285 239 -316 404 -316 112
 0 163 20 234 91 60 59 88 121 94 205 9 124 -9 161 -207 444 -47 66 -141 201
 -211 300 -69 99 -168 240 -219 314 l-93 134 38 36 c281 262 305 286 332 340
 23 48 27 68 27 141 -1 65 -6 96 -22 132 -29 65 -105 143 -168 173 -64 32 -168
-41 -238 21z"
-              />
-            </g>
-          </svg>
+41 -238 21z" />
+          </g>
+        </svg>
+        <figcaption class="article-text">R. Vestimentas.</figcaption>
+        <article style="margin-block: 10px">
+          <h3 class="sub-title">R. Vestimentas.</h3>
+          <p class="article-text">
+            A R.Vestimentas auxilia o projeto com doações de roupas, sendo calças,
+            moletons, blusas e outros items. Também sendo um dos mantenedores do
+            projeto.
+          </p>
+        </article>
+      </figure>
+      <figure class="sponsor-figure">
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="250px" viewBox="0 0 752.000000 268.000000"
+          preserveAspectRatio="xMidYMid meet">
 
-          <figcaption class="article-text">R. Vestimentas.</figcaption>
-        </figure>
-      </section>
+          <g transform="translate(0.000000,268.000000) scale(0.100000,-0.100000)" fill="var(--color-black)"
+            stroke="none">
+            <path d="M5080 2648 c-132 -28 -209 -64 -290 -136 -73 -65 -138 -189 -154
+-293 -10 -65 -22 -80 -36 -44 -46 122 -141 240 -223 279 -134 62 -283 61 -382
+-4 -34 -22 -123 -126 -139 -163 -3 -8 -12 -3 -23 13 -68 94 -112 120 -202 120
+-148 0 -284 -103 -361 -274 -17 -36 -34 -66 -38 -66 -4 0 -18 17 -32 38 -72
+107 -230 230 -360 279 -200 75 -447 84 -660 24 -19 -5 -46 -13 -60 -17 -32 -9
+-163 -78 -192 -101 -98 -79 -202 -205 -239 -290 -17 -39 -29 -43 -29 -8 0 42
+-28 133 -57 186 -96 178 -314 289 -565 289 -139 0 -309 -46 -423 -114 -74 -44
+-173 -133 -223 -201 -47 -65 -121 -212 -142 -285 -7 -25 -16 -56 -20 -70 -47
+-147 -63 -452 -35 -670 35 -274 96 -423 225 -551 126 -124 306 -188 535 -188
+196 -1 379 51 528 149 75 49 132 100 181 160 l29 35 21 -29 c57 -79 121 -149
+175 -190 33 -25 63 -46 66 -46 4 0 19 -8 33 -18 173 -120 614 -135 843 -30
+122 56 252 160 325 260 38 51 51 58 60 30 21 -66 72 -147 119 -190 82 -75 148
+-102 271 -109 162 -10 292 75 345 223 19 54 30 59 43 19 39 -132 98 -195 212
+-230 93 -28 232 -11 292 37 43 33 93 97 119 149 15 32 31 58 35 58 4 1 12 -25
+18 -56 39 -202 150 -293 340 -280 41 2 98 12 126 22 108 36 196 130 229 243
+18 59 18 93 -1 439 l-7 113 132 0 c73 0 152 5 177 11 43 11 71 6 47 -9 -33
+-21 -72 -166 -73 -269 -1 -233 109 -418 310 -518 229 -116 626 -93 913 51 209
+105 323 248 379 479 76 316 76 935 0 1215 -66 242 -204 358 -429 360 -113 0
+-220 -59 -256 -143 -35 -77 -40 -125 -32 -270 5 -78 9 -207 9 -287 1 -124 -2
+-150 -17 -173 -23 -36 -74 -37 -109 -2 -51 50 -56 138 -32 519 12 183 -46 273
+-204 321 -102 31 -240 9 -311 -51 -16 -13 -34 -24 -40 -24 -6 0 -19 19 -30 43
+-56 122 -177 197 -374 232 -91 16 -268 18 -337 3z m314 -59 c186 -33 288 -95
+346 -210 21 -41 26 -98 10 -127 -18 -33 -48 -137 -55 -189 -7 -58 -21 -74 -80
+-92 -44 -14 -171 -10 -242 6 -92 22 -113 -2 -113 -130 0 -131 -8 -127 225
+-127 l193 0 6 -27 c3 -16 8 -50 11 -78 14 -118 41 -207 81 -267 33 -52 31 -63
+-18 -83 -90 -36 -148 -45 -292 -45 -116 0 -146 -3 -156 -15 -13 -15 -13 -28 6
+-398 8 -144 -5 -205 -57 -277 -81 -111 -248 -161 -378 -111 -74 28 -119 81
+-144 171 -5 19 -14 251 -18 515 -5 264 -13 518 -19 565 -18 143 -23 446 -10
+514 25 128 58 195 135 271 74 74 132 104 260 134 56 13 237 13 309 0z m-1121
+-163 c75 -20 107 -38 159 -90 45 -45 112 -166 130 -234 33 -128 44 -185 54
+-273 l7 -57 -36 -17 c-99 -47 -147 -132 -147 -262 0 -169 64 -290 170 -324 19
+-6 39 -15 43 -19 9 -8 -6 -196 -24 -295 -25 -138 -89 -271 -153 -320 -103 -77
+-259 -74 -353 9 -97 85 -120 194 -87 402 31 195 34 231 40 382 10 254 -22 352
+-114 352 -88 0 -126 -164 -87 -375 9 -44 19 -102 25 -130 33 -181 40 -229 39
+-300 0 -134 -35 -244 -97 -308 -34 -36 -50 -45 -125 -76 -68 -27 -228 0 -302
+52 -111 77 -188 255 -148 339 66 139 113 376 113 576 0 150 -28 326 -70 437
+-34 90 -35 109 -9 173 37 92 70 144 124 198 102 102 258 125 326 48 23 -26 69
+-112 69 -128 0 -8 7 -19 15 -26 12 -10 18 -10 30 0 8 7 15 19 15 26 0 7 11 37
+24 66 72 156 203 217 369 174z m-3088 -21 c99 -22 128 -33 190 -71 108 -64
+169 -137 204 -244 49 -147 9 -401 -75 -486 -59 -58 -199 -82 -296 -48 -76 26
+-108 79 -108 181 0 92 -39 136 -106 119 -82 -21 -154 -205 -154 -394 0 -159
+45 -294 110 -327 74 -38 145 -7 277 124 153 152 227 201 299 201 l34 0 0 -82
+c1 -166 39 -397 86 -520 l18 -47 -29 -41 c-76 -109 -223 -212 -380 -265 -164
+-56 -405 -59 -573 -6 -81 25 -150 68 -220 137 -59 59 -80 89 -116 166 -24 51
+-47 107 -50 123 -4 17 -11 48 -16 70 -22 92 -40 267 -40 386 0 542 207 904
+575 1007 123 34 269 41 370 17z m5723 4 c110 -25 184 -86 237 -195 44 -89 60
+-163 80 -354 25 -242 17 -629 -16 -820 -51 -294 -149 -442 -369 -557 -232
+-121 -557 -156 -788 -84 -169 52 -297 188 -337 357 -35 147 -4 339 64 391 26
+20 96 15 153 -11 42 -18 164 -100 188 -126 17 -18 92 -62 129 -75 79 -28 213
+-14 261 28 24 20 36 65 23 86 -20 33 -75 50 -163 51 -155 0 -274 37 -377 115
+-87 65 -92 74 -64 113 65 92 68 219 8 317 -25 40 -92 90 -147 108 l-45 15 -3
+92 c-3 89 -2 92 29 131 49 62 69 127 69 221 l0 82 42 38 c76 68 187 87 292 47
+115 -42 153 -116 142 -272 -23 -326 -19 -418 21 -510 45 -105 213 -101 245 5
+15 50 16 229 4 455 -8 133 -7 159 8 207 40 126 159 181 314 145z m-4233 -27
+c210 -42 381 -153 488 -317 42 -65 43 -74 18 -205 -51 -271 -53 -642 -6 -970
+6 -37 3 -53 -16 -85 -72 -126 -184 -232 -316 -300 -108 -55 -190 -74 -357 -82
+-225 -10 -419 42 -561 151 -117 90 -211 235 -176 271 5 6 17 33 26 60 61 179
+59 379 -5 494 -21 37 -96 101 -118 101 -32 0 -32 45 -1 210 47 249 163 439
+344 559 108 72 146 87 285 116 73 15 313 13 395 -3z m2845 -475 c58 0 117 3
+133 7 l27 8 0 -71 0 -71 -180 0 -180 0 0 71 0 71 48 -7 c26 -4 94 -7 152 -8z
+m-2252 -74 c25 -88 32 -122 42 -202 18 -149 11 -309 -21 -471 -20 -102 -47
+-190 -59 -190 -11 0 -30 275 -30 423 0 195 30 477 50 477 4 0 12 -17 18 -37z
+m-2227 -108 c3 -39 12 -88 19 -109 27 -86 121 -136 254 -136 36 0 66 -3 66 -7
+0 -5 -16 -19 -35 -32 -19 -13 -80 -68 -136 -123 -146 -144 -185 -163 -240
+-115 -93 79 -87 455 9 568 39 48 56 35 63 -46z m3607 -146 c7 -68 11 -176 10
+-239 -3 -109 -4 -115 -23 -112 -26 4 -64 31 -87 63 -42 56 -62 242 -34 310 27
+64 79 114 111 105 6 -1 16 -59 23 -127z m1139 109 c41 -17 102 -78 119 -117 8
+-18 14 -54 14 -80 0 -46 -28 -122 -49 -136 -39 -24 -101 124 -117 279 -4 36
+-4 66 -1 66 3 0 19 -5 34 -12z m-1781 -118 c22 -74 14 -444 -12 -570 -5 -22
+-7 -23 -15 -7 -6 9 -14 52 -20 94 -5 43 -15 114 -21 158 -7 44 -12 134 -13
+200 0 100 3 126 18 149 25 38 47 30 63 -24z m-2443 -16 c11 -11 -5 -34 -24
+-34 -22 0 -24 11 -7 28 13 13 22 15 31 6z m90 -126 c92 -49 135 -242 91 -413
+-9 -33 -18 -70 -21 -83 -8 -34 -36 -23 -46 18 -4 19 -12 53 -18 75 -26 108
+-51 415 -33 415 3 0 15 -5 27 -12z m4217 -198 c0 -5 -9 -10 -20 -10 -11 0 -20
+5 -20 10 0 6 9 10 20 10 11 0 20 -4 20 -10z m455 -186 c120 -6 145 -10 145
+-28 0 -22 -47 -36 -118 -36 -52 1 -77 6 -112 25 -25 14 -53 28 -62 31 -32 11
+-20 27 15 19 17 -3 77 -9 132 -11z" />
+            <path d="M2378 1658 c-38 -22 -47 -38 -68 -120 -14 -54 -9 -223 9 -279 20 -65
+64 -99 126 -99 78 0 121 47 144 157 15 69 10 225 -9 286 -22 73 -123 101 -202
+55z m139 -65 c26 -39 31 -208 8 -285 -18 -62 -43 -88 -86 -88 -53 0 -79 65
+-79 200 0 47 5 102 10 122 21 74 111 106 147 51z" />
+          </g>
+        </svg>
+        <figcaption class="article-text">Confy.</figcaption>
+        <article style="margin-block: 10px">
+          <h3 class="sub-title">Confy.</h3>
+          <p class="article-text">
+            A Confy é uma empresa do ramo de cobertores e roupas de cama, em agosto de 2021 quando foram registradas as
+            temperaturas mais baixas do ano. A Confy entrou em contato com a organização com intuito de auxiliar com
+            distribuição de cobertores e conforme o tempo se tornou uma das nossas mantenedoras.
+          </p>
+        </article>
+      </figure>
+    </section>
 
-      <article style="margin-block: 10px">
-        <h3 style="color: var(--color-black);">Willian Morais Alimentícios</h3>
-        <p class="article-text">
-          Uma das nossas apoiadoras a Willian Morais Alimentícios nos auxilia
-          com doações mensais de alimentos não perecíveis, além de ser um de ser
-          um dos mantenedores do projeto.
-        </p>
-      </article>
-      <article style="margin-block: 10px">
-        <h3 style="color: var(--color-black);">R. Vestimentas</h3>
-        <p class="article-text">
-          A R.Vestimentas auxilia o projeto com doações de roupas, sendo calças,
-          moletons, blusas e outros items. Também sendo um dos mantenedores do
-          projeto.
-        </p>
-      </article>
-
-      <section class="second-title">
-        <h1>Projetos Apoiados</h1>
-      </section>
-      <section class="sponsor-container">
-        <figure class="sponsor-figure">
-          <svg
-          version="1.0"
-          class="sponsors-img"
-          width="100px"
-          viewBox="0 0 208.000000 230.000000"
-          preserveAspectRatio="xMidYMid meet"
-          >
-          <g
-          transform="translate(0.000000,230.000000) scale(0.100000,-0.100000)"
-          fill="var(--color-black)"
-          stroke="none"
-          >
-          <path
-          d="M472 1853 l-142 -97 0 -518 c0 -556 -1 -567 -50 -583 -36 -11 -21
+    <section class="second-title">
+      <h1>Projetos Apoiados</h1>
+    </section>
+    <section class="sponsor-container">
+      <figure class="sponsor-figure">
+        <svg version="1.0" class="sponsors-img" width="100px" viewBox="0 0 208.000000 230.000000"
+          preserveAspectRatio="xMidYMid meet">
+          <g transform="translate(0.000000,230.000000) scale(0.100000,-0.100000)" fill="var(--color-black)"
+            stroke="none">
+            <path d="M472 1853 l-142 -97 0 -518 c0 -556 -1 -567 -50 -583 -36 -11 -21
           -22 38 -28 73 -8 156 -37 249 -87 l74 -40 42 29 c56 38 172 96 225 111 l42 13
           0 341 c0 311 -2 345 -19 382 -20 44 -60 74 -131 99 l-43 15 -132 -85 c-72 -47
           -135 -85 -138 -85 -4 0 -7 108 -7 240 l0 240 42 -30 c117 -85 301 -76 381 20
           29 34 43 86 32 121 -7 22 -8 21 -19 -11 -14 -45 -66 -73 -116 -64 -52 10 -124
           49 -153 84 -14 16 -27 30 -29 30 -2 0 -68 -44 -146 -97z m242 -474 c21 -6 49
           -21 62 -34 l24 -24 0 -354 c0 -313 -2 -356 -16 -361 -8 -3 -80 21 -160 55
-          l-144 61 0 286 0 287 78 47 c83 51 96 54 156 37z"
-          />
-          <path
-          d="M1330 1908 c-65 -47 -149 -91 -207 -108 l-43 -13 0 -336 c0 -306 2
+          l-144 61 0 286 0 287 78 47 c83 51 96 54 156 37z" />
+            <path d="M1330 1908 c-65 -47 -149 -91 -207 -108 l-43 -13 0 -336 c0 -306 2
           -340 19 -377 20 -44 60 -74 131 -99 l43 -15 133 85 c73 47 135 85 138 85 4 0
           6 -108 6 -240 l0 -240 -37 24 c-81 53 -203 72 -294 45 -84 -26 -142 -107 -124
           -176 l7 -28 11 35 c31 94 208 89 320 -10 l36 -31 115 92 116 93 0 512 c0 355
           3 521 11 537 6 14 22 31 35 38 35 18 30 39 -9 39 -58 0 -149 29 -247 78 -52
           26 -97 48 -100 49 -3 0 -30 -17 -60 -39z m77 -124 l143 -67 0 -282 0 -282 -75
           -47 c-42 -25 -88 -46 -103 -46 -48 0 -101 20 -122 47 -19 25 -20 38 -20 379 0
-          347 1 358 29 363 3 1 69 -29 148 -65z"
-          />
-        </g>
-      </svg>
-      <figcaption class="article-text">Glock Nine.</figcaption>
-    </figure>
-  </section>
-  <article style="margin-block: 10px">
-    <h3 style="color: var(--color-black);">GlockNine</h3>
-    <p class="article-text">
-      
-    </p>
-  </article>
-</section>
-
-    <section id="marquee-container-grid">
-      <input
-        type="checkbox"
-        id="hide-btn"
-        checked="checked"
-        class="checkbox-icon"
-      />
-      <marquee
-        id="marquee-text"
-        behavior="scrolling"
-        direction="left"
-        scrollamount="5"
-      >
-        Veja nosso massivo evento de doação, acesse para ver as localidades ➤
-        <a href="Sobre.HTML">Veja mais</a> / Deseja doar? Preencha o formulário
-        de Doação ➤ <a href="Formulário.html">Veja mais</a> / Se torne um
-        voluntário pela nossa Causa ➤ <a href="Formulário.html">Veja mais</a> /
-        Acesse nossas redes sociais ➤ <a href="#Footer">Veja mais</a> / Como
-        doação aceitamos cestas básicas, alimentos não perecíveis, roupas,
-        cobertores, brinquedos. Além disso aceitamos Volutários
-      </marquee>
+          347 1 358 29 363 3 1 69 -29 148 -65z" />
+          </g>
+        </svg>
+        <figcaption class="article-text">Glock Nine.</figcaption>
+      </figure>
     </section>
+    <article style="margin-block: 10px">
+      <h3 style="color: var(--color-black);">GlockNine</h3>
+      <p class="article-text">
 
-    <footer id="Footer">
-      <div class="Footer-Title">
-        <h2>ONG Mangará</h2>
-      </div>
-      <nav class="Contacts-nav">
-        <p>Nossas Redes Sociais:</p>
-        <ul>
-          <li>
-            <a class="Footer-link" href="Contato.HTML">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30px"
-                id="footer-Instagram"
-                fill="currentColor"
-                class="bi bi-instagram"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-                />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="Footer-link" tar href="Contato.HTML">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30px"
-                id="footer-Facebook"
-                fill="currentColor"
-                class="bi bi-facebook"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-                />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="Footer-link" tar href="Contato.HTML">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30px"
-                id="footer-Twitter"
-                fill="currentColor"
-                class="bi bi-twitter"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
-                />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="Footer-link" target="_parent" href="Contato.HTML">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30px"
-                id="footer-Email"
-                fill="currentColor"
-                class="bi bi-envelope-at"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"
-                />
-                <path
-                  d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"
-                />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="Footer-link" target="_parent" href="Contato.HTML">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30px"
-                id="footer-Telefone"
-                fill="currentColor"
-                class="bi bi-whatsapp"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
-                />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <nav class="Info-nav">
-        <ul class="Info-nav-list">
-          <li>
-            <a href="index.html">Nossa História</a>
-          </li>
+      </p>
+    </article>
+  </section>
 
-          <li>
-            <a href="Sobre.HTML">Nossa Rotina</a>
-          </li>
+  <section id="marquee-container-grid">
+    <input type="checkbox" id="hide-btn" checked="checked" class="checkbox-icon" />
+    <marquee id="marquee-text" behavior="scrolling" direction="left" scrollamount="5">
+      Veja nosso massivo evento de doação, acesse para ver as localidades ➤
+      <a href="Sobre.HTML">Veja mais</a> / Deseja doar? Preencha o formulário
+      de Doação ➤ <a href="Formulário.html">Veja mais</a> / Se torne um
+      voluntário pela nossa Causa ➤ <a href="Formulário.html">Veja mais</a> /
+      Acesse nossas redes sociais ➤ <a href="#Footer">Veja mais</a> / Como
+      doação aceitamos cestas básicas, alimentos não perecíveis, roupas,
+      cobertores, brinquedos. Além disso aceitamos Volutários
+    </marquee>
+  </section>
 
-          <li>
-            <a href="Sobre.HTML">Nossas Unidades</a>
-          </li>
-          <li>
-            <a href="Sobre.HTML">Nossos Eventos</a>
-          </li>
+  <footer id="Footer">
+    <div class="Footer-Title">
+      <h2>ONG Mangará</h2>
+    </div>
+    <nav class="Contacts-nav">
+      <p>Nossas Redes Sociais:</p>
+      <ul>
+        <li>
+          <a class="Footer-link" href="Contato.HTML">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" id="footer-Instagram" fill="currentColor"
+              class="bi bi-instagram" viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="Footer-link" tar href="Contato.HTML">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" id="footer-Facebook" fill="currentColor"
+              class="bi bi-facebook" viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="Footer-link" tar href="Contato.HTML">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" id="footer-Twitter" fill="currentColor"
+              class="bi bi-twitter" viewBox="0 0 16 16">
+              <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="Footer-link" target="_parent" href="Contato.HTML">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" id="footer-Email" fill="currentColor"
+              class="bi bi-envelope-at" viewBox="0 0 16 16">
+              <path
+                d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
+              <path
+                d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="Footer-link" target="_parent" href="Contato.HTML">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" id="footer-Telefone" fill="currentColor"
+              class="bi bi-whatsapp" viewBox="0 0 16 16">
+              <path
+                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="Info-nav">
+      <ul class="Info-nav-list">
+        <li>
+          <a href="index.html">Nossa História</a>
+        </li>
 
-          <li>
-            <a href="Formulário.html">Formulário de Doação</a>
-          </li>
-        </ul>
-      </nav>
+        <li>
+          <a href="Sobre.HTML">Nossa Rotina</a>
+        </li>
 
-      <div class="copyright-div">
-        <p>
-          &copy; Copyright ONG Mangará &nbsp;<span id="copyright-year"></span>.
-          <br />
-          Todos direitos Reservados
-        </p>
-      </div>
-    </footer>
-    <script src="Javascript/DarkMode.js"></script>
-    <script src="Javascript/Miscellaneous.js"></script>
-  </body>
+        <li>
+          <a href="Sobre.HTML">Nossas Unidades</a>
+        </li>
+        <li>
+          <a href="Sobre.HTML">Nossos Eventos</a>
+        </li>
+
+        <li>
+          <a href="Formulário.html">Formulário de Doação</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="copyright-div">
+      <p>
+        &copy; Copyright ONG Mangará &nbsp;<span id="copyright-year"></span>.
+        <br />
+        Todos direitos Reservados
+      </p>
+    </div>
+  </footer>
+  <script src="Javascript/DarkMode.js"></script>
+  <script src="Javascript/Miscellaneous.js"></script>
+</body>
+
 </html>
