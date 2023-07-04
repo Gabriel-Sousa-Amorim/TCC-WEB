@@ -261,7 +261,20 @@ article {
   color: var(--color-black);
   font-size: var(--paragraph-size);
 }
-
+.sponsor-container {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
+.sponsor-figure {
+  flex-basis:50% ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sponsor-figure>figcaption {
+font-size: calc(var(--paragraph-size) - 2px);
+}
 /*Seção com textos e imagens na index.html*/
 .section-flex {
   display: flex;
@@ -1000,10 +1013,6 @@ footer nav ul li {
     font-size: x-large;
   }
 
-  .main-title>h1 {
-    font-size: 20px;
-  }
-
   .button-flex-container {
     flex-wrap: wrap;
   }
@@ -1059,9 +1068,15 @@ footer nav ul li {
     cursor: pointer;
     width: 110px;
   }
-
-  .Regions-IMG>text {
-    font-size: 25px;
+  .sponsor-container {
+    flex-direction: column;
+  }
+  .sponsor-figure {
+    align-self: center;
+    align-items: center;
+  }
+  .sponsor-figure>figcaption {
+    text-align: center;
   }
 }
 
