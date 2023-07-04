@@ -143,10 +143,10 @@ function Observed_elmt() {
 //Conteúdo Relacionado as regiões da página Sobre.HTML 
 //Com o conteudo e a função para por ou mudar o conteudo da description-container e etc... 
 const NorteContext = "A unidade da zona norte se localiza no bairro do Parque Edu Chaves, onde há fácil acesso para outros bairros da Zona Norte como Vila Medeiros, Vila Maria, Jaçanã, Tremembé, mas também atendendo regiões mais distantes da própria zona norte, além de realizarmos coleta e distribuição de doações em Guarulhos."
-const LesteContext = "a"
-const CentroContext = "A primeira unidade fundada da ONG, localizada no Bom Retiro que é"
+const LesteContext = "Fundada juntamente com a Unidade Sul, a Unidade da zona leste se localiza em Santo Amaro. Auxiliando comunidades da região. Com dedicação e empenho, buscamos ajudar os bairros do Capão Redondo, Jardim Ângela, Grajaú, Paraisópolis e Heliópolis, e ainda expandindo nossos esforços auxiliando também a região de Diadema, Embu das Artes e Tabõao da Serra."
+const CentroContext = "A primeira unidade fundada da ONG, localizada no Bom Retiro próximo ao Conjunto Parque do Gato, onde é uma localização estratégica para fácil acesso a outras áreas do centro e como Sé, Vale do Anhagabaú e outras demais áreas. Sendo a unidade principal."
 const OesteContext = "a"
-const SulContext = "Fundada juntamente com a Unidade leste a Unidade da zona sul se localiza em Santo Amaro. Auxiliando comunidades da região. Com dedicação e empenho, buscamos ajudar os bairros do Capão Redondo, Jardim Ângela, Grajaú, Paraisópolis e Heliópolis, e ainda expandindo nossos esforços auxiliando também a região de Diadema, Embu das Artes e Tabõao da Serra."
+const SulContext = "Fundada juntamente com a Unidade leste, a Unidade da zona sul se localiza em Santo Amaro. Auxiliando comunidades da região. Com dedicação e empenho, buscamos ajudar os bairros do Capão Redondo, Jardim Ângela, Grajaú, Paraisópolis e Heliópolis, e ainda expandindo nossos esforços auxiliando também a região de Diadema, Embu das Artes e Tabõao da Serra."
 function ChangingContentRegion(idRegion, Region, text, color) {
     let description = document.getElementById("description-container")
     document.getElementById(idRegion).addEventListener("click", function () {
