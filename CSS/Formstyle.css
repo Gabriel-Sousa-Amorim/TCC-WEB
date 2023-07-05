@@ -1,4 +1,8 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&family=Sacramento&display=swap');
+* {
+    font-family: 'Reem Kufi', sans-serif;
+}
 
 body {
     height: 100%;
@@ -8,13 +12,13 @@ body {
     background-attachment: fixed;
     width: 100%;
 }
-figure {
+#figure-icon {
     filter: invert(1) brightness(65%);
 }
 .bg-warning-dark {
     background-color:rgb(107, 91, 0) ;
 }
-.justify-text{
+.text-justify{
     text-align: justify;
     text-justify: inter-word;
 }

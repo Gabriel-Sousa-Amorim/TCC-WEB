@@ -1,9 +1,26 @@
-/////////////////////////
-function TypeForms() {
-    let radio = document.getElementsByName("TypeForms");
-    console.log(radio)
-}
-TypeForms()
+//Botão Remover
+document.getElementsByName('TypeForms').forEach(i => i.addEventListener('click', function() {
+    document.getElementById('Form-Doador').classList.remove('d-none');
+    document.getElementById('Form-Voluntario').classList.remove('d-none');
+    if (i.value == 'Doador') {
+        document.getElementById('Form-Voluntario').classList.add('d-none');
+        document.getElementById('Form-Doador').classList.remove('d-none');
+    }
+    else if (i.value == 'Voluntário') {
+        document.getElementById('Form-Doador').classList.add('d-none');
+        document.getElementById('Form-Voluntario').classList.remove('d-none');
+    }
+    else {
+        return false;
+    }
+}));
+//Previne Colar informações nas tags input (Ctrl+V);
+document.querySelectorAll("input").forEach(i =>
+    i.addEventListener("drop", e => e.preventDefault())
+    )
+document.querySelectorAll("input").forEach(i =>
+    i.addEventListener("paste", e => e.preventDefault())
+    )
 
 //Validador Nome;
 const NameExp = new RegExp(/^[A-zÀ-ú ,.'-]+$/i)
@@ -31,18 +48,18 @@ function ValidaIdade(x) {
     x.classList.remove('is-invalid')
     let dataNasc = new Date(x.value)
     let dataAtual = new Date()
-    if (dataAtual.getFullYear() > dataNasc.getFullYear() 
-    && dataNasc.getFullYear() > (dataAtual.getFullYear() - 120)) 
+    if (dataAtual.getFullYear() > dataNasc.getFullYear()
+    && dataNasc.getFullYear() > (dataAtual.getFullYear() - 120))
     {
-        if (dataAtual.getFullYear() - dataNasc.getFullYear() < 18) 
+        if (dataAtual.getFullYear() - dataNasc.getFullYear() < 18)
         {
             x.classList.add('is-invalid')
             return false;
-        } else if (dataAtual.getFullYear() - dataNasc.getFullYear() == 18) 
+        } else if (dataAtual.getFullYear() - dataNasc.getFullYear() == 18)
         {
-            if(dataAtual.getMonth() == dataNasc.getMonth()) 
+            if(dataAtual.getMonth() == dataNasc.getMonth())
             {
-                if (dataAtual.getDate() > dataNasc.getDate()) 
+                if (dataAtual.getDate() > dataNasc.getDate())
                 {
                     x.classList.add('is-valid')
                     return true;
@@ -62,7 +79,7 @@ function ValidaIdade(x) {
             return true;
         };
     } else {
-        x.classList.add('is-invalid')           
+        x.classList.add('is-invalid')
         return false;
     }
 }
@@ -78,13 +95,13 @@ document.getElementById("Data-Doador").addEventListener("focusout", function() {
 })
 
 //Valida CPF
-const CPFExp = new RegExp(/^[a-z ,.'-]+$/i)
+const CPFExp = new RegExp(/([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})/i)
 function ValidaCPF(x) {
     let CPF = document.getElementById(`${x}`).value;
     console.log(CPF.length)
     console.log(CPF)
     console.log(CPF)
-    if (CPF.length == 11){
+    if (CPF.length == 11 && CPFExp.test()){
         let i =  0;
         let  newCPF =  0;
         let ObjCPF = Object.values(CPF);
@@ -113,8 +130,8 @@ function ValidaCPF(x) {
 
 const TelefoneExp = new RegExp(/^\9{1}?(\d{4})?[ -]?(\d{4})$/);
 function ValidaTelefone(x) {
-    //Regex Expression própria, verifica se há o digito 9 no início e após isso verifica se há 4 digitos numéricos 
-    //se sim aceita a separação por hifén,espaço ou sem 
+    //Regex Expression própria, verifica se há o digito 9 no início e após isso verifica se há 4 digitos numéricos
+    //se sim aceita a separação por hifén,espaço ou sem
     x.classList.remove('is-valid')
     x.classList.remove('is-invalid')
     if (TelefoneExp.test(x.value) == true) {
@@ -146,16 +163,10 @@ function ValidaEmail(x) {
         return false;
     }
 }
-//Previne Colar informações nas tags input (Ctrl+V);
-document.querySelectorAll("input").forEach(i => 
-    i.addEventListener("drop", e => e.preventDefault())
-    )
-document.querySelectorAll("input").forEach(i => 
-    i.addEventListener("paste", e => e.preventDefault())
-    )
+
 
 document.getElementById("Email-Voluntario").addEventListener("blur", function() {
-    
+
     ValidaEmail(document.getElementById("Email-Voluntario"))
 })
 document.getElementById("Email-Doador").addEventListener("blur", function() {
@@ -190,16 +201,17 @@ document.getElementById("Submit-Doador").addEventListener("click", function() {
         ValidaImagem(document.getElementById("Foto-Doador")) == true &&
         ValidaTelefone(document.getElementById("Telefone-Doador")) == true
     ) {
-        console.log(1)
+        document.querySelector('main').classList.add('d-none')
+        document.getElementById('Form-Doador').classList.add("d-none");
+        document.getElementById('Submit-Section-Doador').classList.remove("d-none");
+        document.getElementById('Span-nome').textContent = `${document.getElementById('Nome-Doador').value}`
     } else {
-        console.log(document.getElementById("Foto-Doador"))
-        console.log(document.getElementById("Foto-Doador").value)
-        console.log(ImageExp.test(document.getElementById("Foto-Doador").value))
+        document.getElementById('Span-nome').textContent = `${document.getElementById('Nome-Doador').value}`
         ValidaNome(document.getElementById("Nome-Doador"))
         ValidaIdade(document.getElementById("Data-Doador"))
         ValidaImagem(document.getElementById("Foto-Doador"))
         ValidaEmail(document.getElementById("Email-Doador"))
-        ValidaImagem(document.getElementById("Foto-Doador")) 
+        ValidaImagem(document.getElementById("Foto-Doador"))
         ValidaTelefone(document.getElementById("Telefone-Doador"))
     }
 })
