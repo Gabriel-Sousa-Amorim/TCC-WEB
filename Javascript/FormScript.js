@@ -1,5 +1,5 @@
 //Botão Remover
-document.getElementsByName('TypeForms').forEach(i => i.addEventListener('click', function() {
+document.getElementsByName('TypeForms').forEach(i => i.addEventListener('click', function () {
     document.getElementById('Form-Doador').classList.remove('d-none');
     document.getElementById('Form-Voluntario').classList.remove('d-none');
     if (i.value == 'Doador') {
@@ -14,13 +14,19 @@ document.getElementsByName('TypeForms').forEach(i => i.addEventListener('click',
         return false;
     }
 }));
+
+document.getElementById('Copy-Email-Btn').addEventListener('click', function () {
+    let email = 'Ong.mangara@gmail.com'
+    navigator.clipboard.writeText(email);
+})
+
 //Previne Colar informações nas tags input (Ctrl+V);
 document.querySelectorAll("input").forEach(i =>
     i.addEventListener("drop", e => e.preventDefault())
-    )
+)
 document.querySelectorAll("input").forEach(i =>
     i.addEventListener("paste", e => e.preventDefault())
-    )
+)
 
 //Validador Nome;
 const NameExp = new RegExp(/^[A-zÀ-ú ,.'-]+$/i)
@@ -35,10 +41,10 @@ function ValidaNome(x) {
         return false;
     }
 }
-document.getElementById("Nome-Voluntario").addEventListener("blur", function() {
+document.getElementById("Nome-Voluntario").addEventListener("blur", function () {
     ValidaNome(document.getElementById("Nome-Voluntario"))
 })
-document.getElementById("Nome-Doador").addEventListener("blur", function() {
+document.getElementById("Nome-Doador").addEventListener("blur", function () {
     ValidaNome(document.getElementById("Nome-Doador"))
 })
 
@@ -49,25 +55,20 @@ function ValidaIdade(x) {
     let dataNasc = new Date(x.value)
     let dataAtual = new Date()
     if (dataAtual.getFullYear() > dataNasc.getFullYear()
-    && dataNasc.getFullYear() > (dataAtual.getFullYear() - 120))
-    {
-        if (dataAtual.getFullYear() - dataNasc.getFullYear() < 18)
-        {
+        && dataNasc.getFullYear() > (dataAtual.getFullYear() - 120)) {
+        if (dataAtual.getFullYear() - dataNasc.getFullYear() < 18) {
             x.classList.add('is-invalid')
             return false;
-        } else if (dataAtual.getFullYear() - dataNasc.getFullYear() == 18)
-        {
-            if(dataAtual.getMonth() == dataNasc.getMonth())
-            {
-                if (dataAtual.getDate() > dataNasc.getDate())
-                {
+        } else if (dataAtual.getFullYear() - dataNasc.getFullYear() == 18) {
+            if (dataAtual.getMonth() == dataNasc.getMonth()) {
+                if (dataAtual.getDate() > dataNasc.getDate()) {
                     x.classList.add('is-valid')
                     return true;
                 } else {
                     x.classList.add('is-invalid')
                     return false;
                 }
-            } else if(dataAtual.getMonth() < dataNasc.getMonth()) {
+            } else if (dataAtual.getMonth() < dataNasc.getMonth()) {
                 x.classList.add('is-invalid')
                 return false;
             } else {
@@ -83,50 +84,71 @@ function ValidaIdade(x) {
         return false;
     }
 }
-document.getElementById("Data-Voluntário").addEventListener("focusout", function() {
-    document.getElementById("Data-Voluntário").classList.remove('is-valid')
-    document.getElementById("Data-Voluntário").classList.remove('is-invalid')
+document.getElementById("Data-Voluntário").addEventListener("focusout", function () {
     ValidaIdade(document.getElementById("Data-Voluntário"))
 })
-document.getElementById("Data-Doador").addEventListener("focusout", function() {
-    document.getElementById("Data-Voluntário").classList.remove('is-valid')
-    document.getElementById("Data-Voluntário").classList.remove('is-invalid')
+document.getElementById("Data-Doador").addEventListener("focusout", function () {
     ValidaIdade(document.getElementById("Data-Doador"))
 })
 
 //Valida CPF
-const CPFExp = new RegExp(/([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})/i)
-function ValidaCPF(x) {
-    let CPF = document.getElementById(`${x}`).value;
-    console.log(CPF.length)
-    console.log(CPF)
-    console.log(CPF)
-    if (CPF.length == 11 && CPFExp.test()){
-        let i =  0;
-        let  newCPF =  0;
+    const CPFExp = new RegExp(/([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})/i)
+    function ValidaCPF(x) {
+        x.classList.remove('is-invalid')
+        x.classList.remove('is-valid')
+        let CPF = x.value;
+        let i = 0;
+        let newCPF = 0;
         let ObjCPF = Object.values(CPF);
-        for (f = 10; f >= 2;f--) {
-            ObjCPF[i] = parseInt(ObjCPF[i]) * f;
-            console.log(ObjCPF);
-            i++;
-            newCPF = ObjCPF.slice(0,9);
+        let soma = 0;
+        let v = 0;
+        if (CPF.length == 11 && CPFExp.test(CPF) == true) {
+            for (f = 10; f >= 2; f--) {
+                ObjCPF[i] = parseInt(ObjCPF[i]) * f;
+                i++;
+                newCPF = ObjCPF.slice(0, 9);
+            }
+            soma = newCPF.reduce((accumulator, currentValue) => {
+                return accumulator + currentValue;
+            }, 0);
+            v = (soma * 10) % 11;
+            if (parseInt(v.toFixed(1)) == parseInt(CPF[CPF.length - 2])) {
+                i = 0;
+                newCPF = 0;
+                ObjCPF = Object.values(CPF);
+                soma = 0;
+                v = 0;
+                for (f = 11; f >= 2; f--) {
+                    ObjCPF[i] = parseInt(ObjCPF[i]) * f;
+                    i++;
+                    newCPF = ObjCPF.slice(0, 10);
+                }
+                soma = newCPF.reduce((accumulator, currentValue) => {
+                    return accumulator + currentValue;
+                }, 0);
+                v = (soma * 10) % 11;
+                if (parseInt(v) == parseInt(CPF[CPF.length - 1])) {
+                    x.classList.add('is-valid')
+                    return true
+                } else {
+                    x.classList.add('is-invalid')
+                    return false
+                }
+            } else {
+                x.classList.add('is-invalid')
+                return false
+            }
+        } else {
+            x.classList.add('is-invalid')
+            return false
         }
-        var sum = newCPF.reduce((accumulator, currentValue) => {
-            return accumulator + currentValue;
-        },0);
-        console.log(sum)
-        let j = sum / 11;
-        console.log(parseFloat(j))
-        console.log(parseInt(j))
-        j = j - parseInt(j)
-        j.toFixed(1);
-    } else {
-        console.log(false)
     }
-}
-//document.getElementById("CPF-Voluntário").addEventListener("blur", function() {
-//ValidaCPF(document.getElementById('CPF-Voluntário').value)
-//})
+document.getElementById("CPFVoluntario").addEventListener("blur", function () {
+    ValidaCPF(document.getElementById('CPFVoluntario'))
+})
+document.getElementById("CPF-Doador").addEventListener("blur", function () {
+    ValidaCPF(document.getElementById('CPF-Doador'))
+})
 
 const TelefoneExp = new RegExp(/^\9{1}?(\d{4})?[ -]?(\d{4})$/);
 function ValidaTelefone(x) {
@@ -143,10 +165,10 @@ function ValidaTelefone(x) {
         return false;
     }
 }
-document.getElementById("Telefone-Voluntario").addEventListener("blur", function() {
+document.getElementById("Telefone-Voluntario").addEventListener("blur", function () {
     ValidaTelefone(document.getElementById("Telefone-Voluntario"))
 })
-document.getElementById("Telefone-Doador").addEventListener("blur", function() {
+document.getElementById("Telefone-Doador").addEventListener("blur", function () {
     ValidaTelefone(document.getElementById("Telefone-Doador"))
 })
 
@@ -165,11 +187,11 @@ function ValidaEmail(x) {
 }
 
 
-document.getElementById("Email-Voluntario").addEventListener("blur", function() {
+document.getElementById("Email-Voluntario").addEventListener("blur", function () {
 
     ValidaEmail(document.getElementById("Email-Voluntario"))
 })
-document.getElementById("Email-Doador").addEventListener("blur", function() {
+document.getElementById("Email-Doador").addEventListener("blur", function () {
     ValidaEmail(document.getElementById("Email-Doador"))
 })
 
@@ -184,34 +206,110 @@ function ValidaImagem(x) {
     } else {
         x.classList.add("is-invalid");
         return false;
-    }}
+    }
+}
 
-document.getElementById("Foto-Doador").addEventListener("change", function() {
+document.getElementById("Foto-Doador").addEventListener("change", function () {
     document.getElementById("Foto-Doador").classList.remove("is-invalid");
     document.getElementById("Foto-Doador").classList.remove("is-valid");
     ValidaImagem(document.getElementById("Foto-Doador"))
 })
 
-document.getElementById("Submit-Doador").addEventListener("click", function() {
-    if(
+function ValidaLocal(Element) {
+    Element.classList.remove('is-valid')
+    Element.classList.remove('is-invalid')
+    if (Element.value.length < 3) {
+        Element.classList.add("is-invalid")
+        return false
+    } else {
+        Element.classList.add("is-valid")
+        return true
+    }
+}
+document.getElementById('Distritos-Input-Search').addEventListener("blur", function () {
+    ValidaLocal(document.getElementById('Distritos-Input-Search'))
+})
+function ValidaRegião(Element) {
+    Element.classList.remove('is-valid')
+    Element.classList.remove('is-invalid')
+    if (Element.value == 'null') {
+        Element.classList.add("is-invalid")
+        return false
+    } else {
+        Element.classList.add("is-valid")
+        return true
+    }
+}
+document.getElementById('unidade-doador').addEventListener("change", function () {
+    ValidaRegião(document.getElementById('unidade-doador'))
+})
+
+document.getElementById('Doador-Enable').addEventListener("change", function () {
+    if (document.getElementById('Doador-Enable').checked == true) {
+        document.getElementById("Submit-Doador").classList.remove('disabled')
+    } else {
+        document.getElementById("Submit-Doador").classList.add('disabled')
+    }
+})
+document.getElementById('Voluntario-Enable').addEventListener("change", function () {
+    if (document.getElementById('Voluntario-Enable').checked == true) {
+        document.getElementById("Submit-Voluntário").classList.remove('disabled')
+    } else {
+        document.getElementById("Submit-Voluntário").classList.add('disabled')
+    }
+})
+
+document.getElementById("Submit-Doador").addEventListener("click", function () {
+    document.querySelector('main').classList.add('d-none')
+    document.getElementById('Form-Doador').classList.add("d-none");
+    document.getElementById('Submit-Section-Doador').classList.remove("d-none");
+    document.getElementById('Span-nome').textContent = `${document.getElementById('Nome-Doador').value}`
+    if (
         ValidaNome(document.getElementById("Nome-Doador")) == true &&
         ValidaIdade(document.getElementById("Data-Doador")) == true &&
-        ValidaImagem(document.getElementById("Foto-Doador")) == true &&
+        ValidaCPF(document.getElementById('CPF-Doador')) == true &&
         ValidaEmail(document.getElementById("Email-Doador")) == true &&
         ValidaImagem(document.getElementById("Foto-Doador")) == true &&
-        ValidaTelefone(document.getElementById("Telefone-Doador")) == true
+        ValidaTelefone(document.getElementById("Telefone-Doador")) == true &&
+        ValidaLocal(document.getElementById('Distritos-Input-Search')) == true &&
+        ValidaRegião(document.getElementById('unidade-doador')) == true
     ) {
         document.querySelector('main').classList.add('d-none')
         document.getElementById('Form-Doador').classList.add("d-none");
         document.getElementById('Submit-Section-Doador').classList.remove("d-none");
         document.getElementById('Span-nome').textContent = `${document.getElementById('Nome-Doador').value}`
     } else {
-        document.getElementById('Span-nome').textContent = `${document.getElementById('Nome-Doador').value}`
         ValidaNome(document.getElementById("Nome-Doador"))
         ValidaIdade(document.getElementById("Data-Doador"))
+        ValidaCPF(document.getElementById('CPF-Doador'))
         ValidaImagem(document.getElementById("Foto-Doador"))
         ValidaEmail(document.getElementById("Email-Doador"))
-        ValidaImagem(document.getElementById("Foto-Doador"))
         ValidaTelefone(document.getElementById("Telefone-Doador"))
+        ValidaLocal(document.getElementById('Distritos-Input-Search'))
+        ValidaRegião(document.getElementById('unidade-doador'))
+    }
+})
+
+document.getElementById("Submit-Voluntário").addEventListener("click", function() {
+    document.getElementById('Span-nome-voluntário').textContent = `${document.getElementById('Nome-Doador').value}`
+    document.querySelector('main').classList.add('d-none')
+    document.querySelector('main#Submit-Section-Voluntario').classList.remove('d-none')
+    if (
+        ValidaNome(document.getElementById("Nome-Voluntario")) == true &&
+        ValidaIdade(document.getElementById("Data-Voluntário")) == true &&
+        ValidaCPF(document.getElementById('CPFVoluntario')) == true &&
+        ValidaEmail(document.getElementById("Email-Voluntario")) == true &&
+        ValidaTelefone(document.getElementById("Telefone-Voluntario")) == true
+    ) {
+        document.getElementById('Span-nome-voluntário').textContent = `${document.getElementById("Nome-Voluntario").value}`
+        document.querySelector('main').classList.add('d-none')
+        document.getElementById('Form-Voluntário').classList.add("d-none");
+        document.getElementById('Submit-Section-Voluntário').classList.remove("d-none");
+    } else {
+        ValidaNome(document.getElementById("Nome-Voluntario"))
+        ValidaIdade(document.getElementById("Data-Voluntário"))
+        ValidaCPF(document.getElementById('CPFVoluntario'))
+        ValidaEmail(document.getElementById("Email-Voluntario"))
+        ValidaTelefone(document.getElementById("Telefone-Voluntario"))
     }
 })
