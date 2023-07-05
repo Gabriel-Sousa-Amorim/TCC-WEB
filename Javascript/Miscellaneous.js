@@ -160,6 +160,10 @@ function ChangingContentRegion(idRegion, Region, text, color, textColor) {
         description.style.borderColor = "#000";
         description.children[0].style.color =  textColor;
         description.children[1].style.color =  textColor;
+        if (textColor = 'efefef') {
+            description.children[0].style.textShadow =  '#202020';
+            description.children[1].style.textShadow =  '#202020';
+        }
         description.style.background = color;
     })
 }
@@ -185,7 +189,7 @@ switch (document.querySelector("section.main-title").children[0].innerHTML) {
     case ("Sobre Nós"):
         CatchTheDay();
         ChangingContentRegion("SVG-norte", "Zona Norte", NorteContext, "var(--color-red)", '#efefef');
-        ChangingContentRegion("SVG-oeste", "Zona Oeste", OesteContext, "var(--color-orange)", '#202020');
+        ChangingContentRegion("SVG-oeste", "Zona Oeste", OesteContext, "var(--color-orange)", '#efefef');
         ChangingContentRegion("SVG-centro", "Zona Central", CentroContext, "var(--color-yellow)", '#202020');
         ChangingContentRegion("SVG-leste", "Zona Leste", LesteContext, "var(--color-green-yellow)", '#202020');
         ChangingContentRegion("SVG-sul", "Zona Sul", SulContext, "var(--color-green)", '#202020')
