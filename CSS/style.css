@@ -252,31 +252,22 @@ article {
 }
 
 .main-margin {
-  margin: 5px 250px 20px;
+  margin: 20px 250px;
 }
-
 
 .article-text {
   letter-spacing: 1px;
   color: var(--color-black);
   font-size: var(--paragraph-size);
+  text-align: justify;
+  text-justify: inter-word;
 }
 .sponsor-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: end;
-  gap: 10px;
+border: 3px solid var(--color-black);
+border-radius: 5px;
+padding: 5px;
 }
-.sponsor-figure {
-  flex:1;
-  flex-basis:50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.sponsor-figure>figcaption {
-font-size: calc(var(--paragraph-size) - 2px);
-}
+
 /*Seção com textos e imagens na index.html*/
 .section-flex {
   display: flex;
@@ -291,7 +282,22 @@ font-size: calc(var(--paragraph-size) - 2px);
   color: var(--color-black);
   font-size: var(--paragraph-size)
 }
-
+.logo-flex {
+  align-self: stretch;
+  align-items: stretch;
+}
+.logo-flex-child {
+  padding-block:20px ;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.logo-flex-child-text {
+  text-align: center;
+}
 /*Seção de Fundo com parallax predominantemente na index.html*/
 .parallax_bg {
   height: 600px;
@@ -591,6 +597,8 @@ font-size: calc(var(--paragraph-size) - 2px);
   color: var(--color-black);
   text-align: justify;
   vertical-align: middle;
+  font-size: calc(var(--paragraph-size) * 0.90);
+  font-weight: 900;
 }
 
 
@@ -886,10 +894,15 @@ footer nav ul li {
     height: 20%;
     padding-block: 150px;
   }
+  .main-margin, .section-flex-text {
+    margin: 5px 50px 10px;
+  }
+  #KebradaClick-IMG {
+    width: 400px;
+  }
 }
 
 @media (max-width: 900px) {
-
   header {
     padding: 50px;
     text-align: center;
@@ -981,7 +994,9 @@ footer nav ul li {
     cursor: pointer;
     width: 135px;
   }
-
+  #KebradaClick-IMG {
+    width: 340px;
+  }
 }
 
 @media (max-width: 430px) {
@@ -989,15 +1004,15 @@ footer nav ul li {
     width: 35px;
     height: 35px;
   }
-
+  
   header>a {
     font-size: large;
   }
-
+  
   label.darkModeElement {
     font-size: large;
   }
-
+  
   label:hover.darkModeElement {
     font-size: x-large;
   }
@@ -1005,24 +1020,24 @@ footer nav ul li {
   .nav-flex-item>a {
     font-size: large;
   }
-
+  
   .nav-flex-item>a:hover {
     font-size: x-large;
   }
-
+  
   .button-flex-container {
     flex-wrap: wrap;
   }
-
+  
   .contacts-container {
     display: flex;
     flex-direction: column;
   }
-
+  
   .contact-child {
     border-radius: 0px;
   }
-
+  
   .front-content {
     backdrop-filter: brightness(80%);
     padding-block: 40px;
@@ -1036,7 +1051,7 @@ footer nav ul li {
   svg {
     font-size: 12px;
   }
-
+  
   .front-content>svg {
     filter: drop-shadow(1px 1px 6px #000000) drop-shadow(-1px -1px 6px #000);
     width: 16px;
@@ -1046,11 +1061,11 @@ footer nav ul li {
   .main-margin {
     margin: 5px 20px 10px;
   }
-
+  
   #description-container>p {
     margin-inline: 10px;
   }
-
+  
   footer {
     display: flex;
     flex-direction: column;
@@ -1060,17 +1075,13 @@ footer nav ul li {
     width: 100px;
     height: fit-content;
   }
-
+  
   .Regions-IMG:hover {
     cursor: pointer;
     width: 110px;
   }
-  .sponsor-figure {
-    align-self: center;
-    align-items: center;
-  }
-  .sponsor-figure>figcaption {
-    text-align: center;
+  #KebradaClick-IMG {
+    width: 2500px;
   }
 }
 
@@ -1129,5 +1140,7 @@ footer nav ul li {
   #description-container>p {
     margin-inline: 0px;
   }
-
+  #KebradaClick-IMG {
+    width: 100px;
+  }
 }
