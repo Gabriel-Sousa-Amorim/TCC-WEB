@@ -328,6 +328,9 @@ padding: 5px;
   background-image: url("../Designs/Fotos/JARDIM\ FONTALIS\ Reduzido.jpg");
   background-position: right;
 }
+#parallax_bg_4 {
+  background-image: url("../Designs/Fotos/JOVA\ RURAL\ Reduzido.jpg");
+}
 
 .innerLabel {
   flex: 1;

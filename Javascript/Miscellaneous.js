@@ -160,9 +160,12 @@ function ChangingContentRegion(idRegion, Region, text, color, textColor) {
         description.style.borderColor = "#000";
         description.children[0].style.color =  textColor;
         description.children[1].style.color =  textColor;
-        if (textColor = 'efefef') {
-            description.children[0].style.textShadow =  '#202020';
-            description.children[1].style.textShadow =  '#202020';
+        if (textColor == '#efefef') {
+            description.children[0].style.textShadow =  '2px 2px 2px #202020';
+            description.children[1].style.textShadow =  '2px 2px 2px #202020';
+        } else {
+            description.children[0].style.textShadow =  'none';
+            description.children[1].style.textShadow =  'none';
         }
         description.style.background = color;
     })
