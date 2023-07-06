@@ -260,10 +260,6 @@ document.getElementById('Voluntario-Enable').addEventListener("change", function
 })
 
 document.getElementById("Submit-Doador").addEventListener("click", function () {
-    document.querySelector('main').classList.add('d-none')
-    document.getElementById('Form-Doador').classList.add("d-none");
-    document.getElementById('Submit-Section-Doador').classList.remove("d-none");
-    document.getElementById('Span-nome').textContent = `${document.getElementById('Nome-Doador').value}`
     if (
         ValidaNome(document.getElementById("Nome-Doador")) == true &&
         ValidaIdade(document.getElementById("Data-Doador")) == true &&
@@ -291,9 +287,6 @@ document.getElementById("Submit-Doador").addEventListener("click", function () {
 })
 
 document.getElementById("Submit-Voluntário").addEventListener("click", function() {
-    document.getElementById('Span-nome-voluntário').textContent = `${document.getElementById('Nome-Doador').value}`
-    document.querySelector('main').classList.add('d-none')
-    document.querySelector('main#Submit-Section-Voluntario').classList.remove('d-none')
     if (
         ValidaNome(document.getElementById("Nome-Voluntario")) == true &&
         ValidaIdade(document.getElementById("Data-Voluntário")) == true &&
