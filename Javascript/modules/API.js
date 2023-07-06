@@ -1,11 +1,10 @@
 
-let url = 'https://servicodados.ibge.gov.br/api/v1/localidades/regioes-imediatas/350001/distritos'
+let url = `/Javascript/modules/Bairros.json`
 
 
 let items = []
 
 document.getElementById('Distritos-Input-Search').oninput = () => {
-    document.getElementById('distritos-content').classList.remove('d-none');
     document.getElementById('distritos-content').innerHTML = "";
     items
         .filter((item) =>
@@ -14,6 +13,9 @@ document.getElementById('Distritos-Input-Search').oninput = () => {
 }
 document.getElementById('Distritos-Input-Search').onblur = () => {
     document.getElementById('distritos-content').classList.add('d-none');
+}
+document.getElementById('Distritos-Input-Search').onfocus = () => {
+    document.getElementById('distritos-content').classList.remove('d-none');
 }
 
 function createDistrito(distrito) {
@@ -35,12 +37,10 @@ let options = {
 }
 fetch(url, options)
     .then(response => response.json())
-    .then((distritos) => {
-        distritos.forEach((distrito) => {
-            createDistrito(distrito.nome)
-            items.push(distrito.nome)
-        });
-    })
+    .then((cep) => cep.forEach((cp) => {
+    createDistrito(cp);
+    items.push(cp);
+    }))
 
 
 
