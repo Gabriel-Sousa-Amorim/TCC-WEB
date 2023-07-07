@@ -856,7 +856,10 @@ footer nav ul li {
   #Saturday {
     flex-basis: 10%;
   }
-
+  .sponsors-img {
+    width: 50%;
+    height: 50%;
+  }
 }
 
 @media (min-width: 2600px) {
@@ -997,9 +1000,7 @@ footer nav ul li {
     cursor: pointer;
     width: 135px;
   }
-  #KebradaClick-IMG {
-    width: 340px;
-  }
+
 }
 
 @media (max-width: 430px) {
@@ -1007,15 +1008,15 @@ footer nav ul li {
     width: 35px;
     height: 35px;
   }
-  
+
   header>a {
     font-size: large;
   }
-  
+
   label.darkModeElement {
     font-size: large;
   }
-  
+
   label:hover.darkModeElement {
     font-size: x-large;
   }
@@ -1023,24 +1024,24 @@ footer nav ul li {
   .nav-flex-item>a {
     font-size: large;
   }
-  
+
   .nav-flex-item>a:hover {
     font-size: x-large;
   }
-  
+
   .button-flex-container {
     flex-wrap: wrap;
   }
-  
+
   .contacts-container {
     display: flex;
     flex-direction: column;
   }
-  
+
   .contact-child {
     border-radius: 0px;
   }
-  
+
   .front-content {
     backdrop-filter: brightness(80%);
     padding-block: 40px;
@@ -1054,7 +1055,7 @@ footer nav ul li {
   svg {
     font-size: 12px;
   }
-  
+
   .front-content>svg {
     filter: drop-shadow(1px 1px 6px #000000) drop-shadow(-1px -1px 6px #000);
     width: 16px;
@@ -1064,11 +1065,11 @@ footer nav ul li {
   .main-margin {
     margin: 5px 20px 10px;
   }
-  
+
   #description-container>p {
     margin-inline: 10px;
   }
-  
+
   footer {
     display: flex;
     flex-direction: column;
@@ -1078,13 +1079,10 @@ footer nav ul li {
     width: 100px;
     height: fit-content;
   }
-  
+
   .Regions-IMG:hover {
     cursor: pointer;
     width: 110px;
-  }
-  #KebradaClick-IMG {
-    width: 250px;
   }
 }
 
