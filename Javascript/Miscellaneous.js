@@ -161,8 +161,8 @@ function ChangingContentRegion(idRegion, Region, text, color, textColor) {
         description.children[0].style.color =  textColor;
         description.children[1].style.color =  textColor;
         if (textColor == '#efefef') {
-            description.children[0].style.textShadow =  '2px 2px 2px #202020';
-            description.children[1].style.textShadow =  '2px 2px 2px #202020';
+            description.children[0].style.textShadow =  '2px 2px 0px #202020';
+            description.children[1].style.textShadow =  '2px 2px 0px #202020';
         } else {
             description.children[0].style.textShadow =  'none';
             description.children[1].style.textShadow =  'none';
@@ -193,9 +193,9 @@ switch (document.querySelector("section.main-title").children[0].innerHTML) {
         CatchTheDay();
         ChangingContentRegion("SVG-norte", "Zona Norte", NorteContext, "var(--color-red)", '#efefef');
         ChangingContentRegion("SVG-oeste", "Zona Oeste", OesteContext, "var(--color-orange)", '#efefef');
-        ChangingContentRegion("SVG-centro", "Zona Central", CentroContext, "var(--color-yellow)", '#202020');
-        ChangingContentRegion("SVG-leste", "Zona Leste", LesteContext, "var(--color-green-yellow)", '#202020');
-        ChangingContentRegion("SVG-sul", "Zona Sul", SulContext, "var(--color-green)", '#202020')
+        ChangingContentRegion("SVG-centro", "Zona Central", CentroContext, "var(--color-yellow)", '#efefef');
+        ChangingContentRegion("SVG-leste", "Zona Leste", LesteContext, "var(--color-green-yellow)",'#efefef');
+        ChangingContentRegion("SVG-sul", "Zona Sul", SulContext, "var(--color-green)", '#efefef')
         break;
     case ("Contatos"):
         ContactLink("section-Instagram", "https://www.instagram.com/ong_mangara/");
