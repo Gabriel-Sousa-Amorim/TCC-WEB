@@ -191,11 +191,11 @@ switch (document.querySelector("section.main-title").children[0].innerHTML) {
         break;
     case ("Sobre Nós"):
         CatchTheDay();
-        ChangingContentRegion("SVG-norte", "Zona Norte", NorteContext, "var(--color-red)", '#efefef');
-        ChangingContentRegion("SVG-oeste", "Zona Oeste", OesteContext, "var(--color-orange)", '#efefef');
-        ChangingContentRegion("SVG-centro", "Zona Central", CentroContext, "var(--color-yellow)", '#efefef');
-        ChangingContentRegion("SVG-leste", "Zona Leste", LesteContext, "var(--color-green-yellow)",'#efefef');
-        ChangingContentRegion("SVG-sul", "Zona Sul", SulContext, "var(--color-green)", '#efefef')
+        ChangingContentRegion("SVG-norte", "Zona Norte", NorteContext, "var(--color-dark-red)", '#efefef');
+        ChangingContentRegion("SVG-oeste", "Zona Oeste", OesteContext, "var(--color-dark-orange)", '#efefef');
+        ChangingContentRegion("SVG-centro", "Zona Central", CentroContext, "var(--color-dark-yellow)", '#efefef');
+        ChangingContentRegion("SVG-leste", "Zona Leste", LesteContext, "var(--color-dark-green-yellow)",'#efefef');
+        ChangingContentRegion("SVG-sul", "Zona Sul", SulContext, "var(--color-dark-green)", '#efefef')
         break;
     case ("Contatos"):
         ContactLink("section-Instagram", "https://www.instagram.com/ong_mangara/");

@@ -40,7 +40,7 @@
         suas comunidades. Atuamos na cidade de São Paulo-SP e região.
       </p>
       <details class="text-justify border border-warning text-dark bg-warning bg-opacity-75 rounded p-3">
-        <summary>Detalhes sobre a inscrição <strong class="text-danger">(Por Favor Leie)</strong></summary>
+        <summary>Detalhes sobre a inscrição <strong class="text-danger">(Leia)</strong></summary>
         <hr />
         <h5 class="text-justify">
           Posso me tornar Voluntário sendo menor de idade?
@@ -79,23 +79,23 @@
         <label for="RadioDoador" class="flex-fill btn btn-outline-danger">Desejo me tornar Doador</label>
       </div>
 
-      <form id="Form-Voluntario" class='d-none' action="">
+      <form id="Form-Voluntario" class='d-none' action="#Submit-Section-Doador">
         <h4 class="text-center"> Formulário Voluntário</h4>
         <label class="form-label" for="Nome-Voluntario"><i class="bi bi-person"></i>Nome completo</label><br />
-        <input maxlength="51" type="text" name="" id="Nome-Voluntario" class="form-control" required="required"
+        <input maxlength="51" type="text" name="Nome-Voluntario" id="Nome-Voluntario" class="form-control" required="required"
           autocapitalize="sentences" autocomplete="off" /><br />
 
         <label class="form-label" for="Data-Voluntário"><i class="bi bi-calendar3"></i>Sua data de
           Nascimento</label><br />
-        <input autocomplete="off" type="date" inputmode="numeric" name="" id="Data-Voluntário"
+        <input autocomplete="off" type="date" inputmode="numeric" name="Data-Voluntário" id="Data-Voluntário"
           class="form-control" /><br />
 
         <label class="form-label" for="CPF-Voluntário"><i class="bi bi-person-vcard-fill"></i>CPF </label><br />
-        <input maxlength="11" type="text" placeholder="000.000.000-00" inputmode="numeric" name="" id="CPFVoluntario"
+        <input maxlength="11" type="text" placeholder="000.000.000-00" inputmode="numeric" name="CPFVoluntario" id="CPFVoluntario"
           class="form-control" autocomplete="off" required="required" /><br />
 
         <label class="form-label" for="Email-Voluntario"><i class="bi bi-envelope-at"></i>E-mail</label><br />
-        <input autocomplete="off" type="email" placeholder="Exemplo@exemplo.com.br" name="" id="Email-Voluntario"
+        <input autocomplete="off" type="email" placeholder="Exemplo@exemplo.com.br" name="Email-Voluntario" id="Email-Voluntario"
           class="form-control" /><br />
 
         <label class="form-label" for="Telefone-Voluntario"> <i class="bi bi-telephone"></i> Insira seu telefone</label>
@@ -114,32 +114,32 @@
             </select>
           </div>
           <input class="form-control" maxlength="10" placeholder="99999-9999" autocomplete="off" type="text"
-            id="Telefone-Voluntario" name="" />
+            id="Telefone-Voluntario" name="Telefone-Voluntario" />
         </div>
         <br>
         <input id="Voluntario-Enable" class="form-check-input" type="checkbox" required="required">
         <label class="text-justify" for="Voluntario-Enable">Me certifico que meus dados não são utilizados para quaisquer fins.</label>
         <div class="text-center my-2">
-          <button id="Submit-Voluntário" type="submit" class="btn btn-primary disabled"><i class="bi bi-upload"></i>Enviar</button>
+          <button id="Submit-Voluntário" type="button" class="btn btn-primary disabled"><i class="bi bi-upload"></i>Enviar</button>
         </div>
       </form>
 
       <form id='Form-Doador' class="d-none" action="">
         <h4 class="text-center"> Formulário Doação</h4>
         <label class="form-label" for="Nome-Doador"><i class="bi bi-person"></i>Nome completo</label><br />
-        <input maxlength="51" type="text" name="" id="Nome-Doador" class="form-control" required="required"
-          autocapitalize="sentences" autocomplete="off" /><br />
+        <input maxlength="51" type="text" name="Nome-Doador" id="Nome-Doador" class="form-control" required="required"
+        autocapitalize="sentences" autocomplete="off" /><br />
 
 
         <label class="form-label" for="Data-Doador"><i class="bi bi-calendar3"></i>Sua data de Nascimento</label><br />
-        <input autocomplete="off" type="date" inputmode="numeric" name="" id="Data-Doador" class="form-control" /><br />
+        <input autocomplete="off" type="date" inputmode="numeric" name="Data-Doador" id="Data-Doador" class="form-control" /><br />
 
         <label class="form-label" for="CPF-Doador"><i class="bi bi-person-vcard-fill"></i>CPF</label><br />
-        <input maxlength="11" type="text" placeholder="000.000.000-00" inputmode="numeric" name="" id="CPF-Doador"
+        <input maxlength="11" type="text" placeholder="000.000.000-00" inputmode="numeric" name="CPF-Doador" id="CPF-Doador"
           class="form-control" autocomplete="off" required="required" /><br />
 
         <label class="form-label" for="Email-Doador"><i class="bi bi-envelope-at"></i>E-mail</label><br />
-        <input autocomplete="off" type="email" placeholder="Exemplo@exemplo.com.br" name="" id="Email-Doador"
+        <input autocomplete="off" type="email" placeholder="Exemplo@exemplo.com.br" name="Email-Doador" id="Email-Doador"
           class="form-control" /><br />
 
         <label class="form-label" for="Telefone-Doador"> <i class="bi bi-telephone"></i> Insira seu telefone</label>
@@ -158,18 +158,18 @@
             </select>
           </div>
           <input class="form-control" maxlength="10" placeholder="99999-9999" autocomplete="off" type="text"
-            id="Telefone-Doador" name="" />
+            id="Telefone-Doador" name="Telefone-Doador" />
         </div>
         <br />
 
 
         <label class="form-label" for="unidade-doador"><i class="bi bi-house"></i>Seu Bairro. <span class="text-primary">(Se seu bairro não estiver listado ponha o nome do seu munícipio)</span></label>
-        <input required="required" autocomplete="off" type="text" name="" id="Distritos-Input-Search" class="form-control">
+        <input required="required" autocomplete="off" type="text" name="Distritos-Input-Search" id="Distritos-Input-Search" class="form-control">
         <div class="d-none overflow-y-scroll p-2 rounded border" heigth="100px" id="distritos-content">
         </div>
         <br>
         <label class="form-label" for="unidade-doador"><i class="bi bi-map"></i>Unidade mais próxima a sua casa.</label>
-        <select required="required" class='form-select' name="" id="unidade-doador">
+        <select required="required" class='form-select' name="unidade-doador" id="unidade-doador">
           <option value="null">Selecione uma região</option>
           <option value="ZN">Zona Norte - Distrito Pq. Edu Chaves</option>
           <option value="ZL">Zona Leste - Distrito Vila Matilde</option>
@@ -180,17 +180,13 @@
         <br />
 
         <label class="form-label" for="Foto-Doador"><i class="bi bi-filetype-png"></i>Foto da Doação</label>
-        <input type="file" accept="image/*" id="Foto-Doador" name="" class="form-control" />
+        <input type="file" accept="image/*" id="Foto-Doador" name="Foto-Doador" class="form-control" />
         <p class="text-primary">(Aceita apenas PNG/JPG/JPEG)</p>
-        <label class="form-label" for="Descrição"><i class="bi bi-card-text"></i>Descrição da Doação</label>
-        <textarea required="required" maxlength="500" cols="50" rows="10" minlength="10" class="form-control"></textarea>
         <br>
         <input id="Doador-Enable" class="form-check-input" type="checkbox" required="required">
         <label class="text-justify" for="Doador-Enable">Me certifico que meus dados não são utilizados para quaisquer fins.</label>
         <div class="text-center my-2">
-        </div>
-        <div class="text-center my-2">
-          <button id="Submit-Doador" type="submit" class="btn btn-primary disabled"><i class="bi bi-upload"></i>Enviar</button>
+          <button id="Submit-Doador" type="button" class="btn btn-primary"><i class="bi bi-upload"></i>Enviar</button>
         </div>
       </form>
     </section>

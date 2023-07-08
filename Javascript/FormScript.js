@@ -22,13 +22,6 @@ document
         navigator.clipboard.writeText(email);
     });
 
-//Previne Colar informações nas tags input (Ctrl+V);
-document
-    .querySelectorAll("input")
-    .forEach((i) => i.addEventListener("drop", (e) => e.preventDefault()));
-document
-    .querySelectorAll("input")
-    .forEach((i) => i.addEventListener("paste", (e) => e.preventDefault()));
 
 //Validador Nome;
 const NameExp = new RegExp(/^[A-zÀ-ú ,.'-]+$/i);
@@ -289,10 +282,9 @@ document.getElementById("Submit-Doador").addEventListener("click", function () {
         ValidaNome(document.getElementById("Nome-Doador")) == true &&
         ValidaIdade(document.getElementById("Data-Doador")) == true &&
         ValidaCPF(document.getElementById("CPF-Doador")) == true &&
-        ValidaEmail(document.getElementById("Email-Doador")) == true &&
         ValidaImagem(document.getElementById("Foto-Doador")) == true &&
+        ValidaEmail(document.getElementById("Email-Doador")) == true &&
         ValidaTelefone(document.getElementById("Telefone-Doador")) == true &&
-        ValidaLocal(document.getElementById("Distritos-Input-Search")) == true &&
         ValidaRegião(document.getElementById("unidade-doador")) == true
     ) {
         document.querySelector("main").classList.add("d-none");
@@ -304,19 +296,28 @@ document.getElementById("Submit-Doador").addEventListener("click", function () {
         ValidaNome(document.getElementById("Nome-Doador"));
         ValidaIdade(document.getElementById("Data-Doador"));
         ValidaCPF(document.getElementById("CPF-Doador"));
-        ValidaImagem(document.getElementById("Foto-Doador"));
-        ValidaEmail(document.getElementById("Email-Doador"));
         ValidaTelefone(document.getElementById("Telefone-Doador"));
         ValidaLocal(document.getElementById("Distritos-Input-Search"));
         ValidaRegião(document.getElementById("unidade-doador"));
     }
 });
 
+
+//ValidaCPF(document.getElementById("CPF-Doador")) == true &&
+//ValidaEmail(document.getElementById("Email-Doador")) == true &&
+//ValidaImagem(document.getElementById("Foto-Doador")) == true &&
+//ValidaTelefone(document.getElementById("Telefone-Doador")) == true &&
+//ValidaLocal(document.getElementById("Distritos-Input-Search")) == true &&
+//ValidaRegião(document.getElementById("unidade-doador")) == true
 document
     .getElementById("Submit-Voluntário")
     .addEventListener("click", function () {
         if (
-            ValidaNome() == true 
+            ValidaNome(document.getElementById("Nome-Voluntario")) == true &&
+            ValidaIdade(document.getElementById("Data-Voluntário")) == true &&
+            ValidaCPF(document.getElementById("CPFVoluntario")) == true &&
+            ValidaEmail(document.getElementById("Email-Voluntario")) == true &&
+            ValidaTelefone(document.getElementById("Telefone-Voluntario")) == true
         ) {
             document.getElementById("Span-nome-voluntario").textContent = `${document.getElementById("Nome-Voluntario").value
                 }`;
@@ -326,7 +327,6 @@ document
                 .getElementById("Submit-Section-Voluntario")
                 .classList.remove("d-none");
         } else {
-            console.log("saiu aqui");
             ValidaNome(document.getElementById("Nome-Voluntario"));
             ValidaIdade(document.getElementById("Data-Voluntário"));
             ValidaCPF(document.getElementById("CPFVoluntario"));
