@@ -1,6 +1,5 @@
 
-let url = './Javascript/modules/Bairros.json'
-
+let url = "/Javascript/Modules/bairros.json"
 
 let items = []
 
