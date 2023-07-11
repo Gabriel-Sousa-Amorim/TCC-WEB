@@ -1,5 +1,5 @@
 
-let url = "/Javascript/Modules/bairros.json"
+let url = "../Javascript/Bairros.json"
 
 let items = []
 
@@ -34,12 +34,11 @@ function createDistrito(distrito) {
 let options = {
     method: 'GET'
 }
-fetch(url, options)
+fetch( "../../TCC/Javascript/Bairros.json", options)
     .then(response => response.json())
-    .then((cep) => cep.forEach((cp) => {
-    createDistrito(cp);
-    items.push(cp);
-    }))
-
+    .then((bairros) => {bairros.forEach((bairro) => {
+    createDistrito(bairro);
+    items.push(bairro);
+    })})
 
 
