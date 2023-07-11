@@ -198,7 +198,6 @@ switch (document.querySelector("section.main-title").children[0].innerHTML) {
         ChangingContentRegion("SVG-sul", "Zona Sul", SulContext, "var(--color-dark-green)", '#efefef')
         break;
     case ("Contatos"):
-        
         ContactLink("section-Instagram", "https://www.instagram.com/ong_mangara/");
         ContactLink("section-Facebook", "https://www.facebook.com/people/Organização-Mangará/100092684681862/");
         ContactLink("section-Twitter", "https://www.instagram.com/ong_mangara/");
