@@ -202,8 +202,8 @@ switch (document.querySelector("section.main-title").children[0].innerHTML) {
         ContactLink("section-Facebook", "https://www.facebook.com/people/Organização-Mangará/100092684681862/");
         ContactLink("section-Twitter", "https://www.instagram.com/ong_mangara/");
         ContactLink("section-Twitter", "https://www.instagram.com/ong_mangara/");
-        ContactLink("section-Email", "mailto:ong
-        ");
+        ContactLink("section-Email", "mailto:ong.mangara@gmail.com");
+        ContactLink("section-Telefone", "https://chat.whatsapp.com/JvDzGMG8nWN2Qmxuq37Xep");
         break;
 }
 
