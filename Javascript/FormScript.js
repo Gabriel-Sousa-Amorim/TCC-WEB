@@ -299,6 +299,8 @@ document.getElementById("Submit-Doador").addEventListener("click", function () {
         ValidaTelefone(document.getElementById("Telefone-Doador"));
         ValidaLocal(document.getElementById("Distritos-Input-Search"));
         ValidaRegião(document.getElementById("unidade-doador"));
+        ValidaImagem(document.getElementById("Foto-Doador"));
+        ValidaEmail(document.getElementById("Email-Doador"))
     }
 });
 

@@ -1,28 +1,28 @@
-# HTML
-- [X] Header, nav, div, footer, section…
-- [X] Imagens.
+# Recursos Utilizados em cada 'Linguagem'  
+
+### HTML
+- [X] Header, Nav, Div, Footer, Section…
+- [X] Imagens e SVGs.
 - [X] Listas.
 - [X] Nav-bars.
-- [X] Tabelas. Sem muita Estilização.
-- [X] Forms. Não Completo Ainda.
-
-# CSS
+- [X] Forms.
+- [ ] Tabelas.
+### CSS
 - [X] Class e ID.
-- [X] Margin padding border.
-- [X] Unidades de medidas coerentes.
+- [X] Margin, Padding, Border.
+- [X] Unidades de medidas coerentes (Relativs e Absolutas).
 - [X] Display.
 - [X] Pseudoclasses.
 - [X] Grid e Flex.
 - [X] Media query.
+- [X] Bootstrap. 
 - [ ] Float.
-- [X] Bootstrap. Não Completo Ainda
-
-# JavaScript
-- [X] DOM.
-- [X] Estrutura de decisão.
-- [X] Metodos.
-- [X] Strings arrays e objetos. mais ou menos
-- [X] Estrutura de repetição.
+### JavaScript
+- [X] **DOM**.
+- [X] Estrutura de decisão (If/Else).
+- [X] Métodos.
+- [X] Strings, Arrays, Objetos.
+- [X] Estrutura de repetição (For/While).
+- [X] Array (.forEach(), .map(), .filter()).
 - [ ] Classes.
-- [ ] Array(forEach, map, filter, find).
 - [ ] React.
