@@ -62,15 +62,19 @@ A Organização Mangará teve seu início em 3 março de 2018 na cidade de São 
 - [X] **DOM**.
 - [X] Estrutura de decisão (If/Else).
 - [X] Métodos.
+- [X] Funções. 
 - [X] Strings, Arrays, Objetos.
 - [X] Estrutura de repetição (For/While).
 - [X] Array (.forEach(), .map(), .filter()).
+- [X] RegExp.
+- [X] ***JSON próprio com todos os bairros de São Paulo***
 - [ ] Classes.
 - [ ] React.
+---
 # Referências
 
-### Safira Ferreira 
-Instagram da autora das seguintes fotos
+## Safira Ferreira 
+Instagram da autora das seguintes fotos:
 
 <a href="https://www.instagram.com/safirazn__/">@Safirazn__</a> & <a href="https://www.instagram.com/westblue___/">Coletivo West Blue</a> 
 
@@ -82,3 +86,20 @@ Instagram da autora das seguintes fotos
 
 ## 📷 Foto Jova Rural - Zona Norte - 2023 BY SAFIRA FERREIRA
 <img src="Designs/Fotos/JOVA RURAL.jpg">
+
+---
+
+## Guilherme Christ
+Instagram do autor das seguintes fotos:
+<a href="http://www.guichrist.com">Portfolio</a>
+## 📷 Foto Paraisópolis - Zona Sul - 2023 BY Gui Christ
+<img src="Designs/Fotos/Paraisópolis.jpg">
+
+---
+
+## Malu Araujo
+Refeência da origem das fotos:
+<a href="http://www.guichrist.com">Portfolio</a>
+## 📷 Foto Jardim Fontalis - Zona Norte - 2023 BY Malu Araujo
+<img src="Designs/Fotos/.jpg">
+
