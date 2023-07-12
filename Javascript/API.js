@@ -1,6 +1,4 @@
 
-let url = "../Javascript/Bairros.json"
-
 let items = []
 
 document.getElementById('Distritos-Input-Search').oninput = () => {
