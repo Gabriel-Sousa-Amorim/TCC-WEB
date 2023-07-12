@@ -1,9 +1,9 @@
 <!-- Informações do nosso Projeto -->
 # TCC
 *Projeto TCC* do curso de Programação WEB no período noturno, do primeiro semestre de 2023. O nosso grupo é constituído por:
-* [Gabriel Sousa.](https://github.com/Gabriel-Sousa-Amorim)
-* [Carina Leandro Da Silva.](https://github.com/caleandro)
-* [Patrick Santos Caño.](https://github.com/patricks10)
+* [Gabriel Sousa.](https://github.com/Gabriel-Sousa-Amorim) Desenvolvedor Front-End e Back-End .
+* [Carina Leandro Da Silva.](https://github.com/caleandro) Representante Zona Sul.
+* [Patrick Santos Caño.](https://github.com/patricks10)Representante Zona Norte.
 
 
 <!-- Conteúdo do Projeto -->
@@ -99,7 +99,7 @@ Instagram do autor das seguintes fotos:
 
 ## Malu Araujo
 Refeência da origem das fotos:
-<a href="http://www.guichrist.com">Portfolio</a>
+<a href="https://agemt.pucsp.br/noticias/jardim-fontalis-conheca-cara-da-periferia">Site Referência</a>
 ## 📷 Foto Jardim Fontalis - Zona Norte - 2023 BY Malu Araujo
 <img src="Designs/Fotos/JardimFontalis2.jpeg">
 
