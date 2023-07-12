@@ -107,6 +107,21 @@ function ValidaCPF(x) {
     let ObjCPF = Object.values(CPF);
     let soma = 0;
     let v = 0;
+    if (
+        CPF == '11111111111' ||
+        CPF == '22222222222' ||
+        CPF == '33333333333' ||
+        CPF == '44444444444' ||
+        CPF == '55555555555' ||
+        CPF == '66666666666' ||
+        CPF == '77777777777' ||
+        CPF == '88888888888' ||
+        CPF == '99999999999' ||
+        CPF == '00000000000') {
+            x.classList.add("is-invalid");
+            return false;
+        }
+        else {
     if (CPF.length == 11 && CPFExp.test(CPF) == true) {
         for (f = 10; f >= 2; f--) {
             ObjCPF[i] = parseInt(ObjCPF[i]) * f;
@@ -146,7 +161,7 @@ function ValidaCPF(x) {
     } else {
         x.classList.add("is-invalid");
         return false;
-    }
+    }}
 }
 document.getElementById("CPFVoluntario").addEventListener("blur", function () {
     ValidaCPF(document.getElementById("CPFVoluntario"));
