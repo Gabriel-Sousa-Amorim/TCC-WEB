@@ -22,7 +22,7 @@ function createDistrito(distrito) {
     div.classList = 'p-3 border rounded my-2 '
 
     div.addEventListener('mouseover', function() {
-        div.classList = 'p-3 border rounded my-2 bg-primary text-black shadow-primary '
+        div.classList = 'p-3 border rounded my-2 bg-primary text-light shadow-primary '
         document.getElementById('Distritos-Input-Search').value = distrito
     })
     div.addEventListener('mouseout', function() {

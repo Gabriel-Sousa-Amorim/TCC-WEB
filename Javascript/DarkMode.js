@@ -1,3 +1,4 @@
+const root = document.querySelector(":root");
 //Função para mudança de tema pela mudança das váriaveis no CSS;
 function darkToogle() {
     const btnCheck = document.getElementById("dark-button");
@@ -16,6 +17,9 @@ function darkToogle() {
         img.style.filter = "invert(1) brightness(15%)";
         label.classList.replace("btn-outline-light", "btn-outline-dark");
         icon.classList.replace("bi-moon-stars-fill", "bi-brightness-high-fill");
+        root.style.setProperty('--color-white', "#202020");
+        root.style.setProperty('--color-black', "#efefef ");
+
     } else {
         html[1].textContent = "dark";
         main.forEach(i => {
@@ -26,6 +30,8 @@ function darkToogle() {
         label.innerHTML = "Modo Escuro";
         img.style.filter = "invert(1) brightness(65%)";
         icon.classList.replace("bi-brightness-high-fill", "bi-moon-stars-fill");
+        root.style.setProperty('--color-white', "#efefef ");
+        root.style.setProperty('--color-black', "#202020");
     };
 };
 
@@ -34,7 +40,6 @@ if(document.querySelector('title').textContent ==  "Formulário de Doação") {
 //Mudança de tema para o formulário;
 } else {
     function DarkcheckboxToogle() {
-        const root = document.querySelector(":root");
         let label = document.querySelector("label.darkModeElement");
         if (this.checked == true) {
             root.style.setProperty('--color-white', "#efefef ");
