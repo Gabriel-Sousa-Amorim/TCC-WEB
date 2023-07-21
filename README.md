@@ -1,9 +1,9 @@
 <!-- Informações do nosso Projeto -->
 # TCC
 *Projeto TCC* do curso de Programação WEB no período noturno, do primeiro semestre de 2023. O nosso grupo é constituído por:
-* [Gabriel Sousa.](https://github.com/Gabriel-Sousa-Amorim) Desenvolvedor Front-End e Back-End .
-* [Carina Leandro Da Silva.](https://github.com/caleandro) Representante Zona Sul.
-* [Patrick Santos Caño.](https://github.com/patricks10)Representante Zona Norte.
+* [Gabriel Sousa.](https://github.com/Gabriel-Sousa-Amorim) Desenvolvedor FullStack do WebSite e Escritor do Web.
+* [Carina Leandro Da Silva.](https://github.com/caleandro)Escritora da documentação.
+* [Patrick Santos Caño.](https://github.com/patricks10)Escritor da documentação.
 
 
 <!-- Conteúdo do Projeto -->
