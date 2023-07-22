@@ -57,7 +57,6 @@ A Organização Mangará teve seu início em 3 março de 2018 na cidade de São 
 - [X] Grid e Flex.
 - [X] Media query.
 - [X] Bootstrap.
-- [ ] Float.
 ### JavaScript
 - [X] **DOM**.
 - [X] Estrutura de decisão (If/Else).
@@ -68,8 +67,6 @@ A Organização Mangará teve seu início em 3 março de 2018 na cidade de São 
 - [X] Array (.forEach(), .map(), .filter()).
 - [X] RegExp.
 - [X] ***JSON próprio com todos os bairros de São Paulo***
-- [ ] Classes.
-- [ ] React.
 ---
 # Referências
 
