@@ -32,7 +32,7 @@ function createDistrito(distrito) {
 let options = {
     method: 'GET'
 }
-fetch( "../../TCC/Javascript/Bairros.json", options)
+fetch( "../TCC-Mangara/Javascript/Bairros.json", options)
     .then(response => response.json())
     .then((bairros) => {bairros.forEach((bairro) => {
     createDistrito(bairro);
